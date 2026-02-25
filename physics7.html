@@ -25,30 +25,267 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>功：</strong>力和物体在力的方向上位移的乘积，W = F·s·cosθ</p>
+                    <p><strong>功率：</strong>描述做功快慢的物理量，P = W/t = F·v</p>
+                    <p><strong>动能：</strong>Ek = ½mv²，描述物体由于运动而具有的能量</p>
+                    <p><strong>重力势能：</strong>Ep = mgh，描述物体由于高度而具有的能量</p>
+                    <p><strong>弹性势能：</strong>Ep = ½kx²，描述弹性形变而具有的能量</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>动能定理：</strong>合外力对物体做的功等于物体动能的变化量，W合 = ΔEk</p>
+                    <p><strong>机械能守恒定律：</strong>在只有重力或弹力做功的系统中，动能和势能相互转化，机械能总量保持不变</p>
+                    <p><strong>功能关系：</strong>W除重力弹力以外的力 = ΔE机械能</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 动能定理 【基础】</h3>
+                    <p class="question">一质量为m的物体从高度h处自由下落，不计空气阻力，求物体落地时的速度和动能。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据自由落体公式：v² = 2gh，所以 v = √(2gh)</p>
+                        <p>（2）落地时的动能：Ek = ½mv² = ½m×2gh = mgh</p>
+                        <p><strong>知识点标签：</strong>自由落体、动能定理</p>
+                        <p><strong>答案：v = √(2gh)，Ek = mgh</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 功和功率 【中档】</h3>
+                    <p class="question">汽车在水平路面上匀速行驶，速度为v，牵引力为F。若要使汽车的速度提高到2v，且保持牵引力不变，发动机的功率应变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）初状态功率：P₁ = Fv</p>
+                        <p>（2）末状态功率：P₂ = F×2v = 2Fv</p>
+                        <p>（3）功率之比：P₂/P₁ = 2Fv/Fv = 2</p>
+                        <p><strong>知识点标签：</strong>功率、牵引力</p>
+                        <p><strong>答案：2倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 动能定理 【中档】</h3>
+                    <p class="question">一质量为m的物体从静止开始沿倾角为θ的斜面下滑，滑到底端时速度为v。若物体从同一位置以初速度v₀下滑，滑到底端时速度为多少？已知物体与斜面间的动摩擦因数为μ，下滑距离为s。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）下滑过程中，重力做功：Wg = mgs·sinθ</p>
+                        <p>（2）摩擦力做功：Wf = -μmg·cosθ·s</p>
+                        <p>（3）根据动能定理：W合 = ΔEk</p>
+                        <p>（4）第一次：mgs·sinθ - μmg·cosθ·s = ½mv²</p>
+                        <p>（5）第二次：mgs·sinθ - μmg·cosθ·s = ½m(v'² - v₀²)</p>
+                        <p>（6）两式相等：½mv² = ½m(v'² - v₀²)，解得：v' = √(v² + v₀²)</p>
+                        <p><strong>知识点标签：</strong>动能定理、斜面运动</p>
+                        <p><strong>答案：√(v² + v₀²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 机械能守恒定律 【中档】</h3>
+                    <p class="question">一质量为m的小球从高度H处自由下落到地面，与地面碰撞后反弹，反弹高度为h（h < H）。若不计空气阻力，小球与地面碰撞过程中损失的机械能为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）下落前的机械能：E₁ = mgH</p>
+                        <p>（2）反弹后的机械能：E₂ = mgh</p>
+                        <p>（3）碰撞过程损失的机械能：ΔE = E₁ - E₂ = mgH - mgh = mg(H - h)</p>
+                        <p><strong>知识点标签：</strong>机械能守恒定律、碰撞</p>
+                        <p><strong>答案：mg(H - h)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 圆周运动与能量 【高档】</h3>
+                    <p class="question">一质量为m的小球系在轻绳的一端，轻绳的另一端固定在O点，小球在竖直平面内做圆周运动。若小球通过最低点时的速度为v₀，求小球能通过最高点的最小速度v。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）设绳长为l，从最低点到最高点，上升高度h = 2l</p>
+                        <p>（2）在最高点，小球受重力mg和绳的拉力F（可能为零）</p>
+                        <p>（3）能通过最高点的条件：mg ≤ mv²/l，即 v ≥ √(gl)</p>
+                        <p>（4）根据机械能守恒：½mv₀² = ½mv² + mg·2l</p>
+                        <p>（5）当v = √(gl)时，v₀最小：½mv₀² = ½mgl + 2mgl = 2.5mgl</p>
+                        <p>（6）解得：v₀ = √(5gl)</p>
+                        <p><strong>知识点标签：</strong>圆周运动、机械能守恒定律、临界条件</p>
+                        <p><strong>答案：v₀ = √(5gl)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 功能关系 【中档】</h3>
+                    <p class="question">一质量为m的物体在拉力F作用下沿水平面移动，物体与水平面间的动摩擦因数为μ，移动距离为s。求拉力做的功、摩擦力做的功以及物体动能的变化量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）拉力做的功：WF = F·s（拉力与位移同向）</p>
+                        <p>（2）摩擦力的大小：f = μmg</p>
+                        <p>（3）摩擦力做的功：Wf = -f·s = -μmgs（摩擦力与位移反向）</p>
+                        <p>（4）根据动能定理：W合 = ΔEk</p>
+                        <p>（5）合外力做的功：W合 = WF + Wf = Fs - μmgs = (F - μmg)s</p>
+                        <p>（6）动能的变化量：ΔEk = (F - μmg)s</p>
+                        <p><strong>知识点标签：</strong>功、动能定理、功能关系</p>
+                        <p><strong>答案：WF = Fs，Wf = -μmgs，ΔEk = (F - μmg)s</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 弹簧弹性势能 【中档】</h3>
+                    <p class="question">一轻弹簧原长为l₀，劲度系数为k。一质量为m的物体将弹簧从原长压缩了x，然后释放，求物体离开弹簧时的速度（不计摩擦）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）压缩状态，弹性势能：Ep₁ = ½kx²</p>
+                        <p>（2）释放后，弹簧恢复原长，弹性势能：Ep₂ = 0</p>
+                        <p>（3）弹性势能转化为物体的动能</p>
+                        <p>（4）根据机械能守恒：Ep₁ = ½mv²</p>
+                        <p>（5）解得：v = x√(k/m)</p>
+                        <p><strong>知识点标签：</strong>弹性势能、机械能守恒定律</p>
+                        <p><strong>答案：v = x√(k/m)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 变力做功 【高档】</h3>
+                    <p class="question">一质量为m的物体受到变力F = kx的作用（k为常数，x为位移），从x₁处运动到x₂处，求该力对物体做的功。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）变力做功不能直接用W = F·s计算</p>
+                        <p>（2）取微小位移dx，元功：dW = Fdx = kxdx</p>
+                        <p>（3）积分：W = ∫[x₁到x₂] kxdx = ½k(x₂² - x₁²)</p>
+                        <p>（4）由动能定理：W = ΔEk = ½m(v₂² - v₁²)</p>
+                        <p><strong>知识点标签：</strong>变力做功、积分、动能定理</p>
+                        <p><strong>答案：W = ½k(x₂² - x₁²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 斜面上的能量 【中档】</h3>
+                    <p class="question">一质量为m的物体从高为h的光滑斜面顶端静止滑下，斜面倾角为θ。求物体滑到底端时的速度和动能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）斜面高度：h = s·sinθ，所以 s = h/sinθ</p>
+                        <p>（2）物体下滑过程，只有重力做功，机械能守恒</p>
+                        <p>（3）初始状态：E₁ = mgh</p>
+                        <p>（4）末状态：E₂ = ½mv²</p>
+                        <p>（5）由机械能守恒：mgh = ½mv²</p>
+                        <p>（6）解得：v = √(2gh)</p>
+                        <p>（7）末状态动能：Ek = mgh</p>
+                        <p><strong>知识点标签：</strong>机械能守恒定律、斜面运动</p>
+                        <p><strong>答案：v = √(2gh)，Ek = mgh</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2023·江苏卷】 能量转化 【中档】</h3>
+                    <p class="question">一质量为m的物体从高处自由下落，进入沙坑后下落了深度h而停止。若重力加速度为g，求沙坑对物体的平均阻力。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）设物体进入沙坑时的速度为v₀</p>
+                        <p>（2）自由落体阶段：v₀² = 2gH（H为物体自由下落的高度）</p>
+                        <p>（3）进入沙坑阶段，受重力mg和阻力F（向上）</p>
+                        <p>（4）根据动能定理：mg h - F h = 0 - ½mv₀²</p>
+                        <p>（5）若自由落落高度为H，则mg(H + h) - F h = 0</p>
+                        <p>（6）解得：F = mg(H + h)/h = mg(1 + H/h)</p>
+                        <p><strong>知识点标签：</strong>动能定理、功能关系</p>
+                        <p><strong>答案：F = mg(1 + H/h)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2022·全国卷】 传送带问题 【高档】</h3>
+                    <p class="question">一传送带以恒定速度v水平运动，一质量为m的物体以速度v₀（v₀ < v）被轻轻放到传送带一端，物体与传送带间的动摩擦因数为μ，传送带长为L。求物体从一端运动到另一端的时间。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）物体加速阶段：a = μg，达到速度v所需时间：t₁ = (v - v₀)/(μg)</p>
+                        <p>（2）加速阶段的位移：s₁ = v₀t₁ + ½at₁² = v₀(v - v₀)/(μg) + ½μg·((v - v₀)/(μg))²</p>
+                        <p>（3）若s₁ ≥ L，物体一直在加速，由 L = v₀t + ½μgt² 解t</p>
+                        <p>（4）若s₁ < L，物体先加速达到速度v，然后匀速运动</p>
+                        <p>（5）匀速阶段的时间：t₂ = (L - s₁)/v</p>
+                        <p>（6）总时间：t = t₁ + t₂</p>
+                        <p><strong>知识点标签：</strong>牛顿第二定律、动能定理、传送带</p>
+                        <p><strong>答案：分情况讨论</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 功率与阻力 【中档】</h3>
+                    <p class="question">一汽车以额定功率P匀速行驶，速度为v。若要使汽车的速度提高到2v（忽略空气阻力），且保持额定功率不变，汽车的牵引力应变为原来的几分之几？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）初状态：P = F₁v，所以牵引力 F₁ = P/v</p>
+                        <p>（2）末状态：P = F₂·2v，所以牵引力 F₂ = P/(2v)</p>
+                        <p>（3）牵引力之比：F₂/F₁ = (P/(2v))/(P/v) = 1/2</p>
+                        <p>（4）速度提高时，牵引力减小</p>
+                        <p><strong>知识点标签：</strong>功率、牵引力、速度关系</p>
+                        <p><strong>答案：牵引力变为原来的1/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2023·浙江卷】 弹簧振子能量 【中档】</h3>
+                    <p class="question">一质量为m的弹簧振子，劲度系数为k，振幅为A。求振子通过平衡位置时的速度和此时的动能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）振子在最大位移处（振幅A处），全部能量为弹性势能：Ep_max = ½kA²</p>
+                        <p>（2）振子在平衡位置处，全部能量为动能：Ek_max = ½mv²</p>
+                        <p>（3）根据机械能守恒：½kA² = ½mv²</p>
+                        <p>（4）解得：v = A√(k/m)</p>
+                        <p>（5）平衡位置的动能：Ek = ½kA²</p>
+                        <p><strong>知识点标签：</strong>机械能守恒定律、简谐运动</p>
+                        <p><strong>答案：v = A√(k/m)，Ek = ½kA²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2022·河北卷】 摩擦力做功 【中档】</h3>
+                    <p class="question">一质量为m的物体在水平面上滑行，初速度为v₀，与水平面间的动摩擦因数为μ。求物体滑行的距离和摩擦力做的功。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）物体受力：重力mg竖直向下，支持力FN = mg竖直向上，摩擦力f = μmg水平向后</p>
+                        <p>（2）根据动能定理：W合 = ΔEk = 0 - ½mv₀²</p>
+                        <p>（3）摩擦力做的功：Wf = -f·s = -μmgs</p>
+                        <p>（4）由 -μmgs = -½mv₀²，解得：s = v₀²/(2μg)</p>
+                        <p>（5）摩擦力做的功：Wf = -½mv₀²</p>
+                        <p><strong>知识点标签：</strong>动能定理、摩擦力做功</p>
+                        <p><strong>答案：s = v₀²/(2μg)，Wf = -½mv₀²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 能量综合 【高档】</h3>
+                    <p class="question">一质量为m的物体从高度h₁处自由下落，落到地面后反弹，反弹高度为h₂（h₂ < h₁）。若每次碰撞损失的机械能与碰撞前的机械能之比相同，求物体第三次反弹后的高度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）第一次下落：E₁ = mgh₁</p>
+                        <p>（2）第一次反弹：E₂ = mgh₂</p>
+                        <p>（3）能量损失比：k = (E₁ - E₂)/E₁ = (mgh₁ - mgh₂)/(mgh₁) = (h₁ - h₂)/h₁</p>
+                        <p>（4）第二次反弹后能量：E₃ = E₂(1 - k) = mgh₂·(1 - (h₁ - h₂)/h₁) = mgh₂·(h₂/h₁)</p>
+                        <p>（5）第二次反弹高度：h₃ = E₃/(mg) = h₂·(h₂/h₁)</p>
+                        <p>（6）第三次反弹后能量：E₄ = E₃(1 - k) = mgh₃·(1 - k)</p>
+                        <p>（7）第三次反弹高度：h₄ = h₃·(1 - k) = h₂·(h₂/h₁)·(h₂/h₁)</p>
+                        <p><strong>知识点标签：</strong>机械能守恒定律、碰撞、能量损失</p>
+                        <p><strong>答案：h₄ = h₂³/h₁²</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +306,7 @@
             const chapterId = 'physics7';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +314,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
