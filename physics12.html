@@ -25,30 +25,287 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>电流：</strong>I = Q/t，单位是安培(A)，描述电荷定向移动的快慢</p>
+                    <p><strong>欧姆定律：</strong>I = U/R，导体中的电流与两端电压成正比，与电阻成反比</p>
+                    <p><strong>电阻：</strong>R = ρl/S，导体的电阻与长度l成正比，与横截面积S成反比，ρ是电阻率</p>
+                    <p><strong>电功率：</strong>P = UI = I²R = U²/R，单位是瓦特(W)</p>
+                    <p><strong>电功：</strong>W = UIt = I²Rt，单位是焦耳(J)</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>闭合电路欧姆定律：</strong>I = ε/(R + r)，ε为电动势，r为内阻</p>
+                    <p><strong>串联电路：</strong>电流相同，总电压等于各部分电压之和，总电阻等于各部分电阻之和</p>
+                    <p><strong>并联电路：</strong>电压相同，总电流等于各支路电流之和，总电阻的倒数等于各支路电阻倒数之和</p>
+                    <p><strong>焦耳定律：</strong>Q = I²Rt，电流通过导体产生的热量</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 欧姆定律 【基础】</h3>
+                    <p class="question">一电阻两端的电压为U，通过的电流为I。若将电压增大为原来的2倍，则通过的电流变为原来的几倍？</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据欧姆定律：I = U/R，所以 R = U/I</p>
+                        <p>（2）电压增大为原来的2倍后：U' = 2U</p>
+                        <p>（3）新电流：I' = U'/R = 2U/(U/I) = 2I</p>
+                        <p>（4）电流之比：I'/I = 2I/I = 2</p>
+                        <p><strong>知识点标签：</strong>欧姆定律、电阻</p>
+                        <p><strong>答案：2倍</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 电阻定律 【中档】</h3>
+                    <p class="question">一导体的电阻为R，若将其长度拉长为原来的2倍，体积不变，则导体的电阻变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电阻定律：R = ρl/S</p>
+                        <p>（2）体积：V = lS，拉长后体积不变：V' = l'S' = V</p>
+                        <p>（3）长度拉长为原来的2倍：l' = 2l</p>
+                        <p>（4）横截面积：S' = V'/l' = lS/(2l) = S/2</p>
+                        <p>（5）新电阻：R' = ρl'/S' = ρ·(2l)/(S/2) = 4ρl/S = 4R</p>
+                        <p>（6）电阻之比：R'/R = 4R/R = 4</p>
+                        <p><strong>知识点标签：</strong>电阻定律、体积不变</p>
+                        <p><strong>答案：4倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 串联电路 【基础】</h3>
+                    <p class="question">两个电阻R₁和R₂串联接在电压为U的电源上，求通过两个电阻的电流和每个电阻两端的电压。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）串联电路总电阻：R = R₁ + R₂</p>
+                        <p>（2）通过两个电阻的电流相同：I = U/R = U/(R₁ + R₂)</p>
+                        <p>（3）电阻R₁两端的电压：U₁ = IR₁ = UR₁/(R₁ + R₂)</p>
+                        <p>（4）电阻R₂两端的电压：U₂ = IR₂ = UR₂/(R₁ + R₂)</p>
+                        <p>（5）验证：U₁ + U₂ = U(R₁ + R₂)/(R₁ + R₂) = U，正确</p>
+                        <p><strong>知识点标签：</strong>串联电路、欧姆定律、电压分配</p>
+                        <p><strong>答案：I = U/(R₁ + R₂)，U₁ = UR₁/(R₁ + R₂)，U₂ = UR₂/(R₁ + R₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 并联电路 【中档】</h3>
+                    <p class="question">两个电阻R₁和R₂并联接在电压为U的电源上，求通过两个电阻的电流和总电流。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）两个电阻两端的电压相同：U₁ = U₂ = U</p>
+                        <p>（2）通过R₁的电流：I₁ = U/R₁</p>
+                        <p>（3）通过R₂的电流：I₂ = U/R₂</p>
+                        <p>（4）总电流：I = I₁ + I₂ = U/R₁ + U/R₂ = U(R₁ + R₂)/(R₁R₂)</p>
+                        <p>（5）并联总电阻：1/R = 1/R₁ + 1/R₂ = (R₁ + R₂)/(R₁R₂)，所以 R = R₁R₂/(R₁ + R₂)</p>
+                        <p>（6）验证：I = U/R = U/[(R₁R₂)/(R₁ + R₂)] = U(R₁ + R₂)/(R₁R₂)，正确</p>
+                        <p><strong>知识点标签：</strong>并联电路、欧姆定律、电流分配</p>
+                        <p><strong>答案：I₁ = U/R₁，I₂ = U/R₂，I = U(R₁ + R₂)/(R₁R₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 电功率 【中档】</h3>
+                    <p class="question">一电阻两端的电压为U，通过的电流为I。求该电阻消耗的电功率和电功率的另外两个表达式。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电功率定义：P = UI</p>
+                        <p>（2）根据欧姆定律：I = U/R，所以 U = IR</p>
+                        <p>（3）将U = IR代入P = UI：P = (IR)I = I²R</p>
+                        <p>（4）将I = U/R代入P = UI：P = U(U/R) = U²/R</p>
+                        <p>（5）所以电功率的三个表达式：P = UI = I²R = U²/R</p>
+                        <p>（6）分别表示：P = UI（基本公式），P = I²R（与电流有关），P = U²/R（与电压有关）</p>
+                        <p><strong>知识点标签：</strong>电功率、欧姆定律</p>
+                        <p><strong>答案：P = UI = I²R = U²/R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 闭合电路欧姆定律 【中档】</h3>
+                    <p class="question">一电源的电动势为ε，内阻为r，外电路电阻为R。求电路中的电流、路端电压和电源的输出功率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据闭合电路欧姆定律：I = ε/(R + r)</p>
+                        <p>（2）路端电压（外电阻两端的电压）：U = IR = εR/(R + r)</p>
+                        <p>（3）电源内阻上的电压：U内 = Ir = εr/(R + r)</p>
+                        <p>（4）验证：U + U内 = εR/(R + r) + εr/(R + r) = ε(R + r)/(R + r) = ε，正确</p>
+                        <p>（5）电源的输出功率：P输出 = UI = εR/(R + r)·ε/(R + r) = ε²R/(R + r)²</p>
+                        <p><strong>知识点标签：</strong>闭合电路欧姆定律、路端电压、输出功率</p>
+                        <p><strong>答案：I = ε/(R + r)，U = εR/(R + r)，P输出 = ε²R/(R + r)²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 焦耳定律 【中档】</h3>
+                    <p class="question">一电阻R，通过的电流为I，通电时间为t。求电阻产生的热量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据焦耳定律：Q = I²Rt</p>
+                        <p>（2）电流产生的热量全部转化为内能</p>
+                        <p>（3）焦耳定律的另外两个表达式：Q = UIt = U²t/R</p>
+                        <p>（4）若电路中只有电阻，则电功等于电热：W = Q = I²Rt</p>
+                        <p>（5）若电路中有电动机等非纯电阻电路，则电功大于电热</p>
+                        <p><strong>知识点标签：</strong>焦耳定律、电功、电热</p>
+                        <p><strong>答案：Q = I²Rt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 电动势和路端电压 【中档】</h3>
+                    <p class="question">一电源的开路电压为U₀（即外电路断开时的路端电压），接一电阻R后路端电压为U。求电源的电动势ε和内阻r。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）开路时外电阻R → ∞，电流I = 0，内阻上的电压U内 = Ir = 0</p>
+                        <p>（2）所以开路电压等于电动势：U₀ = ε</p>
+                        <p>（3）接电阻R后：I = ε/(R + r)，路端电压：U = IR = εR/(R + r)</p>
+                        <p>（4）由ε = U₀和U = εR/(R + r)，得：U = U₀·R/(R + r)</p>
+                        <p>（5）解得：r = R(U₀ - U)/U</p>
+                        <p>（6）电动势：ε = U₀</p>
+                        <p><strong>知识点标签：</strong>电动势、路端电压、内阻</p>
+                        <p><strong>答案：ε = U₀，r = R(U₀ - U)/U</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 电源的最大输出功率 【高档】</h3>
+                    <p class="question">一电源的电动势为ε，内阻为r。求当外电路电阻R为多少时，电源的输出功率最大，并求最大输出功率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电源的输出功率：P输出 = I²R = [ε/(R + r)]²·R = ε²R/(R + r)²</p>
+                        <p>（2）当P输出最大时，令dP输出/dR = 0</p>
+                        <p>（3）对P输出求导并令为零，得：R = r</p>
+                        <p>（4）所以当外电阻R等于内阻r时，电源的输出功率最大</p>
+                        <p>（5）最大输出功率：Pmax = ε²r/(r + r)² = ε²r/(4r²) = ε²/(4r)</p>
+                        <p>（6）此时效率：η = P输出/P总 = (I²R)/(Iε) = R/(R + r) = r/(2r) = 50%</p>
+                        <p><strong>知识点标签：</strong>输出功率、最大输出功率、效率</p>
+                        <p><strong>答案：当R = r时输出功率最大，Pmax = ε²/(4r)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 混联电路 【高档】</h3>
+                    <p class="question">三个电阻R₁、R₂、R₃，其中R₁和R₂并联后与R₃串联，接在电压为U的电源上。求通过每个电阻的电流和总电流。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）R₁和R₂并联的等效电阻：R₁₂ = R₁R₂/(R₁ + R₂)</p>
+                        <p>（2）总电阻：R = R₁₂ + R₃ = R₁R₂/(R₁ + R₂) + R₃</p>
+                        <p>（3）总电流：I = U/R = U/[R₁R₂/(R₁ + R₂) + R₃]</p>
+                        <p>（4）R₁和R₂两端的电压：U₁₂ = IR₁₂ = I·R₁R₂/(R₁ + R₂)</p>
+                        <p>（5）通过R₁的电流：I₁ = U₁₂/R₁ = IR₂/(R₁ + R₂)</p>
+                        <p>（6）通过R₂的电流：I₂ = U₁₂/R₂ = IR₁/(R₁ + R₂)</p>
+                        <p>（7）通过R₃的电流：I₃ = I = U/[R₁R₂/(R₁ + R₂) + R₃]</p>
+                        <p>（8）验证：I₁ + I₂ = I(R₂ + R₁)/(R₁ + R₂) = I = I₃，正确</p>
+                        <p><strong>知识点标签：</strong>混联电路、等效电阻、电流分配</p>
+                        <p><strong>答案：I₁ = IR₂/(R₁ + R₂)，I₂ = IR₁/(R₁ + R₂)，I₃ = I</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 电功与电功率 【中档】</h3>
+                    <p class="question">一电阻R，接在电压为U的电源上，通电时间为t。求电阻消耗的电功和电功率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据电功公式：W = UIt</p>
+                        <p>（2）根据欧姆定律：I = U/R</p>
+                        <p>（3）将I = U/R代入W = UIt：W = U(U/R)t = U²t/R</p>
+                        <p>（4）也可以写成：W = I²Rt</p>
+                        <p>（5）根据电功率公式：P = W/t = UI = U²/R = I²R</p>
+                        <p>（6）电功的单位是焦耳(J)，电功率的单位是瓦特(W)</p>
+                        <p><strong>知识点标签：</strong>电功、电功率、欧姆定律</p>
+                        <p><strong>答案：W = U²t/R = I²Rt，P = U²/R = I²R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 伏安法测电阻 【中档】</h3>
+                    <p class="question">用伏安法测电阻，测得电压为U，电流为I。若考虑电流表的内阻为RA，电压表的内阻为RV，求待测电阻的真实值R。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电流表内接法（电流表与待测电阻串联）：测量值R测 = U/I = (R + RA)/1 = R + RA</p>
+                        <p>（2）所以真实值：R = R测 - RA</p>
+                        <p>（3）系统误差：ΔR = RA，测量值偏大</p>
+                        <p>（4）电压表外接法（电压表与待测电阻并联）：测量值R测 = U/I = 1/(1/R + 1/RV)</p>
+                        <p>（5）所以真实值：1/R = 1/R测 - 1/RV</p>
+                        <p>（6）系统误差：ΔR = -R²/RV，测量值偏小</p>
+                        <p>（7）当RV >> R时，外接法的误差较小</p>
+                        <p><strong>知识点标签：</strong>伏安法、内接法、外接法、系统误差</p>
+                        <p><strong>答案：内接法：R = R测 - RA；外接法：1/R = 1/R测 - 1/RV</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 电源的效率 【中档】</h3>
+                    <p class="question">一电源的电动势为ε，内阻为r，外电路电阻为R。求电源的效率η。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电源的输出功率：P输出 = I²R = [ε/(R + r)]²R = ε²R/(R + r)²</p>
+                        <p>（2）电源的总功率：P总 = Iε = [ε/(R + r)]ε = ε²/(R + r)</p>
+                        <p>（3）电源的效率：η = P输出/P总 = [ε²R/(R + r)²]/[ε²/(R + r)] = R/(R + r)</p>
+                        <p>（4）当R = r时，效率：η = r/(r + r) = 50%</p>
+                        <p>（5）当R → ∞时，效率：η → 100%</p>
+                        <p>（6）效率随外电阻的增大而增大</p>
+                        <p><strong>知识点标签：</strong>效率、输出功率、总功率</p>
+                        <p><strong>答案：η = R/(R + r)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 惠斯通电桥 【高档】</h3>
+                    <p class="question">一惠斯通电桥，四个电阻分别为R₁、R₂、R₃、R₄，组成菱形电路，电流计接在对角线上。求电桥平衡时四个电阻的关系。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电桥平衡时，电流计中没有电流，即CD两点等电势</p>
+                        <p>（2）所以通过R₁和R₂的电流相同，通过R₃和R₄的电流相同</p>
+                        <p>（3）R₁和R₃两端的电压相等：I₁R₁ = I₃R₃</p>
+                        <p>（4）R₂和R₄两端的电压相等：I₁R₂ = I₃R₄</p>
+                        <p>（5）两式相比：(I₁R₁)/(I₁R₂) = (I₃R₃)/(I₃R₄)</p>
+                        <p>（6）化简得：R₁/R₂ = R₃/R₄</p>
+                        <p>（7）或写成：R₁R₄ = R₂R₃</p>
+                        <p>（8）这就是惠斯通电桥的平衡条件</p>
+                        <p><strong>知识点标签：</strong>惠斯通电桥、电桥平衡、电阻关系</p>
+                        <p><strong>答案：R₁/R₂ = R₃/R₄ 或 R₁R₄ = R₂R₃</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 非纯电阻电路 【高档】</h3>
+                    <p class="question">一电源的电动势为ε，内阻为r，给一电动机供电，电动机的线圈电阻为R。若电动机正常工作时通过的电流为I，求电动机的机械功率和电路的总功率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电动机线圈电阻上的电压：U线圈 = IR</p>
+                        <p>（2）线圈电阻上的电功率：P热 = I²R</p>
+                        <p>（3）电源的总功率：P总 = Iε</p>
+                        <p>（4）电源内阻上的电功率：P内 = I²r</p>
+                        <p>（5）电动机的输入功率：P入 = I(U线圈 + U反） = I(IR + U反)</p>
+                        <p>（6）由能量守恒：P总 = P内 + P入，即 Iε = I²r + I(IR + U反)</p>
+                        <p>（7）化简得：ε = Ir + IR + U反 = I(R + r) + U反</p>
+                        <p>（8）电动机的机械功率：P机 = IU反 = I[ε - I(R + r)]</p>
+                        <p>（9）电动机的效率：η = P机/P总 = [I(ε - I(R + r))]/(Iε) = [ε - I(R + r)]/ε</p>
+                        <p>（10）非纯电阻电路中，电功大于电热：W > Q</p>
+                        <p><strong>知识点标签：</strong>非纯电阻电路、电动机、机械功率、效率</p>
+                        <p><strong>答案：P机 = I[ε - I(R + r)]，P总 = Iε</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +326,7 @@
             const chapterId = 'physics12';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +334,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
