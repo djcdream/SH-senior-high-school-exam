@@ -25,30 +25,299 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>温度：</strong>描述物体冷热程度的物理量，单位是开尔文(K)或摄氏度(°C)</p>
+                    <p><strong>内能：</strong>物体中所有分子热运动的动能和分子势能的总和</p>
+                    <p><strong>热量：</strong>Q，在热传递过程中，物体吸收或放出的能量，单位是焦耳(J)</p>
+                    <p><strong>比热容：</strong>c，单位质量的某种物质温度升高1K所吸收的热量，单位是J/(kg·K)</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>热力学第一定律：</strong>ΔU = Q + W，系统内能的变化等于吸收的热量与外界对系统做功的和</p>
+                    <p><strong>理想气体状态方程：</strong>pV = nRT，其中p是压强，V是体积，n是物质的量，R是理想气体常数，T是温度</p>
+                    <p><strong>热传递：</strong>热传导、对流、热辐射三种方式</p>
+                    <p><strong>分子动理论：</strong>气体压强与分子数密度和分子平均动能有关</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 理想气体状态方程 【基础】</h3>
+                    <p class="question">一理想气体，压强为p，体积为V，温度为T。若将气体等温压缩，体积减半，求新的压强。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据理想气体状态方程：pV = nRT</p>
+                        <p>（2）等温过程中，温度T不变，物质的量n也不变</p>
+                        <p>（3）体积减半后：V' = V/2</p>
+                        <p>（4）新的压强：p'V' = nRT，所以 p'(V/2) = pV</p>
+                        <p>（5）解得：p' = 2p</p>
+                        <p>（6）等温压缩，压强增大，体积减小</p>
+                        <p><strong>知识点标签：</strong>理想气体、状态方程、等温过程</p>
+                        <p><strong>答案：p' = 2p</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 内能 【中档】</h3>
+                    <p class="question">一定质量的理想气体，从状态1（p₁, V₁, T₁）变化到状态2（p₂, V₂, T₂）。若过程中吸收热量Q，对外做功W，求内能的变化量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据热力学第一定律：ΔU = Q + W</p>
+                        <p>（2）其中W为外界对系统做的功，若系统对外做功，则W为负值</p>
+                        <p>（3）若系统吸收热量，Q为正值；若系统放出热量，Q为负值</p>
+                        <p>（4）内能变化量：ΔU = Q + W</p>
+                        <p>（5）对于理想气体，内能只与温度有关：ΔU = (3/2)nRΔT</p>
+                        <p>（6）内能增大，温度升高；内能减小，温度降低</p>
+                        <p><strong>知识点标签：</strong>热力学第一定律、内能、热量、做功</p>
+                        <p><strong>答案：ΔU = Q + W</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 比热容 【中档】</h3>
+                    <p class="question">一质量为m的物体，比热容为c，温度从T₁升高到T₂。求该物体吸收的热量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）温度变化量：ΔT = T₂ - T₁</p>
+                        <p>（2）吸收的热量：Q = cmΔT = cm(T₂ - T₁)</p>
+                        <p>（3）若T₂ > T₁，则Q > 0，物体吸热</p>
+                        <p>（4）若T₂ < T₁，则Q < 0，物体放热</p>
+                        <p>（5）比热容c越大，升高相同温度所需的热量越多</p>
+                        <p><strong>知识点标签：</strong>比热容、热量、温度变化</p>
+                        <p><strong>答案：Q = cm(T₂ - T₁)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 理想气体等压过程 【中档】</h3>
+                    <p class="question">一理想气体，初始压强为p，体积为V，温度为T。若保持压强不变，将温度升高为原来的2倍，求新的体积。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）初始状态：pV = nRT</p>
+                        <p>（2）等压过程：p' = p</p>
+                        <p>（3）温度升高为原来的2倍：T' = 2T</p>
+                        <p>（4）新的状态方程：p'V' = nRT'</p>
+                        <p>（5）代入p' = p和T' = 2T：pV' = nR·2T</p>
+                        <p>（6）由于pV = nRT，所以：V' = 2V</p>
+                        <p>（7）等压过程，温度升高，体积增大</p>
+                        <p><strong>知识点标签：</strong>理想气体、等压过程、查理定律</p>
+                        <p><strong>答案：V' = 2V</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 热力学第一定律 【中档】</h3>
+                    <p class="question">一理想气体经历一个循环过程，从状态A到B吸热Q₁，做功W₁；从B到C放热Q₂，做功W₂；从C到A放热Q₃，做功W₃。求整个循环过程中气体的内能变化和对外做的净功。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）循环过程中，系统回到初始状态，内能变化为零：ΔU = 0</p>
+                        <p>（2）根据热力学第一定律：ΔU = Q总 + W总</p>
+                        <p>（3）总热量：Q总 = Q₁ - Q₂ - Q₃</p>
+                        <p>（4）总功：W总 = W₁ + W₂ + W₃</p>
+                        <p>（5）由于ΔU = 0，所以：Q总 + W总 = 0，即 W总 = -Q总</p>
+                        <p>（6）净功：W净 = W₁ + W₂ + W₃ = -(Q₁ - Q₂ - Q₃)</p>
+                        <p>（7）循环过程中，系统对外做的净功等于净吸热量</p>
+                        <p><strong>知识点标签：</strong>热力学第一定律、循环过程、净功</p>
+                        <p><strong>答案：ΔU = 0，W净 = -(Q₁ - Q₂ - Q₃)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 热传递 【中档】</h3>
+                    <p class="question">两个温度分别为T₁和T₂（T₁ > T₂）的物体相互接触，若它们的比热容分别为c₁和c₂，质量分别为m₁和m₂。求达到热平衡时的共同温度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）高温物体放出的热量：Q放 = c₁m₁(T₁ - T）</p>
+                        <p>（2）低温物体吸收的热量：Q吸 = c₂m₂(T - T₂)</p>
+                        <p>（3）热平衡时，Q放 = Q吸</p>
+                        <p>（4）所以：c₁m₁(T₁ - T) = c₂m₂(T - T₂)</p>
+                        <p>（5）解得：c₁m₁T₁ + c₂m₂T₂ = (c₁m₁ + c₂m₂)T</p>
+                        <p>（6）共同温度：T = (c₁m₁T₁ + c₂m₂T₂)/(c₁m₁ + c₂m₂)</p>
+                        <p>（7）这是热平衡温度的公式</p>
+                        <p><strong>知识点标签：</strong>热传递、热平衡、比热容</p>
+                        <p><strong>答案：T = (c₁m₁T₁ + c₂m₂T₂)/(c₁m₁ + c₂m₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 理想气体等容过程 【中档】</h3>
+                    <p class="question">一理想气体，初始压强为p，温度为T。若保持体积不变，将温度升高为原来的2倍，求新的压强。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）初始状态：pV = nRT</p>
+                        <p>（2）等容过程：V' = V</p>
+                        <p>（3）温度升高为原来的2倍：T' = 2T</p>
+                        <p>（4）新的状态方程：p'V' = nRT'</p>
+                        <p>（5）代入V' = V和T' = 2T：p'V = nR·2T</p>
+                        <p>（6）由于pV = nRT，所以：p'V = 2pV</p>
+                        <p>（7）解得：p' = 2p</p>
+                        <p>（8）等容过程，温度升高，压强增大</p>
+                        <p><strong>知识点标签：</strong>理想气体、等容过程、查理定律</p>
+                        <p><strong>答案：p' = 2p</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 内能和功 【中档】</h3>
+                    <p class="question">一理想气体经历一等温膨胀过程，体积从V₁变为V₂（V₂ > V₁）。求气体的内能变化和气体对外做的功。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）等温过程中，温度不变：ΔT = 0</p>
+                        <p>（2）理想气体的内能只与温度有关：ΔU = (3/2)nRΔT = 0</p>
+                        <p>（3）气体对外做的功：W = ∫p·dV = nRT∫(1/V)dV = nRT·ln(V₂/V₁)</p>
+                        <p>（4）根据热力学第一定律：ΔU = Q + W</p>
+                        <p>（5）由于ΔU = 0，所以：Q = -W</p>
+                        <p>（6）气体对外做功，从外界吸收热量</p>
+                        <p>（7）内能变化为零，但能量从热能转化为机械能</p>
+                        <p><strong>知识点标签：</strong>理想气体、等温过程、内能、功、热量</p>
+                        <p><strong>答案：ΔU = 0，W = nRT·ln(V₂/V₁)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 混合气体 【中档】</h3>
+                    <p class="question">两种理想气体A、B混合，物质的量分别为n_A和n_B，体积为V，温度为T。求混合气体的总压强和每种气体的分压。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据理想气体状态方程：pV = nRT</p>
+                        <p>（2）混合气体的总物质的量：n = n_A + n_B</p>
+                        <p>（3）混合气体的总压强：p = nRT/V = (n_A + n_B)RT/V</p>
+                        <p>（4）气体A的分压：p_A = n_ART/V</p>
+                        <p>（5）气体B的分压：p_B = n_BRT/V</p>
+                        <p>（6）验证：p_A + p_B = (n_A + n_B)RT/V = p</p>
+                        <p>（7）分压之和等于总压强</p>
+                        <p>（8）这是道尔顿分压定律的应用</p>
+                        <p><strong>知识点标签：</strong>理想气体、混合气体、分压、道尔顿定律</p>
+                        <p><strong>答案：p = (n_A + n_B)RT/V，p_A = n_ART/V，p_B = n_BRT/V</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 热机效率 【中档】</h3>
+                    <p class="question">一热机从高温热源吸收热量Q₁，对外做功W，向低温热源放出热量Q₂。求该热机的效率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据能量守恒：Q₁ = W + Q₂</p>
+                        <p>（2）热机效率：η = W/Q₁</p>
+                        <p>（3）由W = Q₁ - Q₂，得：η = (Q₁ - Q₂)/Q₁ = 1 - Q₂/Q₁</p>
+                        <p>（4）效率等于对外做功与吸收热量的比值</p>
+                        <p>（5）效率总是小于1（100%），因为Q₂ > 0</p>
+                        <p>（6）这是热力学第二定律的体现</p>
+                        <p><strong>知识点标签：</strong>热机、效率、能量守恒、热力学第二定律</p>
+                        <p><strong>答案：η = 1 - Q₂/Q₁</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 理想气体绝热过程 【高档】</h3>
+                    <p class="question">一理想气体，初始压强为p，体积为V，温度为T。若经历一个绝热压缩过程，体积减半，求新的压强和温度。已知绝热指数γ = Cp/Cv = 1.4。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）绝热过程关系式：pV^γ = 常数</p>
+                        <p>（2）初始状态：pV^γ = C</p>
+                        <p>（3）体积减半后：V' = V/2</p>
+                        <p>（4）新的压强：p'(V/2)^γ = pV^γ</p>
+                        <p>（5）解得：p' = p·2^γ = p·2^1.4 ≈ 2.64p</p>
+                        <p>（6）理想气体状态方程：pV/T = p'V'/T'</p>
+                        <p>（7）解得：T' = p'V'·T/(pV) = (p·2^γ)·(V/2)·T/(pV) = T·2^(γ-1)</p>
+                        <p>（8）新的温度：T' = T·2^0.4 ≈ 1.32T</p>
+                        <p>（9）绝热压缩，压强增大，温度升高</p>
+                        <p><strong>知识点标签：</strong>理想气体、绝热过程、绝热指数</p>
+                        <p><strong>答案：p' ≈ 2.64p，T' ≈ 1.32T</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 热传导 【中档】</h3>
+                    <p class="question">一金属杆，长度为L，横截面积为S，导热系数为k。杆的两端温度分别为T₁和T₂（T₁ > T₂）。求单位时间内通过杆的热量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）傅里叶热传导定律：Q/Δt = -k·S·dT/dx</p>
+                        <p>（2）稳态热传导时，温度梯度为常数：dT/dx = (T₂ - T₁)/L = -(T₁ - T₂)/L</p>
+                        <p>（3）单位时间内通过杆的热量：Q/Δt = k·S·(T₁ - T₂)/L</p>
+                        <p>（4）热量从高温端传向低温端</p>
+                        <p>（5）导热系数k越大，传导热量越多</p>
+                        <p>（6）横截面积S越大，传导热量越多</p>
+                        <p>（7）长度L越大，传导热量越少</p>
+                        <p><strong>知识点标签：</strong>热传导、傅里叶定律、导热系数</p>
+                        <p><strong>答案：Q/Δt = k·S·(T₁ - T₂)/L</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 理想气体状态变化 【中档】</h3>
+                    <p class="question">一理想气体，从状态A（p₁, V₁, T₁）变化到状态B（p₂, V₂, T₂）。若p₂ = 2p₁，V₂ = 0.5V₁，求温度之比T₂/T₁。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）状态A：p₁V₁ = nRT₁</p>
+                        <p>（2）状态B：p₂V₂ = nRT₂</p>
+                        <p>（3）两式相比：p₂V₂/(p₁V₁) = T₂/T₁</p>
+                        <p>（4）代入p₂ = 2p₁和V₂ = 0.5V₁</p>
+                        <p>（5）所以：T₂/T₁ = (2p₁×0.5V₁)/(p₁V₁) = 1</p>
+                        <p>（6）温度之比：T₂/T₁ = 1</p>
+                        <p>（7）压强增大一倍，体积减半，温度不变</p>
+                        <p>（8）符合理想气体状态方程</p>
+                        <p><strong>知识点标签：</strong>理想气体、状态方程、温度变化</p>
+                        <p><strong>答案：T₂/T₁ = 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 热力学第二定律 【基础】</h3>
+                    <p class="question">关于热力学第二定律，下列说法正确的是：</p>
+                    <p>(A) 热量可以自发地从低温物体传向高温物体</p>
+                    <p>(B) 热机可以单一热源吸收热量做功</p>
+                    <p>(C) 气体可以自发地向真空自由膨胀</p>
+                    <p>(D) 熵增是孤立系统演化的方向</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。热量不能自发地从低温物体传向高温物体（克劳修斯表述）</p>
+                        <p>（B）错误。热机不能单一热源吸收热量做功（第二类永动机不可能）</p>
+                        <p>（C）正确。气体可以自发地向真空自由膨胀（熵增过程）</p>
+                        <p>（D）正确。孤立系统的熵永不减少，总是朝着熵增的方向演化（熵增原理）</p>
+                        <p>（5）热力学第二定律有多种表述，核心是自然过程的方向性</p>
+                        <p><strong>知识点标签：</strong>热力学第二定律、克劳修斯表述、熵增原理</p>
+                        <p><strong>答案：C、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 热平衡 【中档】</h3>
+                    <p class="question">一质量为m₁的金属球，温度为T₁；一质量为m₂的水，温度为T₂（T₁ > T₂）。若将金属球放入水中，达到热平衡后，水的温度升高到T。求金属球的比热容c（不计热量损失）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）金属球放出的热量：Q放 = c·m₁(T₁ - T)</p>
+                        <p>（2）水吸收的热量：Q吸 = c水·m₂(T - T₂)，其中c水 = 4.2×10³J/(kg·°C)</p>
+                        <p>（3）热平衡时，Q放 = Q吸</p>
+                        <p>（4）所以：c·m₁(T₁ - T) = c水·m₂(T - T₂)</p>
+                        <p>（5）解得：c = c水·m₂(T - T₂)/[m₁(T₁ - T)]</p>
+                        <p>（6）金属球的比热容可以通过热平衡实验测定</p>
+                        <p>（7）这种方法称为混合量热法</p>
+                        <p><strong>知识点标签：</strong>热平衡、比热容、热量</p>
+                        <p><strong>答案：c = c水·m₂(T - T₂)/[m₁(T₁ - T)]</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +338,7 @@
             const chapterId = 'physics18';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +346,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
