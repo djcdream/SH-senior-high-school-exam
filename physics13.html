@@ -25,30 +25,293 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>磁感应强度：</strong>B，描述磁场强弱和方向的物理量，单位是特斯拉(T)</p>
+                    <p><strong>磁感线：</strong>假想的曲线，曲线上每点的切线方向表示该点的磁场方向，磁感线越密处磁场越强</p>
+                    <p><strong>磁通量：</strong>Φ = BS·cosθ，穿过某一面积的磁感线条数，单位是韦伯(Wb)</p>
+                    <p><strong>安培力：</strong>F = BIL·sinθ，通电导线在磁场中受到的力，单位是牛顿(N)</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>洛伦兹力：</strong>F = qvB·sinθ，运动电荷在磁场中受到的力，方向垂直于v和B</p>
+                    <p><strong>左手定则：</strong>用于判断安培力、洛伦兹力的方向</p>
+                    <p><strong>带电粒子在磁场中的圆周运动：</strong>qvB = mv²/r，运动半径r = mv/(qB)，周期T = 2πm/(qB)</p>
+                    <p><strong>回旋加速器：</strong>利用电场加速、磁场偏转的装置</p>
+                    <p><strong>电磁感应：</strong>磁通量变化产生感应电动势，法拉第电磁感应定律</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 洛伦兹力 【基础】</h3>
+                    <p class="question">一电子以速度v垂直进入磁感应强度为B的匀强磁场中。若电子的质量为m，电荷量为-e，求电子在磁场中运动的半径和周期。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）洛伦兹力提供向心力：qvB = mv²/r</p>
+                        <p>（2）运动半径：r = mv/(qB) = mv/(eB)</p>
+                        <p>（3）周期：T = 2πr/v = 2π[mv/(eB)]/v = 2πm/(eB)</p>
+                        <p>（4）洛伦兹力不做功，电子的速度大小不变</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、圆周运动、回旋周期</p>
+                        <p><strong>答案：r = mv/(eB)，T = 2πm/(eB)</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 安培力 【中档】</h3>
+                    <p class="question">一长度为L的直导线，通过的电流为I，垂直放入磁感应强度为B的匀强磁场中。求导线受到的安培力的大小和方向。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）安培力公式：F = BIL·sinθ</p>
+                        <p>（2）由于导线垂直放入磁场，θ = 90°，sinθ = 1</p>
+                        <p>（3）安培力的大小：F = BIL</p>
+                        <p>（4）安培力的方向：用左手定则判断，四指指向电流方向，磁感线穿过手心，大拇指指向安培力方向</p>
+                        <p>（5）安培力既垂直于电流，也垂直于磁场</p>
+                        <p><strong>知识点标签：</strong>安培力、左手定则</p>
+                        <p><strong>答案：F = BIL，方向用左手定则判断</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 磁通量 【基础】</h3>
+                    <p class="question">一矩形线圈的面积为S，线圈平面与磁感应强度为B的匀强磁场的夹角为θ。求穿过线圈的磁通量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）磁通量公式：Φ = BS·cosα</p>
+                        <p>（2）其中α是线圈平面法线与磁场的夹角</p>
+                        <p>（3）线圈平面与磁场的夹角为θ，则法线与磁场的夹角为α = 90° - θ</p>
+                        <p>（4）所以：Φ = BS·cos(90° - θ) = BS·sinθ</p>
+                        <p>（5）当线圈平面与磁场平行（θ = 0°）时，磁通量最大：Φmax = BS</p>
+                        <p>（6）当线圈平面与磁场垂直（θ = 90°）时，磁通量最小：Φmin = 0</p>
+                        <p><strong>知识点标签：</strong>磁通量、角度关系</p>
+                        <p><strong>答案：Φ = BS·sinθ</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 带电粒子在磁场中的运动 【中档】</h3>
+                    <p class="question">一质子以速度v垂直进入磁感应强度为B的匀强磁场中，做匀速圆周运动。若将磁感应强度增大为原来的2倍，则质子的运动半径和周期如何变化？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）运动半径：r = mv/(qB)</p>
+                        <p>（2）磁感应强度变为原来的2倍后：B' = 2B</p>
+                        <p>（3）新半径：r' = mv/(q·2B) = r/2</p>
+                        <p>（4）半径之比：r'/r = 1/2</p>
+                        <p>（5）周期：T = 2πm/(qB)</p>
+                        <p>（6）新周期：T' = 2πm/(q·2B) = T/2</p>
+                        <p>（7）周期之比：T'/T = 1/2</p>
+                        <p>（8）磁感应强度增大，半径和周期都减半</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、圆周运动、半径、周期</p>
+                        <p><strong>答案：半径和周期都变为原来的1/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 磁场对电流的作用 【中档】</h3>
+                    <p class="question">两根平行的直导线，分别通过的电流为I₁和I₂，距离为d。求两导线之间单位长度上的相互作用力。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）导线1在导线2处产生的磁感应强度：B₁ = kI₁/d，其中k = μ₀/4π</p>
+                        <p>（2）导线2单位长度受到的安培力：F/L = I₂L·B₁/L = I₂B₁</p>
+                        <p>（3）所以：F/L = I₂·kI₁/d = kI₁I₂/d</p>
+                        <p>（4）同理，导线1单位长度受到的力：F'/L = kI₁I₂/d，大小相等</p>
+                        <p>（5）方向：若I₁和I₂同向，两导线相互吸引；若I₁和I₂反向，两导线相互排斥</p>
+                        <p>（6）单位长度的力：F/L = kI₁I₂/d</p>
+                        <p><strong>知识点标签：</strong>安培力、平行直导线、相互作用力</p>
+                        <p><strong>答案：F/L = kI₁I₂/d</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 洛伦兹力不做功 【中档】</h3>
+                    <p class="question">一带电量为q的电荷，以速度v在磁感应强度为B的匀强磁场中运动，运动时间为t。求洛伦兹力对电荷做的功和电荷的动能变化。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹力：F = qvB·sinθ</p>
+                        <p>（2）洛伦兹力的方向：总是垂直于速度v</p>
+                        <p>（3）洛伦兹力对电荷做的功：W = F·s·cosφ = 0</p>
+                        <p>（4）其中φ是力与位移的夹角，由于洛伦兹力垂直于速度，φ = 90°，cosφ = 0</p>
+                        <p>（5）根据动能定理：W = ΔEk</p>
+                        <p>（6）由于W = 0，所以ΔEk = 0，动能不变化</p>
+                        <p>（7）洛伦兹力只改变电荷的运动方向，不改变运动速度的大小</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、做功、动能</p>
+                        <p><strong>答案：W = 0，ΔEk = 0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 带电粒子在磁场中的偏转 【中档】</h3>
+                    <p class="question">一电子以速度v垂直进入磁感应强度为B的匀强磁场，磁场区域的宽度为d。求电子离开磁场时的侧向位移。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹力提供向心力：evB = mv²/r</p>
+                        <p>（2）运动半径：r = mv/(eB)</p>
+                        <p>（3）圆心角：sin(θ/2) = d/(2r)</p>
+                        <p>（4）侧向位移：y = r - r·cos(θ/2) = r[1 - √(1 - (d/(2r))²)]</p>
+                        <p>（5）若d << r，则y ≈ d²/(8r)</p>
+                        <p>（6）由于r = mv/(eB)，所以：y ≈ eBd²/(8mv)</p>
+                        <p>（7）侧向位移与磁感应强度B和宽度d的平方成正比</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、圆周运动、侧向位移</p>
+                        <p><strong>答案：y ≈ eBd²/(8mv)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 磁感应强度的计算 【中档】</h3>
+                    <p class="question">一环形电流的半径为R，通过的电流为I。求圆环中心的磁感应强度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）在圆环上取一小段弧ds，其通过的电流为dI = I·(ds/2πR)</p>
+                        <p>（2）该段弧在圆心产生的磁感应强度：dB = k·dI/R² = k·I·ds/(2πR³)</p>
+                        <p>（3）方向：垂直于圆环平面，由右手定则判断</p>
+                        <p>（4）对整圆环积分：B = ∫dB = ∫[0到2πR] k·I·ds/(2πR³) = k·I·(2πR)/(2πR³)</p>
+                        <p>（5）化简得：B = kI/R² = (μ₀/4π)·I/R²</p>
+                        <p>（6）其中k = μ₀/4π = 10⁻⁷ N/A²，是真空磁导率</p>
+                        <p>（7）圆环中心的磁感应强度：B = μ₀I/(4πR²)</p>
+                        <p><strong>知识点标签：</strong>磁感应强度、环形电流、积分</p>
+                        <p><strong>答案：B = μ₀I/(4πR²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 带电粒子在磁场中的周期 【基础】</h3>
+                    <p class="question">一质子和一电子，分别以相同的速度v垂直进入磁感应强度为B的匀强磁场中。比较两者的运动周期。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）周期公式：T = 2πm/(qB)</p>
+                        <p>（2）质子的周期：T_p = 2πm_p/(eB)</p>
+                        <p>（3）电子的周期：T_e = 2πm_e/(-eB) = 2πm_e/(eB)</p>
+                        <p>（4）周期之比：T_p/T_e = (2πm_p/(eB))/(2πm_e/(eB)) = m_p/m_e</p>
+                        <p>（5）由于质子的质量m_p远大于电子的质量m_e（m_p ≈ 1836m_e）</p>
+                        <p>（6）所以质子的周期远大于电子的周期：T_p >> T_e</p>
+                        <p>（7）相同速度下，质量大的周期长</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、周期、质量比较</p>
+                        <p><strong>答案：T_p >> T_e，质子的周期远大于电子的周期</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 磁场对运动电荷的作用 【中档】</h3>
+                    <p class="question">一电荷量为q的电荷，以速度v斜着进入磁感应强度为B的匀强磁场，速度与磁场的夹角为θ。求电荷在磁场中运动的半径和螺距。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）将速度v分解为垂直于磁场的分量v⊥ = v·sinθ和平行于磁场的分量v∥ = v·cosθ</p>
+                        <p>（2）垂直分量v⊥在磁场中做圆周运动，半径：r = mv⊥/(qB) = mv·sinθ/(qB)</p>
+                        <p>（3）平行分量v∥不受洛伦兹力，匀速运动</p>
+                        <p>（4）螺旋运动的螺距：h = v∥·T = v·cosθ·[2πm/(qB)]</p>
+                        <p>（5）螺距表示电荷旋转一周沿磁场方向前进的距离</p>
+                        <p>（6）半径r描述电荷绕磁场轴线旋转的圆半径</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、速度分解、螺旋运动、螺距</p>
+                        <p><strong>答案：r = mv·sinθ/(qB)，h = 2πmv·cosθ/(qB)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 安培力的应用 【中档】</h3>
+                    <p class="question">一匝数线圈的面积为S，通过的电流为I，线圈平面的法线与磁感应强度为B的匀强磁场的夹角为α。求线圈受到的磁力矩。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）穿过线圈的磁通量：Φ = BS·cosα</p>
+                        <p>（2）磁力矩公式：M = NBIS·sinθ</p>
+                        <p>（3）其中θ是线圈平面与磁场的夹角，θ = 90° - α</p>
+                        <p>（4）所以：M = NBI·S·sin(90° - α) = NBI·S·cosα</p>
+                        <p>（5）也可以写成：M = NBI·S·sin(90° - α)</p>
+                        <p>（6）当线圈平面与磁场平行（α = 0°）时，磁力矩最大：Mmax = NBIS</p>
+                        <p>（7）当线圈平面与磁场垂直（α = 90°）时，磁力矩最小：Mmin = 0</p>
+                        <p><strong>知识点标签：</strong>安培力、磁力矩、线圈</p>
+                        <p><strong>答案：M = NBIS·cosα</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 回旋加速器 【高档】</h3>
+                    <p class="question">一回旋加速器的D形电极半径为R，磁场的磁感应强度为B。若要加速质子（电荷量为e，质量为m），求质子能获得的最大动能和所需的高频电压。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）回旋加速器中，洛伦兹力提供向心力：evB = mv²/r</p>
+                        <p>（2）最大半径r = R时的速度：v_max = eBR/m</p>
+                        <p>（3）最大动能：Ek_max = ½mv_max² = ½m(eBR/m)² = ½e²B²R²/m</p>
+                        <p>（4）回旋频率：f = eB/(2πm)</p>
+                        <p>（5）高频电压的频率：f电源 = eB/(2πm)</p>
+                        <p>（6）每次质子通过D形电极的缝隙时，被电场加速，获得能量eU</p>
+                        <p>（7）高频电压的频率需与回旋频率同步</p>
+                        <p>（8）质子能获得的最大动能与半径的平方成正比</p>
+                        <p><strong>知识点标签：</strong>回旋加速器、洛伦兹力、高频电压、最大动能</p>
+                        <p><strong>答案：Ek_max = ½e²B²R²/m，f电源 = eB/(2πm)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 磁场对运动导线的作用 【中档】</h3>
+                    <p class="question">一长度为L的直导线，以速度v在磁感应强度为B的匀强磁场中运动，导线与速度垂直，也与磁场垂直。求导线两端的感应电动势。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）感应电动势公式：ε = BLv</p>
+                        <p>（2）导线中的自由电荷在磁场中运动，受到洛伦兹力</p>
+                        <p>（3）洛伦兹力使电荷向导线一端聚集，形成电场</p>
+                        <p>（4）当电场力与洛伦兹力平衡时，感应电动势稳定</p>
+                        <p>（5）导线两端的感应电动势：ε = BLv</p>
+                        <p>（6）方向：用右手定则判断，四指指向速度方向，磁感线穿过手心，大拇指指向感应电动势的高电势端</p>
+                        <p>（7）感应电动势的大小与导线长度、磁感应强度、速度成正比</p>
+                        <p><strong>知识点标签：</strong>感应电动势、洛伦兹力、右手定则</p>
+                        <p><strong>答案：ε = BLv</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 带电粒子在磁场中的能量 【中档】</h3>
+                    <p class="question">一电荷量为q的电荷，以速度v在磁感应强度为B的匀强磁场中做匀速圆周运动。求电荷的动能和磁场对电荷做的功。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电荷的动能：Ek = ½mv²</p>
+                        <p>（2）洛伦兹力提供向心力：qvB = mv²/r</p>
+                        <p>（3）运动半径：r = mv/(qB)</p>
+                        <p>（4）磁场对电荷做的功：W = 0</p>
+                        <p>（5）因为洛伦兹力总是垂直于速度，不做功</p>
+                        <p>（6）所以电荷的动能不变，只改变运动方向</p>
+                        <p>（7）电荷在磁场中做匀速圆周运动，速率恒定</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、动能、做功</p>
+                        <p><strong>答案：Ek = ½mv²，W = 0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 带电粒子在磁场中的偏转 【高档】</h3>
+                    <p class="question">一电子以速度v垂直进入磁感应强度为B的匀强磁场，磁场区域的宽度为d。若电子的质量为m，电荷量为-e，求电子离开磁场时的偏转角度和离开磁场时的位置。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹力提供向心力：evB = mv²/r</p>
+                        <p>（2）运动半径：r = mv/(eB)</p>
+                        <p>（3）偏转角：sinθ = d/r = d·eB/(mv)</p>
+                        <p>（4）偏转角：θ = arcsin(deB/(mv))</p>
+                        <p>（5）侧向位移：y = r - √(r² - d²) = r[1 - √(1 - (d/r)²)]</p>
+                        <p>（6）若d << r，则θ ≈ deB/(mv)，y ≈ d²/(2r)</p>
+                        <p>（7）离开磁场时，电子的速度大小不变，方向偏转了θ</p>
+                        <p>（8）电子在磁场中做匀速圆周运动的一部分</p>
+                        <p><strong>知识点标签：</strong>洛伦兹力、偏转角、侧向位移</p>
+                        <p><strong>答案：θ = arcsin(deB/(mv))，侧向位移y ≈ d²/(2r)</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +332,7 @@
             const chapterId = 'physics13';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +340,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
