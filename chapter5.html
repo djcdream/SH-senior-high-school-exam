@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五章 不等式 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第五章 不等式</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#quadratic" class="nav-link">5.1 一元二次不等式</a>
+            <a href="#basic" class="nav-link">5.2 基本不等式</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="quadratic" class="section">
+                <h2>5.1 一元二次不等式</h2>
+                
+                <div class="content-box">
+                    <h3>一元二次不等式的概念</h3>
+                    <p class="definition">形如 <span class="math">ax² + bx + c > 0</span>（或 <span class="math"><, ≥, ≤</span>）的不等式叫做一元二次不等式，其中 <span class="math">a ≠ 0</span></p>
+                </div>
+
+                <div class="content-box">
+                    <h3>解集的判定</h3>
+                    
+                    <div class="operation-box">
+                        <h3>当 <span class="math">Δ > 0</span> 时</h3>
+                        <p>方程 <span class="math">ax² + bx + c = 0</span> 有两个不等实根 <span class="math">x₁, x₂</span>（<span class="math">x₁ < x₂</span>）</p>
+                        <p><strong><span class="math">a > 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">x < x₁</span> 或 <span class="math">x > x₂</span></li>
+                        </ul>
+                        <p><strong><span class="math">a < 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">x₁ < x < x₂</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>当 <span class="math">Δ = 0</span> 时</h3>
+                        <p>方程 <span class="math">ax² + bx + c = 0</span> 有两个相等实根 <span class="math">x₀</span></p>
+                        <p><strong><span class="math">a > 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">x ≠ x₀</span></li>
+                        </ul>
+                        <p><strong><span class="math">a < 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">∅</span>（空集）</li>
+                        </ul>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>当 <span class="math">Δ < 0</span> 时</h3>
+                        <p>方程 <span class="math">ax² + bx + c = 0</span> 无实根</p>
+                        <p><strong><span class="math">a > 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">R</span>（全体实数）</li>
+                        </ul>
+                        <p><strong><span class="math">a < 0</span> 时：</strong></p>
+                        <ul>
+                            <li><span class="math">∅</span>（空集）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>解一元二次不等式的步骤</h3>
+                    <ol data-counter="1">
+                        <li>计算判别式 <span class="math">Δ = b² - 4ac</span></li>
+                        <li>求出方程的根（如果 <span class="math">Δ ≥ 0</span>）</li>
+                        <li>根据判别式和二次项系数确定解集</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="basic" class="section">
+                <h2>5.2 基本不等式</h2>
+
+                <div class="content-box">
+                    <h3>基本不等式</h3>
+                    
+                    <div class="operation-box">
+                        <h3>定理</h3>
+                        <div class="formula">
+                            <span class="math">√(ab) ≤ (a + b)/2</span> <span class="math">(a, b > 0)</span>
+                        </div>
+                        <p><strong>条件：</strong><span class="math">a > 0, b > 0</span></p>
+                        <p><strong>等号成立条件：</strong>当且仅当 <span class="math">a = b</span> 时，等号成立</p>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>几何意义</h3>
+                        <p>两个正数的几何平均数不大于它们的算术平均数</p>
+                        <p>当且仅当两个数相等时，几何平均数等于算术平均数</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>基本不等式的应用</h3>
+                    
+                    <div class="operation-box">
+                        <h3>求最值</h3>
+                        <p>如果两个正数的积为定值，则当它们相等时，和有最小值</p>
+                        <p>如果两个正数的和为定值，则当它们相等时，积有最大值</p>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>证明不等式</h3>
+                        <p>利用基本不等式可以证明许多重要的不等式</p>
+                        <p>例如：<span class="math">a² + b² ≥ 2ab</span></p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>常用的变形</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>变形1</h4>
+                            <div class="formula">
+                                <span class="math">a + b ≥ 2√(ab)</span>
+                            </div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>变形2</h4>
+                            <div class="formula">
+                                <span class="math">a + 1/a ≥ 2</span> <span class="math">(a > 0)</span>
+                            </div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>变形3</h4>
+                            <div class="formula">
+                                <span class="math">a² + 1 ≥ 2a</span>
+                            </div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>变形4</h4>
+                            <div class="formula">
+                                <span class="math">a/b + b/a ≥ 2</span> <span class="math">(a, b > 0)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 一元二次不等式基础 -->
+                <div class="example-box">
+                    <h3>例题 1：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">x² - 3x + 2 > 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>步骤1：计算判别式</strong></p>
+                        <p><span class="math">Δ = (-3)² - 4×1×2 = 9 - 8 = 1 > 0</span></p>
+                        <br>
+                        <p><strong>步骤2：求根</strong></p>
+                        <p><span class="math">x = (3 ± √1)/2 = (3 ± 1)/2</span></p>
+                        <p><span class="math">x₁ = 1</span>，<span class="math">x₂ = 2</span></p>
+                        <br>
+                        <p><strong>步骤3：确定解集</strong></p>
+                        <p>由于 <span class="math">a = 1 > 0</span>，且 <span class="math">Δ > 0</span></p>
+                        <p>解集：<span class="math">x < 1</span> 或 <span class="math">x > 2</span></p>
+                        <p><strong>答案：(-∞, 1) ∪ (2, +∞)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">x² - 4 < 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">x² - 4 = (x - 2)(x + 2) < 0</span></p>
+                        <p><span class="math">-2 < x < 2</span></p>
+                        <p><strong>答案：(-2, 2)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">-x² + 4x - 3 > 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>两边乘以 -1：<span class="math">x² - 4x + 3 < 0</span></p>
+                        <p><span class="math">(x - 1)(x - 3) < 0</span></p>
+                        <p>由于二次项系数 <span class="math">a = 1 > 0</span></p>
+                        <p>解集：<span class="math">1 < x < 3</span></p>
+                        <p><strong>答案：(1, 3)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">2x² - 5x + 2 ≥ 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>步骤1：计算判别式</strong></p>
+                        <p><span class="math">Δ = (-5)² - 4×2×2 = 25 - 16 = 9 > 0</span></p>
+                        <br>
+                        <p><strong>步骤2：求根</strong></p>
+                        <p><span class="math">x = (5 ± √9)/(2×2) = (5 ± 3)/4</span></p>
+                        <p><span class="math">x₁ = 2/4 = 1/2</span>，<span class="math">x₂ = 8/4 = 2</span></p>
+                        <br>
+                        <p><strong>步骤3：确定解集</strong></p>
+                        <p>由于 <span class="math">a = 2 > 0</span>，且 <span class="math">Δ > 0</span></p>
+                        <p>解集：<span class="math">x ≤ 1/2</span> 或 <span class="math">x ≥ 2</span></p>
+                        <p><strong>答案：(-∞, 1/2] ∪ [2, +∞)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">x² + 2x + 1 < 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>步骤1：计算判别式</strong></p>
+                        <p><span class="math">Δ = 2² - 4×1×1 = 4 - 4 = 0</span></p>
+                        <br>
+                        <p><strong>步骤2：求根</strong></p>
+                        <p><span class="math">x = -2/2 = -1</span></p>
+                        <br>
+                        <p><strong>步骤3：确定解集</strong></p>
+                        <p>由于 <span class="math">a = 1 > 0</span>，且 <span class="math">Δ = 0</span></p>
+                        <p>解集：<span class="math">x ≠ -1</span></p>
+                        <p><strong>答案：(-∞, -1) ∪ (-1, +∞)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：一元二次不等式 【基础】</h3>
+                    <p class="question">解不等式：<span class="math">x² + 4 < 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>步骤1：计算判别式</strong></p>
+                        <p><span class="math">Δ = 0² - 4×1×4 = 0 - 16 = -16 < 0</span></p>
+                        <br>
+                        <p><strong>步骤2：确定解集</strong></p>
+                        <p>由于 <span class="math">a = 1 > 0</span>，且 <span class="math">Δ < 0</span></p>
+                        <p>解集：<span class="math">∅</span>（空集）</p>
+                        <p><strong>答案：∅</strong></p>
+                    </div>
+                </div>
+
+                <!-- 基本不等式基础 -->
+                <div class="example-box">
+                    <h3>例题 7：基本不等式 【基础】</h3>
+                    <p class="question">已知 <span class="math">a > 0</span>，证明：<span class="math">a + 1/a ≥ 2</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">b = 1/a</span>：</p>
+                        <p><span class="math">√(a×1/a) ≤ (a + 1/a)/2</span></p>
+                        <p><span class="math">√1 ≤ (a + 1/a)/2</span></p>
+                        <p><span class="math">1 ≤ (a + 1/a)/2</span></p>
+                        <p><span class="math">a + 1/a ≥ 2</span></p>
+                        <p>当且仅当 <span class="math">a = 1/a</span>，即 <span class="math">a² = 1</span>，<span class="math">a = 1</span> 时，等号成立</p>
+                        <p><strong>证毕。</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：基本不等式求最值 【基础】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，且 <span class="math">x + 1/x = 3</span>，求 <span class="math">x² + 1/x²</span> 的值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">(x + 1/x)² = x² + 2 + 1/x² = 9</span></p>
+                        <p><span class="math">x² + 1/x² = 7</span></p>
+                        <p><strong>答案：7</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：基本不等式求最值 【基础】</h3>
+                    <p class="question">已知 <span class="math">a > 0, b > 0</span>，且 <span class="math">a + b = 4</span>，求 <span class="math">ab</span> 的最大值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p><span class="math">√(ab) ≤ 4/2 = 2</span></p>
+                        <p><span class="math">ab ≤ 4</span></p>
+                        <p>当且仅当 <span class="math">a = b = 2</span> 时，<span class="math">ab</span> 取得最大值 4</p>
+                        <p><strong>答案：最大值4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：基本不等式求最值 【基础】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，求 <span class="math">x + 4/x</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">a = x</span>，<span class="math">b = 4/x</span>：</p>
+                        <p><span class="math">√(x×4/x) ≤ (x + 4/x)/2</span></p>
+                        <p><span class="math">√4 ≤ (x + 4/x)/2</span></p>
+                        <p><span class="math">2 ≤ (x + 4/x)/2</span></p>
+                        <p><span class="math">x + 4/x ≥ 4</span></p>
+                        <p>当且仅当 <span class="math">x = 4/x</span>，即 <span class="math">x² = 4</span>，<span class="math">x = 2</span> 时，<span class="math">x + 4/x</span> 取得最小值 4</p>
+                        <p><strong>答案：最小值4</strong></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题 -->
+                <div class="example-box">
+                    <h3>例题 11：2024年新高考I卷 【中档】</h3>
+                    <p class="question">解不等式：<span class="math">x² - x - 2 < 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">x² - x - 2 = (x - 2)(x + 1) < 0</span></p>
+                        <p>由于二次项系数 <span class="math">a = 1 > 0</span></p>
+                        <p>解集：<span class="math">-1 < x < 2</span></p>
+                        <p><strong>答案：(-1, 2)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2023年全国甲卷 【中档】</h3>
+                    <p class="question">解不等式：<span class="math">-2x² + 5x + 3 > 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>两边乘以 -1：<span class="math">2x² - 5x - 3 < 0</span></p>
+                        <p><span class="math">2x² - 5x - 3 = 0</span> 的判别式：</p>
+                        <p><span class="math">Δ = (-5)² - 4×2×(-3) = 25 + 24 = 49 > 0</span></p>
+                        <p><span class="math">x = (5 ± √49)/(2×2) = (5 ± 7)/4</span></p>
+                        <p><span class="math">x₁ = (5 - 7)/4 = -2/4 = -1/2</span></p>
+                        <p><span class="math">x₂ = (5 + 7)/4 = 12/4 = 3</span></p>
+                        <p>由于 <span class="math">a = 2 > 0</span></p>
+                        <p>解集：<span class="math">-1/2 < x < 3</span></p>
+                        <p><strong>答案：(-1/2, 3)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2022年新高考I卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">a > 0, b > 0</span>，且 <span class="math">a + b = 6</span>，则 <span class="math">ab</span> 的最大值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p><span class="math">√(ab) ≤ 6/2 = 3</span></p>
+                        <p><span class="math">ab ≤ 9</span></p>
+                        <p>当且仅当 <span class="math">a = b = 3</span> 时，<span class="math">ab</span> 取得最大值 9</p>
+                        <p><strong>答案：9</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：2021年全国乙卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，则 <span class="math">x + 9/x</span> 的最小值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">a = x</span>，<span class="math">b = 9/x</span>：</p>
+                        <p><span class="math">√(x×9/x) ≤ (x + 9/x)/2</span></p>
+                        <p><span class="math">√9 ≤ (x + 9/x)/2</span></p>
+                        <p><span class="math">3 ≤ (x + 9/x)/2</span></p>
+                        <p><span class="math">x + 9/x ≥ 6</span></p>
+                        <p>当且仅当 <span class="math">x = 9/x</span>，即 <span class="math">x² = 9</span>，<span class="math">x = 3</span> 时，<span class="math">x + 9/x</span> 取得最小值 6</p>
+                        <p><strong>答案：最小值6</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：2020年全国I卷 【中档】</h3>
+                    <p class="question">解不等式：<span class="math">x² + 2x + 5 > 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>步骤1：计算判别式</strong></p>
+                        <p><span class="math">Δ = 2² - 4×1×5 = 4 - 20 = -16 < 0</span></p>
+                        <br>
+                        <p><strong>步骤2：确定解集</strong></p>
+                        <p>由于 <span class="math">a = 1 > 0</span>，且 <span class="math">Δ < 0</span></p>
+                        <p>解集：<span class="math">R</span>（全体实数）</p>
+                        <p><strong>答案：R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 16：2019年全国I卷 【中档】</h3>
+                    <p class="question">解不等式：<span class="math">-x² + 4x - 4 > 0</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>两边乘以 -1：<span class="math">x² - 4x + 4 < 0</span></p>
+                        <p><span class="math">(x - 2)² < 0</span></p>
+                        <p>由于 <span class="math">(x - 2)² ≥ 0</span> 恒成立，且 <span class="math">(x - 2)² < 0</span> 永远不成立</p>
+                        <p>解集：<span class="math">∅</span>（空集）</p>
+                        <p><strong>答案：∅</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 17：2018年全国II卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">a > 0, b > 0</span>，且 <span class="math">ab = 4</span>，则 <span class="math">a + b</span> 的最小值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p><span class="math">√4 ≤ (a + b)/2</span></p>
+                        <p><span class="math">2 ≤ (a + b)/2</span></p>
+                        <p><span class="math">a + b ≥ 4</span></p>
+                        <p>当且仅当 <span class="math">a = b = 2</span> 时，<span class="math">a + b</span> 取得最小值 4</p>
+                        <p><strong>答案：最小值4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：2017年全国I卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，则 <span class="math">2x + 8/x</span> 的最小值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">a = 2x</span>，<span class="math">b = 8/x</span>：</p>
+                        <p><span class="math">√(2x×8/x) ≤ (2x + 8/x)/2</span></p>
+                        <p><span class="math">√16 ≤ (2x + 8/x)/2</span></p>
+                        <p><span class="math">4 ≤ (2x + 8/x)/2</span></p>
+                        <p><span class="math">2x + 8/x ≥ 8</span></p>
+                        <p>当且仅当 <span class="math">2x = 8/x</span>，即 <span class="math">2x² = 8</span>，<span class="math">x² = 4</span>，<span class="math">x = 2</span> 时，<span class="math">2x + 8/x</span> 取得最小值 8</p>
+                        <p><strong>答案：最小值8</strong></p>
+                    </div>
+                </div>
+
+                <!-- 综合应用 -->
+                <div class="example-box">
+                    <h3>例题 19：不等式综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">a > 0, b > 0</span>，且 <span class="math">a + b = 8</span>，求 <span class="math">a² + b²</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a² + b² = (a + b)² - 2ab = 64 - 2ab</span></p>
+                        <p>根据基本不等式：<span class="math">ab ≤ (a + b)²/4 = 64/4 = 16</span></p>
+                        <p><span class="math">a² + b² = 64 - 2ab ≥ 64 - 2×16 = 64 - 32 = 32</span></p>
+                        <p>当且仅当 <span class="math">a = b = 4</span> 时，<span class="math">a² + b²</span> 取得最小值 32</p>
+                        <p><strong>答案：最小值32</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 20：不等式综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，求 <span class="math">x³ + 1/x³</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol20')">查看解答</button>
+                    <div id="sol20" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">(x + 1/x)³ = x³ + 3x + 3/x + 1/x³</span></p>
+                        <p><span class="math">x³ + 1/x³ = (x + 1/x)³ - 3(x + 1/x)</span></p>
+                        <p>根据基本不等式：<span class="math">x + 1/x ≥ 2</span></p>
+                        <p>令 <span class="math">t = x + 1/x ≥ 2</span></p>
+                        <p><span class="math">x³ + 1/x³ = t³ - 3t</span></p>
+                        <p>求 <span class="math">f(t) = t³ - 3t</span>（<span class="math">t ≥ 2</span>）的最小值</p>
+                        <p><span class="math">f'(t) = 3t² - 3</span></p>
+                        <p>令 <span class="math">f'(t) = 0</span>：<span class="math">3t² - 3 = 0</span></p>
+                        <p><span class="math">t² = 1</span>，<span class="math">t = ±1</span></p>
+                        <p>由于 <span class="math">t ≥ 2</span>，所以 <span class="math">f'(t) > 0</span> 在 <span class="math">t ≥ 2</span> 上恒成立</p>
+                        <p>因此 <span class="math">f(t)</span> 在 <span class="math">t ≥ 2</span> 上单调递增</p>
+                        <p><span class="math">f(t)</span> 的最小值为 <span class="math">f(2) = 2³ - 3×2 = 8 - 6 = 2</span></p>
+                        <p>当且仅当 <span class="math">x = 1</span> 时，<span class="math">x³ + 1/x³</span> 取得最小值 2</p>
+                        <p><strong>答案：最小值2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 21：不等式综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">a > 0, b > 0</span>，且 <span class="math">a + b = 10</span>，求 <span class="math">1/a + 1/b</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol21')">查看解答</button>
+                    <div id="sol21" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">1/a + 1/b = (a + b)/(ab) = 10/(ab)</span></p>
+                        <p>根据基本不等式：<span class="math">ab ≤ (a + b)²/4 = 100/4 = 25</span></p>
+                        <p><span class="math">1/a + 1/b = 10/(ab) ≥ 10/25 = 2/5</span></p>
+                        <p>当且仅当 <span class="math">a = b = 5</span> 时，<span class="math">1/a + 1/b</span> 取得最小值 <span class="math">2/5</span></p>
+                        <p><strong>答案：最小值2/5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 22：不等式综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，求 <span class="math">x + 16/x</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol22')">查看解答</button>
+                    <div id="sol22" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">a = x</span>，<span class="math">b = 16/x</span>：</p>
+                        <p><span class="math">√(x×16/x) ≤ (x + 16/x)/2</span></p>
+                        <p><span class="math">√16 ≤ (x + 16/x)/2</span></p>
+                        <p><span class="math">4 ≤ (x + 16/x)/2</span></p>
+                        <p><span class="math">x + 16/x ≥ 8</span></p>
+                        <p>当且仅当 <span class="math">x = 16/x</span>，即 <span class="math">x² = 16</span>，<span class="math">x = 4</span> 时，<span class="math">x + 16/x</span> 取得最小值 8</p>
+                        <p><strong>答案：最小值8</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 23：不等式证明 【提高】</h3>
+                    <p class="question">证明：<span class="math">a² + b² + c² ≥ ab + bc + ca</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol23')">查看解答</button>
+                    <div id="sol23" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">2(a² + b² + c² - ab - bc - ca)</span></p>
+                        <p><span class="math">= (a² - 2ab + b²) + (b² - 2bc + c²) + (c² - 2ca + a²)</span></p>
+                        <p><span class="math">= (a - b)² + (b - c)² + (c - a)²</span></p>
+                        <p><span class="math">= (a - b)² + (b - c)² + (c - a)² ≥ 0</span></p>
+                        <p><span class="math">a² + b² + c² - ab - bc - ca ≥ 0</span></p>
+                        <p><span class="math">a² + b² + c² ≥ ab + bc + ca</span></p>
+                        <p><strong>证毕。</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 24：不等式证明 【提高】</h3>
+                    <p class="question">证明：<span class="math">a³ + b³ + c³ ≥ 3abc</span>（当 <span class="math">a, b, c > 0</span>）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol24')">查看解答</button>
+                    <div id="sol24" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：</p>
+                        <p><span class="math">a³ + b³ ≥ 2a√(ab²)</span></p>
+                        <p><span class="math">b³ + c³ ≥ 2b√(bc²)</span></p>
+                        <p><span class="math">c³ + a³ ≥ 2c√(ca²)</span></p>
+                        <p>三式相加：<span class="math">2(a³ + b³ + c³) ≥ 2(a√(ab²) + b√(bc²) + c√(ca²))</span></p>
+                        <p><span class="math">a³ + b³ + c³ ≥ a√(ab²) + b√(bc²) + c√(ca²)</span></p>
+                        <p>由均值不等式：<span class="math">a√(ab²) + b√(bc²) + c√(ca²) ≥ 3∛(a√(ab²)×b√(bc²)×c√(ca²))</span></p>
+                        <p><span class="math">= 3∛(a³b³c³) = 3abc</span></p>
+                        <p><span class="math">a³ + b³ + c³ ≥ 3abc</span></p>
+                        <p><strong>证毕。</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 25：不等式综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">x > 0</span>，求 <span class="math">x + 25/x</span> 的最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol25')">查看解答</button>
+                    <div id="sol25" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据基本不等式：<span class="math">√(ab) ≤ (a + b)/2</span></p>
+                        <p>令 <span class="math">a = x</span>，<span class="math">b = 25/x</span>：</p>
+                        <p><span class="math">√(x×25/x) ≤ (x + 25/x)/2</span></p>
+                        <p><span class="math">√25 ≤ (x + 25/x)/2</span></p>
+                        <p><span class="math">5 ≤ (x + 25/x)/2</span></p>
+                        <p><span class="math">x + 25/x ≥ 10</span></p>
+                        <p>当且仅当 <span class="math">x = 25/x</span>，即 <span class="math">x² = 25</span>，<span class="math">x = 5</span> 时，<span class="math">x + 25/x</span> 取得最小值 10</p>
+                        <p><strong>答案：最小值10</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第五章 不等式</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter5';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第五章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

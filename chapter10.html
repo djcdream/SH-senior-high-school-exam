@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十章 复数 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第十章 复数</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#concept" class="nav-link">10.1 复数的概念</a>
+            <a href="#operations" class="nav-link">10.2 复数的四则运算</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="concept" class="section">
+                <h2>10.1 复数的概念</h2>
+                <div class="content-box">
+                    <h3>定义</h3>
+                    <p class="definition">形如 <span class="math">a + bi</span> 的数叫做<strong>复数</strong>，其中：</p>
+                    <ul>
+                        <li><span class="math">a</span> 是<strong>实部</strong>（real part）</li>
+                        <li><span class="math">b</span> 是<strong>虚部</strong>（imaginary part）</li>
+                        <li><span class="math">i</span> 是<strong>虚数单位</strong>，满足 <span class="math">i² = -1</span></li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>复数的分类</h3>
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>纯实数</h4>
+                            <p>当 <span class="math">b = 0</span> 时，<span class="math">a + bi = a</span></p>
+                            <p class="example">例：<span class="math">3</span>，<span class="math">-5</span>，<span class="math">0</span></p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>纯虚数</h4>
+                            <p>当 <span class="math">a = 0</span> 且 <span class="math">b ≠ 0</span> 时，<span class="math">a + bi = bi</span></p>
+                            <p class="example">例：<span class="math">2i</span>，<span class="math">-3i</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>复数的几何表示</h3>
+                    <p>复数 <span class="math">a + bi</span> 可以表示为复平面上的点：</p>
+                    <ul>
+                        <li>横坐标为实部 <span class="math">a</span></li>
+                        <li>纵坐标为虚部 <span class="math">b</span></li>
+                        <li>原点到该点的距离称为<strong>模</strong>：<span class="math">|a + bi| = √(a² + b²)</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="operations" class="section">
+                <h2>10.2 复数的四则运算</h2>
+
+                <div class="operation-box">
+                    <h3>加法</h3>
+                    <div class="formula">
+                        <span class="math">(a + bi) + (c + di) = (a + c) + (b + d)i</span>
+                    </div>
+                    <p><strong>规则</strong>：实部相加，虚部相加</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>减法</h3>
+                    <div class="formula">
+                        <span class="math">(a + bi) - (c + di) = (a - c) + (b - d)i</span>
+                    </div>
+                    <p><strong>规则</strong>：实部相减，虚部相减</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>乘法</h3>
+                    <div class="formula">
+                        <span class="math">(a + bi)(c + di) = (ac - bd) + (ad + bc)i</span>
+                    </div>
+                    <p><strong>推导</strong>：展开并利用 <span class="math">i² = -1</span></p>
+                    <div class="sub-example">
+                        <p><span class="math">= ac + adi + bci + bdi²</span></p>
+                        <p><span class="math">= ac + adi + bci - bd</span></p>
+                        <p><span class="math">= (ac - bd) + (ad + bc)i</span></p>
+                    </div>
+                </div>
+
+                <div class="operation-box">
+                    <h3>模（绝对值）</h3>
+                    <div class="formula">
+                        <span class="math">|a + bi| = √(a² + b²)</span>
+                    </div>
+                    <p><strong>几何意义</strong>：复数在复平面上到原点的距离</p>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <div class="example-box">
+                    <h3>例题 1：复数加法 【基础】</h3>
+                    <p class="question">计算：<span class="math">(3 + 2i) + (1 - 4i)</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">(3 + 2i) + (1 - 4i)</span></p>
+                        <p><span class="math">= (3 + 1) + (2 - 4)i</span></p>
+                        <p><span class="math">= 4 - 2i</span></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：复数乘法 【基础】</h3>
+                    <p class="question">计算：<span class="math">(2 + 3i)(1 - 2i)</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">(2 + 3i)(1 - 2i)</span></p>
+                        <p><span class="math">= 2×1 + 2×(-2i) + 3i×1 + 3i×(-2i)</span></p>
+                        <p><span class="math">= 2 - 4i + 3i - 6i²</span></p>
+                        <p><span class="math">= 2 - i - 6(-1)</span></p>
+                        <p><span class="math">= 2 - i + 6</span></p>
+                        <p><span class="math">= 8 - i</span></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：求模 【基础】</h3>
+                    <p class="question">求复数 <span class="math">3 + 4i</span> 的模</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">|3 + 4i| = √(3² + 4²)</span></p>
+                        <p><span class="math">= √(9 + 16)</span></p>
+                        <p><span class="math">= √25</span></p>
+                        <p><span class="math">= 5</span></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：综合练习 【基础】</h3>
+                    <p class="question">计算：<span class="math">(1 + i)(1 - i)</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">(1 + i)(1 - i)</span></p>
+                        <p><span class="math">= 1×1 + 1×(-i) + i×1 + i×(-i)</span></p>
+                        <p><span class="math">= 1 - i + i - i²</span></p>
+                        <p><span class="math">= 1 - (-1)</span></p>
+                        <p><span class="math">= 2</span></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题开始 -->
+                <div class="example-box">
+                    <h3>例题 5：2024年新课标卷 【中档】</h3>
+                    <p class="question">已知复数 <span class="math">z = (1 + i)(2 - i)</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：先化简再求模</strong></p>
+                        <p><span class="math">z = (1 + i)(2 - i)</span></p>
+                        <p><span class="math">= 1×2 + 1×(-i) + i×2 + i×(-i)</span></p>
+                        <p><span class="math">= 2 - i + 2i - i²</span></p>
+                        <p><span class="math">= 2 + i - (-1)</span></p>
+                        <p><span class="math">= 3 + i</span></p>
+                        <p><span class="math">|z| = √(3² + 1²) = √10</span></p>
+                        <br>
+                        <p><strong>解法二：利用模的性质</strong></p>
+                        <p><span class="math">|z| = |(1 + i)(2 - i)| = |1 + i| × |2 - i|</span></p>
+                        <p><span class="math">= √(1² + 1²) × √(2² + (-1)²)</span></p>
+                        <p><span class="math">= √2 × √5 = √10</span></p>
+                        <p><strong>答案：√10</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：2023年全国甲卷 【中档】</h3>
+                    <p class="question">若复数 <span class="math">z</span> 满足 <span class="math">z(1 - i) = 2 + i</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：先求出 z，再求模</strong></p>
+                        <p><span class="math">z = (2 + i) / (1 - i)</span></p>
+                        <p><span class="math">= (2 + i)(1 + i) / [(1 - i)(1 + i)]</span></p>
+                        <p><span class="math">= (2 + 2i + i + i²) / (1 + 1)</span></p>
+                        <p><span class="math">= (2 + 3i - 1) / 2</span></p>
+                        <p><span class="math">= (1 + 3i) / 2</span></p>
+                        <p><span class="math">|z| = √((1/2)² + (3/2)²) = √(1/4 + 9/4) = √(10/4) = √10/2</span></p>
+                        <br>
+                        <p><strong>解法二：利用模的性质</strong></p>
+                        <p><span class="math">|z(1 - i)| = |2 + i|</span></p>
+                        <p><span class="math">|z| × |1 - i| = √5</span></p>
+                        <p><span class="math">|z| × √2 = √5</span></p>
+                        <p><span class="math">|z| = √5 / √2 = √10/2</span></p>
+                        <p><strong>答案：√10/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：2022年新高考I卷 【中档】</h3>
+                    <p class="question">若复数 <span class="math">z</span> 满足 <span class="math">z(1 + i) = 2 - i</span>，则 <span class="math">z</span> 的共轭复数 <span class="math"><span style="text-decoration: overline">z</span></span> =</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">z = (2 - i) / (1 + i)</span></p>
+                        <p><span class="math">= (2 - i)(1 - i) / [(1 + i)(1 - i)]</span></p>
+                        <p><span class="math">= (2 - 2i - i + i²) / (1 + 1)</span></p>
+                        <p><span class="math">= (2 - 3i - 1) / 2</span></p>
+                        <p><span class="math">= (1 - 3i) / 2</span></p>
+                        <p><span class="math">= 1/2 - (3/2)i</span></p>
+                        <p><span class="math"><span style="text-decoration: overline">z</span> = 1/2 + (3/2)i</span></p>
+                        <p><strong>答案：1/2 + (3/2)i</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：2021年全国乙卷 【中档】</h3>
+                    <p class="question">复数 <span class="math">z = (1 - 2i) / i</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：先化简</strong></p>
+                        <p><span class="math">z = (1 - 2i) / i</span></p>
+                        <p><span class="math">= (1 - 2i)(-i) / [i(-i)]</span></p>
+                        <p><span class="math">= (-i + 2i²) / 1</span></p>
+                        <p><span class="math">= -i + 2(-1)</span></p>
+                        <p><span class="math">= -2 - i</span></p>
+                        <p><span class="math">|z| = √((-2)² + (-1)²) = √(4 + 1) = √5</span></p>
+                        <br>
+                        <p><strong>解法二：直接利用模的性质</strong></p>
+                        <p><span class="math">|z| = |(1 - 2i) / i| = |1 - 2i| / |i|</span></p>
+                        <p><span class="math">= √(1² + (-2)²) / 1</span></p>
+                        <p><span class="math">= √5</span></p>
+                        <p><strong>答案：√5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2020年全国I卷 【提高】</h3>
+                    <p class="question">已知复数 <span class="math">z</span> 满足 <span class="math">z + <span style="text-decoration: overline">z</span> = 4</span>，<span class="math">z·<span style="text-decoration: overline">z</span> = 8</span>，则 <span class="math">z =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设 <span class="math">z = a + bi</span>（其中 <span class="math">a, b</span> 为实数）</p>
+                        <p>则 <span class="math"><span style="text-decoration: overline">z</span> = a - bi</span></p>
+                        <br>
+                        <p>由 <span class="math">z + <span style="text-decoration: overline">z</span> = 4</span> 得：</p>
+                        <p><span class="math">(a + bi) + (a - bi) = 4</span></p>
+                        <p><span class="math">2a = 4</span></p>
+                        <p><span class="math">a = 2</span></p>
+                        <br>
+                        <p>由 <span class="math">z·<span style="text-decoration: overline">z</span> = 8</span> 得：</p>
+                        <p><span class="math">(a + bi)(a - bi) = 8</span></p>
+                        <p><span class="math">a² + b² = 8</span></p>
+                        <p><span class="math">4 + b² = 8</span></p>
+                        <p><span class="math">b² = 4</span></p>
+                        <p><span class="math">b = ±2</span></p>
+                        <br>
+                        <p>所以 <span class="math">z = 2 + 2i</span> 或 <span class="math">z = 2 - 2i</span></p>
+                        <p><strong>答案：2 + 2i 或 2 - 2i</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2019年全国I卷 【提高】</h3>
+                    <p class="question">若复数 <span class="math">z = (3 + 4i) / (1 + i)</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：先化简再求模</strong></p>
+                        <p><span class="math">z = (3 + 4i)(1 - i) / [(1 + i)(1 - i)]</span></p>
+                        <p><span class="math">= (3 - 3i + 4i - 4i²) / 2</span></p>
+                        <p><span class="math">= (3 + i - 4(-1)) / 2</span></p>
+                        <p><span class="math">= (7 + i) / 2</span></p>
+                        <p><span class="math">|z| = √((7/2)² + (1/2)²) = √(49/4 + 1/4) = √(50/4) = √50/2 = 5√2/2</span></p>
+                        <br>
+                        <p><strong>解法二：利用模的性质</strong></p>
+                        <p><span class="math">|z| = |(3 + 4i) / (1 + i)| = |3 + 4i| / |1 + i|</span></p>
+                        <p><span class="math">= 5 / √2</span></p>
+                        <p><span class="math">= 5√2/2</span></p>
+                        <p><strong>答案：5√2/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：2018年全国II卷 【提高】</h3>
+                    <p class="question">已知复数 <span class="math">z = 1 - i</span>，则 <span class="math">z² + <span style="text-decoration: overline">z</span> =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>首先，<span class="math">z = 1 - i</span>，所以 <span class="math"><span style="text-decoration: overline">z</span> = 1 + i</span></p>
+                        <p><span class="math">z² = (1 - i)² = 1 - 2i + i² = 1 - 2i - 1 = -2i</span></p>
+                        <p><span class="math">z² + <span style="text-decoration: overline">z</span> = -2i + (1 + i) = 1 - i</span></p>
+                        <p><strong>答案：1 - i</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2017年全国I卷 【提高】</h3>
+                    <p class="question">若复数 <span class="math">z = (1 + 2i) / (2 - i)</span>，则 <span class="math">z</span> 的虚部为</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">z = (1 + 2i)(2 + i) / [(2 - i)(2 + i)]</span></p>
+                        <p><span class="math">= (2 + i + 4i + 2i²) / (4 + 1)</span></p>
+                        <p><span class="math">= (2 + 5i - 2) / 5</span></p>
+                        <p><span class="math">= 5i / 5</span></p>
+                        <p><span class="math">= i</span></p>
+                        <p><span class="math">z = 0 + 1·i</span></p>
+                        <p>所以虚部为 <span class="math">1</span></p>
+                        <p><strong>答案：1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2016年全国I卷 【提高】</h3>
+                    <p class="question">若复数 <span class="math">z</span> 满足 <span class="math">z(2 - i) = 1 + 3i</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">z = (1 + 3i) / (2 - i)</span></p>
+                        <p><span class="math">= (1 + 3i)(2 + i) / [(2 - i)(2 + i)]</span></p>
+                        <p><span class="math">= (2 + i + 6i + 3i²) / (4 + 1)</span></p>
+                        <p><span class="math">= (2 + 7i - 3) / 5</span></p>
+                        <p><span class="math">= (-1 + 7i) / 5</span></p>
+                        <p><span class="math">|z| = √((-1/5)² + (7/5)²) = √(1/25 + 49/25) = √(50/25) = √2</span></p>
+                        <p><strong>答案：√2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：2024年北京卷 【提高】</h3>
+                    <p class="question">复数 <span class="math">z = (1 + i)²</span>，则 <span class="math">|z| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：先计算，再求模</strong></p>
+                        <p><span class="math">z = (1 + i)² = 1 + 2i + i² = 1 + 2i - 1 = 2i</span></p>
+                        <p><span class="math">|z| = |2i| = 2|i| = 2 × 1 = 2</span></p>
+                        <br>
+                        <p><strong>解法二：利用模的性质</strong></p>
+                        <p><span class="math">|z| = |(1 + i)²| = |1 + i|²</span></p>
+                        <p><span class="math">= (√2)² = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第十章 复数</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter10';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第十章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二章 匀变速直线运动的研究 - 高中物理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理</h1>
+            <h2>第二章 匀变速直线运动的研究</h2>
+        </header>
+
+        <nav>
+            <a href="physics.html" class="nav-link">← 返回物理列表</a>
+            <a href="#uniform" class="nav-link">匀变速直线运动</a>
+            <a href="#formulas" class="nav-link">运动公式</a>
+            <a href="#freefall" class="nav-link">自由落体</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="uniform" class="section">
+                <h2>匀变速直线运动</h2>
+
+                <div class="content-box">
+                    <h3>定义</h3>
+                    <p class="definition">物体沿直线运动，且加速度恒定的运动叫做<strong>匀变速直线运动</strong></p>
+                    <p>加速度恒定：大小和方向都不变</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>分类</h3>
+                    <ul>
+                        <li><strong>匀加速直线运动：</strong>加速度方向与速度方向相同</li>
+                        <li><strong>匀减速直线运动：</strong>加速度方向与速度方向相反</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="formulas" class="section">
+                <h2>匀变速直线运动的公式</h2>
+
+                <div class="operation-box">
+                    <h3>速度公式</h3>
+                    <div class="formula">
+                        v = v₀ + at
+                    </div>
+                    <p>v：末速度，v₀：初速度，a：加速度，t：时间</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>位移公式</h3>
+                    <div class="formula">
+                        x = v₀t + ½at²
+                    </div>
+                    <p>x：位移</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>速度位移公式</h3>
+                    <div class="formula">
+                        v² - v₀² = 2ax
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>重要推论</h3>
+                    <div class="sub-box">
+                        <h4>平均速度公式</h4>
+                        <p>v̄ = (v₀ + v)/2</p>
+                    </div>
+                    <div class="sub-box">
+                        <h4>中间时刻速度</h4>
+                        <p>v中 = v̄ = (v₀ + v)/2</p>
+                    </div>
+                    <div class="sub-box">
+                        <h4>中间位置速度</h4>
+                        <p>v中位置 = √[(v₀² + v²)/2]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="freefall" class="section">
+                <h2>自由落体运动</h2>
+
+                <div class="content-box">
+                    <h3>定义</h3>
+                    <p class="definition">物体只在重力作用下从静止开始下落的运动叫做<strong>自由落体运动</strong></p>
+                </div>
+
+                <div class="content-box">
+                    <h3>特点</h3>
+                    <ul>
+                        <li>初速度 v₀ = 0</li>
+                        <li>加速度 a = g ≈ 9.8m/s²（重力加速度）</li>
+                        <li>只受重力作用</li>
+                    </ul>
+                </div>
+
+                <div class="operation-box">
+                    <h3>自由落体运动公式</h3>
+                    <div class="formula">v = gt</div>
+                    <div class="formula">h = ½gt²</div>
+                    <div class="formula">v² = 2gh</div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <div class="example-box">
+                    <h3>例题 1：匀加速运动 【基础】</h3>
+                    <p class="question">汽车从静止开始以2m/s²的加速度加速，求5秒后的速度和位移</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>v₀ = 0, a = 2m/s², t = 5s</p>
+                        <p>速度：v = v₀ + at = 0 + 2×5 = 10m/s</p>
+                        <p>位移：x = v₀t + ½at² = 0 + ½×2×25 = 25m</p>
+                        <p><strong>答案：速度为10m/s，位移为25m</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：匀减速运动 【基础】</h3>
+                    <p class="question">汽车以20m/s的速度刹车，加速度大小为4m/s²，求5秒后的速度和位移</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>先求停车时间：v = v₀ + at = 0</p>
+                        <p>0 = 20 + (-4)t，t = 5s</p>
+                        <p>恰好5秒停下</p>
+                        <p>位移：x = v₀t + ½at² = 20×5 + ½×(-4)×25 = 100 - 50 = 50m</p>
+                        <p><strong>答案：速度为0，位移为50m</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：自由落体运动 【基础】</h3>
+                    <p class="question">物体自由下落2秒，求下落高度和落地速度（取g=10m/s²）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>t = 2s, g = 10m/s²</p>
+                        <p>高度：h = ½gt² = ½×10×4 = 20m</p>
+                        <p>速度：v = gt = 10×2 = 20m/s</p>
+                        <p><strong>答案：下落高度20m，落地速度20m/s</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中物理 - 第二章 匀变速直线运动的研究</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'physics2';
+            const btn = document.getElementById('complete-btn');
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+            btn.addEventListener('click', () => {
+                PhysicsProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第二章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'physics.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

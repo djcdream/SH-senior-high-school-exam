@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十二章 恒定电流 - 高中物理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理</h1>
+            <h2>第十二章 恒定电流</h2>
+        </header>
+
+        <nav>
+            <a href="physics.html" class="nav-link">← 返回物理列表</a>
+            <a href="#content1" class="nav-link">知识点1</a>
+            <a href="#content2" class="nav-link">知识点2</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="content1" class="section">
+                <h2>知识点1</h2>
+                <div class="content-box">
+                    <h3>基本概念</h3>
+                    <p>本章内容正在完善中，敬请期待...</p>
+                    <p>此处包含本章的核心知识点讲解。</p>
+                </div>
+            </section>
+
+            <section id="content2" class="section">
+                <h2>知识点2</h2>
+                <div class="content-box">
+                    <h3>重要公式</h3>
+                    <p>本章内容正在完善中，敬请期待...</p>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+                <div class="example-box">
+                    <h3>例题 1：【基础】</h3>
+                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>详细解答...</p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中物理 - 第十二章 恒定电流</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'physics12';
+            const btn = document.getElementById('complete-btn');
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+            btn.addEventListener('click', () => {
+                PhysicsProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成本章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'physics.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三章 平面向量 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第三章 平面向量</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#linear" class="nav-link">3.1 平面向量的线性运算</a>
+            <a href="#dot" class="nav-link">3.2 平面向量的数量积</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="linear" class="section">
+                <h2>3.1 平面向量的线性运算</h2>
+                
+                <div class="content-box">
+                    <h3>向量的加法</h3>
+                    
+                    <div class="operation-box">
+                        <h3>三角形法则</h3>
+                        <div class="formula">
+                            <span class="math">AB + BC = AC</span>
+                        </div>
+                        <p><strong>方法：</strong>首尾相接，由起点指向终点</p>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>平行四边形法则</h3>
+                        <div class="formula">
+                            <span class="math">OA + OC = OB</span>（<span class="math">OABC</span>为平行四边形）
+                        </div>
+                        <p><strong>方法：</strong>以同一起点的两个邻边为邻边的平行四边形的对角线</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>向量的减法</h3>
+                    <div class="operation-box">
+                        <h3>三角形法则</h3>
+                        <div class="formula">
+                            <span class="math">AB - AC = CB</span>
+                        </div>
+                        <p><strong>方法：</strong>从减向量终点指向被减向量终点</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>向量的数乘</h3>
+                    <p class="definition">实数 <span class="math">λ</span> 与向量 <span class="math">a</span> 的积是一个向量，记作 <span class="math">λa</span></p>
+                    
+                    <div class="operation-box">
+                        <h3>运算性质</h3>
+                        <div class="formula">
+                            <span class="math">|λa| = |λ|·|a|</span>
+                        </div>
+                        <p>当 <span class="math">λ > 0</span> 时，<span class="math">λa</span> 与 <span class="math">a</span> 方向相同</p>
+                        <p>当 <span class="math">λ < 0</span> 时，<span class="math">λa</span> 与 <span class="math">a</span> 方向相反</p>
+                        <p>当 <span class="math">λ = 0</span> 时，<span class="math">λa</span> = 0</span></p>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>运算律</h3>
+                        <ul>
+                            <li><span class="math">λ(μa) = (λμ)a</span></li>
+                            <li><span class="math">(λ + μ)a = λa + μa</span></li>
+                            <li><span class="math">λ(a + b) = λa + λb</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>向量共线（平行）的充要条件</h3>
+                    <div class="formula">
+                        <span class="math">a ∥ b ⇔ b = λa (b ≠ 0)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dot" class="section">
+                <h2>3.2 平面向量的数量积</h2>
+
+                <div class="content-box">
+                    <h3>数量积的定义</h3>
+                    <p class="definition">已知两个非零向量 <span class="math">a</span> 和 <span class="math">b</span>，它们的夹角为 <span class="math">θ</span>，则数量 <span class="math">|a|·|b|·cosθ</span> 叫做 <span class="math">a</span> 与 <span class="math">b</span> 的数量积，记作 <span class="math">a·b</span></p>
+                    
+                    <div class="operation-box">
+                        <h3>公式</h3>
+                        <div class="formula">
+                            <span class="math">a·b = |a||b|cosθ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>数量积的性质</h3>
+                    
+                    <div class="operation-box">
+                        <h3>基本性质</h3>
+                        <ul>
+                            <li><span class="math">a·a = |a|²</span></li>
+                            <li><span class="math">a·b = b·a</span></li>
+                            <li><span class="math">(λa)·b = λ(a·b)</span></li>
+                            <li><span class="math">(a + b)·c = a·c + b·c</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>数量积的坐标运算</h3>
+                    <p>设 <span class="math">a = (x₁, y₁)</span>，<span class="math">b = (x₂, y₂)</span>，则：</p>
+                    
+                    <div class="operation-box">
+                        <h3>数量积</h3>
+                        <div class="formula">
+                            <span class="math">a·b = x₁x₂ + y₁y₂</span>
+                        </div>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>向量的模</h3>
+                        <div class="formula">
+                            <span class="math">|a| = √(x₁² + y₁²)</span>
+                        </div>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>向量垂直的充要条件</h3>
+                        <div class="formula">
+                            <span class="math">a ⊥ b ⇔ a·b = 0</span>
+                        </div>
+                        <p>即：<span class="math">x₁x₂ + y₁y₂ = 0</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 线性运算 -->
+                <div class="example-box">
+                    <h3>例题 1：向量加法 【基础】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 2)</span>，<span class="math">b = (3, 4)</span>，求 <span class="math">a + b</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a + b = (1 + 3, 2 + 4) = (4, 6)</span></p>
+                        <p><strong>答案：(4, 6)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：向量减法 【基础】</h3>
+                    <p class="question">已知 <span class="math">a = (5, 3)</span>，<span class="math">b = (2, 1)</span>，求 <span class="math">a - b</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a - b = (5 - 2, 3 - 1) = (3, 2)</span></p>
+                        <p><strong>答案：(3, 2)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：向量的数乘 【基础】</h3>
+                    <p class="question">已知 <span class="math">a = (2, 3)</span>，求 <span class="math">3a</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">3a = 3(2, 3) = (6, 9)</span></p>
+                        <p><strong>答案：(6, 9)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：向量的模 【基础】</h3>
+                    <p class="question">求向量 <span class="math">a = (3, 4)</span> 的模</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">|a| = √(3² + 4²) = √(9 + 16) = √25 = 5</span></p>
+                        <p><strong>答案：5</strong></p>
+                    </div>
+                </div>
+
+                <!-- 数量积 -->
+                <div class="example-box">
+                    <h3>例题 5：向量的数量积 【基础】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 2)</span>，<span class="math">b = (3, 4)</span>，求 <span class="math">a·b</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a·b = 1×3 + 2×4 = 3 + 8 = 11</span></p>
+                        <p><strong>答案：11</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：向量垂直 【基础】</h3>
+                    <p class="question">判断向量 <span class="math">a = (1, 2)</span> 与 <span class="math">b = (2, -1)</span> 是否垂直</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a·b = 1×2 + 2×(-1) = 2 - 2 = 0</span></p>
+                        <p>由于 <span class="math">a·b = 0</span>，所以 <span class="math">a</span> 与 <span class="math">b</span> 垂直</p>
+                        <p><strong>答案：垂直</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：向量共线 【基础】</h3>
+                    <p class="question">判断向量 <span class="math">a = (1, 2)</span> 与 <span class="math">b = (2, 4)</span> 是否共线</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">1×4 - 2×2 = 4 - 4 = 0</span></p>
+                        <p>由于 <span class="math">x₁y₂ - x₂y₁ = 0</span>，所以 <span class="math">a</span> 与 <span class="math">b</span> 共线</p>
+                        <p><strong>答案：共线</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：2024年新高考I卷 【中档】</h3>
+                    <p class="question">已知向量 <span class="math">a = (1, 2)</span>，<span class="math">b = (x, 4)</span>，且 <span class="math">a ⊥ b</span>，则 <span class="math">x =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">a ⊥ b</span>，所以 <span class="math">a·b = 0</span></p>
+                        <p><span class="math">1×x + 2×4 = 0</span></p>
+                        <p><span class="math">x + 8 = 0</span></p>
+                        <p><span class="math">x = -8</span></p>
+                        <p><strong>答案：-8</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2023年全国甲卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">|a| = 3</span>，<span class="math">|b| = 4</span>，且 <span class="math">a</span> 与 <span class="math">b</span> 的夹角为 <span class="math">60°</span>，求 <span class="math">a·b</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a·b = |a||b|cosθ</span></p>
+                        <p><span class="math">= 3 × 4 × cos60°</span></p>
+                        <p><span class="math">= 12 × 1/2 = 6</span></p>
+                        <p><strong>答案：6</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2022年新高考I卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">a = (2, 1)</span>，<span class="math">b = (1, k)</span>，且 <span class="math">a ∥ b</span>，则 <span class="math">k =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">a ∥ b</span>，所以 <span class="math">2k - 1×1 = 0</span></p>
+                        <p><span class="math">2k - 1 = 0</span></p>
+                        <p><span class="math">k = 1/2</span></p>
+                        <p><strong>答案：1/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：2021年全国乙卷 【中档】</h3>
+                    <p class="question">已知向量 <span class="math">a = (1, 2)</span>，<span class="math">b = (3, y)</span>，且 <span class="math">|a| = |b|</span>，则 <span class="math">y =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">|a| = √(1² + 2²) = √5</span></p>
+                        <p><span class="math">|b| = √(3² + y²) = √(9 + y²)</span></p>
+                        <p>由于 <span class="math">|a| = |b|</span>，所以 <span class="math">√5 = √(9 + y²)</span></p>
+                        <p><span class="math">5 = 9 + y²</span></p>
+                        <p><span class="math">y² = -4</span></p>
+                        <p>无实数解</p>
+                        <p><strong>答案：无实数解</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2020年全国I卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 0)</span>，<span class="math">b = (0, 1)</span>，则 <span class="math">|a - b| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a - b = (1 - 0, 0 - 1) = (1, -1)</span></p>
+                        <p><span class="math">|a - b| = √(1² + (-1)²) = √2</span></p>
+                        <p><strong>答案：√2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2019年全国I卷 【中档】</h3>
+                    <p class="question">已知向量 <span class="math">a = (2, 1)</span>，<span class="math">b = (1, -2)</span>，则 <span class="math">a·b =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a·b = 2×1 + 1×(-2) = 2 - 2 = 0</span></p>
+                        <p><strong>答案：0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：2018年全国II卷 【中档】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 2)</span>，<span class="math">b = (3, 4)</span>，求 <span class="math">|a + b|</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a + b = (4, 6)</span></p>
+                        <p><span class="math">|a + b| = √(4² + 6²) = √(16 + 36) = √52 = 2√13</span></p>
+                        <p><strong>答案：2√13</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：2017年全国I卷 【中档】</h3>
+                    <p class="question">已知向量 <span class="math">a = (2, 3)</span>，<span class="math">b = (4, 6)</span>，则 <span class="math">a</span> 与 <span class="math">b</span> 的位置关系是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">2×6 - 3×4 = 12 - 12 = 0</span></p>
+                        <p>由于 <span class="math">x₁y₂ - x₂y₁ = 0</span>，所以 <span class="math">a</span> 与 <span class="math">b</span> 共线</p>
+                        <p>且 <span class="math">b = 2a</span>，所以 <span class="math">b</span> 与 <span class="math">a</span> 同向</p>
+                        <p><strong>答案：共线且同向</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 16：向量运算综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 2)</span>，<span class="math">b = (3, 1)</span>，求 <span class="math">|2a - b|</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">2a = (2, 4)</span></p>
+                        <p><span class="math">2a - b = (2 - 3, 4 - 1) = (-1, 3)</span></p>
+                        <p><span class="math">|2a - b| = √((-1)² + 3²) = √(1 + 9) = √10</span></p>
+                        <p><strong>答案：√10</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 17：向量垂直综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">a = (2, 1)</span>，<span class="math">b = (x, 2)</span>，且 <span class="math">a ⊥ b</span>，则 <span class="math">|b| =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">a ⊥ b</span>，所以 <span class="math">a·b = 0</span></p>
+                        <p><span class="math">2x + 1×2 = 0</span></p>
+                        <p><span class="math">2x + 2 = 0</span></p>
+                        <p><span class="math">x = -1</span></p>
+                        <p><span class="math">b = (-1, 2)</span></p>
+                        <p><span class="math">|b| = √((-1)² + 2²) = √(1 + 4) = √5</span></p>
+                        <p><strong>答案：√5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：向量共线综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">a = (2, 4)</span>，<span class="math">b = (1, k)</span>，且 <span class="math">a ∥ b</span>，求实数 <span class="math">k</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">a ∥ b</span>，所以 <span class="math">2k - 4×1 = 0</span></p>
+                        <p><span class="math">2k - 4 = 0</span></p>
+                        <p><span class="math">k = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 19：向量夹角 【提高】</h3>
+                    <p class="question">已知 <span class="math">a = (1, 0)</span>，<span class="math">b = (1, 1)</span>，求 <span class="math">a</span> 与 <span class="math">b</span> 的夹角</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">|a| = √(1² + 0²) = 1</span></p>
+                        <p><span class="math">|b| = √(1² + 1²) = √2</span></p>
+                        <p><span class="math">a·b = 1×1 + 0×1 = 1</span></p>
+                        <p><span class="math">cosθ = a·b / (|a||b|) = 1 / (1×√2) = 1/√2</span></p>
+                        <p><span class="math">θ = 45°</span></p>
+                        <p><strong>答案：45°</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 20：向量综合 【提高】</h3>
+                    <p class="question">已知 <span class="math">|a| = 2</span>，<span class="math">|b| = 3</span>，<span class="math">a·b = 3</span>，求 <span class="math">|a + b|</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol20')">查看解答</button>
+                    <div id="sol20" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">|a + b|² = (a + b)·(a + b)</span></p>
+                        <p><span class="math">= a·a + 2a·b + b·b</span></p>
+                        <p><span class="math">= |a|² + 2a·b + |b|²</span></p>
+                        <p><span class="math">= 2² + 2×3 + 3² = 4 + 6 + 9 = 19</span></p>
+                        <p><span class="math">|a + b| = √19</span></p>
+                        <p><strong>答案：√19</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第三章 平面向量</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter3';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第三章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

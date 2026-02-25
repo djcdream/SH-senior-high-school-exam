@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一章 运动的描述 - 高中物理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理</h1>
+            <h2>第一章 运动的描述</h2>
+        </header>
+
+        <nav>
+            <a href="physics.html" class="nav-link">← 返回物理列表</a>
+            <a href="#reference" class="nav-link">1.1 参考系</a>
+            <a href="#displacement" class="nav-link">1.2 时间和位移</a>
+            <a href="#velocity" class="nav-link">1.3 速度</a>
+            <a href="#acceleration" class="nav-link">1.4 加速度</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="reference" class="section">
+                <h2>1.1 参考系</h2>
+
+                <div class="content-box">
+                    <h3>参考系的定义</h3>
+                    <p class="definition">为了描述物体的运动而选作参考的物体叫做<strong>参考系</strong></p>
+                    <p>参考系的选择是任意的，但选择不同的参考系，对物体运动的描述可能不同</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>参考系的选择原则</h3>
+                    <ul>
+                        <li>选择使问题简化的参考系</li>
+                        <li>通常选地面为参考系</li>
+                        <li>研究地球公转时，选太阳为参考系</li>
+                        <li>研究火车上物体的运动，可选火车为参考系</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>运动和静止的相对性</h3>
+                    <p class="definition">运动是绝对的，静止是相对的</p>
+                    <p>同一个物体相对于不同的参考系，运动状态可能不同</p>
+                </div>
+            </section>
+
+            <section id="displacement" class="section">
+                <h2>1.2 时间和位移</h2>
+
+                <div class="content-box">
+                    <h3>时刻和时间间隔</h3>
+
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>时刻</h4>
+                            <p>指某一瞬时，在时间轴上用点表示</p>
+                            <p class="example">例如：第2秒末、3秒初</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>时间间隔</h4>
+                            <p>指两时刻之间的间隔，在时间轴上用线段表示</p>
+                            <p class="example">例如：2秒内、第2秒内</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>位移和路程</h3>
+
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>位移</h4>
+                            <p><strong>定义：</strong>初位置指向末位置的有向线段</p>
+                            <p><strong>矢量：</strong>既有大小又有方向</p>
+                            <p><strong>取决于：</strong>只取决于初末位置</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>路程</h4>
+                            <p><strong>定义：</strong>物体运动轨迹的实际长度</p>
+                            <p><strong>标量：</strong>只有大小，没有方向</p>
+                            <p><strong>取决于：</strong>取决于实际运动路径</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operation-box">
+                    <h3>重要结论</h3>
+                    <ul>
+                        <li>单向直线运动中，位移大小等于路程</li>
+                        <li>往返运动或曲线运动中，位移大小小于路程</li>
+                        <li>位移可以为零，路程只有在物体回到原点时为零</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="velocity" class="section">
+                <h2>1.3 速度</h2>
+
+                <div class="content-box">
+                    <h3>速度的定义</h3>
+                    <p class="definition">速度是描述物体运动快慢和方向的物理量</p>
+                    <p>速度是矢量，既有大小又有方向</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>平均速度和瞬时速度</h3>
+
+                    <div class="operation-box">
+                        <h3>平均速度</h3>
+                        <div class="formula">
+                            v = Δx/Δt
+                        </div>
+                        <p><strong>说明：</strong></p>
+                        <ul>
+                            <li>粗略描述物体在某段时间内的运动快慢</li>
+                            <li>矢量，方向与位移方向相同</li>
+                            <li>计算：位移与所用时间的比值</li>
+                        </ul>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>瞬时速度</h3>
+                        <div class="formula">
+                            v = lim(Δt→0) Δx/Δt
+                        </div>
+                        <p><strong>说明：</strong></p>
+                        <ul>
+                            <li>精确描述物体在某一时刻的运动快慢</li>
+                            <li>矢量，方向沿物体运动轨迹的切线方向</li>
+                            <li>大小等于瞬时速率</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>速度和速率的区别</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>物理量</th>
+                            <th>速度</th>
+                            <th>速率</th>
+                        </tr>
+                        <tr>
+                            <td>类型</td>
+                            <td>矢量</td>
+                            <td>标量</td>
+                        </tr>
+                        <tr>
+                            <td>定义</td>
+                            <td>位移与时间的比值</td>
+                            <td>路程与时间的比值</td>
+                        </tr>
+                        <tr>
+                            <td>方向</td>
+                            <td>有方向</td>
+                            <td>无方向</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="acceleration" class="section">
+                <h2>1.4 加速度</h2>
+
+                <div class="content-box">
+                    <h3>加速度的定义</h3>
+                    <p class="definition">加速度是描述速度变化快慢的物理量</p>
+                    <p>加速度是矢量，既有大小又有方向</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>加速度公式</h3>
+                    <div class="formula">
+                        a = Δv/Δt = (v₂ - v₁)/(t₂ - t₁)
+                    </div>
+                    <p><strong>单位：</strong>m/s²（米每二次方秒）</p>
+                    <p><strong>说明：</strong></p>
+                    <ul>
+                        <li>加速度等于速度的变化量与所用时间的比值</li>
+                        <li>加速度的方向与速度变化量的方向相同</li>
+                        <li>加速度大表示速度变化快，不表示速度大</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>速度、速度变化量、加速度的区别</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>物理量</th>
+                            <th>速度 v</th>
+                            <th>速度变化量 Δv</th>
+                            <th>加速度 a</th>
+                        </tr>
+                        <tr>
+                            <td>物理意义</td>
+                            <td>描述运动快慢</td>
+                            <td>描述速度变化</td>
+                            <td>描述速度变化快慢</td>
+                        </tr>
+                        <tr>
+                            <td>定义</td>
+                            <td>v = Δx/Δt</td>
+                            <td>Δv = v₂ - v₁</td>
+                            <td>a = Δv/Δt</td>
+                        </tr>
+                        <tr>
+                            <td>单位</td>
+                            <td>m/s</td>
+                            <td>m/s</td>
+                            <td>m/s²</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="content-box">
+                    <h3>加速度方向的判断</h3>
+                    <ul>
+                        <li><strong>加速运动：</strong>加速度方向与速度方向相同</li>
+                        <li><strong>减速运动：</strong>加速度方向与速度方向相反</li>
+                        <li><strong>匀速运动：</strong>加速度为零</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <div class="example-box">
+                    <h3>例题 1：参考系的选择 【基础】</h3>
+                    <p class="question">坐在行驶火车中的乘客，以火车为参考系，看到路边的树木向什么方向运动？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>以火车为参考系，假设火车不动，则路边的树木相对于火车向后运动</p>
+                        <p><strong>答案：向后运动（与火车运动方向相反）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：时间和时刻 【基础】</h3>
+                    <p class="question">关于时间和时刻，下列说法正确的是：</p>
+                    <p>(A) 第2秒内是2秒的时间间隔</p>
+                    <p>(B) 第2秒末是2秒的时间间隔</p>
+                    <p>(C) 2秒内是2秒的时间间隔</p>
+                    <p>(D) 2秒末是2秒的时间间隔</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>(A) 错误。第2秒内是1秒的时间间隔（第1秒末到第2秒末）</p>
+                        <p>(B) 错误。第2秒末是一个时刻</p>
+                        <p>(C) 正确。2秒内是从0时刻到2秒末，时间间隔为2秒</p>
+                        <p>(D) 错误。2秒末是一个时刻</p>
+                        <p><strong>答案：C</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：位移和路程 【基础】</h3>
+                    <p class="question">某物体沿半径为R的圆周运动一周，则物体的位移和路程分别为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>位移：</strong>物体回到原点，初位置和末位置相同，位移为0</p>
+                        <p><strong>路程：</strong>物体沿圆周运动一周，路程为圆的周长 2πR</p>
+                        <p><strong>答案：位移为0，路程为2πR</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：平均速度的计算 【基础】</h3>
+                    <p class="question">某物体沿直线运动，前一半时间速度为4m/s，后一半时间速度为6m/s，求全程的平均速度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设总时间为2t</p>
+                        <p>前一半时间位移：x₁ = 4t</p>
+                        <p>后一半时间位移：x₂ = 6t</p>
+                        <p>总位移：x = x₁ + x₂ = 4t + 6t = 10t</p>
+                        <p>平均速度：v = x/(2t) = 10t/(2t) = 5m/s</p>
+                        <p><strong>答案：5m/s</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：加速度的计算 【基础】</h3>
+                    <p class="question">某汽车从静止开始加速，经过10s速度达到20m/s，求汽车的加速度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>初速度：v₁ = 0</p>
+                        <p>末速度：v₂ = 20m/s</p>
+                        <p>时间：Δt = 10s</p>
+                        <p>加速度：a = (v₂ - v₁)/Δt = (20 - 0)/10 = 2m/s²</p>
+                        <p><strong>答案：2m/s²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：加速度方向的判断 【中档】</h3>
+                    <p class="question">汽车以20m/s的速度行驶，刹车后经5s停下，设刹车过程为匀减速运动，求加速度的大小和方向</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>初速度：v₁ = 20m/s</p>
+                        <p>末速度：v₂ = 0</p>
+                        <p>时间：Δt = 5s</p>
+                        <p>速度变化量：Δv = v₂ - v₁ = 0 - 20 = -20m/s</p>
+                        <p>加速度：a = Δv/Δt = -20/5 = -4m/s²</p>
+                        <p>加速度为负值，说明加速度方向与速度方向相反</p>
+                        <p><strong>答案：加速度大小为4m/s²，方向与运动方向相反</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：位移和路程的计算 【中档】</h3>
+                    <p class="question某人先向东走40m，然后向北走30m，求此人的位移和路程</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>路程：</strong>沿实际路径计算</p>
+                        <p>s = 40m + 30m = 70m</p>
+                        <p><strong>位移：</strong>从起点指向终点的有向线段</p>
+                        <p>根据勾股定理：x = √(40² + 30²) = √(1600 + 900) = √2500 = 50m</p>
+                        <p>方向：东偏北某个角度（tanθ = 30/40 = 0.75，θ ≈ 37°）</p>
+                        <p><strong>答案：位移为50m，方向东偏北37°；路程为70m</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：平均速度的多种计算 【中档】</h3>
+                    <p class="question">某物体沿直线运动，前一半位移速度为4m/s，后一半位移速度为6m/s，求全程的平均速度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设总位移为2x</p>
+                        <p>前一半位移时间：t₁ = x/4</p>
+                        <p>后一半位移时间：t₂ = x/6</p>
+                        <p>总时间：t = t₁ + t₂ = x/4 + x/6 = (3x + 2x)/12 = 5x/12</p>
+                        <p>平均速度：v = 2x/t = 2x/(5x/12) = 2x × 12/(5x) = 24/5 = 4.8m/s</p>
+                        <p><strong>答案：4.8m/s</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2024年高考真题 【中档】</h3>
+                    <p class="question">甲乙两车在同一直线上运动，甲车速度为10m/s，乙车速度为15m/s，若以甲车为参考系，则乙车的速度为多少？方向如何？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设甲车速度方向为正方向</p>
+                        <p>v甲 = 10m/s，v乙 = 15m/s</p>
+                        <p>以甲车为参考系，乙车的相对速度：</p>
+                        <p>v乙对甲 = v乙 - v甲 = 15 - 10 = 5m/s</p>
+                        <p>相对速度为正，说明方向与甲车运动方向相同</p>
+                        <p><strong>答案：5m/s，方向与甲车运动方向相同</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2023年高考真题 【中档】</h3>
+                    <p class="question">物体从A点运动到B点，前一半时间平均速度为v₁，后一半时间平均速度为v₂，则全程平均速度为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设总时间为2t</p>
+                        <p>前一半时间位移：x₁ = v₁t</p>
+                        <p>后一半时间位移：x₂ = v₂t</p>
+                        <p>总位移：x = x₁ + x₂ = v₁t + v₂t = (v₁ + v₂)t</p>
+                        <p>平均速度：v = x/(2t) = (v₁ + v₂)t/(2t) = (v₁ + v₂)/2</p>
+                        <p><strong>答案：(v₁ + v₂)/2</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中物理 - 第一章 运动的描述</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'physics1';
+            const btn = document.getElementById('complete-btn');
+
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                PhysicsProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第一章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'physics.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

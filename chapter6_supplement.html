@@ -1,0 +1,302 @@
+<!-- 第六章解析几何完整版 - 例题补充到50道 -->
+<!-- 例题35-50：新增的解析几何例题 -->
+
+<div class="example-box">
+    <h3>例题 35：圆的综合 【提高】</h3>
+    <p class="question">已知圆 <span class="math">C</span> 过点 <span class="math">A(1, 3)</span>、<span class="math">B(5, 1)</span>，且圆心在直线 <span class="math">y = x</span> 上，求圆的方程</p>
+    <button class="solution-btn" onclick="toggleSolution('sol35')">查看解答</button>
+    <div id="sol35" class="solution">
+        <p><strong>解答：</strong></p>
+        <p>设圆心 <span class="math">C(a, a)</span>（因为圆心在 <span class="math">y = x</span> 上）</p>
+        <p>由于圆过 <span class="math">A</span>、<span class="math">B</span>，所以 <span class="math">|CA| = |CB|</span></p>
+        <p><span class="math">√[(1 - a)² + (3 - a)²] = √[(5 - a)² + (1 - a)²]</span></p>
+        <p>两边平方：<span class="math">(1 - a)² + (3 - a)² = (5 - a)² + (1 - a)²</span></p>
+        <p><span class="math">(3 - a)² = (5 - a)²</span></p>
+        <p><span class="math">9 - 6a + a² = 25 - 10a + a²</span></p>
+        <p><span class="math">4a = 16</span></p>
+        <p><span class="math">a = 4</span></p>
+        <p>所以圆心 <span class="math">C(4, 4)</span></p>
+        <p>半径 <span class="math">r = √[(1 - 4)² + (3 - 4)²] = √(9 + 1) = √10</span></p>
+        <p>圆的方程：<span class="math">(x - 4)² + (y - 4)² = 10</span></p>
+        <p><strong>答案：(x - 4)² + (y - 4)² = 10</strong></p>
+    </div>
+</div>
+
+<div class="example-box">
+    <h3>例题 36：椭圆的切线 【提高】</h3>
+    <p class="question">椭圆 <span class="math">x²/25 + y²/16 = 1</span> 在点 <span class="math">(3, 12/5)</span> 处的切线方程是</p>
+    <button class="solution-btn" onclick="toggleSolution('sol36')">查看解答</button>
+    <div id="sol36" class="solution">
+        <p><strong>解答：</strong></p>
+        <p>椭圆：<span class="math">x²/a² + y²/b² = 1</span>，<span class="math">a = 5</span>，<span class="math">b = 4</span></p>
+        <p>椭圆上点 <span class="math">(x₀, y₀)</span> 处的切线方程：<span class="math">x₀x/a² + y₀y/b² = 1</span></p>
+        <p><span class="math">3x/25 + (12/5)y/16 = 1</span></p>
+        <p><span class="math">3x/25 + 3y/20 = 1</span></p>
+        <p>两边乘以100：<span class="math">12x + 15y = 100</span></p>
+        <p>化简：<span class="math">4x + 5y = 100/3</span></p>
+        <p><strong>答案：4x + 5y = 100/3</strong></p>
+    </div>
+</div>
+
+<div class="example-box">
+    <h3>例题 37：双曲线的切线 【提高】</h3>
+    <p class="question">双曲线 <span class="math">x²/9 - y²/4 = 1</span> 在点 <span class="math">(6, 2√3)</span> 处的切线方程是</p>
+    <button class="solution-btn" onclick="toggleSolution('sol37')">查看解答</button>
+    <div id="sol37" class="solution">
+        <p><strong>解答：</strong></p>
+        <p>双曲线：<span class="math">x²/a² - y²/b² = 1</span>，<span class="math">a = 3</span>，<span class="math">b = 2</span></p>
+        <p>双曲线上点 <span class="math">(x₀, y₀)</span> 处的切线方程：<span class="math">x₀x/a² - y₀y/b² = 1</span></p>
+        <p><span class="math">6x/9 - (2√3)y/4 = 1</span></p>
+        <p><span class="math">2x/3 - (√3)y/2 = 1</span></p>
+        <p>两边乘以6：<span class="math">4x - 3√3y = 6</span></p>
+        <p><strong>答案：4x - 3√3y = 6</strong></p>
+    </div>
+</div>
+
+<div class="example-box">
+    <h3>例题 38：两圆位置关系 【提高】</h3>
+    <p class="question">圆 <span class="math">C₁：x² + y² = 1</span> 与圆 <span class="math">C₂：(x - 3)² + (y - 4)² = 16</span> 的位置关系是</p>
+    <button class="solution-btn" onclick="toggleSolution('sol38')">查看解答</button>
+    <div id="sol38" class="solution">
+        <p><strong>解答：</strong></p>
+        <p>圆 <span class="math">C₁</span>：圆心 <span class="math">O₁(0, 0)</span>，半径 <span class="math">r₁ = 1</span></p>
+        <p>圆 <span class="math">C₂</span>：圆心 <span class="math">O₂(3, 4)</span>，半径 <span class="math">r₂ = 4</span></p>
+        <p>圆心距：<span class="math">d = √[(3 - 0)² + (4 - 0)²] = √(9 + 16) = √25 = 5</span></p>
+        <p>半径和：<span class="math">r₁ + r₂ = 1 + 4 = 5</span></p>
+        <p>由于 <span class="math">d = r₁ + r₂</span>，所以两圆外切</p>
+        <p><strong>答案：外切</strong></p>
+    </div>
+</div>
+
+<div class="example-box">
+    <h3>例题 39：圆与椭圆相切 【提高】</h3>
+    <p class="question">圆 <span class="math">x² + y² = 1</span> 与椭圆 <span class="math">x²/4 + y²/1 = 1</span> 在第一象限相切，求切点坐标</p>
+    <button class="solution-btn" onclick="toggleSolution('sol39')">查看解答</button>
+                    <div id="sol39" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于相切，圆心与椭圆中心连线通过切点</p>
+                        <p>椭圆长轴在 <span class="math">x</span> 轴上，<span class="math">a = 2, b = 1</span></p>
+                        <p>第一象限的切点在椭圆上：<span class="math">(2cosθ, sinθ)</span></p>
+                        <p>由于切点也在圆上：<span class="math">(2cosθ, sinθ)</span> 满足 <span class="math">x² + y² = 1</span></p>
+                        <p><span class="math">(2cosθ)² + (sinθ)² = 1</span></p>
+                        <p><span class="math">4cos²θ + sin²θ = 1</span></p>
+                        <p><span class="math">4cos²θ + (1 - cos²θ) = 1</span></p>
+                        <p><span class="math">3cos²θ = 0</span></p>
+                        <p><span class="math">cosθ = 0</span></p>
+                        <p><span class="math">θ = π/2</span></p>
+                        <p>切点：<span class="math">(2cos(π/2), sin(π/2)) = (0, 1)</span></p>
+                        <p><strong>答案：(0, 1)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 40：直线与椭圆相交 【提高】</h3>
+                    <p class="question">直线 <span class="math">y = x + 1</span> 截椭圆 <span class="math">x²/4 + y² = 1</span> 所得的弦长是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol40')">查看解答</button>
+                    <div id="sol40" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>将直线代入椭圆方程：<span class="math">x²/4 + (x + 1)² = 1</span></p>
+                        <p><span class="math">x²/4 + x² + 2x + 1 = 1</span></p>
+                        <p>两边乘以4：<span class="math">x² + 4x² + 8x + 4 = 4</span></p>
+                        <p><span class="math">5x² + 8x = 0</span></p>
+                        <p><span class="math">x(5x + 8) = 0</span></p>
+                        <p><span class="math">x = 0</span> 或 <span class="math">x = -8/5</span></p>
+                        <p>当 <span class="math">x = 0</span> 时，<span class="math">y = 1</span></p>
+                        <p>当 <span class="math">x = -8/5</span> 时，<span class="math">y = -8/5 + 1 = -3/5</span></p>
+                        <p>弦长：<span class="math">√[(-8/5 - 0)² + (-3/5 - 1)²] = √(64/25 + 64/25) = √(128/25) = 8√2/5</span></p>
+                        <p><strong>答案：8√2/5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 41：圆与抛物线相交 【提高】</h3>
+                    <p class="question">圆 <span class="math">x² + y² = 4</span> 与抛物线 <span class="math">y² = 4x</span> 的交点个数是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol41')">查看解答</button>
+                    <div id="sol41" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>抛物线：<span class="math">y² = 4x</span></p>
+                        <p>代入圆方程：<span class="math">x² + 4x = 4</span></p>
+                        <p><span class="math">x² + 4x - 4 = 0</span></p>
+                        <p><span class="math">x = [-4 ± √(16 + 16)]/2 = [-4 ± √32]/2 = -2 ± 2√2</span></p>
+                        <p><span class="math">x₁ = -2 - 2√2 < 0</span>（舍去，因为抛物线 <span class="math">x ≥ 0</span>）</p>
+                        <p><span class="math">x₂ = -2 + 2√2 > 0</span></p>
+                        <p>只有 <span class="math">x₂</span> 有效</p>
+                        <p>当 <span class="math">x = -2 + 2√2</span> 时，<span class="math">y² = 4(-2 + 2√2)</span></p>
+                        <p><span class="math">= -8 + 8√2</span></p>
+                        <p>由于 <span class="math">-8 + 8√2 ≈ -8 + 11.31 = 3.31 > 0</span>，所以 <span class="math">y</span> 有两个值</p>
+                        <p>因此有 2 个交点</p>
+                        <p><strong>答案：2个</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 42：椭圆焦点弦 【提高】</h3>
+                    <p class="question">椭圆 <span class="math">x²/25 + y²/9 = 1</span> 过右焦点 <span class="math">F</span> 的弦的中点为 <span class="math">M(3, 0)</span>，求弦的方程</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol42')">查看解答</button>
+                    <div id="sol42" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>椭圆：<span class="math">a = 5, b = 3</span></p>
+                        <p><span class="math">c = √(a² - b²) = √(25 - 9) = √16 = 4</span></p>
+                        <p>右焦点：<span class="math">F(4, 0)</span></p>
+                        <p>弦的中点为 <span class="math">M(3, 0)</span></p>
+                        <p>由于弦的中点在 <span class="math">x</span> 轴上，所以弦垂直于 <span class="math">x</span> 轴</p>
+                        <p>弦的方程：<span class="math">x = 3</span></p>
+                        <p><strong>答案：x = 3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 43：双曲线渐近线夹角 【提高】</h3>
+                    <p class="question">双曲线 <span class="math">x²/9 - y²/16 = 1</span> 的两条渐近线的夹角是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol43')">查看解答</button>
+                    <div id="sol43" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>双曲线：<span class="math">a = 3, b = 4</span></p>
+                        <p>渐近线：<span class="math">y = ±(b/a)x = ±(4/3)x</span></p>
+                        <p>设两条渐近线的斜率分别为 <span class="math">k₁ = 4/3</span>，<span class="math">k₂ = -4/3</span></p>
+                        <p>夹角 <span class="math">α</span> 满足：<span class="math">tanα = |(k₂ - k₁)/(1 + k₁k₂)|</span></p>
+                        <p><span class="math">= |(-4/3 - 4/3)/(1 + (-16/9))|</span></p>
+                        <p><span class="math">= |(-8/3)/(-7/9)| = |-8/3 × (-9/7)| = |24/7| = 24/7</span></p>
+                        <p><span class="math">α = arctan(24/7)</span></p>
+                        <p><strong>答案：arctan(24/7)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 44：抛物线动点 【提高】</h3>
+                    <p class="question">抛物线 <span class="math">y² = 4x</span> 上的一点 <span class="math">P</span> 到焦点 <span class="math">F</span> 的距离等于到准线 <span class="math">l</span> 的距离，求点 <span class="math">P</span> 的坐标</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol44')">查看解答</button>
+                    <div id="sol44" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>抛物线：<span class="math">y² = 4x</span></p>
+                        <p><span class="math">2p = 4</span>，<span class="math">p = 2</span></p>
+                        <p>焦点：<span class="math">F(p/2, 0) = (1, 0)</span></p>
+                        <p>准线：<span class="math">x = -p/2 = -1</span></p>
+                        <p>设点 <span class="math">P(x, y)</span></p>
+                        <p>点 <span class="math">P</span> 到焦点 <span class="math">F</span> 的距离：<span class="math">d₁ = √[(x - 1)² + y²]</span></p>
+                        <p>点 <span class="math">P</span> 到准线的距离：<span class="math">d₂ = |x + 1|</span></p>
+                        <p>由于 <span class="math">d₁ = d₂</span>，所以 <span class="math">√[(x - 1)² + y²] = |x + 1|</span></p>
+                        <p>平方：<span class="math">(x - 1)² + y² = (x + 1)²</span></p>
+                        <p><span class="math">x² - 2x + 1 + y² = x² + 2x + 1</span></p>
+                        <p><span class="math">y² = 4x</span></p>
+                        <p>这与抛物线方程一致</p>
+                        <p>由于点 <span class="math">P</span> 在抛物线上，所以满足这个条件</p>
+                        <p>点 <span class="math">P</span> 的坐标：<span class="math">(t², 2t)</span>，其中 <span class="math">t</span> 为参数</p>
+                        <p><strong>答案：(t², 2t)，t为参数</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 45：椭圆面积最大 【提高】</h3>
+                    <p class="question">点 <span class="math">P</span> 在椭圆 <span class="math">x²/4 + y²/3 = 1</span> 上移动，求 <span class="math">△POA</span> 面积的最大值（其中 <span class="math">O</span> 为原点，<span class="math">A</span> 为右顶点）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol45')">查看解答</button>
+                    <div id="sol45" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>椭圆：<span class="math">a = 2, b = √3</span></p>
+                        <p>右顶点：<span class="math">A(2, 0)</span></p>
+                        <p>椭圆上点：<span class="math">P(2cosθ, √3sinθ)</span></p>
+                        <p><span class="math">△POA</span> 的面积：<span class="math">S = (1/2)×|OA|×|y_P| = (1/2)×2×|√3sinθ| = √3|sinθ|</span></p>
+                        <p>当 <span class="math">sinθ = ±1</span> 时，面积最大</p>
+                        <p><span class="math">S_max = √3</span></p>
+                        <p>此时 <span class="math">θ = π/2</span> 或 <span class="math">θ = 3π/2</span></p>
+                        <p>点 <span class="math">P</span>：<span class="math">(0, √3)</span> 或 <span class="math">(0, -√3)</span></p>
+                        <p><strong>答案：最大值√3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 46：圆与直线最值 【提高】</h3>
+                    <p class="question">圆 <span class="math">x² + y² = 4</span> 上的动点 <span class="math">P</span> 到直线 <span class="math">y = x + 2</span> 的距离的最大值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol46')">查看解答</button>
+                    <div id="sol46" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>圆：<span class="math">x² + y² = 4</span>，圆心 <span class="math">O(0, 0)</span>，半径 <span class="math">r = 2</span></p>
+                        <p>圆心到直线的距离：<span class="math">d = |0 - 0 + 2|/√(1 + 1) = 2/√2 = √2</span></p>
+                        <p>圆上点到直线的距离：<span class="math">d_P = |d ± r|</span></p>
+                        <p><span class="math">d_max = |√2 + 2| = √2 + 2 ≈ 1.414 + 2 = 3.414</span></p>
+                        <p><strong>答案：√2 + 2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 47：椭圆离心率范围 【提高】</h3>
+                    <p class="question">椭圆 <span class="math">x²/a² + y²/(a² - 1) = 1</span>（<span class="math">a > 1</span>）的离心率的取值范围是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol47')">查看解答</button>
+                    <div id="sol47" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>椭圆：<span class="math">b² = a² - 1</span></p>
+                        <p><span class="math">c² = a² - b² = a² - (a² - 1) = 1</span></p>
+                        <p><span class="math">c = 1</span></p>
+                        <p>离心率：<span class="math">e = c/a = 1/a</span></p>
+                        <p>由于 <span class="math">a > 1</span>，所以 <span class="math">0 < 1/a < 1</span></p>
+                        <p><strong>答案：(0, 1)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 48：双曲线离心率 【提高】</h3>
+                    <p class="question">已知双曲线的离心率 <span class="math">e = 2</span>，焦距 <span class="math">2c = 4√3</span>，则双曲线的标准方程是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol48')">查看解答</button>
+                    <div id="sol48" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">2c = 4√3</span>，<span class="math">c = 2√3</span></p>
+                        <p><span class="math">e = c/a = 2</span></p>
+                        <p><span class="math">a = c/2 = √3</span></p>
+                        <p><span class="math">c² = a² + b²</span></p>
+                        <p><span class="math">(2√3)² = 3 + b²</span></p>
+                        <p><span class="math">12 = 3 + b²</span></p>
+                        <p><span class="math">b² = 9</span>，<span class="math">b = 3</span></p>
+                        <p>双曲线方程：<span class="math">x²/3 - y²/9 = 1</span></p>
+                        <p><strong>答案：x²/3 - y²/9 = 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 49：抛物线范围 【提高】</h3>
+                    <p class="question">抛物线 <span class="math">y² = 4x</span> 上的点 <span class="math">P</span> 到点 <span class="math">Q(2, 2)</span> 的距离的最小值是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol49')">查看解答</button>
+                    <div id="sol49" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设抛物线上点 <span class="math">P(t², 2t)</span></p>
+                        <p>距离平方：<span class="math">d² = (t² - 2)² + (2t - 2)²</span></p>
+                        <p><span class="math">= (t² - 2)² + 4(t - 1)²</span></p>
+                        <p>设 <span class="math">u = t - 1</span></p>
+                        <p><span class="math">d² = ((u + 1)² - 3)² + 4u²</span></p>
+                        <p><span class="math">= (u² + 2u - 2)² + 4u²</span></p>
+                        <p><span class="math">= u⁴ + 4u³ + 4u² - 4u² - 8u + 4 + 4u²</span></p>
+                        <p><span class="math">= u⁴ + 4u³ + 4u² - 8u + 4</span></p>
+                        <p>求导：<span class="math">d'(u²) = 2u³ + 12u² + 8u - 8</span></p>
+                        <p>令 <span class="math">d'(u²) = 0</span>：<span class="math">2u³ + 12u² + 8u - 8 = 0</span></p>
+                        <p><span class="math">u³ + 6u² + 4u - 4 = 0</span></p>
+                        <p><span class="math">(u - 1)(u² + 7u + 4) = 0</span></p>
+                        <p><span class="math">u = 1</span></p>
+                        <p><span class="math">t = u + 1 = 2</span></p>
+                        <p>点 <span class="math">P(4, 4)</span></p>
+                        <p><span class="math">d_min = √[(4 - 2)² + (4 - 2)²] = √(4 + 4) = √8 = 2√2</span></p>
+                        <p><strong>答案：2√2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 50：圆锥曲线综合 【提高】</h3>
+                    <p class="question">已知椭圆 <span class="math">C₁</span> 和双曲线 <span class="math">C₂</span> 有相同的焦点 <span class="math">F₁(±√3, 0)</span> 和 <span class="math">F₂(±√3, 0)</span>，且椭圆的离心率 <span class="math">e₁ = √3/2</span>，双曲线的离心率 <span class="math">e₂ = 2/√3</span>，则椭圆 <span class="math">C₁</span> 和双曲线 <span class="math">C₂</span> 的标准方程分别是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol50')">查看解答</button>
+                    <div id="sol50" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>对于椭圆：<span class="math">e₁ = c/a = √3/2</span></p>
+                        <p><span class="math">c = √3</span>，<span class="math">a = c/e₁ = √3 × 2/√3 = 2</span></p>
+                        <p><span class="math">c² = a² - b²</span></p>
+                        <p><span class="math">3 = 4 - b²</span></p>
+                        <p><span class="math">b² = 1</span>，<span class="math">b = 1</span></p>
+                        <p>椭圆方程：<span class="math">x²/4 + y²/1 = 1</span></p>
+                        <br>
+                        <p>对于双曲线：<span class="math">e₂ = c/a = 2/√3</span></p>
+                        <p><span class="math">c = √3</span>，<span class="math">a = c/e₂ = √3 × √3/2 = 3/2</span></p>
+                        <p><span class="math">c² = a² + b²</span></p>
+                        <p><span class="math">3 = 9/4 + b²</span></p>
+                        <p><span class="math">b² = 3 - 9/4 = 3/4</span>，<span class="math">b = √3/2</span></p>
+                        <p>双曲线方程：<span class="math">x²/(9/4) - y²/(3/4) = 1</span></p>
+                        <p>即：<span class="math">4x²/9 - 4y²/3 = 1</span></p>
+                        <p><strong>答案：x²/4 + y²/1 = 1 和 4x²/9 - 4y²/3 = 1</strong></p>
+                    </div>
+                </div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物理 - 高中理科学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理学习平台</h1>
+            <h2>系统化学习，轻松掌握</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+        </nav>
+
+        <main>
+            <!-- 进度概览 -->
+            <section class="progress-section">
+                <h3>学习总进度</h3>
+                <div class="progress-container">
+                    <div id="total-progress-bar" class="progress-bar"></div>
+                </div>
+                <p id="total-progress-text" class="progress-text">0%</p>
+            </section>
+
+            <!-- 章节列表 -->
+            <section id="chapters-list" class="chapters-grid">
+                <!-- 章节卡片将通过 JavaScript 动态生成 -->
+            </section>
+        </main>
+
+        <footer>
+            <p>高中物理学习平台 &copy; 2026</p>
+            <p class="footer-note">跟随进度，循序渐进</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script>
+        // 渲染章节列表
+        function renderChapters() {
+            const container = document.getElementById('chapters-list');
+            const progress = PhysicsProgressManager.getAllProgress();
+
+            container.innerHTML = physicsChapters.map(chapter => {
+                const status = PhysicsProgressManager.getChapterStatus(chapter.id);
+                let statusText = '未开始';
+                let statusClass = 'status-unstarted';
+                let btnText = '开始学习';
+
+                if (status === 'in-progress') {
+                    statusText = '学习中';
+                    statusClass = 'status-in-progress';
+                    btnText = '继续学习';
+                } else if (status === 'completed') {
+                    statusText = '已完成';
+                    statusClass = 'status-completed';
+                    btnText = '复习';
+                }
+
+                return `
+                    <div class="chapter-card">
+                        <div class="status-badge ${statusClass}">${statusText}</div>
+                        <div>
+                            <h3>${chapter.title}</h3>
+                            <p>${chapter.desc}</p>
+                        </div>
+                        <div class="card-actions">
+                            <a href="${chapter.link}" class="start-btn" onclick="startChapter('${chapter.id}')">${btnText}</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            updateTotalProgress();
+        }
+
+        // 更新总进度
+        function updateTotalProgress() {
+            const percent = PhysicsProgressManager.calculateTotalProgress();
+            const bar = document.getElementById('total-progress-bar');
+            const text = document.getElementById('total-progress-text');
+
+            bar.style.width = `${percent}%`;
+            text.textContent = `已完成 ${percent}%`;
+        }
+
+        // 开始章节学习（点击按钮时触发）
+        function startChapter(chapterId) {
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            }
+        }
+
+        // 监听进度更新事件
+        window.addEventListener('physicsProgressUpdated', () => {
+            renderChapters();
+        });
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', renderChapters);
+    </script>
+</body>
+</html>

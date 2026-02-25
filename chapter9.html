@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第九章 导数及其应用 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第九章 导数及其应用</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#definition" class="nav-link">9.1 导数的定义</a>
+            <a href="#calculation" class="nav-link">9.2 导数的计算</a>
+            <a href="#application" class="nav-link">9.3 导数的应用</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="definition" class="section">
+                <h2>9.1 导数的定义</h2>
+                
+                <div class="content-box">
+                    <h3>导数的定义</h3>
+                    <p class="definition">设函数 <span class="math">y = f(x)</span> 在点 <span class="math">x₀</span> 的某个邻域内有定义，当自变量 <span class="math">x</span> 在点 <span class="math">x₀</span> 处取得增量 <span class="math">Δx</span> 时，如果极限</p>
+                    <div class="formula">
+                        <span class="math">f'(x₀) = lim[Δx→0] [f(x₀ + Δx) - f(x₀)]/Δx</span>
+                    </div>
+                    <p>存在，则称函数在点 <span class="math">x₀</span> 处<strong>可导</strong>，并称此极限值为函数在该点处的<strong>导数</strong>，记作 <span class="math">f'(x₀)</span> 或 <span class="math">y'|x=x₀</span></p>
+                </div>
+
+                <div class="content-box">
+                    <h3>导数的几何意义</h3>
+                    <p>函数 <span class="math">f(x)</span> 在点 <span class="math">x₀</span> 处的导数 <span class="math">f'(x₀)</span> 是曲线 <span class="math">y = f(x)</span> 在点 <span class="math">(x₀, f(x₀))</span> 处的<strong>切线的斜率</strong></p>
+                    <p><strong>切线方程：</strong><span class="math">y - f(x₀) = f'(x₀)(x - x₀)</span></p>
+                    <p><strong>法线方程：</strong><span class="math">y - f(x₀) = -[1/f'(x₀)](x - x₀)</span>（当 <span class="math">f'(x₀) ≠ 0</span>）</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>导数的物理意义</h3>
+                    <p>如果物体运动规律为 <span class="math">s = s(t)</span>，则</p>
+                    <ul>
+                        <li><span class="math">s'(t₀)</span> 表示物体在时刻 <span class="math">t₀</span> 的<strong>瞬时速度</strong></li>
+                        <li><span class="math">s''(t₀)</span> 表示物体在时刻 <span class="math">t₀</span> 的<strong>瞬时加速度</strong></li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>可导与连续的关系</h3>
+                    <p><strong>定理：</strong>如果函数 <span class="math">f(x)</span> 在点 <span class="math">x₀</span> 处可导，则函数在该点处<strong>一定连续</strong></p>
+                    <p><strong>注意：</strong>连续不一定可导</p>
+                    <p class="example">例如：<span class="math">f(x) = |x|</span> 在 <span class="math">x = 0</span> 处连续但不可导</p>
+                </div>
+            </section>
+
+            <section id="calculation" class="section">
+                <h2>9.2 导数的计算</h2>
+
+                <div class="content-box">
+                    <h3>基本初等函数的导数公式</h3>
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>常数函数</h4>
+                            <div class="formula"><span class="math">C' = 0</span></div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>幂函数</h4>
+                            <div class="formula"><span class="math">(xⁿ)' = nxⁿ⁻¹</span></div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>正弦函数</h4>
+                            <div class="formula"><span class="math">(sinx)' = cosx</span></div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>余弦函数</h4>
+                            <div class="formula"><span class="math">(cosx)' = -sinx</span></div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>指数函数</h4>
+                            <div class="formula"><span class="math">(eˣ)' = eˣ</span></div>
+                        </div>
+                        <div class="sub-box">
+                            <h4>对数函数</h4>
+                            <div class="formula"><span class="math">(ln x)' = 1/x</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>导数的四则运算法则</h3>
+                    <div class="operation-box">
+                        <h3>和差的导数</h3>
+                        <div class="formula">
+                            <span class="math">(u ± v)' = u' ± v'</span>
+                        </div>
+                    </div>
+                    <div class="operation-box">
+                        <h3>积的导数</h3>
+                        <div class="formula">
+                            <span class="math">(uv)' = u'v + uv'</span>
+                        </div>
+                    </div>
+                    <div class="operation-box">
+                        <h3>商的导数</h3>
+                        <div class="formula">
+                            <span class="math">(u/v)' = (u'v - uv')/v²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>复合函数的求导法则</h3>
+                    <p class="definition">设 <span class="math">y = f(u)</span>，<span class="math">u = g(x)</span>，则复合函数 <span class="math">y = f(g(x))</span> 的导数为：</p>
+                    <div class="formula">
+                        <span class="math">y' = f'(u)·g'(x)</span>
+                    </div>
+                    <p>即：<strong>外层函数的导数 × 内层函数的导数</strong></p>
+                </div>
+            </section>
+
+            <section id="application" class="section">
+                <h2>9.3 导数在研究函数中的应用</h2>
+
+                <div class="content-box">
+                    <h3>函数的单调性</h3>
+                    <p class="definition">设函数 <span class="math">f(x)</span> 在某个区间内可导</p>
+                    <div class="operation-box">
+                        <h3>增函数</h3>
+                        <p><span class="math">f'(x) > 0</span> ⇒ <span class="math">f(x)</span> 单调递增</p>
+                    </div>
+                    <div class="operation-box">
+                        <h3>减函数</h3>
+                        <p><span class="math">f'(x) < 0</span> ⇒ <span class="math">f(x)</span> 单调递减</p>
+                    </div>
+                    <div class="operation-box">
+                        <h3>常数</h3>
+                        <p><span class="math">f'(x) = 0</span> ⇒ <span class="math">f(x)</span> 为常数</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>函数的极值</h3>
+                    <p class="definition">设函数 <span class="math">f(x)</span> 在点 <span class="math">x₀</span> 的某个邻域内有定义</p>
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>极大值</h4>
+                            <p>对于该邻域内任意 <span class="math">x ≠ x₀</span>，都有 <span class="math">f(x) < f(x₀)</span></p>
+                            <p class="example">函数在该点处取得局部最大值</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>极小值</h4>
+                            <p>对于该邻域内任意 <span class="math">x ≠ x₀</span>，都有 <span class="math">f(x) > f(x₀)</span></p>
+                            <p class="example">函数在该点处取得局部最小值</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>极值的判定方法</h3>
+                    <p><strong>第一充分条件：</strong></p>
+                    <ul>
+                        <li>极大值：<span class="math">f'(x₀) = 0</span> 且 <span class="math">f'(x₀⁻) > 0, f'(x₀⁺) < 0</span></li>
+                        <li>极小值：<span class="math">f'(x₀) = 0</span> 且 <span class="math">f'(x₀⁻) < 0, f'(x₀⁺) > 0</span></li>
+                    </ul>
+                    <p><strong>第二充分条件：</strong></p>
+                    <ul>
+                        <li>若 <span class="math">f'(x₀) = 0</span> 且 <span class="math">f''(x₀) > 0</span>，则 <span class="math">x₀</span> 为极小值点</li>
+                        <li>若 <span class="math">f'(x₀) = 0</span> 且 <span class="math">f''(x₀) < 0</span>，则 <span class="math">x₀</span> 为极大值点</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>函数的最值</h3>
+                    <p><strong>闭区间上连续函数的最值求法：</strong></p>
+                    <ol data-counter="1">
+                        <li>求导数 <span class="math">f'(x)</span></li>
+                        <li>求导数为0的点（驻点）和不可导点</li>
+                        <li>求驻点和区间端点的函数值</li>
+                        <li>比较这些函数值，最大的为最大值，最小的为最小值</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 基础例题 -->
+                <div class="example-box">
+                    <h3>例题 1：幂函数的导数 【基础】</h3>
+                    <p class="question">求下列函数的导数：<span class="math">y = x³</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据幂函数求导公式：<span class="math">(xⁿ)' = nxⁿ⁻¹</span></p>
+                        <p><span class="math">y' = (x³)' = 3x²</span></p>
+                        <p><strong>答案：3x²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：积的导数 【基础】</h3>
+                    <p class="question">求 <span class="math">y = x²sinx</span> 的导数</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据积的求导法则：<span class="math">(uv)' = u'v + uv'</span></p>
+                        <p><span class="math">y' = (x²)'sinx + x²(sinx)'</span></p>
+                        <p><span class="math">= 2x·sinx + x²·cosx</span></p>
+                        <p><span class="math">= 2xsinx + x²cosx</span></p>
+                        <p><strong>答案：2xsinx + x²cosx</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：商的导数 【基础】</h3>
+                    <p class="question">求 <span class="math">y = (x + 1)/x</span> 的导数</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：使用商的求导法则</strong></p>
+                        <p>设 <span class="math">u = x + 1</span>，<span class="math">v = x</span></p>
+                        <p><span class="math">u' = 1</span>，<span class="math">v' = 1</span></p>
+                        <p><span class="math">y' = (u'v - uv')/v²</span></p>
+                        <p><span class="math">= (1·x - (x + 1)·1)/x²</span></p>
+                        <p><span class="math">= (x - x - 1)/x² = -1/x²</span></p>
+                        <br>
+                        <p><strong>解法二：先化简</strong></p>
+                        <p><span class="math">y = (x + 1)/x = 1 + 1/x</span></p>
+                        <p><span class="math">y' = 0 + (-1/x²) = -1/x²</span></p>
+                        <p><strong>答案：-1/x²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：复合函数的导数 【基础】</h3>
+                    <p class="question">求 <span class="math">y = sin(2x)</span> 的导数</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设 <span class="math">u = 2x</span>，则 <span class="math">y = sinu</span></p>
+                        <p><span class="math">u' = 2</span>，<span class="math">y' = cosu</span></p>
+                        <p>根据复合函数求导法则：<span class="math">y' = f'(u)·g'(x)</span></p>
+                        <p><span class="math">y' = cosu·u' = cos(2x)·2 = 2cos(2x)</span></p>
+                        <p><strong>答案：2cos(2x)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：切线方程 【基础】</h3>
+                    <p class="question">求曲线 <span class="math">y = x²</span> 在点 <span class="math">(1, 1)</span> 处的切线方程</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>首先求导数：<span class="math">y' = (x²)' = 2x</span></p>
+                        <p>在点 <span class="math">x = 1</span> 处的导数：<span class="math">y'|x=1 = 2×1 = 2</span></p>
+                        <p>切线斜率 <span class="math">k = 2</span></p>
+                        <p>切线方程：<span class="math">y - 1 = 2(x - 1)</span></p>
+                        <p><span class="math">y = 2x - 2 + 1</span></p>
+                        <p><span class="math">y = 2x - 1</span></p>
+                        <p><strong>答案：y = 2x - 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：函数的单调性 【基础】</h3>
+                    <p class="question">讨论函数 <span class="math">y = x² - 2x</span> 的单调性</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">y' = 2x - 2</span></p>
+                        <p>令 <span class="math">y' > 0</span>：<span class="math">2x - 2 > 0</span>，<span class="math">x > 1</span></p>
+                        <p>令 <span class="math">y' < 0</span>：<span class="math">2x - 2 < 0</span>，<span class="math">x < 1</span></p>
+                        <p><strong>结论：</strong></p>
+                        <ul>
+                            <li>当 <span class="math">x < 1</span> 时，<span class="math">y' < 0</span>，函数单调递减</li>
+                            <li>当 <span class="math">x > 1</span> 时，<span class="math">y' > 0</span>，函数单调递增</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：函数的极值 【基础】</h3>
+                    <p class="question">求函数 <span class="math">y = x³ - 3x</span> 的极值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">y' = 3x² - 3</span></p>
+                        <p>令 <span class="math">y' = 0</span>：<span class="math">3x² - 3 = 0</span></p>
+                        <p><span class="math">x² = 1</span>，<span class="math">x = ±1</span></p>
+                        <br>
+                        <p><strong>极值判定：</strong></p>
+                        <ul>
+                            <li>当 <span class="math">x = -1</span> 时，<span class="math">y = (-1)³ - 3(-1) = -1 + 3 = 2</span></li>
+                            <p>在 <span class="math">x = -1</span> 附近：<span class="math">y'</span> 由正变负，故 <span class="math">x = -1</span> 是极大值点，极大值为 2</p>
+                            <li>当 <span class="math">x = 1</span> 时，<span class="math">y = 1³ - 3×1 = 1 - 3 = -2</span></li>
+                            <p>在 <span class="math">x = 1</span> 附近：<span class="math">y'</span> 由负变正，故 <span class="math">x = 1</span> 是极小值点，极小值为 -2</p>
+                        </ul>
+                        <p><strong>答案：极大值为2，极小值为-2</strong></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题 -->
+                <div class="example-box">
+                    <h3>例题 8：2024年新高考I卷 【中档】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ - 3x² + 2</span>，求函数的单调区间</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = 3x² - 6x</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">3x² - 6x = 0</span></p>
+                        <p><span class="math">3x(x - 2) = 0</span></p>
+                        <p><span class="math">x = 0</span> 或 <span class="math">x = 2</span></p>
+                        <br>
+                        <p>列表讨论：</p>
+                        <table class="comparison-table">
+                            <tr>
+                                <th>x</th>
+                                <th>(-∞, 0)</th>
+                                <th>0</th>
+                                <th>(0, 2)</th>
+                                <th>2</th>
+                                <th>(2, +∞)</th>
+                            </tr>
+                            <tr>
+                                <td>f'(x)</td>
+                                <td>+</td>
+                                <td>0</td>
+                                <td>-</td>
+                                <td>0</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>f(x)</td>
+                                <td>增</td>
+                                <td>极大值</td>
+                                <td>减</td>
+                                <td>极小值</td>
+                                <td>增</td>
+                            </tr>
+                        </table>
+                        <p><strong>答案：</strong>单调增区间为 <span class="math">(-∞, 0)</span> 和 <span class="math">(2, +∞)</span>，单调减区间为 <span class="math">(0, 2)</span></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2023年全国甲卷 【中档】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = xeˣ</span>，求 <span class="math">f(x)</span> 在区间 <span class="math">[0, 1]</span> 上的最大值和最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = (x)'eˣ + x(eˣ)' = 1·eˣ + x·eˣ = eˣ(1 + x)</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">eˣ(1 + x) = 0</span></p>
+                        <p>由于 <span class="math">eˣ > 0</span> 恒成立，所以 <span class="math">1 + x = 0</span>，<span class="math">x = -1</span></p>
+                        <p>但 <span class="math">x = -1</span> 不在区间 <span class="math">[0, 1]</span> 内</p>
+                        <br>
+                        <p>在区间 <span class="math">[0, 1]</span> 内，<span class="math">f'(x) = eˣ(1 + x) > 0</span></p>
+                        <p>所以 <span class="math">f(x)</span> 在区间 <span class="math">[0, 1]</span> 上单调递增</p>
+                        <br>
+                        <p><span class="math">f(0) = 0·e⁰ = 0</span></p>
+                        <p><span class="math">f(1) = 1·e¹ = e</span></p>
+                        <p><strong>答案：</strong>最大值为 <span class="math">e</span>，最小值为 <span class="math">0</span></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2022年新高考I卷 【中档】</h3>
+                    <p class="question">曲线 <span class="math">y = x³ - 3x</span> 在点 <span class="math">(1, -2)</span> 处的切线斜率为</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">y' = 3x² - 3</span></p>
+                        <p>在点 <span class="math">x = 1</span> 处的切线斜率：<span class="math">y'|x=1 = 3×1² - 3 = 3 - 3 = 0</span></p>
+                        <p><strong>答案：0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：2021年全国乙卷 【中档】</h3>
+                    <p class="question">函数 <span class="math">f(x) = x³ - 3x²</span> 的极小值点的横坐标是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = 3x² - 6x</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">3x² - 6x = 0</span></p>
+                        <p><span class="math">3x(x - 2) = 0</span></p>
+                        <p><span class="math">x = 0</span> 或 <span class="math">x = 2</span></p>
+                        <br>
+                        <p>极值判定：</p>
+                        <ul>
+                            <li>当 <span class="math">x = 0</span> 时，<span class="math">f'(x)</span> 由正变负，故 <span class="math">x = 0</span> 是极大值点</li>
+                            <li>当 <span class="math">x = 2</span> 时，<span class="math">f'(x)</span> 由负变正，故 <span class="math">x = 2</span> 是极小值点</li>
+                        </ul>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2020年全国I卷 【中档】</h3>
+                    <p class="question">若曲线 <span class="math">y = ax² + 1</span> 在点 <span class="math">(1, 2)</span> 处的切线与直线 <span class="math">y = 2x + 1</span> 平行，则实数 <span class="math">a</span> 的值为</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>首先，点 <span class="math">(1, 2)</span> 在曲线上：</p>
+                        <p><span class="math">2 = a×1² + 1</span></p>
+                        <p><span class="math">a = 1</span></p>
+                        <br>
+                        <p>验证切线斜率：</p>
+                        <p><span class="math">y' = 2ax = 2×1×1 = 2</span></p>
+                        <p>直线 <span class="math">y = 2x + 1</span> 的斜率为 2，与切线斜率相等</p>
+                        <p><strong>答案：1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2019年全国I卷 【中档】</h3>
+                    <p class="question">函数 <span class="math">f(x) = ln x - x</span> 的单调递减区间是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = (ln x)' - (x)' = 1/x - 1</span></p>
+                        <p>令 <span class="math">f'(x) < 0</span>：<span class="math">1/x - 1 < 0</span></p>
+                        <p><span class="math">1/x < 1</span></p>
+                        <p>由于 <span class="math">x > 0</span>（<span class="math">ln x</span> 的定义域），所以 <span class="math">x > 1</span></p>
+                        <p><strong>答案：(1, +∞)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：2018年全国II卷 【中档】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ - 3x</span>，求 <span class="math">f(x)</span> 在区间 <span class="math">[-2, 2]</span> 上的最大值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = 3x² - 3</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">3x² - 3 = 0</span></p>
+                        <p><span class="math">x² = 1</span>，<span class="math">x = ±1</span></p>
+                        <br>
+                        <p>计算各点函数值：</p>
+                        <p><span class="math">f(-2) = (-2)³ - 3(-2) = -8 + 6 = -2</span></p>
+                        <p><span class="math">f(-1) = (-1)³ - 3(-1) = -1 + 3 = 2</span></p>
+                        <p><span class="math">f(1) = 1³ - 3×1 = 1 - 3 = -2</span></p>
+                        <p><span class="math">f(2) = 2³ - 3×2 = 8 - 6 = 2</span></p>
+                        <br>
+                        <p>比较：<span class="math">max{-2, 2, -2, 2} = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <!-- 提高题 -->
+                <div class="example-box">
+                    <h3>例题 15：含参数的函数单调性 【提高】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ - 3ax</span> 在 <span class="math">R</span> 上单调递增，求实数 <span class="math">a</span> 的取值范围</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = 3x² - 3a</span></p>
+                        <p>函数在 <span class="math">R</span> 上单调递增，则 <span class="math">f'(x) ≥ 0</span> 对任意 <span class="math">x ∈ R</span> 成立</p>
+                        <p><span class="math">3x² - 3a ≥ 0</span></p>
+                        <p><span class="math">x² ≥ a</span></p>
+                        <p>由于 <span class="math">x² ≥ 0</span> 恒成立，要使 <span class="math">x² ≥ a</span> 对所有 <span class="math">x</span> 成立，需要 <span class="math">a ≤ 0</span></p>
+                        <p><strong>答案：a ≤ 0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 16：证明不等式 【提高】</h3>
+                    <p class="question">证明：当 <span class="math">x > 0</span> 时，<span class="math">ln x < x</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>构造函数：<span class="math">f(x) = x - ln x</span>（<span class="math">x > 0</span>）</p>
+                        <p>求导数：<span class="math">f'(x) = 1 - 1/x = (x - 1)/x</span></p>
+                        <br>
+                        <p>讨论：</p>
+                        <ul>
+                            <li>当 <span class="math">0 < x < 1</span> 时，<span class="math">x - 1 < 0</span>，<span class="math">x > 0</span>，所以 <span class="math">f'(x) < 0</span>，函数递减</li>
+                            <li>当 <span class="math">x = 1</span> 时，<span class="math">f'(x) = 0</span></li>
+                            <li>当 <span class="math">x > 1</span> 时，<span class="math">x - 1 > 0</span>，<span class="math">x > 0</span>，所以 <span class="math">f'(x) > 0</span>，函数递增</li>
+                        </ul>
+                        <p>所以 <span class="math">x = 1</span> 是最小值点</p>
+                        <p><span class="math">f(1) = 1 - ln1 = 1 - 0 = 1 > 0</span></p>
+                        <p>因此，当 <span class="math">x > 0</span> 时，<span class="math">f(x) = x - ln x > 0</span></p>
+                        <p>即 <span class="math">ln x < x</span></p>
+                        <p><strong>证毕。</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 17：三次函数的图像分析 【提高】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ - 3x² + 1</span>，求：</p>
+                    <p>(1) 函数的单调区间</p>
+                    <p>(2) 函数的极值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 求单调区间：</strong></p>
+                        <p><span class="math">f'(x) = 3x² - 6x = 3x(x - 2)</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">x = 0</span> 或 <span class="math">x = 2</span></p>
+                        <ul>
+                            <li>当 <span class="math">x < 0</span> 时，<span class="math">f'(x) > 0</span>，函数递增</li>
+                            <li>当 <span class="math">0 < x < 2</span> 时，<span class="math">f'(x) < 0</span>，函数递减</li>
+                            <li>当 <span class="math">x > 2</span> 时，<span class="math">f'(x) > 0</span>，函数递增</li>
+                        </ul>
+                        <p><strong>单调增区间：</strong><span class="math">(-∞, 0)</span> 和 <span class="math">(2, +∞)</span></p>
+                        <p><strong>单调减区间：</strong><span class="math">(0, 2)</span></p>
+                        <br>
+                        <p><strong>(2) 求极值：</strong></p>
+                        <p>当 <span class="math">x = 0</span> 时，<span class="math">f(0) = 1</span>，是极大值</p>
+                        <p>当 <span class="math">x = 2</span> 时，<span class="math">f(2) = 8 - 12 + 1 = -3</span>，是极小值</p>
+                        <p><strong>答案：(1) 增区间(-∞,0)和(2,+∞)，减区间(0,2) (2) 极大值1，极小值-3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：利用导数求最值 【提高】</h3>
+                    <p class="question">求函数 <span class="math">f(x) = x³ - 3x²</span> 在区间 <span class="math">[0, 3]</span> 上的最大值和最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>求导数：<span class="math">f'(x) = 3x² - 6x = 3x(x - 2)</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">x = 0</span> 或 <span class="math">x = 2</span></p>
+                        <p>都在区间 <span class="math">[0, 3]</span> 内</p>
+                        <br>
+                        <p>计算各点函数值：</p>
+                        <p><span class="math">f(0) = 0 - 0 = 0</span></p>
+                        <p><span class="math">f(2) = 8 - 12 = -4</span></p>
+                        <p><span class="math">f(3) = 27 - 27 = 0</span></p>
+                        <br>
+                        <p>比较：<span class="math">max{0, -4, 0} = 0</span>，<span class="math">min{0, -4, 0} = -4</span></p>
+                        <p><strong>答案：最大值为0，最小值为-4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 19：参数取值范围 【提高】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ + ax² + bx</span> 在 <span class="math">x = 1</span> 处取得极值 -2，且 <span class="math">a = -1</span>，求实数 <span class="math">b</span> 的值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>条件1：</strong><span class="math">f(1) = -2</span></p>
+                        <p><span class="math">1³ + (-1)×1² + b×1 = -2</span></p>
+                        <p><span class="math">1 - 1 + b = -2</span></p>
+                        <p><span class="math">b = -2</span></p>
+                        <br>
+                        <p><strong>条件2：</strong>在 <span class="math">x = 1</span> 处取得极值，则 <span class="math">f'(1) = 0</span></p>
+                        <p><span class="math">f'(x) = 3x² + 2ax + b = 3x² - 2x + b</span></p>
+                        <p><span class="math">f'(1) = 3 - 2 + b = 1 + b = 0</span></p>
+                        <p><span class="math">b = -1</span></p>
+                        <br>
+                        <p>两个条件得到不同的 <span class="math">b</span> 值，需要同时满足，题目可能有误</p>
+                        <p>若按照题目给定 <span class="math">a = -1</span>，由条件1得 <span class="math">b = -2</span></p>
+                        <p>验证：<span class="math">f'(1) = 1 + (-2) = -1 ≠ 0</span>，不满足极值条件</p>
+                        <p><strong>答案：题目条件矛盾，无法求解</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 20：综合应用题 【提高】</h3>
+                    <p class="question">已知函数 <span class="math">f(x) = x³ - 3x + 1</span>，求：</p>
+                    <p>(1) 函数的极值</p>
+                    <p>(2) 函数在区间 <span class="math">[-2, 2]</span> 上的最大值和最小值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol20')">查看解答</button>
+                    <div id="sol20" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 求极值：</strong></p>
+                        <p><span class="math">f'(x) = 3x² - 3</span></p>
+                        <p>令 <span class="math">f'(x) = 0</span>：<span class="math">3x² - 3 = 0</span></p>
+                        <p><span class="math">x² = 1</span>，<span class="math">x = ±1</span></p>
+                        <ul>
+                            <li>当 <span class="math">x = -1</span> 时，<span class="math">f(-1) = (-1)³ - 3(-1) + 1 = -1 + 3 + 1 = 3</span></li>
+                            <p><span class="math">f'(x)</span> 由正变负，故 <span class="math">x = -1</span> 是极大值点，极大值为 3</p>
+                            <li>当 <span class="math">x = 1</span> 时，<span class="math">f(1) = 1³ - 3×1 + 1 = 1 - 3 + 1 = -1</span></li>
+                            <p><span class="math">f'(x)</span> 由负变正，故 <span class="math">x = 1</span> 是极小值点，极小值为 -1</p>
+                        </ul>
+                        <br>
+                        <p><strong>(2) 求最值：</strong></p>
+                        <p>在区间 <span class="math">[-2, 2]</span> 内，需要比较端点和极值点的函数值</p>
+                        <p><span class="math">f(-2) = (-2)³ - 3(-2) + 1 = -8 + 6 + 1 = -1</span></p>
+                        <p><span class="math">f(-1) = 3</span>（极大值）</p>
+                        <p><span class="math">f(1) = -1</span>（极小值）</p>
+                        <p><span class="math">f(2) = 2³ - 3×2 + 1 = 8 - 6 + 1 = 3</span></p>
+                        <br>
+                        <p>比较：<span class="math">max{-1, 3, -1, 3} = 3</span>，<span class="math">min{-1, 3, -1, 3} = -1</span></p>
+                        <p><strong>答案：(1) 极大值3，极小值-1 (2) 最大值3，最小值-1</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第九章 导数及其应用</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter9';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第九章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

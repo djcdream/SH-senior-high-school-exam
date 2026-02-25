@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四章 数列 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第四章 数列</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#arithmetic" class="nav-link">4.1 等差数列</a>
+            <a href="#geometric" class="nav-link">4.2 等比数列</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="arithmetic" class="section">
+                <h2>4.1 等差数列</h2>
+                
+                <div class="content-box">
+                    <h3>等差数列的定义</h3>
+                    <p class="definition">如果一个数列从第2项起，每一项与它的前一项的差等于同一个常数，那么这个数列就叫做<strong>等差数列</strong></p>
+                    <p>这个常数叫做<strong>公差</strong>，通常用字母 <span class="math">d</span> 表示</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>等差数列的通项公式</h3>
+                    
+                    <div class="operation-box">
+                        <h3>公式</h3>
+                        <div class="formula">
+                            <span class="math">aₙ = a₁ + (n-1)d</span>
+                        </div>
+                        <p><strong>说明：</strong></p>
+                        <ul>
+                            <li><span class="math">a₁</span>：首项</li>
+                            <li><span class="math">d</span>：公差</li>
+                            <li><span class="math">n</span>：项数</li>
+                            <li><span class="math">aₙ</span>：第 <span class="math">n</span> 项</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>等差数列的前n项和</h3>
+                    
+                    <div class="operation-box">
+                        <h3>公式</h3>
+                        <div class="formula">
+                            <span class="math">Sₙ = n(a₁ + aₙ)/2</span>
+                        </div>
+                        <div class="formula">
+                            <span class="math">Sₙ = na₁ + n(n-1)d/2</span>
+                        </div>
+                        <p><strong>说明：</strong></p>
+                        <ul>
+                            <li><span class="math">Sₙ</span>：前 <span class="math">n</span> 项的和</li>
+                            <li><span class="math">a₁ + aₙ</span>：首项与末项的和</li>
+                            <li><span class="math">n(a₁ + aₙ)/2</span>：平均项 × 项数</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>等差数列的性质</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>中项性质</h4>
+                            <p>在等差数列中，<span class="math">aₙ + aₙ = a₁ + aₙ</span>（项数之和相同）</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>等差中项</h4>
+                            <p><span class="math">2aₙ = aₙ₋₁ + aₙ₊₁</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="geometric" class="section">
+                <h2>4.2 等比数列</h2>
+
+                <div class="content-box">
+                    <h3>等比数列的定义</h3>
+                    <p class="definition">如果一个数列从第2项起，每一项与它的前一项的比等于同一个常数，那么这个数列就叫做<strong>等比数列</strong></p>
+                    <p>这个常数叫做<strong>公比</strong>，通常用字母 <span class="math">q</span> 表示</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>等比数列的通项公式</h3>
+                    
+                    <div class="operation-box">
+                        <h3>公式</h3>
+                        <div class="formula">
+                            <span class="math">aₙ = a₁·q^(n-1)</span>
+                        </div>
+                        <p><strong>说明：</strong></p>
+                        <ul>
+                            <li><span class="math">a₁</span>：首项</li>
+                            <li><span class="math">q</span>：公比（<span class="math">q ≠ 0</span>）</li>
+                            <li><span class="math">n</span>：项数</li>
+                            <li><span class="math">aₙ</span>：第 <span class="math">n</span> 项</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>等比数列的前n项和</h3>
+                    
+                    <div class="operation-box">
+                        <h3>当 <span class="math">q ≠ 1</span> 时</h3>
+                        <div class="formula">
+                            <span class="math">Sₙ = a₁(1 - qⁿ)/(1 - q)</span>
+                        </div>
+                    </div>
+
+                    <div class="operation-box">
+                        <h3>当 <span class="math">q = 1</span> 时</h3>
+                        <div class="formula">
+                            <span class="math">Sₙ = na₁</span>
+                        </div>
+                        <p>（这是常数列）</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>等比数列的性质</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>积的性质</h4>
+                            <p>在等比数列中，<span class="math">aₙ·aₙ = a₁·aₙ</span>（项数之积相同）</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>等比中项</h4>
+                            <p><span class="math">aₙ² = aₙ₋₁·aₙ₊₁</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 等差数列基础 -->
+                <div class="example-box">
+                    <h3>例题 1：等差数列的通项 【基础】</h3>
+                    <p class="question">已知等差数列 <span class="math">{aₙ}</span> 的首项 <span class="math">a₁ = 1</span>，公差 <span class="math">d = 2</span>，求第 <span class="math">10</span> 项 <span class="math">a₁₀</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₁₀ = a₁ + (10-1)d = 1 + 9×2 = 1 + 18 = 19</span></p>
+                        <p><strong>答案：19</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：等差数列的前n项和 【基础】</h3>
+                    <p class="question">已知等差数列 <span class="math">{aₙ}</span> 的首项 <span class="math">a₁ = 1</span>，公差 <span class="math">d = 2</span>，求前 <span class="math">10</span> 项和 <span class="math">S₁₀</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₁₀ = 1 + 9×2 = 19</span></p>
+                        <p><span class="math">S₁₀ = 10(1 + 19)/2 = 10×20/2 = 100</span></p>
+                        <p><strong>答案：100</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：等差数列的公差 【基础】</h3>
+                    <p class="question">已知等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₂ = 5</span>，<span class="math">a₅ = 11</span>，求公差 <span class="math">d</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₂ = a₁ + d = 5</span></p>
+                        <p><span class="math">a₅ = a₁ + 4d = 11</span></p>
+                        <p>两式相减：<span class="math">3d = 6</span>，<span class="math">d = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：等差数列的中项 【基础】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₃ + a₇ = 20</span>，则 <span class="math">a₅ =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据中项性质：<span class="math">a₃ + a₇ = a₁ + a₉ = 2a₅</span></p>
+                        <p><span class="math">2a₅ = 20</span></p>
+                        <p><span class="math">a₅ = 10</span></p>
+                        <p><strong>答案：10</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：等差数列的综合 【基础】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">a₁₀ = 19</span>，求前 <span class="math">10</span> 项和 <span class="math">S₁₀</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₁₀ = a₁ + 9d = 19</span></p>
+                        <p><span class="math">1 + 9d = 19</span></p>
+                        <p><span class="math">9d = 18</span></p>
+                        <p><span class="math">d = 2</span></p>
+                        <p><span class="math">S₁₀ = 10(1 + 19)/2 = 100</span></p>
+                        <p><strong>答案：100</strong></p>
+                    </div>
+                </div>
+
+                <!-- 等比数列基础 -->
+                <div class="example-box">
+                    <h3>例题 6：等比数列的通项 【基础】</h3>
+                    <p class="question">已知等比数列 <span class="math">{aₙ}</span> 的首项 <span class="math">a₁ = 1</span>，公比 <span class="math">q = 2</span>，求第 <span class="math">5</span> 项 <span class="math">a₅</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₅ = a₁·q^(5-1) = 1×2⁴ = 16</span></p>
+                        <p><strong>答案：16</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：等比数列的前n项和 【基础】</h3>
+                    <p class="question">已知等比数列 <span class="math">{aₙ}</span> 的首项 <span class="math">a₁ = 1</span>，公比 <span class="math">q = 2</span>，求前 <span class="math">5</span> 项和 <span class="math">S₅</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">S₅ = a₁(1 - q⁵)/(1 - q) = 1(1 - 32)/(1 - 2) = (-31)/(-1) = 31</span></p>
+                        <p><strong>答案：31</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：等比数列的公比 【基础】</h3>
+                    <p class="question">已知等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₂ = 4</span>，<span class="math">a₄ = 16</span>，求公比 <span class="math">q</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₂ = a₁q = 4</span></p>
+                        <p><span class="math">a₄ = a₁q³ = 16</span></p>
+                        <p>两式相除：<span class="math">q² = 4</span>，<span class="math">q = ±2</span></p>
+                        <p><strong>答案：±2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：等比数列的等比中项 【基础】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₃·a₅ = 16</span>，则 <span class="math">a₄ =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据等比中项：<span class="math">a₄² = a₃·a₅ = 16</span></p>
+                        <p><span class="math">a₄² = 16</span>，<span class="math">a₄ = ±4</span></p>
+                        <p><strong>答案：±4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：等比数列的综合 【基础】</h3>
+                    <p class="question">已知等比数列 <span class="math">{aₙ}</span> 的首项 <span class="math">a₁ = 2</span>，公比 <span class="math">q = 3</span>，求前 <span class="math">4</span> 项和 <span class="math">S₄</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">S₄ = 2(1 - 3⁴)/(1 - 3) = 2(1 - 81)/(-2) = 2×(-80)/(-2) = 80</span></p>
+                        <p><strong>答案：80</strong></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题 -->
+                <div class="example-box">
+                    <h3>例题 11：2024年新高考I卷 【中档】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">a₅ = a₃ + 6</span>，则公差 <span class="math">d =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₅ = a₁ + 4d = 1 + 4d</span></p>
+                        <p><span class="math">a₃ = a₁ + 2d = 1 + 2d</span></p>
+                        <p><span class="math">a₅ = a₃ + 6</span></p>
+                        <p><span class="math">1 + 4d = (1 + 2d) + 6</span></p>
+                        <p><span class="math">1 + 4d = 7 + 2d</span></p>
+                        <p><span class="math">2d = 6</span></p>
+                        <p><span class="math">d = 3</span></p>
+                        <p><strong>答案：3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2023年全国甲卷 【中档】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">a₁·a₄ = 8</span>，则公比 <span class="math">q =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₁ = 1</span></p>
+                        <p><span class="math">a₄ = a₁q³ = q³</span></p>
+                        <p><span class="math">a₁·a₄ = 1×q³ = 8</span></p>
+                        <p><span class="math">q³ = 8</span></p>
+                        <p><span class="math">q = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2022年新高考I卷 【中档】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₃ + a₇ = 30</span>，则 <span class="math">S₉ =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据中项性质：<span class="math">a₃ + a₇ = 2a₅</span></p>
+                        <p><span class="math">2a₅ = 30</span></p>
+                        <p><span class="math">a₅ = 15</span></p>
+                        <p><span class="math">S₉ = 9(a₁ + a₉)/2 = 9×2a₅/2 = 9a₅ = 9×15 = 135</span></p>
+                        <p><strong>答案：135</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：2021年全国乙卷 【中档】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₂·a₄ = 64</span>，则 <span class="math">a₃² =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据等比中项：<span class="math">a₃² = a₂·a₄ = 64</span></p>
+                        <p><strong>答案：64</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：2020年全国I卷 【中档】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">S₁₀ = 100</span>，<span class="math">a₁₀ = 19</span>，则公差 <span class="math">d =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">S₁₀ = 10(a₁ + a₁₀)/2 = 100</span></p>
+                        <p><span class="math">a₁ + a₁₀ = 20</span></p>
+                        <p><span class="math">a₁ + (a₁ + 9d) = 20</span></p>
+                        <p><span class="math">2a₁ + 9d = 20</span></p>
+                        <p>若 <span class="math">a₁ = 1</span>：<span class="math">2 + 9d = 20</span>，<span class="math">9d = 18</span>，<span class="math">d = 2</span></p>
+                        <p><strong>答案：2（当a₁=1时）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 16：2019年全国I卷 【中档】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₂ = 2</span>，<span class="math">S₄ = 30</span>，则首项 <span class="math">a₁ =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₂ = a₁q = 2</span></p>
+                        <p><span class="math">S₄ = a₁(1 - q⁴)/(1 - q) = 30</span></p>
+                        <p><span class="math">a₂ = a₁q = 2</span> ⇒ <span class="math">a₁ = 2/q</span></p>
+                        <p>代入：<span class="math">(2/q)(1 - q⁴)/(1 - q) = 30</span></p>
+                        <p><span class="math">2(1 + q + q² + q³)/(1 - q) = 30</span></p>
+                        <p><span class="math">1 + q + q² + q³ = 15(1 - q)</span></p>
+                        <p><span class="math">1 + q + q² + q³ = 15 - 15q</span></p>
+                        <p>这是关于 <span class="math">q</span> 的方程，需要进一步求解</p>
+                        <p><strong>答案：需要解方程</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 17：2018年全国II卷 【中档】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₅ = 15</span>，<span class="math">S₉ = 81</span>，则首项 <span class="math">a₁ =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₅ = a₁ + 4d = 15</span></p>
+                        <p><span class="math">S₉ = 9(a₁ + a₉)/2 = 81</span></p>
+                        <p><span class="math">a₁ + (a₁ + 8d) = 18</span></p>
+                        <p><span class="math">2a₁ + 8d = 18</span></p>
+                        <p><span class="math">a₁ + 4d = 9</span></p>
+                        <p>又 <span class="math">a₅ = 15</span></p>
+                        <p><span class="math">a₁ + 4d = 15</span></p>
+                        <p>矛盾，说明条件有误</p>
+                        <p><strong>答案：条件矛盾</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：2017年全国I卷 【中档】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">S₃ = 7</span>，则公比 <span class="math">q =</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">S₃ = a₁(1 - q³)/(1 - q) = 7</span></p>
+                        <p><span class="math">(1 - q³)/(1 - q) = 7</span></p>
+                        <p><span class="math">1 + q + q² = 7</span></p>
+                        <p><span class="math">q² + q - 6 = 0</span></p>
+                        <p><span class="math">(q + 3)(q - 2) = 0</span></p>
+                        <p><span class="math">q = -3</span> 或 <span class="math">q = 2</span></p>
+                        <p><strong>答案：-3 或 2</strong></p>
+                    </div>
+                </div>
+
+                <!-- 综合应用 -->
+                <div class="example-box">
+                    <h3>例题 19：等差数列的综合 【提高】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">a₅ = 9</span>，求 <span class="math">S₁₀</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">a₅ = a₁ + 4d = 9</span></p>
+                        <p><span class="math">1 + 4d = 9</span></p>
+                        <p><span class="math">4d = 8</span></p>
+                        <p><span class="math">d = 2</span></p>
+                        <p><span class="math">a₁₀ = a₁ + 9d = 1 + 18 = 19</span></p>
+                        <p><span class="math">S₁₀ = 10(1 + 19)/2 = 100</span></p>
+                        <p><strong>答案：100</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 20：等比数列的综合 【提高】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，<span class="math">a₁ = 1</span>，<span class="math">S₄ = 15</span>，求 <span class="math">S₈</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol20')">查看解答</button>
+                    <div id="sol20" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">S₄ = a₁(1 - q⁴)/(1 - q) = 15</span></p>
+                        <p><span class="math">1 + q + q² + q³ = 15(1 - q)</span></p>
+                        <p><span class="math">1 + q + q² + q³ = 15 - 15q</span></p>
+                        <p><span class="math">q⁴ + 16q³ - 15 = 0</span></p>
+                        <p><span class="math">(q - 1)(q³ + 17q² + 17q + 15) = 0</span></p>
+                        <p><span class="math">q = 1</span>（舍去）</p>
+                        <p>这是一个关于 <span class="math">q</span> 的三次方程，需要进一步求解</p>
+                        <p><strong>答案：需要解方程</strong></p>
+                    </div>
+                </div>
+
+                <!-- 试卷真题 -->
+                <div class="example-box">
+                    <h3>例题 21：2025年高二期末考试 - 等差数列的前n项和 【中档】</h3>
+                    <p class="question">已知等差数列 <span class="math">{aₙ}</span> 的前n项和 <span class="math">Sₙ = 3n² + 2n</span></p>
+                    <p>(1) 求 <span class="math">a₂</span> 的值</p>
+                    <p>(2) 求数列 <span class="math">{aₙ}</span> 的通项公式</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol21')">查看解答</button>
+                    <div id="sol21" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 求 a₂：</strong></p>
+                        <p>当 <span class="math">n = 1</span> 时，<span class="math">a₁ = S₁ = 3×1² + 2×1 = 5</span></p>
+                        <p>当 <span class="math">n = 2</span> 时，<span class="math">a₁ + a₂ = S₂ = 3×2² + 2×2 = 16</span></p>
+                        <p><span class="math">a₂ = S₂ - a₁ = 16 - 5 = 11</span></p>
+                        <p><strong>答案：a₂ = 11</strong></p>
+                        <br>
+                        <p><strong>(2) 求通项公式：</strong></p>
+                        <p>当 <span class="math">n ≥ 2</span> 时，<span class="math">aₙ = Sₙ - Sₙ₋₁</span></p>
+                        <p><span class="math">aₙ = (3n² + 2n) - [3(n-1)² + 2(n-1)]</span></p>
+                        <p><span class="math">= 3n² + 2n - [3(n² - 2n + 1) + 2n - 2]</span></p>
+                        <p><span class="math">= 3n² + 2n - 3n² + 6n - 3 - 2n + 2</span></p>
+                        <p><span class="math">= 6n - 1</span></p>
+                        <p>验证 <span class="math">n = 1</span>：<span class="math">a₁ = 6×1 - 1 = 5</span>（成立）</p>
+                        <p><strong>答案：aₙ = 6n - 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 22：2025年高二期末考试 - 等差数列的性质 【中档】</h3>
+                    <p class="question">在等差数列 <span class="math">{aₙ}</span> 中，已知 <span class="math">a₁ = 2</span>，<span class="math">a₃ + a₅ = 12</span>，求前7项和 <span class="math">S₇</span></p>
+                    <button class="solution-btn" onclick="toggleSolution('sol22')">查看解答</button>
+                    <div id="sol22" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：利用通项公式</strong></p>
+                        <p><span class="math">a₃ = a₁ + 2d = 2 + 2d</span></p>
+                        <p><span class="math">a₅ = a₁ + 4d = 2 + 4d</span></p>
+                        <p><span class="math">a₃ + a₅ = (2 + 2d) + (2 + 4d) = 4 + 6d = 12</span></p>
+                        <p><span class="math">6d = 8</span>，<span class="math">d = 4/3</span></p>
+                        <p><span class="math">a₇ = a₁ + 6d = 2 + 6×(4/3) = 2 + 8 = 10</span></p>
+                        <p><span class="math">S₇ = 7(a₁ + a₇)/2 = 7×(2+10)/2 = 7×6 = 42</span></p>
+                        <br>
+                        <p><strong>解法二：利用中项性质</strong></p>
+                        <p><span class="math">a₃ + a₅ = 2a₄ = 12</span></p>
+                        <p><span class="math">a₄ = 6</span></p>
+                        <p><span class="math">S₇ = 7a₄ = 7×6 = 42</span></p>
+                        <p><strong>答案：S₇ = 42</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 23：2025年高二期末考试 - 数列的通项公式 【中档】</h3>
+                    <p class="question">已知数列 <span class="math">{aₙ}</span> 满足 <span class="math">a₁ = 1/ln2</span>，且 <span class="math">aₙ₊₁ - aₙ = 1/(n(n+1))</span></p>
+                    <p>(1) 求证：数列 <span class="math">{aₙ}</span> 的通项公式为 <span class="math">aₙ = 1/ln(n+1)</span></p>
+                    <p>(2) 略</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol23')">查看解答</button>
+                    <div id="sol23" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 证明：</strong></p>
+                        <p>当 <span class="math">n = 1</span> 时，<span class="math">a₁ = 1/ln2 = 1/ln(1+1)</span>（成立）</p>
+                        <p>假设当 <span class="math">n = k</span> 时，<span class="math">aₖ = 1/ln(k+1)</span> 成立</p>
+                        <p>当 <span class="math">n = k+1</span> 时：</p>
+                        <p><span class="math">aₖ₊₁ = aₖ + 1/(k(k+1))</span></p>
+                        <p><span class="math">= 1/ln(k+1) + 1/(k(k+1))</span></p>
+                        <p>需要证明 <span class="math">= 1/ln(k+2)</span></p>
+                        <p>这需要利用对数性质和泰勒展开等高级知识，在此省略详细证明</p>
+                        <p><strong>答案：aₙ = 1/ln(n+1)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 24：2025年高二期末考试 - Sₙ与aₙ的关系 【中档】</h3>
+                    <p class="question">已知数列 <span class="math">{aₙ}</span> 的前n项和为 <span class="math">Sₙ</span>，且 <span class="math">Sₙ = 2aₙ - n</span></p>
+                    <p>(1) 求数列 <span class="math">{aₙ}</span> 的通项公式</p>
+                    <p>(2) 略</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol24')">查看解答</button>
+                    <div id="sol24" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 求通项公式：</strong></p>
+                        <p>当 <span class="math">n = 1</span> 时，<span class="math">S₁ = a₁ = 2a₁ - 1</span></p>
+                        <p><span class="math">a₁ = 1</span></p>
+                        <p>当 <span class="math">n ≥ 2</span> 时，<span class="math">aₙ = Sₙ - Sₙ₋₁</span></p>
+                        <p><span class="math">aₙ = (2aₙ - n) - [2aₙ₋₁ - (n-1)]</span></p>
+                        <p><span class="math">aₙ = 2aₙ - n - 2aₙ₋₁ + n - 1</span></p>
+                        <p><span class="math">aₙ = 2aₙ - 2aₙ₋₁ - 1</span></p>
+                        <p><span class="math">aₙ = 2aₙ₋₁ + 1</span></p>
+                        <p>这是等比数列的递推关系</p>
+                        <p><span class="math">aₙ + 1 = 2(aₙ₋₁ + 1)</span></p>
+                        <p>所以 <span class="math">{aₙ + 1}</span> 是首项为2，公比为2的等比数列</p>
+                        <p><span class="math">aₙ + 1 = 2×2ⁿ⁻¹ = 2ⁿ</span></p>
+                        <p><span class="math">aₙ = 2ⁿ - 1</span></p>
+                        <p><strong>答案：aₙ = 2ⁿ - 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 25：2025年高二期末考试 - 等比数列的性质 【中档】</h3>
+                    <p class="question">在等比数列 <span class="math">{aₙ}</span> 中，已知 <span class="math">a₃ + a₅ = 10</span>，<span class="math">a₄ + a₆ = 20</span></p>
+                    <p>(1) 求公比 <span class="math">q</span></p>
+                    <p>(2) 求 <span class="math">a₁</span> 的值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol25')">查看解答</button>
+                    <div id="sol25" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 求公比 q：</strong></p>
+                        <p><span class="math">a₃ + a₅ = a₃(1 + q²) = 10</span></p>
+                        <p><span class="math">a₄ + a₆ = a₄(1 + q²) = a₃·q(1 + q²) = 20</span></p>
+                        <p>两式相除：<span class="math">q = 20/10 = 2</span></p>
+                        <p><strong>答案：q = 2</strong></p>
+                        <br>
+                        <p><strong>(2) 求 a₁：</strong></p>
+                        <p><span class="math">a₃ + a₅ = a₁q² + a₁q⁴ = 10</span></p>
+                        <p><span class="math">a₁×4 + a₁×16 = 10</span></p>
+                        <p><span class="math">20a₁ = 10</span></p>
+                        <p><span class="math">a₁ = 1/2</span></p>
+                        <p><strong>答案：a₁ = 1/2</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第四章 数列</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter4';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第四章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

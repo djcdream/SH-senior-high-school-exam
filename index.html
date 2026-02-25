@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中理科学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中理科学习平台</h1>
+            <h2>数学 · 物理 · 系统化学习</h2>
+        </header>
+
+        <main>
+            <!-- 总体学习概览 -->
+            <section class="total-overview">
+                <h3>学习总览</h3>
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <span class="overview-value" id="total-chapters">33</span>
+                        <span class="overview-label">总章节数</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="overview-value" id="total-completed">0</span>
+                        <span class="overview-label">已完成</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="overview-value" id="total-progress">0%</span>
+                        <span class="overview-label">总体进度</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="overview-value" id="total-inprogress">0</span>
+                        <span class="overview-label">学习中</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 学科选择 -->
+            <section class="subjects-container">
+                <!-- 数学学科卡片 -->
+                <div class="subject-card">
+                    <span class="subject-icon">∑</span>
+                    <h3>数学</h3>
+                    <p>集合与函数、三角函数、数列、不等式、解析几何、立体几何、概率统计、导数等</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="math-total">11</span>
+                            <span class="stat-label">章节</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="math-completed">0</span>
+                            <span class="stat-label">已完成</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="math-progress">0%</span>
+                            <span class="stat-label">进度</span>
+                        </div>
+                    </div>
+                    <a href="math.html" class="subject-btn">进入学习</a>
+                </div>
+
+                <!-- 物理学科卡片 -->
+                <div class="subject-card">
+                    <span class="subject-icon">⚡</span>
+                    <h3>物理</h3>
+                    <p>运动学、力学、电磁学、光学、热学、原子物理、相对论、量子力学等</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="physics-total">22</span>
+                            <span class="stat-label">章节</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="physics-completed">0</span>
+                            <span class="stat-label">已完成</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="physics-progress">0%</span>
+                            <span class="stat-label">进度</span>
+                        </div>
+                    </div>
+                    <a href="physics.html" class="subject-btn">进入学习</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>高中理科学习平台 &copy; 2026</p>
+            <p class="footer-note">跟随进度，循序渐进</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="physics-data.js"></script>
+    <script>
+        // 更新统计数据
+        function updateStats() {
+            // 数学统计
+            const mathCompleted = MathProgressManager.getCompletedCount();
+            const mathProgress = MathProgressManager.calculateTotalProgress();
+            const mathInProgress = MathProgressManager.getInProgressCount();
+
+            document.getElementById('math-completed').textContent = mathCompleted;
+            document.getElementById('math-progress').textContent = mathProgress + '%';
+
+            // 物理统计
+            const physicsCompleted = PhysicsProgressManager.getCompletedCount();
+            const physicsProgress = PhysicsProgressManager.calculateTotalProgress();
+            const physicsInProgress = PhysicsProgressManager.getInProgressCount();
+
+            document.getElementById('physics-completed').textContent = physicsCompleted;
+            document.getElementById('physics-progress').textContent = physicsProgress + '%';
+
+            // 总体统计
+            const totalChapters = chapters.length + physicsChapters.length;
+            const totalCompleted = mathCompleted + physicsCompleted;
+            const totalInProgress = mathInProgress + physicsInProgress;
+            const totalProgress = Math.round((totalCompleted / totalChapters) * 100);
+
+            document.getElementById('total-chapters').textContent = totalChapters;
+            document.getElementById('total-completed').textContent = totalCompleted;
+            document.getElementById('total-progress').textContent = totalProgress + '%';
+            document.getElementById('total-inprogress').textContent = totalInProgress;
+        }
+
+        // 监听进度更新事件
+        window.addEventListener('progressUpdated', updateStats);
+        window.addEventListener('physicsProgressUpdated', updateStats);
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', updateStats);
+    </script>
+</body>
+</html>

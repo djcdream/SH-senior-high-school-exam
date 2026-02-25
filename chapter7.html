@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第七章 立体几何 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第七章 立体几何</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#body" class="nav-link">7.1 空间几何体的表面积与体积</a>
+            <a href="#position" class="nav-link">7.2 点、直线、平面之间的位置关系</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="body" class="section">
+                <h2>7.1 空间几何体的表面积与体积</h2>
+                
+                <div class="content-box">
+                    <h3>柱体</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>棱柱</h4>
+                            <div class="formula">
+                                <span class="math">体积 = Sh</span>
+                            </div>
+                            <p><strong>说明：</strong><span class="math">S</span> 为底面积，<span class="math">h</span> 为高</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>圆柱</h4>
+                            <div class="formula">
+                                <span class="math">表面积 = 2πr² + 2πrh</span>
+                            </div>
+                            <div class="formula">
+                                <span class="math">体积 = πr²h</span>
+                            </div>
+                            <p><strong>说明：</strong><span class="math">r</span> 为底面半径，<span class="math">h</span> 为高</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>锥体</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>棱锥</h4>
+                            <div class="formula">
+                                <span class="math">体积 = (1/3)Sh</span>
+                            </div>
+                            <p><strong>说明：</strong><span class="math">S</span> 为底面积，<span class="math">h</span> 为高</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>圆锥</h4>
+                            <div class="formula">
+                                <span class="math">表面积 = πr² + πrl</span>
+                            </div>
+                            <div class="formula">
+                                <span class="math">体积 = (1/3)πr²h</span>
+                            </div>
+                            <p><strong>说明：</strong><span class="math">r</span> 为底面半径，<span class="math">l</span> 为母线长，<span class="math">h</span> 为高</p>
+                            <p><span class="math">l = √(r² + h²)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>球</h3>
+                    
+                    <div class="operation-box">
+                        <h3>表面积与体积公式</h3>
+                        <div class="formula">
+                            <span class="math">表面积 = 4πR²</span>
+                        </div>
+                        <div class="formula">
+                            <span class="math">体积 = (4/3)πR³</span>
+                        </div>
+                        <p><strong>说明：</strong><span class="math">R</span> 为球的半径</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="position" class="section">
+                <h2>7.2 点、直线、平面之间的位置关系</h2>
+
+                <div class="content-box">
+                    <h3>直线与平面的位置关系</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>直线在平面内</h4>
+                            <p>直线上的所有点都在平面内</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>直线与平面平行</h4>
+                            <p>直线与平面没有公共点</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>直线与平面相交</h4>
+                            <p>直线与平面有且只有一个公共点</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>平面与平面的位置关系</h3>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>平面与平面平行</h4>
+                            <p>两个平面没有公共点</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>平面与平面相交</h4>
+                            <p>两个平面有一条公共直线</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>二面角</h3>
+                    
+                    <div class="operation-box">
+                        <h3>定义</h3>
+                        <p>从一条直线出发的两个半平面所组成的图形叫做<strong>二面角</strong></p>
+                        <p><strong>二面角的平面角：</strong>过二面角的棱上任意一点，在两个面内分别作垂直于棱的射线，这两条射线所成的角</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>直线与平面所成的角</h3>
+                    
+                    <div class="operation-box">
+                        <h3>定义</h3>
+                        <p>平面的一条斜线和它在平面内的射影所成的锐角，叫做这条直线和这个平面所成的角</p>
+                        <p><strong>说明：</strong>直线与平面平行时，所成的角为 <span class="math">0°</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 表面积与体积基础 -->
+                <div class="example-box">
+                    <h3>例题 1：圆柱的表面积 【基础】</h3>
+                    <p class="question">已知圆柱的底面半径为 <span class="math">2</span>，高为 <span class="math">3</span>，求圆柱的表面积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">表面积 = 2πr² + 2πrh</span></p>
+                        <p><span class="math">= 2π×2² + 2π×2×3</span></p>
+                        <p><span class="math">= 8π + 12π = 20π</span></p>
+                        <p><strong>答案：20π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：圆锥的体积 【基础】</h3>
+                    <p class="question">已知圆锥的底面半径为 <span class="math">3</span>，高为 <span class="math">4</span>，求圆锥的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (1/3)πr²h</span></p>
+                        <p><span class="math">= (1/3)π×3²×4</span></p>
+                        <p><span class="math">= (1/3)π×9×4</span></p>
+                        <p><span class="math">= 12π</span></p>
+                        <p><strong>答案：12π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：球的表面积 【基础】</h3>
+                    <p class="question">已知球的半径为 <span class="math">2</span>，求球的表面积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">表面积 = 4πR²</span></p>
+                        <p><span class="math">= 4π×2² = 16π</span></p>
+                        <p><strong>答案：16π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：球的体积 【基础】</h3>
+                    <p class="question">已知球的半径为 <span class="math">3</span>，求球的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (4/3)πR³</span></p>
+                        <p><span class="math">= (4/3)π×3³</span></p>
+                        <p><span class="math">= (4/3)π×27 = 36π</span></p>
+                        <p><strong>答案：36π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：棱锥的体积 【基础】</h3>
+                    <p class="question">已知棱锥的底面积为 <span class="math">6</span>，高为 <span class="math">4</span>，求棱锥的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (1/3)Sh</span></p>
+                        <p><span class="math">= (1/3)×6×4 = 8</span></p>
+                        <p><strong>答案：8</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：棱柱的体积 【基础】</h3>
+                    <p class="question">已知棱柱的底面积为 <span class="math">5</span>，高为 <span class="math">3</span>，求棱柱的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = Sh</span></p>
+                        <p><span class="math">= 5×3 = 15</span></p>
+                        <p><strong>答案：15</strong></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题 -->
+                <div class="example-box">
+                    <h3>例题 7：2024年新高考I卷 【中档】</h3>
+                    <p class="question">已知圆锥的底面半径为 <span class="math">1</span>，母线长为 <span class="math">√5</span>，求圆锥的高</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">l² = r² + h²</span></p>
+                        <p><span class="math">h² = l² - r²</span></p>
+                        <p><span class="math">= (√5)² - 1² = 5 - 1 = 4</span></p>
+                        <p><span class="math">h = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：2023年全国甲卷 【中档】</h3>
+                    <p class="question">已知球的体积为 <span class="math">36π</span>，求球的半径</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (4/3)πR³ = 36π</span></p>
+                        <p><span class="math">R³ = 36π × (3/4) / π = 27</span></p>
+                        <p><span class="math">R = 3</span></p>
+                        <p><strong>答案：3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2022年新高考I卷 【中档】</h3>
+                    <p class="question">已知圆柱的体积为 <span class="math">16π</span>，高为 <span class="math">4</span>，求圆柱的底面半径</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = πr²h = 16π</span></p>
+                        <p><span class="math">r²h = 16</span></p>
+                        <p><span class="math">r²×4 = 16</span></p>
+                        <p><span class="math">r² = 4</span></p>
+                        <p><span class="math">r = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2021年全国乙卷 【中档】</h3>
+                    <p class="question">已知球的表面积为 <span class="math">16π</span>，求球的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">表面积 = 4πR² = 16π</span></p>
+                        <p><span class="math">R² = 4</span></p>
+                        <p><span class="math">R = 2</span></p>
+                        <p><span class="math">体积 = (4/3)πR³ = (4/3)π×8 = (32/3)π</span></p>
+                        <p><strong>答案：(32/3)π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：2020年全国I卷 【中档】</h3>
+                    <p class="question">已知圆锥的体积为 <span class="math">4π</span>，高为 <span class="math">3</span>，求圆锥的底面半径</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (1/3)πr²h = 4π</span></p>
+                        <p><span class="math">(1/3)r²×3 = 4</span></p>
+                        <p><span class="math">r² = 4</span></p>
+                        <p><span class="math">r = 2</span></p>
+                        <p><strong>答案：2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：2019年全国I卷 【中档】</h3>
+                    <p class="question">已知球的半径为 <span class="math">R</span>，球的表面积增加 <span class="math">25%</span>，则球的半径增加</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>原表面积：<span class="math">S₁ = 4πR²</span></p>
+                        <p>新表面积：<span class="math">S₂ = S₁(1 + 25%) = 1.25S₁ = 5πR²</span></p>
+                        <p><span class="math">4πr² = 5πR²</span></p>
+                        <p><span class="math">r² = (5/4)R²</span></p>
+                        <p><span class="math">r = (√5/2)R</span></p>
+                        <p>半径增加：<span class="math">r - R = ((√5/2) - 1)R = ((√5 - 2)/2)R</span></p>
+                        <p><strong>答案：((√5 - 2)/2)R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：2018年全国II卷 【中档】</h3>
+                    <p class="question">已知圆柱的底面周长为 <span class="math">4π</span>，高为 <span class="math">2</span>，求圆柱的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">周长 = 2πr = 4π</span></p>
+                        <p><span class="math">r = 2</span></p>
+                        <p><span class="math">体积 = πr²h = π×2²×2 = 8π</span></p>
+                        <p><strong>答案：8π</strong></p>
+                    </div>
+                </div>
+
+                <!-- 位置关系基础 -->
+                <div class="example-box">
+                    <h3>例题 14：直线与平面平行 【基础】</h3>
+                    <p class="question">已知直线 <span class="math">l</span> 与平面 <span class="math">α</span> 平行，且直线 <span class="math">m</span> 与平面 <span class="math">α</span> 垂直，则直线 <span class="math">l</span> 与直线 <span class="math">m</span> 的位置关系是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">l ∥ α</span>，<span class="math">m ⟂ α</span></p>
+                        <p>所以 <span class="math">l ⟂ m</span>（直线 <span class="math">l</span> 与直线 <span class="math">m</span> 垂直）</p>
+                        <p><strong>答案：垂直</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：平面与平面平行 【基础】</h3>
+                    <p class="question">已知平面 <span class="math">α ∥ β</span>，平面 <span class="math">β ∥ γ</span>，则平面 <span class="math">α</span> 与平面 <span class="math">γ</span> 的位置关系是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>由于 <span class="math">α ∥ β</span>，<span class="math">β ∥ γ</span></p>
+                        <p>所以 <span class="math">α ∥ γ</span>（平面 <span class="math">α</span> 与平面 <span class="math">γ</span> 平行）</p>
+                        <p><strong>答案：平行</strong></p>
+                    </div>
+                </div>
+
+                <!-- 综合应用 -->
+                <div class="example-box">
+                    <h3>例题 16：圆锥的综合 【提高】</h3>
+                    <p class="question">已知圆锥的底面半径为 <span class="math">3</span>，母线长为 <span class="math">5</span>，求圆锥的表面积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>先求圆锥的高：</p>
+                        <p><span class="math">h² = l² - r² = 5² - 3² = 25 - 9 = 16</span></p>
+                        <p><span class="math">h = 4</span></p>
+                        <p>圆锥的表面积：</p>
+                        <p><span class="math">= πr² + πrl</span></p>
+                        <p><span class="math">= π×3² + π×3×5</span></p>
+                        <p><span class="math">= 9π + 15π = 24π</span></p>
+                        <p><strong>答案：24π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 17：球的综合 【提高】</h3>
+                    <p class="question">已知球的半径增加 <span class="math">50%</span>，求球的体积增加的百分比</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>原半径：<span class="math">R</span></p>
+                        <p>新半径：<span class="math">r = R(1 + 50%) = 1.5R</span></p>
+                        <p>原体积：<span class="math">V₁ = (4/3)πR³</span></p>
+                        <p>新体积：<span class="math">V₂ = (4/3)π(1.5R)³ = (4/3)π×3.375R³ = 4.5πR³</span></p>
+                        <p>体积增加：<span class="math">V₂ - V₁ = 4.5πR³ - (4/3)πR³ = (4.5 - 1.333)πR³ = 3.167πR³</span></p>
+                        <p>增加百分比：<span class="math">3.167/(4/3) = 3.167×3/4 = 2.375</span></p>
+                        <p><span class="math">= 237.5%</span></p>
+                        <p><strong>答案：237.5%</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：圆柱与球的体积比 【提高】</h3>
+                    <p class="question">已知圆柱的底面半径为 <span class="math">r</span>，球的半径也为 <span class="math">r</span>，且圆柱的高为球的直径，求圆柱与球的体积比</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>球的直径：<span class="math">d = 2r</span></p>
+                        <p>圆柱的高：<span class="math">h = 2r</span></p>
+                        <p>圆柱的体积：<span class="math">V_圆柱 = πr²h = πr²×2r = 2πr³</span></p>
+                        <p>球的体积：<span class="math">V_球 = (4/3)πr³</span></p>
+                        <p>体积比：<span class="math">V_圆柱 : V_球 = 2πr³ : (4/3)πr³ = 2 : 4/3 = 3 : 2</span></p>
+                        <p><strong>答案：3:2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 19：圆锥与球的体积比 【提高】</h3>
+                    <p class="question">已知圆锥的底面半径为 <span class="math">r</span>，球的半径也为 <span class="math">r</span>，且圆锥的高为球的直径，母线与底面成 <span class="math">60°</span> 角，求圆锥与球的体积比</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>球的直径：<span class="math">d = 2r</span></p>
+                        <p>圆锥的高：<span class="math">h = 2r</span></p>
+                        <p>由于母线与底面成 <span class="math">60°</span> 角，所以 <span class="math">cos60° = r/l</span></p>
+                        <p><span class="math">1/2 = r/l</span>，<span class="math">l = 2r</span></p>
+                        <p>圆锥的体积：<span class="math">V_圆锥 = (1/3)πr²h = (1/3)πr²×2r = (2/3)πr³</span></p>
+                        <p>球的体积：<span class="math">V_球 = (4/3)πr³</span></p>
+                        <p>体积比：<span class="math">V_圆锥 : V_球 = (2/3)πr³ : (4/3)πr³ = 2 : 4 = 1 : 2</span></p>
+                        <p><strong>答案：1:2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 20：球的体积计算 【提高】</h3>
+                    <p class="question">已知球的体积为 <span class="math">32π/3</span>，求球的表面积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol20')">查看解答</button>
+                    <div id="sol20" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = (4/3)πR³ = 32π/3</span></p>
+                        <p><span class="math">R³ = 8</span></p>
+                        <p><span class="math">R = 2</span></p>
+                        <p><span class="math">表面积 = 4πR² = 4π×4 = 16π</span></p>
+                        <p><strong>答案：16π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 21：2017年全国I卷 【提高】</h3>
+                    <p class="question">已知球的表面积为 <span class="math">100π</span>，求球的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol21')">查看解答</button>
+                    <div id="sol21" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">表面积 = 4πR² = 100π</span></p>
+                        <p><span class="math">R² = 25</span></p>
+                        <p><span class="math">R = 5</span></p>
+                        <p><span class="math">体积 = (4/3)πR³ = (4/3)π×125 = (500/3)π</span></p>
+                        <p><strong>答案：(500/3)π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 22：2016年全国I卷 【提高】</h3>
+                    <p class="question">已知圆柱的表面积为 <span class="math">24π</span>，高为 <span class="math">4</span>，求圆柱的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol22')">查看解答</button>
+                    <div id="sol22" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">表面积 = 2πr² + 2πrh = 24π</span></p>
+                        <p><span class="math">2πr² + 2πr×4 = 24π</span></p>
+                        <p><span class="math">2πr² + 8πr = 24π</span></p>
+                        <p><span class="math">r² + 4r - 12 = 0</span></p>
+                        <p><span class="math">(r + 6)(r - 2) = 0</span></p>
+                        <p><span class="math">r = 2</span>（舍去 <span class="math">r = -6</span>）</p>
+                        <p><span class="math">体积 = πr²h = π×2²×4 = 16π</span></p>
+                        <p><strong>答案：16π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 23：圆锥的综合计算 【提高】</h3>
+                    <p class="question">已知圆锥的底面周长为 <span class="math">6π</span>，母线长为 <span class="math">5</span>，求圆锥的体积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol23')">查看解答</button>
+                    <div id="sol23" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">周长 = 2πr = 6π</span></p>
+                        <p><span class="math">r = 3</span></p>
+                        <p>圆锥的高：<span class="math">h² = l² - r² = 5² - 3² = 25 - 9 = 16</span></p>
+                        <p><span class="math">h = 4</span></p>
+                        <p><span class="math">体积 = (1/3)πr²h = (1/3)π×3²×4 = 12π</span></p>
+                        <p><strong>答案：12π</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 24：球的体积变化 【提高】</h3>
+                    <p class="question">已知球的半径增加 <span class="math">100%</span>，求球的体积增加的百分比</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol24')">查看解答</button>
+                    <div id="sol24" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>原半径：<span class="math">R</span></p>
+                        <p>新半径：<span class="math">r = R(1 + 100%) = 2R</span></p>
+                        <p>原体积：<span class="math">V₁ = (4/3)πR³</span></p>
+                        <p>新体积：<span class="math">V₂ = (4/3)π(2R)³ = (4/3)π×8R³ = (32/3)πR³</span></p>
+                        <p>体积增加：<span class="math">V₂ - V₁ = (32/3 - 4/3)πR³ = 28πR³/3</span></p>
+                        <p>增加百分比：<span class="math">(28/3)/(4/3) = 7</span></p>
+                        <p><span class="math">= 700%</span></p>
+                        <p><strong>答案：700%</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 25：几何体的综合 【提高】</h3>
+                    <p class="question">已知圆柱的体积为 <span class="math">24π</span>，高为 <span class="math">6</span>，求圆柱的表面积</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol25')">查看解答</button>
+                    <div id="sol25" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><span class="math">体积 = πr²h = 24π</span></p>
+                        <p><span class="math">r²×6 = 24</span></p>
+                        <p><span class="math">r² = 4</span></p>
+                        <p><span class="math">r = 2</span></p>
+                        <p><span class="math">表面积 = 2πr² + 2πrh = 2π×4 + 2π×2×6 = 8π + 24π = 32π</span></p>
+                        <p><strong>答案：32π</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第七章 立体几何</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter7';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第七章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

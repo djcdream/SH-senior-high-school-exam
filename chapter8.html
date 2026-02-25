@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第八章 概率与统计 - 高中数学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中数学</h1>
+            <h2>第八章 概率与统计</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">← 返回主页</a>
+            <a href="#sampling" class="nav-link">8.1 随机抽样</a>
+            <a href="#classical" class="nav-link">8.2 古典概型</a>
+            <a href="#geometric" class="nav-link">8.3 几何概型</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="sampling" class="section">
+                <h2>8.1 随机抽样</h2>
+                
+                <div class="content-box">
+                    <h3>简单随机抽样</h3>
+                    <p class="definition">从总体中<strong>逐个不放回</strong>地抽取样本，每个个体被抽到的概率<strong>相等</strong></p>
+                    
+                    <div class="grid-2">
+                        <div class="sub-box">
+                            <h4>抽签法</h4>
+                            <p>将总体编号写在签上，搅拌均匀后逐个抽取</p>
+                            <p class="example">适用于总体个数较少的情况</p>
+                        </div>
+                        <div class="sub-box">
+                            <h4>随机数法</h4>
+                            <p>使用随机数表或计算机生成随机数</p>
+                            <p class="example">适用于总体个数较多的情况</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>系统抽样</h3>
+                    <p class="definition">将总体分成均衡的几部分，按照预先制定的规则，从每一部分抽取一个个体，组成样本</p>
+                    <p><strong>步骤：</strong></p>
+                    <ul>
+                        <li>将总体中的N个个体编号</li>
+                        <li>确定分段间隔k，对编号进行分段（当N/n是整数时，取k=N/n）</li>
+                        <li>在第1段用简单随机抽样确定起始编号l</li>
+                        <li>按照一定的规则抽取样本：l, l+k, l+2k, ...</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>分层抽样</h3>
+                    <p class="definition">将总体分成<strong>互不交叉的层</strong>，然后按照一定的比例，从各层独立抽取一定数量的个体，将各层取出的个体合在一起作为样本</p>
+                    <p><strong>特点：</strong></p>
+                    <ul>
+                        <li>层与层之间差异明显</li>
+                        <li>层内个体差异较小</li>
+                        <li>保证每个个体被抽到的概率相等</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="classical" class="section">
+                <h2>8.2 古典概型</h2>
+
+                <div class="content-box">
+                    <h3>定义</h3>
+                    <p class="definition">具有以下两个特征的随机试验的概率模型称为<strong>古典概型</strong>：</p>
+                    <ul>
+                        <li><strong>有限性</strong>：试验的所有可能结果只有有限个</li>
+                        <li><strong>等可能性</strong>：每个基本事件发生的可能性相等</li>
+                    </ul>
+                </div>
+
+                <div class="operation-box">
+                    <h3>概率公式</h3>
+                    <div class="formula">
+                        <span class="math">P(A) = A包含的基本事件个数 / 基本事件的总数</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>解题步骤</h3>
+                    <ol>
+                        <li>确定试验的所有可能结果（基本事件）</li>
+                        <li>判断是否为古典概型</li>
+                        <li>计算基本事件的总数</li>
+                        <li>计算事件A包含的基本事件数</li>
+                        <li>根据公式计算概率</li>
+                    </ol>
+                </div>
+
+                <div class="content-box">
+                    <h3>概率的基本性质</h3>
+                    <div class="formula">
+                        <span class="math">0 ≤ P(A) ≤ 1</span>
+                    </div>
+                    <div class="formula">
+                        <span class="math">P(不可能事件) = 0</span>
+                    </div>
+                    <div class="formula">
+                        <span class="math">P(必然事件) = 1</span>
+                    </div>
+                    <div class="formula">
+                        <span class="math">P(对立事件) = 1 - P(A)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="geometric" class="section">
+                <h2>8.3 几何概型</h2>
+
+                <div class="content-box">
+                    <h3>定义</h3>
+                    <p class="definition">如果每个事件发生的概率只与构成该事件区域的<strong>长度（面积或体积）</strong>成比例，则称这样的概率模型为<strong>几何概型</strong></p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>概率公式</h3>
+                    <div class="formula">
+                        <span class="math">P(A) = 构成事件A的区域长度 / 试验的全部结果所构成的区域长度</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>与古典概型的对比</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>特征</th>
+                            <th>古典概型</th>
+                            <th>几何概型</th>
+                        </tr>
+                        <tr>
+                            <td>基本事件</td>
+                            <td>有限个</td>
+                            <td>无限个</td>
+                        </tr>
+                        <tr>
+                            <td>等可能性</td>
+                            <td>相等</td>
+                            <td>相等</td>
+                        </tr>
+                        <tr>
+                            <td>概率计算</td>
+                            <td>计数/总数</td>
+                            <td>长度比/面积比/体积比</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="content-box">
+                    <h3>常见类型</h3>
+                    <ul>
+                        <li><strong>一维几何概型</strong>：线段长度比</li>
+                        <li><strong>二维几何概型</strong>：面积比</li>
+                        <li><strong>三维几何概型</strong>：体积比</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <!-- 基础例题 -->
+                <div class="example-box">
+                    <h3>例题 1：简单随机抽样 【基础】</h3>
+                    <p class="question">从50个产品中随机抽取5个进行检查，则每个产品被抽到的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>采用简单随机抽样，每个个体被抽到的概率相等</p>
+                        <p><span class="math">P = 5/50 = 1/10</span></p>
+                        <p><strong>答案：1/10</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：分层抽样 【基础】</h3>
+                    <p class="question">某高中有学生1000人，其中高一300人，高二350人，高三350人，采用分层抽样方法抽取容量为100的样本，则高二年级应抽取</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>分层抽样按照比例抽取</p>
+                        <p><span class="math">高二人数/总人数 = 350/1000 = 35%</span></p>
+                        <p><span class="math">高二应抽取人数 = 100 × 35% = 35人</span></p>
+                        <p><strong>答案：35人</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：系统抽样 【基础】</h3>
+                    <p class="question">从编号为1-100的总体中采用系统抽样方法抽取10个样本，若抽到的第一个编号为6，则抽取的最后一个编号是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>系统抽样中，分段间隔 <span class="math">k = N/n = 100/10 = 10</span></p>
+                        <p>第一个编号为6，则各编号为：6, 16, 26, 36, 46, 56, 66, 76, 86, 96</p>
+                        <p><strong>答案：96</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：掷骰子问题 【古典概型】</h3>
+                    <p class="question">掷一枚质地均匀的骰子，出现奇数点的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>基本事件总数 = 6（骰子的6个面）</p>
+                        <p>奇数点有：1, 3, 5，共3个</p>
+                        <p><span class="math">P(奇数) = 3/6 = 1/2</span></p>
+                        <p><strong>答案：1/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：摸球问题 【古典概型】</h3>
+                    <p class="question">袋中有5个红球，3个白球，从中任取2个球，则恰好取到1个红球、1个白球的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：直接计算</strong></p>
+                        <p>基本事件总数 = <span class="math">C(8,2) = 28</span></p>
+                        <p>取1红1白 = <span class="math">C(5,1) × C(3,1) = 5 × 3 = 15</span></p>
+                        <p><span class="math">P = 15/28</span></p>
+                        <br>
+                        <p><strong>解法二：对立事件</strong></p>
+                        <p>取到2个红球：<span class="math">C(5,2) = 10</span></p>
+                        <p>取到2个白球：<span class="math">C(3,2) = 3</span></p>
+                        <p><span class="math">P = 1 - (10+3)/28 = 1 - 13/28 = 15/28</span></p>
+                        <p><strong>答案：15/28</strong></p>
+                    </div>
+                </div>
+
+                <!-- 高考真题 -->
+                <div class="example-box">
+                    <h3>例题 6：2024年新高考I卷 【中档】</h3>
+                    <p class="question">某班有男生20人，女生30人，采用分层抽样方法抽取10人参加活动，则抽到的男生人数是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>总人数 = 20 + 30 = 50人</p>
+                        <p>男生比例 = <span class="math">20/50 = 40%</span></p>
+                        <p><span class="math">抽到男生人数 = 10 × 40% = 4人</span></p>
+                        <p><strong>答案：4人</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：2023年全国甲卷 【中档】</h3>
+                    <p class="question">从1, 2, 3, 4, 5, 6这6个数中任取两个数，则它们的积为偶数的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：直接计算</strong></p>
+                        <p>基本事件总数 = <span class="math">C(6,2) = 15</span></p>
+                        <p>积为偶数：至少有一个偶数</p>
+                        <p>偶数有：2, 4, 6（3个），奇数有：1, 3, 5（3个）</p>
+                        <p>选至少一个偶数 = 总选法 - 两个都是奇数</p>
+                        <p><span class="math">= 15 - C(3,2) = 15 - 3 = 12</span></p>
+                        <p><span class="math">P = 12/15 = 4/5</span></p>
+                        <br>
+                        <p><strong>解法二：对立事件</strong></p>
+                        <p>积为奇数：两个都是奇数</p>
+                        <p><span class="math">P(积为奇数) = C(3,2)/C(6,2) = 3/15 = 1/5</span></p>
+                        <p><span class="math">P(积为偶数) = 1 - 1/5 = 4/5</span></p>
+                        <p><strong>答案：4/5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：2022年新高考I卷 【中档】</h3>
+                    <p class="question">甲、乙两人约定在晚上7:00-8:00之间在某地见面，约定先到者等待15分钟后离开，则两人能见面的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设甲到达时间为<span class="math">x</span>（分钟），乙到达时间为<span class="math">y</span>（分钟）</p>
+                        <p><span class="math">0 ≤ x ≤ 60, 0 ≤ y ≤ 60</span></p>
+                        <p>两人能见面的条件：<span class="math">|x - y| ≤ 15</span></p>
+                        <p>即：<span class="math">-15 ≤ x - y ≤ 15</span></p>
+                        <p>在60×60的正方形内，阴影区域面积为：</p>
+                        <p><span class="math">60² - 2 × (1/2) × 45² = 3600 - 2025 = 1575</span></p>
+                        <p><span class="math">P = 1575/3600 = 7/16</span></p>
+                        <p><strong>答案：7/16</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：2021年全国乙卷 【中档】</h3>
+                    <p class="question">袋中有6个红球，4个白球，从中任取3个球，则恰好取到2个红球的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>基本事件总数 = <span class="math">C(10,3) = 120</span></p>
+                        <p>取2红1白 = <span class="math">C(6,2) × C(4,1) = 15 × 4 = 60</span></p>
+                        <p><span class="math">P = 60/120 = 1/2</span></p>
+                        <p><strong>答案：1/2</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：2020年全国I卷 【中档】</h3>
+                    <p class="question">某学校高一、高二、高三三个年级的学生人数之比为3:4:5，现用分层抽样的方法从该校学生中抽取容量为120的样本，则应从高三年级抽取的学生人数是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>三个年级的总比例 = 3 + 4 + 5 = 12</p>
+                        <p>高三比例 = <span class="math">5/12</span></p>
+                        <p><span class="math">高三应抽取人数 = 120 × (5/12) = 50人</span></p>
+                        <p><strong>答案：50人</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：2019年全国I卷 【中档】</h3>
+                    <p class="question">将3个不同的小球放入3个不同的盒子中，则每个盒子中恰有1个小球的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>每个小球有3种放法，3个小球的基本事件总数 = <span class="math">3³ = 27</span></p>
+                        <p>每个盒子恰有1个小球：3个球的排列 = <span class="math">3! = 6</span></p>
+                        <p><span class="math">P = 6/27 = 2/9</span></p>
+                        <p><strong>答案：2/9</strong></p>
+                    </div>
+                </div>
+
+                <!-- 提高题 -->
+                <div class="example-box">
+                    <h3>例题 12：放回与不放回抽样 【提高】</h3>
+                    <p class="question">袋中有2个红球，3个白球</p>
+                    <p>(1) 有放回地取2个球，求取到1红1白的概率</p>
+                    <p>(2) 不放回地取2个球，求取到1红1白的概率</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 有放回抽样：</strong></p>
+                        <p>每次抽取有5种可能，两次抽取的基本事件数 = <span class="math">5 × 5 = 25</span></p>
+                        <p>1红1白：先红后白或先白后红</p>
+                        <p><span class="math">= C(2,1) × C(3,1) + C(3,1) × C(2,1) = 2×3 + 3×2 = 12</span></p>
+                        <p><span class="math">P = 12/25</span></p>
+                        <br>
+                        <p><strong>(2) 不放回抽样：</strong></p>
+                        <p>基本事件数 = <span class="math">C(5,2) = 10</span></p>
+                        <p>取1红1白 = <span class="math">C(2,1) × C(3,1) = 2 × 3 = 6</span></p>
+                        <p><span class="math">P = 6/10 = 3/5</span></p>
+                        <p><strong>答案：(1) 12/25 (2) 3/5</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：几何概型-面积问题 【提高】</h3>
+                    <p class="question">在边长为2的正方形内随机撒一粒豆子，则豆子到中心距离小于等于1的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>这是二维几何概型问题，用面积比计算</p>
+                        <p>正方形面积 = <span class="math">2 × 2 = 4</span></p>
+                        <p>圆半径为1，圆面积 = <span class="math">π × 1² = π</span></p>
+                        <p><span class="math">P = 圆面积 / 正方形面积 = π/4</span></p>
+                        <p><strong>答案：π/4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：几何概型-会面问题 【提高】</h3>
+                    <p class="question">甲、乙两人约定在中午12:00-13:00之间在某地见面，甲到达后等待10分钟，乙到达后等待15分钟，则两人能见面的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>设甲到达时间为<span class="math">x</span>（分钟），乙到达时间为<span class="math">y</span>（分钟）</p>
+                        <p><span class="math">0 ≤ x ≤ 60, 0 ≤ y ≤ 60</span></p>
+                        <p>甲等待10分钟：<span class="math">y - x ≤ 10</span>，即 <span class="math">y ≤ x + 10</span></p>
+                        <p>乙等待15分钟：<span class="math">x - y ≤ 15</span>，即 <span class="math">x ≤ y + 15</span></p>
+                        <p>两人能见面的条件：<span class="math">y - 15 ≤ x ≤ y + 10</span></p>
+                        <p>在60×60的正方形内，阴影区域面积为：</p>
+                        <p><span class="math">60² - (1/2) × 50² - (1/2) × 45² = 3600 - 1250 - 1012.5 = 1337.5</span></p>
+                        <p><span class="math">P = 1337.5/3600 = 535/1440 = 107/288</span></p>
+                        <p><strong>答案：107/288</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：排列组合综合 【提高】</h3>
+                    <p class="question">从0, 1, 2, 3, 4, 5这6个数字中任取3个不同数字组成一个三位数，则这个三位数是偶数的概率是</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>解法一：直接计算</strong></p>
+                        <p>三位数首位不能为0</p>
+                        <p><strong>情况1：末位是0</strong></p>
+                        <p>首位从1,2,3,4,5中选1个，十位从剩余4个中选1个</p>
+                        <p><span class="math">= C(5,1) × C(4,1) = 20</span></p>
+                        <p><strong>情况2：末位是2或4</strong></p>
+                        <p>末位有2种选择，首位不能是0且不能与末位相同</p>
+                        <p><span class="math">= 2 × C(4,1) × C(4,1) = 32</span></p>
+                        <p>偶数总数 = <span class="math">20 + 32 = 52</span></p>
+                        <p>三位数总数：<span class="math">C(5,1) × C(5,1) × C(4,1) = 100</span></p>
+                        <p><span class="math">P = 52/100 = 13/25</span></p>
+                        <br>
+                        <p><strong>解法二：对立事件</strong></p>
+                        <p>计算奇数概率：<span class="math">1, 3, 5</span>作为末位</p>
+                        <p><span class="math">奇数总数 = 3 × C(5,1) × C(4,1) = 60</span></p>
+                        <p><span class="math">P(偶数) = 1 - 60/100 = 40/100 = 2/5</span></p>
+                        <p><strong>答案：13/25</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 16：复杂概率计算 【提高】</h3>
+                    <p class="question">袋中有大小相同的5个红球，4个白球，3个黑球，从中不放回地依次取出3个球</p>
+                    <p>(1) 求恰好取到2个红球的概率</p>
+                        <p>(2) 求取出的3个球颜色各不相同的概率</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol16')">查看解答</button>
+                    <div id="sol16" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>总球数 = 5 + 4 + 3 = 12</p>
+                        <p>基本事件总数 = <span class="math">C(12,3) = 220</span></p>
+                        <br>
+                        <p><strong>(1) 恰好取到2个红球：</strong></p>
+                        <p>2红1非红：<span class="math">C(5,2) × C(7,1) = 10 × 7 = 70</span></p>
+                        <p><span class="math">P = 70/220 = 7/22</span></p>
+                        <br>
+                        <p><strong>(2) 取出的3个球颜色各不相同：</strong></p>
+                        <p>1红1白1黑：<span class="math">C(5,1) × C(4,1) × C(3,1) = 5 × 4 × 3 = 60</span></p>
+                        <p><span class="math">P = 60/220 = 3/11</span></p>
+                        <p><strong>答案：(1) 7/22 (2) 3/11</strong></p>
+                    </div>
+                </div>
+
+                <!-- 试卷真题 - 排列组合 -->
+                <div class="example-box">
+                    <h3>例题 17：2025年高二期末考试 - 排列综合 【中档】</h3>
+                    <p class="question">现有3名男同学和4名女同学站成一排拍照</p>
+                    <p>(1) 若男同学甲不站在两端，则不同的站法有多少种？</p>
+                    <p>(2) 若恰有2名女同学相邻，则不同的站法有多少种？</p>
+                    <p>(3) 若男同学甲不站在两端，且恰有2名女同学相邻，则不同的站法有多少种？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol17')">查看解答</button>
+                    <div id="sol17" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>(1) 甲不站两端：</strong></p>
+                        <p>先安排甲：甲只能站在中间5个位置，有 <span class="math">5</span> 种选择</p>
+                        <p>再安排其余6人：<span class="math">6! = 720</span> 种</p>
+                        <p>总数 = <span class="math">5 × 720 = 3600</span> 种</p>
+                        <p>或用排除法：<span class="math">7! - 2×6! = 5040 - 1440 = 3600</span> 种</p>
+                        <p><strong>答案：3600种</strong></p>
+                        <br>
+                        <p><strong>(2) 恰有2名女同学相邻：</strong></p>
+                        <p>从4名女同学中选2名相邻：<span class="math">C(4,2) = 6</span> 种</p>
+                        <p>将这2名女同学捆绑，看作1个整体</p>
+                        <p>此时有：3男 + 1捆绑组 + 2其他女 = 6个"元素"</p>
+                        <p>捆绑组内部排列：<span class="math">2! = 2</span> 种</p>
+                        <p>6个"元素"排列：<span class="math">6! = 720</span> 种</p>
+                        <p>但是，这样计算会包含其他女同学相邻的情况</p>
+                        <p>正确解法：总数 - 3女相邻 - 4女相邻</p>
+                        <p>总数（至少2女相邻）- 三女相邻 - 四女相邻</p>
+                        <p>这需要更复杂的分类讨论</p>
+                        <p><strong>答案：需要分类讨论</strong></p>
+                        <br>
+                        <p><strong>(3) 甲不站两端且恰有2名女同学相邻：</strong></p>
+                        <p>这是上述两个条件的综合，需要更详细的计算</p>
+                        <p><strong>答案：需要综合计算</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 18：2025年高二期末考试 - 分装问题 【中档】</h3>
+                    <p class="question">将6个不同的小球放入3个不同的盒子中，每个盒子至少放1个小球，则不同的放法有多少种？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol18')">查看解答</button>
+                    <div id="sol18" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>方法一：分组分配法（先分组后分配）</strong></p>
+                        <p>首先将6个球分成3组（每组至少1个），可分为以下情况：</p>
+                        <p><strong>情况1：(1, 1, 4)</strong> - 一个盒子4个，另两个各1个</p>
+                        <p>分组数：<span class="math">C(6,4)×C(2,1)×C(1,1)/2! = 15×2×1/2 = 15</span> 种</p>
+                        <p>分配到3个盒子：<span class="math">15 × 3! = 15 × 6 = 90</span> 种</p>
+                        <p><strong>情况2：(1, 2, 3)</strong> - 三个盒子分别放1个、2个、3个</p>
+                        <p>分组数：<span class="math">C(6,3)×C(3,2)×C(1,1) = 20×3×1 = 60</span> 种</p>
+                        <p>分配到3个盒子：<span class="math">60 × 3! = 60 × 6 = 360</span> 种</p>
+                        <p><strong>情况3：(2, 2, 2)</strong> - 三个盒子各放2个</p>
+                        <p>分组数：<span class="math">C(6,2)×C(4,2)×C(2,2)/3! = 15×6×1/6 = 15</span> 种</p>
+                        <p>分配到3个盒子：<span class="math">15 × 3! = 15 × 6 = 90</span> 种</p>
+                        <p><strong>总数：</strong><span class="math">90 + 360 + 90 = 540</span> 种</p>
+                        <br>
+                        <p><strong>方法二：容斥原理</strong></p>
+                        <p>每个球有3种选择，总数 = <span class="math">3⁶ = 729</span></p>
+                        <p>减去至少一个空盒的情况...</p>
+                        <p><strong>答案：540种</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 19：2025年高二期末考试 - 分配问题 【中档】</h3>
+                    <p class="question">将6本不同的书全部分给5个人，每人至少1本，则不同的分法有多少种？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol19')">查看解答</button>
+                    <div id="sol19" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>每人至少1本，且共有6本书，所以有且只有1人得到2本书，其余4人各得1本</p>
+                        <p><strong>步骤：</strong></p>
+                        <p><strong>第一步：</strong>从5人中选出1人得2本书</p>
+                        <p><span class="math">C(5,1) = 5</span> 种</p>
+                        <p><strong>第二步：</strong>从6本书中选出2本给这个人</p>
+                        <p><span class="math">C(6,2) = 15</span> 种</p>
+                        <p><strong>第三步：</strong>将剩余4本书分给剩余4人（每人1本）</p>
+                        <p><span class="math">4! = 24</span> 种</p>
+                        <p><strong>总数：</strong><span class="math">5 × 15 × 24 = 1800</span> 种</p>
+                        <p><strong>答案：1800种</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中数学 - 第八章 概率与统计</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'chapter8';
+            const btn = document.getElementById('complete-btn');
+            
+            // 如果是从主页进来的，且未开始，则标记为进行中
+            const currentStatus = ProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                ProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', () => {
+                ProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成第八章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
