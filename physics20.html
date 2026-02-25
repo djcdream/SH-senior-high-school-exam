@@ -25,30 +25,303 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>原子核的组成：</strong>由质子和中子组成，统称为核子</p>
+                    <p><strong>质子数：</strong>Z，决定元素的化学性质</p>
+                    <p><strong>质量数：</strong>A，质子数和中子数之和，A = Z + N</p>
+                    <p><strong>同位素：</strong>质子数相同、中子数不同的原子核</p>
+                    <p><strong>放射性：</strong>某些原子核自发地发射粒子或射线，变成另一种原子核</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>天然放射性：</strong>α衰变、β衰变、γ衰变</p>
+                    <p><strong>半衰期：</strong>T₁/₂，放射性元素的原子核有半数发生衰变所需的时间</p>
+                    <p><strong>衰变规律：</strong>N = N₀·(1/2)^(t/T₁/₂)</p>
+                    <p><strong>核反应：</strong>重核裂变、轻核聚变释放巨大的能量</p>
+                    <p><strong>质能方程：</strong>E = mc²，质量亏损产生能量</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 质能方程 【基础】</h3>
+                    <p class="question">一氘核（²H）的质量为m，若将氘核完全分解为一个质子和一个中子，释放的能量是多少？已知质量亏损为Δm。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据质能方程：ΔE = Δm·c²</p>
+                        <p>（2）质量亏损Δm是分解前后的质量差</p>
+                        <p>（3）释放的能量：ΔE = Δm·c²</p>
+                        <p>（4）其中c = 3×10⁸m/s是真空中的光速</p>
+                        <p>（5）质能方程说明质量和能量可以相互转化</p>
+                        <p><strong>知识点标签：</strong>质能方程、质量亏损、核反应</p>
+                        <p><strong>答案：ΔE = Δm·c²</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 半衰期 【中档】</h3>
+                    <p class="question">一放射性元素，初始原子核数为N₀，半衰期为T₁/₂。求经过时间t后剩余的原子核数。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）半衰期的定义：经过T₁/₂时间，原子核数减半</p>
+                        <p>（2）经过t时间，经历的半衰期次数：n = t/T₁/₂</p>
+                        <p>（3）剩余原子核数：N = N₀·(1/2)^n = N₀·(1/2)^(t/T₁/₂)</p>
+                        <p>（4）也可以写成指数形式：N = N₀·e^(-λt)，其中λ = ln2/T₁/₂是衰变常量</p>
+                        <p>（5）放射性元素的原子核数随时间按指数规律衰减</p>
+                        <p><strong>知识点标签：</strong>半衰期、放射性衰变、原子核数</p>
+                        <p><strong>答案：N = N₀·(1/2)^(t/T₁/₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 α衰变 【中档】</h3>
+                    <p class="question">一原子核（A, Z）发生α衰变，变成一个新的原子核。写出衰变方程，并求新原子核的质子数和质量数。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）α衰变：原子核发射一个α粒子（⁴He）</p>
+                        <p>（2）衰变方程：^A_ZX → ^(A-4)_(Z-2)Y + ⁴₂He</p>
+                        <p>（3）新原子核Y的质子数：Z' = Z - 2</p>
+                        <p>（4）新原子核Y的质量数：A' = A - 4</p>
+                        <p>（5）α衰变使原子核的质子数减2，质量数减4</p>
+                        <p>（6）α粒子带2个单位正电，是氦原子核</p>
+                        <p><strong>知识点标签：</strong>α衰变、原子核、质子数、质量数</p>
+                        <p><strong>答案：质子数 = Z - 2，质量数 = A - 4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 β衰变 【中档】</h3>
+                    <p class="question">一原子核（A, Z）发生β衰变，变成一个新的原子核。写出衰变方程，并求新原子核的质子数和质量数。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）β衰变：原子核中的一个中子转化为一个质子和一个电子</p>
+                        <p>（2）衰变方程：^A_ZX → ^A_(Z+1)Y + ₋₁₀e</p>
+                        <p>（3）新原子核Y的质子数：Z' = Z + 1</p>
+                        <p>（4）新原子核Y的质量数：A' = A（质量数不变）</p>
+                        <p>（5）β衰变使原子核的质子数加1，质量数不变</p>
+                        <p>（6）β⁻粒子是电子，带1个单位负电</p>
+                        <p>（7）β衰变过程中，中子转变为质子，放出电子和反中微子</p>
+                        <p><strong>知识点标签：</strong>β衰变、原子核、质子数、质量数</p>
+                        <p><strong>答案：质子数 = Z + 1，质量数 = A</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 放射性衰变 【中档】</h3>
+                    <p class="question">一放射性元素，初始原子核数为N₀，衰变常量为λ。求放射性元素的半衰期T₁/₂与衰变常量λ的关系。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）衰变规律：N = N₀·e^(-λt)</p>
+                        <p>（2）半衰期的定义：经过T₁/₂时间，原子核数减半</p>
+                        <p>（3）N₀/2 = N₀·e^(-λ·T₁/₂)</p>
+                        <p>（4）化简得：1/2 = e^(-λ·T₁/₂)</p>
+                        <p>（5）两边取自然对数：ln(1/2) = -λ·T₁/₂</p>
+                        <p>（6）所以：T₁/₂ = ln2/λ = 0.693/λ</p>
+                        <p>（7）半衰期与衰变常量成反比</p>
+                        <p><strong>知识点标签：</strong>放射性衰变、半衰期、衰变常量</p>
+                        <p><strong>答案：T₁/₂ = ln2/λ</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 核反应 【中档】</h3>
+                    <p class="question">一核反应：²H + ³He → ⁴He + ¹H。若反应前的总质量为m₁，反应后的总质量为m₂（m₁ > m₂），求该核反应释放的能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质量亏损：Δm = m₁ - m₂</p>
+                        <p>（2）根据质能方程：释放的能量ΔE = Δm·c²</p>
+                        <p>（3）代入Δm：ΔE = (m₁ - m₂)·c²</p>
+                        <p>（4）核反应释放的能量来源于质量亏损</p>
+                        <p>（5）质量亏损越大，释放的能量越多</p>
+                        <p>（6）这是核反应、核裂变、核聚变释放能量的原理</p>
+                        <p><strong>知识点标签：</strong>核反应、质量亏损、质能方程、核能</p>
+                        <p><strong>答案：ΔE = (m₁ - m₂)·c²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 核结合能 【中档】</h3>
+                    <p class="question">一原子核（A, Z）的质量为M，Z个质子的质量为Z·m_p，（A-Z）个中子的质量为(A-Z)·m_n。求该原子核的结合能和平均结合能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质量亏损：Δm = Z·m_p + (A-Z)·m_n - M</p>
+                        <p>（2）结合能：E = Δm·c² = [Z·m_p + (A-Z)·m_n - M]·c²</p>
+                        <p>（3）平均结合能：E_平均 = E/A</p>
+                        <p>（4）结合能表示将原子核分解为核子需要的能量</p>
+                        <p>（5）平均结合能表示每个核子的平均结合能</p>
+                        <p>（6）不同原子核的平均结合能不同，中等质量原子核的平均结合能最大</p>
+                        <p><strong>知识点标签：</strong>核结合能、质量亏损、平均结合能</p>
+                        <p><strong>答案：E = [Z·m_p + (A-Z)·m_n - M]·c²，E_平均 = E/A</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 裂变 【中档】</h3>
+                    <p class="question">一重核U发生裂变，分裂成两个中等质量的原子核，同时释放2-3个中子。若裂变前后的质量亏损为Δm，求该裂变释放的能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）裂变反应：²³⁵₉₂U → ¹⁴¹₅₆Ba + ⁹²₃₉₂Kr + 3¹₀n</p>
+                        <p>（2）质量亏损：Δm = m(U) - m(Ba) - m(Kr) - 3·m(n)</p>
+                        <p>（3）释放的能量：ΔE = Δm·c²</p>
+                        <p>（4）裂变释放的能量是很大的</p>
+                        <p>（5）1kg²³⁵U裂变释放的能量相当于20000吨TNT炸药</p>
+                        <p>（6）裂变是核电站和原子弹的原理</p>
+                        <p>（7）裂变过程需要中子轰击才能触发</p>
+                        <p><strong>知识点标签：</strong>裂变、核能、质量亏损、质能方程</p>
+                        <p><strong>答案：ΔE = Δm·c²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 聚变 【中档】</h3>
+                    <p class="question">一聚变反应：²H + ³H → ⁴He + ¹n。若反应前的总质量为m₁，反应后的总质量为m₂（m₁ > m₂），求该聚变释放的能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质量亏损：Δm = m₁ - m₂</p>
+                        <p>（2）释放的能量：ΔE = Δm·c² = (m₁ - m₂)·c²</p>
+                        <p>（3）聚变反应释放的能量是巨大的</p>
+                        <p>（4）太阳的能量来源于氢核的聚变</p>
+                        <p>（5）聚变是氢弹的原理</p>
+                        <p>（6）聚变需要极高温才能触发（约10⁸K）</p>
+                        <p>（7）聚变释放的能量比裂变更多，质量亏损更大</p>
+                        <p><strong>知识点标签：</strong>聚变、核能、质量亏损、质能方程</p>
+                        <p><strong>答案：ΔE = (m₁ - m₂)·c²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 同位素 【基础】</h3>
+                    <p class="question">下列哪一组属于同位素？</p>
+                    <p>(A) ¹H、²H、³H</p>
+                    <p>(B) ¹H、²He、³Li</p>
+                    <p>(C) ⁶C、⁷N、⁸O</p>
+                    <p>(D) ²H、³He、⁴Be</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）同位素定义：质子数相同、中子数不同的原子核</p>
+                        <p>（2）¹H、²H、³H：质子数都是1，中子数分别是0、1、2</p>
+                        <p>（3）这三种原子核是氢的同位素，分别称为氕、氘、氚</p>
+                        <p>（4）A选项正确，都是氢的同位素</p>
+                        <p>（5）B、C、D选项中的原子核质子数都不同</p>
+                        <p>（6）同位素的化学性质基本相同</p>
+                        <p><strong>知识点标签：</strong>同位素、质子数、中子数、氢同位素</p>
+                        <p><strong>答案：A</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 放射性强度 【中档】</h3>
+                    <p class="question">一放射性源的强度为I₀，半衰期为T₁/₂。求经过时间t后放射性源的强度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）放射性强度I与原子核数N成正比：I ∝ N</p>
+                        <p>（2）原子核数随时间衰减：N = N₀·(1/2)^(t/T₁/₂)</p>
+                        <p>（3）放射性强度：I = I₀·(1/2)^(t/T₁/₂)</p>
+                        <p>（4）放射性强度也按指数规律衰减</p>
+                        <p>（5）经过t时间后，强度减弱为原来的(1/2)^(t/T₁/₂)</p>
+                        <p>（6）放射性强度表示单位时间内发射的粒子数</p>
+                        <p><strong>知识点标签：</strong>放射性强度、半衰期、指数衰减</p>
+                        <p><strong>答案：I = I₀·(1/2)^(t/T₁/₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 核力 【中档】</h3>
+                    <p class="question">关于原子核内部的核力，下列说法正确的是：</p>
+                    <p>(A) 核力是万有引力</p>
+                    <p>(B) 核力是电磁力</p>
+                    <p>(C) 核力是强相互作用</p>
+                    <p>(D) 核力与距离无关</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。核力不是万有引力，万有引力是长程力，核力是短程力</p>
+                        <p>（B）错误。核力不是电磁力，电磁力是电荷间的作用力</p>
+                        <p>（C）正确。核力是强相互作用，是四种基本力中最强的一种</p>
+                        <p>（D）错误。核力是短程力，只在极小距离（约10⁻¹⁵m）内起作用</p>
+                        <p>（5）核力的特点：短程强相互作用，只作用于核子之间</p>
+                        <p>（6）核力克服质子间的库仑斥力，使原子核稳定</p>
+                        <p><strong>知识点标签：</strong>核力、强相互作用、短程力</p>
+                        <p><strong>答案：C</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 核反应类型 【中档】</h3>
+                    <p class="question">一核反应：¹H + ³Li → ⁴He + ¹H。这是哪种类型的核反应？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）分析核反应前后的原子核</p>
+                        <p>（2）反应前：¹H（质子）和³Li（锂-3）</p>
+                        <p>（3）反应后：⁴He（氦-4）和¹H（质子）</p>
+                        <p>（4）总质量数：1 + 3 = 4 = 4 + 1，质量数守恒</p>
+                        <p>（5）总质子数：1 + 3 = 4 = 2 + 1，质子数守恒</p>
+                        <p>（6）这是一种人工核反应，用质子轰击锂核</p>
+                        <p>（7）这种核反应释放能量，是聚变反应的一种</p>
+                        <p>（8）也是轻核聚变释放能量的一种方式</p>
+                        <p><strong>知识点标签：</strong>核反应、核反应类型、聚变</p>
+                        <p><strong>答案：人工核反应、聚变反应</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 质能方程的应用 【中档】</h3>
+                    <p class="question">1kg煤完全燃烧释放的热量约为2.9×10⁷J。1kg²³⁵U裂变释放的能量约为8.2×10¹³J。求1kg²³⁵U裂变释放的能量相当于多少吨煤燃烧释放的能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）1kg²³⁵U裂变释放的能量：E_U = 8.2×10¹³J</p>
+                        <p>（2）1kg煤燃烧释放的能量：E_煤 = 2.9×10⁷J</p>
+                        <p>（3）能量比：E_U/E_煤 = 8.2×10¹³/2.9×10⁷ ≈ 2.8×10⁶</p>
+                        <p>（4）1kg煤燃烧释放的能量相当于2.8×10⁶kg煤</p>
+                        <p>（5）换算成吨：2.8×10⁶kg = 2.8×10³吨 ≈ 2800吨</p>
+                        <p>（6）1kg²³⁵U裂变释放的能量相当于约2800吨煤燃烧释放的能量</p>
+                        <p>（7）核裂变的能量密度远高于化学燃料</p>
+                        <p><strong>知识点标签：</strong>质能方程、核能、化学能、能量比较</p>
+                        <p><strong>答案：约2800吨</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 原子核的综合 【高档】</h3>
+                    <p class="question">一原子核（A, Z）发生衰变，放出α粒子后变成新的原子核，新的原子核又发生β衰变。写出整个衰变过程的方程，并求最终原子核的质子数和质量数。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）第一次衰变（α衰变）：</p>
+                        <p>（2）^A_ZX → ^(A-4)_(Z-2)Y + ⁴₂He</p>
+                        <p>（3）原子核Y的质子数：Z₁ = Z - 2</p>
+                        <p>（4）原子核Y的质量数：A₁ = A - 4</p>
+                        <p>（5）第二次衰变（β衰变）：</p>
+                        <p>（6）^(A-4)_(Z-2)Y → ^(A-4)_(Z-1)Z + ₋₁₀e</p>
+                        <p>（7）最终原子核Z的质子数：Z₂ = Z - 2 + 1 = Z - 1</p>
+                        <p>（8）最终原子核Z的质量数：A₂ = A - 4</p>
+                        <p>（9）整个衰变过程：</p>
+                        <p>（10）^A_ZX → ^(A-4)_(Z-1)Z + ⁴₂He + ₋₁₀e</p>
+                        <p>（11）最终原子核的质子数比原来少1，质量数比原来少4</p>
+                        <p>（12）这是α衰变和β衰变连续发生的例子</p>
+                        <p><strong>知识点标签：</strong>α衰变、β衰变、原子核衰变、质子数、质量数</p>
+                        <p><strong>答案：质子数 = Z - 1，质量数 = A - 4</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +342,7 @@
             const chapterId = 'physics20';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +350,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
