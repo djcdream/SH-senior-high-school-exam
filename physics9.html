@@ -25,8 +25,12 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>机械振动：</strong>物体在平衡位置附近所做的往复运动</p>
+                    <p><strong>简谐运动：</strong>物体在跟偏离平衡位置的位移大小成正比，并且总是指向平衡位置的回复力作用下的振动</p>
+                    <p><strong>回复力：</strong>F = -kx，其中k是常数，负号表示回复力方向与位移方向相反</p>
+                    <p><strong>振幅：</strong>A，物体离开平衡位置的最大距离</p>
+                    <p><strong>周期：</strong>T，物体完成一次全振动所用的时间，单位是秒(s)</p>
+                    <p><strong>频率：</strong>f，单位时间内完成全振动的次数，单位是赫兹(Hz)，f = 1/T</p>
                 </div>
             </section>
 
@@ -34,21 +38,264 @@
                 <h2>知识点2</h2>
                 <div class="content-box">
                     <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <p><strong>简谐运动的周期公式：</strong>T = 2π√(m/k)</p>
+                    <p><strong>单摆的周期公式：</strong>T = 2π√(l/g)</p>
+                    <p><strong>弹簧振子的周期：</strong>T = 2π√(m/k)</p>
+                    <p><strong>简谐运动的能量：</strong>E = ½kA²（振子系统的机械能守恒）</p>
+                    <p><strong>受迫振动：</strong>物体在周期性驱动力作用下的振动</p>
+                    <p><strong>共振：</strong>驱动力的频率等于物体的固有频率时，振幅最大</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 简谐运动判别 【基础】</h3>
+                    <p class="question">以下运动中属于简谐运动的是：</p>
+                    <p>(A) 弹簧振子在光滑水平面上的振动</p>
+                    <p>(B) 小球在半径很大的光滑凹形球面最低点附近的摆动</p>
+                    <p>(C) 小球在半球形光滑碗底附近的小角度摆动</p>
+                    <p>(D) 以上都是</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（A）正确。弹簧振子的回复力F = -kx，满足简谐运动的条件</p>
+                        <p>（B）正确。小球在球面最低点附近摆动，回复力F = -mgθ ≈ -mg·x/R = -(mg/R)x，满足简谐运动条件</p>
+                        <p>（C）正确。与（B）类似，回复力满足简谐运动条件</p>
+                        <p><strong>知识点标签：</strong>简谐运动、回复力</p>
+                        <p><strong>答案：D</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 弹簧振子周期 【中档】</h3>
+                    <p class="question">一质量为m的弹簧振子，劲度系数为k，在光滑水平面上做简谐运动。若将振子的质量增大为原来的4倍，其他条件不变，则振子的周期变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）弹簧振子的周期公式：T = 2π√(m/k)</p>
+                        <p>（2）原周期：T₁ = 2π√(m/k)</p>
+                        <p>（3）质量变为4m后，新周期：T₂ = 2π√(4m/k) = 2π·2√(m/k) = 2T₁</p>
+                        <p>（4）周期之比：T₂/T₁ = 2</p>
+                        <p><strong>知识点标签：</strong>简谐运动、弹簧振子、周期</p>
+                        <p><strong>答案：2倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 单摆周期 【中档】</h3>
+                    <p class="question">一单摆的摆长为l，摆球质量为m。若将摆长缩短为原来的1/4，则单摆的周期变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）单摆的周期公式：T = 2π√(l/g)</p>
+                        <p>（2）原周期：T₁ = 2π√(l/g)</p>
+                        <p>（3）摆长变为l/4后，新周期：T₂ = 2π√[(l/4)/g] = 2π·(1/2)√(l/g) = T₁/2</p>
+                        <p>（4）周期之比：T₂/T₁ = 1/2</p>
+                        <p>（5）摆长缩短，周期变短</p>
+                        <p><strong>知识点标签：</strong>单摆、周期、摆长</p>
+                        <p><strong>答案：1/2倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 简谐运动能量 【中档】</h3>
+                    <p class="question">一弹簧振子在光滑水平面上做简谐运动，振幅为A，劲度系数为k。求振子在平衡位置时的动能和最大位移处的弹性势能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）振子的总能量（机械能守恒）：E = ½kA²</p>
+                        <p>（2）在最大位移处，全部能量为弹性势能：Ep_max = ½kA²，动能为零</p>
+                        <p>（3）在平衡位置处，全部能量为动能：Ek_max = ½kA²，弹性势能为零</p>
+                        <p>（4）平衡位置时的动能：Ek_max = ½kA²</p>
+                        <p>（5）最大位移处的弹性势能：Ep_max = ½kA²</p>
+                        <p><strong>知识点标签：</strong>简谐运动、能量守恒、机械能</p>
+                        <p><strong>答案：平衡位置动能 = ½kA²，最大位移处弹性势能 = ½kA²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 单摆重力加速度测量 【高档】</h3>
+                    <p class="question">用单摆测量某地的重力加速度，测量摆长为l，单摆完成n次全振动的时间为t。求重力加速度g的表达式。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）单摆的周期：T = t/n</p>
+                        <p>（2）根据单摆周期公式：T = 2π√(l/g)</p>
+                        <p>（3）由t/n = 2π√(l/g)，平方得：(t/n)² = 4π²l/g</p>
+                        <p>（4）解得：g = 4π²ln²/t²</p>
+                        <p>（5）这是测量重力加速度的一种方法，称为单摆法</p>
+                        <p><strong>知识点标签：</strong>单摆、周期、重力加速度测量</p>
+                        <p><strong>答案：g = 4π²ln²/t²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 受迫振动与共振 【中档】</h3>
+                    <p class="question">一物体在周期性驱动力作用下做受迫振动。当驱动力的频率等于物体的固有频率时，下列说法正确的是：</p>
+                    <p>(A) 物体振动的频率等于驱动力的频率</p>
+                    <p>(B) 物体振动的振幅最大，发生共振</p>
+                    <p>(C) 物体振动的振幅最小</p>
+                    <p>(D) 物体振动的周期等于驱动力的周期</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）正确。受迫振动的频率等于驱动力的频率，与固有频率无关</p>
+                        <p>（B）正确。当驱动力的频率等于物体的固有频率时，发生共振，振幅最大</p>
+                        <p>（C）错误。共振时振幅最大，不是最小</p>
+                        <p>（D）正确。受迫振动的周期等于驱动力的周期</p>
+                        <p><strong>知识点标签：</strong>受迫振动、共振、固有频率</p>
+                        <p><strong>答案：A、B、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 弹簧振子速度 【中档】</h3>
+                    <p class="question">一弹簧振子在光滑水平面上做简谐运动，振幅为A，劲度系数为k，振子质量为m。求振子通过平衡位置时的速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）振子的总能量：E = ½kA²</p>
+                        <p>（2）在平衡位置处，全部能量为动能：Ek = ½mv²</p>
+                        <p>（3）根据能量守恒：½mv² = ½kA²</p>
+                        <p>（4）解得：v = √(k/m)·A = A√(k/m)</p>
+                        <p>（5）平衡位置处速度最大，为振幅与角速度的乘积</p>
+                        <p><strong>知识点标签：</strong>简谐运动、能量守恒、速度</p>
+                        <p><strong>答案：v = A√(k/m)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 单摆摆长 【中档】</h3>
+                    <p class="question">一单摆的周期为T。若将摆长增大为原来的2倍，则单摆的周期变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）单摆的周期公式：T = 2π√(l/g)</p>
+                        <p>（2）原周期：T₁ = 2π√(l/g)</p>
+                        <p>（3）摆长变为2l后，新周期：T₂ = 2π√(2l/g) = 2π·√2√(l/g) = √2·T₁</p>
+                        <p>（4）周期之比：T₂/T₁ = √2 ≈ 1.414</p>
+                        <p><strong>知识点标签：</strong>单摆、周期、摆长</p>
+                        <p><strong>答案：√2倍（约1.414倍）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 简谐运动加速度 【中档】</h3>
+                    <p class="question">一弹簧振子做简谐运动，质量为m，劲度系数为k。当振子偏离平衡位置的位移为x时，求振子的加速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）简谐运动的回复力：F = -kx</p>
+                        <p>（2）根据牛顿第二定律：F = ma</p>
+                        <p>（3）由-ma = -kx，得：a = -kx/m</p>
+                        <p>（4）加速度方向与位移方向相反，指向平衡位置</p>
+                        <p>（5）加速度大小与位移成正比：a = (k/m)|x|</p>
+                        <p><strong>知识点标签：</strong>简谐运动、回复力、加速度</p>
+                        <p><strong>答案：a = -kx/m，大小为a = (k/m)|x|</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 单摆频率 【基础】</h3>
+                    <p class="question">一单摆的摆长为l，重力加速度为g。求单摆的频率f。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）单摆的周期：T = 2π√(l/g)</p>
+                        <p>（2）频率与周期的关系：f = 1/T</p>
+                        <p>（3）所以：f = 1/[2π√(l/g)] = g^(1/2)/[2πl^(1/2)] = √(g/l)/(2π)</p>
+                        <p>（4）频率的单位是赫兹(Hz)，表示每秒振动的次数</p>
+                        <p><strong>知识点标签：</strong>单摆、周期、频率</p>
+                        <p><strong>答案：f = 1/[2π√(l/g)] = √(g/l)/(2π)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 阻尼振动 【中档】</h3>
+                    <p class="question">关于阻尼振动，下列说法正确的是：</p>
+                    <p>(A) 阻尼振动的振幅保持不变</p>
+                    <p>(B) 阻尼振动的周期比无阻尼时大</p>
+                    <p>(C) 阻尼振动的振幅逐渐减小</p>
+                    <p>(D) 阻尼振动是机械能守恒的</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。阻尼振动中由于阻力作用，振幅逐渐减小</p>
+                        <p>（B）正确。阻尼振动的周期比无阻尼时略有增大</p>
+                        <p>（C）正确。阻尼振动中，振幅随时间逐渐减小</p>
+                        <p>（D）错误。阻尼振动中，机械能不守恒，有能量转化为热能等</p>
+                        <p><strong>知识点标签：</strong>阻尼振动、振幅、机械能</p>
+                        <p><strong>答案：B、C</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 相位差 【中档】</h3>
+                    <p class="question">两个弹簧振子，做简谐运动的周期相同，振幅相同。当其中一个振子经过平衡位置向上运动时，另一个振子刚好在最大位移处。求两个振子的相位差。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）从平衡位置向上运动到最大位移处，振子经历了1/4个周期</p>
+                        <p>（2）一个周期T对应相位变化为2π</p>
+                        <p>（3）1/4个周期对应的相位差：Δφ = (1/4)·2π = π/2</p>
+                        <p>（4）第二个振子比第一个振子落后π/2的相位</p>
+                        <p>（5）相位差的单位是弧度(rad)，也可以用角度表示，即90°</p>
+                        <p><strong>知识点标签：</strong>简谐运动、相位、相位差</p>
+                        <p><strong>答案：π/2（90°）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 共振条件 【中档】</h3>
+                    <p class="question">一物体在做受迫振动，其固有频率为f₀。若要使物体的振幅最大，驱动力的频率f应满足什么条件？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）受迫振动的频率等于驱动力的频率：f振 = f</p>
+                        <p>（2）当驱动力的频率等于物体的固有频率时，发生共振</p>
+                        <p>（3）共振时，物体的振幅达到最大值</p>
+                        <p>（4）共振条件：f = f₀</p>
+                        <p>（5）若驱动力的频率略大于或略小于固有频率，振幅也会较大，但不是最大</p>
+                        <p><strong>知识点标签：</strong>受迫振动、共振、固有频率</p>
+                        <p><strong>答案：f = f₀</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·浙江卷】 简谐运动位移 【中档】</h3>
+                    <p class="question">一弹簧振子做简谐运动，振幅为A，周期为T。求振子从最大位移处运动到平衡位置所需的最短时间。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）简谐运动从最大位移处到平衡位置，相当于1/4个周期</p>
+                        <p>（2）所以最短时间：t = T/4</p>
+                        <p>（3）也可以从平衡位置到最大位移处，时间也是T/4</p>
+                        <p>（4）若从最大位移到另一侧最大位移，时间为T/2</p>
+                        <p>（5）完成一次全振动，时间为T</p>
+                        <p><strong>知识点标签：</strong>简谐运动、周期、位移</p>
+                        <p><strong>答案：t = T/4</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 简谐运动图像 【高档】</h3>
+                    <p class="question">一简谐运动的位移-时间图像为正弦曲线，振幅为A，周期为T。写出位移x随时间t的变化关系式（t=0时，x=0且向正方向运动）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）简谐运动的位移-时间关系可以用正弦函数或余弦函数表示</p>
+                        <p>（2）角频率：ω = 2π/T</p>
+                        <p>（3）由于t=0时，x=0且向正方向运动，所以用正弦函数：x = Asin(ωt)</p>
+                        <p>（4）也可以写成：x = Asin(2πt/T)</p>
+                        <p>（5）若用余弦函数，则为：x = Acos(ωt - π/2)</p>
+                        <p>（6）振幅A描述位移的最大值，周期T描述振动的快慢</p>
+                        <p><strong>知识点标签：</strong>简谐运动、位移-时间图像、三角函数</p>
+                        <p><strong>答案：x = Asin(2πt/T)</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +316,7 @@
             const chapterId = 'physics9';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +324,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
