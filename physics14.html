@@ -25,30 +25,288 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>电磁感应：</strong>磁通量变化产生感应电动势和感应电流的现象</p>
+                    <p><strong>磁通量：</strong>Φ = BS·cosθ，单位是韦伯(Wb)</p>
+                    <p><strong>磁通量的变化率：</strong>ΔΦ/Δt，单位是韦伯每秒(Wb/s)</p>
+                    <p><strong>感应电动势：</strong>ε = -ΔΦ/Δt，单位是伏特(V)</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>法拉第电磁感应定律：</strong>ε = -n·ΔΦ/Δt，n为匝数，负号表示方向</p>
+                    <p><strong>楞次定律：</strong>感应电流的方向总是使感应电流的磁场阻碍引起感应电流的磁通量的变化</p>
+                    <p><strong>自感：</strong>线圈自身电流变化产生的感应电动势，ε自 = -L·ΔI/Δt</p>
+                    <p><strong>互感：</strong>一个线圈的电流变化在另一个线圈中产生感应电动势</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 磁通量的变化 【基础】</h3>
+                    <p class="question">一矩形线圈的面积为S，匝数为n，线圈平面与磁感应强度为B的匀强磁场的夹角为θ。若将线圈旋转90°，使平面与磁场垂直，求穿过线圈的磁通量的变化量。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）初始磁通量：Φ₁ = n·BS·cosθ</p>
+                        <p>（2）旋转90°后，线圈平面与磁场垂直，夹角为0°</p>
+                        <p>（3）末态磁通量：Φ₂ = n·BS·cos0° = n·BS</p>
+                        <p>（4）磁通量的变化量：ΔΦ = Φ₂ - Φ₁ = n·BS(1 - cosθ)</p>
+                        <p>（5）当θ = 0°时，ΔΦ = 0；当θ = 90°时，ΔΦ = n·BS</p>
+                        <p><strong>知识点标签：</strong>磁通量、法拉第电磁感应定律</p>
+                        <p><strong>答案：ΔΦ = n·BS(1 - cosθ)</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 法拉第电磁感应定律 【中档】</h3>
+                    <p class="question">一匝数为n的线圈，磁通量在时间Δt内从Φ₁变为Φ₂。求线圈中产生的感应电动势。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）磁通量的变化量：ΔΦ = Φ₂ - Φ₁</p>
+                        <p>（2）磁通量的变化率：ΔΦ/Δt = (Φ₂ - Φ₁)/Δt</p>
+                        <p>（3）根据法拉第电磁感应定律：ε = -n·ΔΦ/Δt</p>
+                        <p>（4）感应电动势：ε = -n·(Φ₂ - Φ₁)/Δt</p>
+                        <p>（5）负号表示方向，由楞次定律判断</p>
+                        <p>（6）感应电动势的大小：|ε| = n·|Φ₂ - Φ₁|/Δt</p>
+                        <p><strong>知识点标签：</strong>法拉第电磁感应定律、感应电动势</p>
+                        <p><strong>答案：ε = -n·(Φ₂ - Φ₁)/Δt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 楞次定律 【中档】</h3>
+                    <p class="question">一条形磁铁向下穿过一水平放置的环形线圈。判断线圈中感应电流的方向和线圈上端受到的安培力方向。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）磁铁向下运动，穿过线圈的向下的磁通量增加</p>
+                        <p>（2）根据楞次定律，感应电流的磁场要阻碍磁通量的增加</p>
+                        <p>（3）所以感应电流的磁场方向向上（与磁铁的磁场方向相反）</p>
+                        <p>（4）由右手螺旋定则，感应电流方向为顺时针（从上方看）</p>
+                        <p>（5）线圈上端受到的安培力方向：向下（排斥磁铁）</p>
+                        <p>（6）安培力方向与磁铁的运动方向相反，阻碍磁铁的运动</p>
+                        <p><strong>知识点标签：</strong>楞次定律、感应电流方向、安培力</p>
+                        <p><strong>答案：感应电流方向为顺时针，安培力方向向下</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 导体切割磁感线 【中档】</h3>
+                    <p class="question">一长度为L的直导线，以速度v在磁感应强度为B的匀强磁场中垂直切割磁感线运动。求导线两端的感应电动势。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）导体切割磁感线的感应电动势：ε = BLv</p>
+                        <p>（2）导线在时间Δt内扫过的面积：ΔS = L·v·Δt</p>
+                        <p>（3）扫过的磁通量：ΔΦ = B·ΔS = BLv·Δt</p>
+                        <p>（4）根据法拉第电磁感应定律：ε = ΔΦ/Δt = BLv</p>
+                        <p>（5）感应电动势的方向：用右手定则判断，四指指向速度方向，磁感线穿过手心，大拇指指向感应电动势的高电势端</p>
+                        <p><strong>知识点标签：</strong>导体切割磁感线、感应电动势、右手定则</p>
+                        <p><strong>答案：ε = BLv</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 自感 【中档】</h3>
+                    <p class="question">一线圈的自感系数为L，通过的电流从I₁变为I₂，变化时间为Δt。求线圈中产生的自感电动势。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）自感电动势公式：ε自 = -L·ΔI/Δt</p>
+                        <p>（2）电流的变化量：ΔI = I₂ - I₁</p>
+                        <p>（3）电流的变化率：ΔI/Δt = (I₂ - I₁)/Δt</p>
+                        <p>（4）自感电动势：ε自 = -L·(I₂ - I₁)/Δt</p>
+                        <p>（5）负号表示自感电动势的方向：当I₂ > I₁时，自感电动势阻碍电流增大；当I₂ < I₁时，自感电动势阻碍电流减小</p>
+                        <p><strong>知识点标签：</strong>自感、自感电动势、自感系数</p>
+                        <p><strong>答案：ε自 = -L·(I₂ - I₁)/Δt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 电磁感应的能量 【中档】</h3>
+                    <p class="question">一电阻为R的线圈，磁通量从Φ₁变为Φ₂，变化时间为Δt。求线圈中产生的热量和电源消耗的电能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）感应电动势：ε = -ΔΦ/Δt</p>
+                        <p>（2）感应电流：I = |ε|/R = |ΔΦ|/(R·Δt)</p>
+                        <p>（3）线圈中产生的热量（焦耳热）：Q = I²R·Δt = [|ΔΦ|/(R·Δt)]²R·Δt = (ΔΦ)²/(R·Δt)</p>
+                        <p>（4）由于是纯电阻电路，电功等于电热：W = Q = (ΔΦ)²/(R·Δt)</p>
+                        <p>（5）电磁感应过程将机械能转化为电能，最终转化为内能</p>
+                        <p>（6）产生的热量与磁通量的变化量平方成正比</p>
+                        <p><strong>知识点标签：</strong>电磁感应、能量守恒、焦耳定律</p>
+                        <p><strong>答案：Q = W = (ΔΦ)²/(R·Δt)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 互感 【中档】</h3>
+                    <p class="question">两线圈A、B，互感系数为M。当线圈A的电流从0变化到I时，求线圈B中产生的感应电动势。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）互感电动势公式：ε互 = -M·ΔI₁/Δt</p>
+                        <p>（2）线圈A的电流变化：ΔI₁ = I - 0 = I</p>
+                        <p>（3）线圈B中产生的感应电动势：εB = -M·I/Δt</p>
+                        <p>（4）互感电动势的方向：由楞次定律判断</p>
+                        <p>（5）互感系数M与两线圈的匝数、相对位置、磁介质等有关</p>
+                        <p>（6）互感是变压器的工作原理</p>
+                        <p><strong>知识点标签：</strong>互感、互感电动势、互感系数</p>
+                        <p><strong>答案：εB = -M·I/Δt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 电磁感应与力学 【高档】</h3>
+                    <p class="question">一质量为m的金属棒，长度为L，电阻为R，在磁感应强度为B的匀强磁场中从静止开始下滑，磁场方向垂直于斜面。求金属棒能达到的最大速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）金属棒切割磁感线产生的感应电动势：ε = BLv</p>
+                        <p>（2）感应电流：I = ε/R = BLv/R</p>
+                        <p>（3）金属棒受到的安培力（阻碍运动）：F安 = BIL = B(BLv/R)L = B²L²v/R</p>
+                        <p>（4）金属棒受到的重力沿斜面的分量：F重 = mg·sinθ（θ为斜面倾角）</p>
+                        <p>（5）当金属棒速度最大时，加速度为零，安培力等于重力分量：F安 = F重</p>
+                        <p>（6）B²L²v_max/R = mg·sinθ</p>
+                        <p>（7）解得：v_max = mgR·sinθ/(B²L²)</p>
+                        <p>（8）金属棒达到最大速度后匀速下滑</p>
+                        <p><strong>知识点标签：</strong>电磁感应、安培力、最大速度、力学平衡</p>
+                        <p><strong>答案：v_max = mgR·sinθ/(B²L²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 磁通量的计算 【中档】</h3>
+                    <p class="question">一矩形线圈的面积为S，匝数为n，放入磁感应强度为B的匀强磁场中，线圈平面与磁场平行。若将线圈旋转角度α，求穿过线圈的磁通量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）磁通量公式：Φ = n·BS·cosθ</p>
+                        <p>（2）初始线圈平面与磁场平行，夹角为90°</p>
+                        <p>（3）初始磁通量：Φ₁ = n·BS·cos90° = 0</p>
+                        <p>（4）旋转角度α后，线圈平面与磁场的夹角变为：θ = 90° - α</p>
+                        <p>（5）旋转后的磁通量：Φ₂ = n·BS·cos(90° - α) = n·BS·sinα</p>
+                        <p>（6）当α = 0°时，Φ = 0；当α = 90°时，Φ = n·BS</p>
+                        <p>（7）磁通量随旋转角度α的变化：Φ = n·BS·sinα</p>
+                        <p><strong>知识点标签：</strong>磁通量、角度关系、线圈旋转</p>
+                        <p><strong>答案：Φ = n·BS·sinα</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 电磁感应与电路 【中档】</h3>
+                    <p class="question">一匝数为n的线圈，电阻为R，磁通量从Φ₁线性变化到Φ₂，变化时间为t。求线圈中的平均感应电流和总电荷量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）平均感应电动势：ε = -n·(Φ₂ - Φ₁)/t</p>
+                        <p>（2）平均感应电流：I = |ε|/R = n·|Φ₂ - Φ₁|/(R·t)</p>
+                        <p>（3）通过线圈的总电荷量：Q = I·t = n·|Φ₂ - Φ₁|/R</p>
+                        <p>（4）总电荷量与磁通量的变化量成正比，与时间t无关</p>
+                        <p>（5）这说明电磁感应产生的电荷量只取决于磁通量的变化量，与变化的快慢无关</p>
+                        <p><strong>知识点标签：</strong>电磁感应、感应电流、电荷量、磁通量变化</p>
+                        <p><strong>答案：I = n·|Φ₂ - Φ₁|/(R·t)，Q = n·|Φ₂ - Φ₁|/R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 电磁感应与能量 【中档】</h3>
+                    <p class="question">一电阻为R的线圈，以速度v拉动从磁场中拉出，磁场区域的宽度为d。求拉力做的功和线圈产生的热量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）线圈切割磁感线产生的感应电动势：ε = BLv</p>
+                        <p>（2）感应电流：I = ε/R = BLv/R</p>
+                        <p>（3）安培力：F安 = BIL = B(BLv/R)L = B²L²v/R</p>
+                        <p>（4）匀速拉动时，拉力等于安培力：F拉 = F安 = B²L²v/R</p>
+                        <p>（5）拉动距离为d时，拉力做的功：W = F拉·d = B²L²v·d/R</p>
+                        <p>（6）线圈产生的热量：Q = I²R·t = (BLv/R)²R·(d/v) = B²L²v·d/R</p>
+                        <p>（7）拉力做的功等于线圈产生的热量：W = Q</p>
+                        <p>（8）能量守恒：外力做功转化为电能，最终转化为内能</p>
+                        <p><strong>知识点标签：</strong>电磁感应、拉力做功、能量守恒、焦耳定律</p>
+                        <p><strong>答案：W = Q = B²L²v·d/R</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 楞次定律的应用 【中档】</h3>
+                    <p class="question">一环形线圈，当条形磁铁的N极从上方靠近时，判断线圈中感应电流的方向和线圈对磁铁的受力方向。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）磁铁N极靠近，穿过线圈的向下的磁通量增加</p>
+                        <p>（2）根据楞次定律，感应电流的磁场要阻碍磁通量的增加</p>
+                        <p>（3）所以感应电流的磁场方向向上（与磁铁N极的磁场方向相反）</p>
+                        <p>（4）由右手螺旋定则，感应电流方向为逆时针（从上方看）</p>
+                        <p>（5）线圈对磁铁的受力：上端是N极，与磁铁的N极相互排斥，所以线圈对磁铁的受力方向向上</p>
+                        <p>（6）这个受力方向与磁铁的运动方向相反，阻碍磁铁的运动</p>
+                        <p><strong>知识点标签：</strong>楞次定律、感应电流方向、磁极相互作用</p>
+                        <p><strong>答案：感应电流方向为逆时针，受力方向向上（排斥）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 电磁感应与动力学 【高档】</h3>
+                    <p class="question">一金属杆ab，长度为L，质量为m，电阻为R，在磁感应强度为B的匀强磁场中，以初速度v₀开始运动。求金属杆能滑行的距离和速度随时间的变化关系。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）感应电动势：ε = BLv</p>
+                        <p>（2）感应电流：I = ε/R = BLv/R</p>
+                        <p>（3）安培力（阻碍运动）：F安 = BIL = B²L²v/R</p>
+                        <p>（4）根据牛顿第二定律：ma = -F安 = -B²L²v/R</p>
+                        <p>（5）加速度：a = -B²L²v/(mR)</p>
+                        <p>（6）由于a = dv/dt，所以：dv/dt = -B²L²v/(mR)</p>
+                        <p>（7）解微分方程得：v = v₀·e^[-B²L²t/(mR)]</p>
+                        <p>（8）滑行距离：∫[0到∞] v·dt = v₀·∫[0到∞] e^[-B²L²t/(mR)]dt = v₀·mR/(B²L²)</p>
+                        <p>（9）速度随时间指数衰减，金属杆最终停止</p>
+                        <p><strong>知识点标签：</strong>电磁感应、牛顿第二定律、微分方程、指数衰减</p>
+                        <p><strong>答案：v = v₀·e^[-B²L²t/(mR)]，s = v₀·mR/(B²L²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 电磁感应的综合 【高档】</h3>
+                    <p class="question">一匝数为n的矩形线圈，面积为S，在磁感应强度为B的匀强磁场中，以角速度ω匀速转动，线圈平面与磁场初始平行。求线圈中产生的感应电动势的最大值和瞬时值。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）线圈转动角度：θ = ωt</p>
+                        <p>（2）磁通量：Φ = n·BS·sinθ = n·BS·sin(ωt)</p>
+                        <p>（3）感应电动势：ε = -dΦ/dt = -n·BS·ω·cos(ωt)</p>
+                        <p>（4）感应电动势的最大值：εmax = n·BS·ω</p>
+                        <p>（5）感应电动势的瞬时值：ε = εmax·cos(ωt)</p>
+                        <p>（6）当线圈平面与磁场平行时，感应电动势最大；当线圈平面与磁场垂直时，感应电动势为零</p>
+                        <p>（7）这是一个交流发电机的基本原理</p>
+                        <p><strong>知识点标签：</strong>电磁感应、线圈转动、感应电动势、交流发电机</p>
+                        <p><strong>答案：εmax = n·BS·ω，ε = n·BS·ω·cos(ωt)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 电磁感应与能量的计算 【高档】</h3>
+                    <p class="question">一电阻为R的线圈，匝数为n，磁通量从0线性变化到Φ，变化时间为t。求线圈中产生的感应电流、总电荷量和总能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）平均感应电动势：ε = -n·ΔΦ/Δt = -n·Φ/t</p>
+                        <p>（2）平均感应电流：I = |ε|/R = n·Φ/(R·t)</p>
+                        <p>（3）总电荷量：Q = I·t = n·Φ/R</p>
+                        <p>（4）总能量（焦耳热）：E = I²R·t = [n·Φ/(R·t)]²R·t = n²Φ²/(R·t)</p>
+                        <p>（5）能量也可以表示为：E = Q·|ε| = (n·Φ/R)·(n·Φ/t) = n²Φ²/(R·t)</p>
+                        <p>（6）产生的能量与磁通量的平方成正比，与时间成反比</p>
+                        <p>（7）能量与线圈匝数的平方也成正比</p>
+                        <p><strong>知识点标签：</strong>电磁感应、感应电流、电荷量、能量、焦耳定律</p>
+                        <p><strong>答案：I = n·Φ/(R·t)，Q = n·Φ/R，E = n²Φ²/(R·t)</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +327,7 @@
             const chapterId = 'physics14';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +335,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
