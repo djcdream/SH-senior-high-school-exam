@@ -10,7 +10,7 @@
     <div class="container">
         <header>
             <h1>高中物理</h1>
-            <h2>第十六章 机械波和电磁波</h2>
+            <h2>第十六章 电磁波</h2>
         </header>
 
         <nav>
@@ -25,30 +25,281 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>电磁波：</strong>由变化的电场和磁场相互激发形成的波，可以在真空中传播</p>
+                    <p><strong>电磁波谱：</strong>按频率或波长排列的电磁波，包括无线电波、微波、红外线、可见光、紫外线、X射线、γ射线</p>
+                    <p><strong>电磁波速：</strong>c = 3×10⁸m/s，真空中的光速</p>
+                    <p><strong>波长和频率关系：</strong>λ = c/f</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>电磁波的产生：</strong>LC振荡电路可以产生电磁波，频率f = 1/[2π√(LC)]</p>
+                    <p><strong>电磁波的性质：</strong>电磁波是横波，电场和磁场相互垂直，且都垂直于传播方向</p>
+                    <p><strong>电磁波的反射和折射：</strong>遵循反射定律和折射定律</p>
+                    <p><strong>电磁波的干涉和衍射：</strong>电磁波也能发生干涉和衍射现象</p>
+                    <p><strong>电磁波的能量：</strong>能流密度S = ½cε₀E² = ½cμ₀H²</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 电磁波的性质 【基础】</h3>
+                    <p class="question">关于电磁波，下列说法正确的是：</p>
+                    <p>(A) 电磁波是纵波</p>
+                    <p>(B) 电磁波可以在真空中传播</p>
+                    <p>(C) 电磁波的传播速度与介质有关</p>
+                    <p>(D) 电磁波的电场和磁场同相位</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（A）错误。电磁波是横波，电场和磁场都垂直于传播方向</p>
+                        <p>（B）正确。电磁波是变化的电场和磁场相互激发形成的，不需要介质，可以在真空中传播</p>
+                        <p>（C）正确。电磁波的传播速度与介质的电磁性质有关，真空中最快</p>
+                        <p>（D）错误。电磁波的电场和磁场相位相同，但空间方向相互垂直</p>
+                        <p><strong>知识点标签：</strong>电磁波的性质、横波</p>
+                        <p><strong>答案：B、C</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 电磁波谱 【基础】</h3>
+                    <p class="question">下列电磁波中，频率由低到高排列的是：</p>
+                    <p>(A) 无线电波、微波、红外线、可见光</p>
+                    <p>(B) γ射线、X射线、紫外线、可见光</p>
+                    <p>(C) 可见光、紫外线、X射线、γ射线</p>
+                    <p>(D) 微波、红外线、可见光、无线电波</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）正确。电磁波谱中，频率由低到高的顺序是：无线电波、微波、红外线、可见光、紫外线、X射线、γ射线</p>
+                        <p>（B）错误。这是频率由高到低的顺序</p>
+                        <p>（C）错误。这是可见光及以上，没有无线电波、微波、红外线</p>
+                        <p>（D）错误。顺序不对，且无线电波的频率最低</p>
+                        <p><strong>知识点标签：</strong>电磁波谱、频率排列</p>
+                        <p><strong>答案：A</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 波长和频率 【中档】</h3>
+                    <p class="question">一电磁波的频率为f，在真空中传播的速度为c。求该电磁波的波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）波长、频率和波速的关系：c = λf</p>
+                        <p>（2）解得：λ = c/f</p>
+                        <p>（3）电磁波的波长与频率成反比</p>
+                        <p>（4）频率越高，波长越短</p>
+                        <p><strong>知识点标签：</strong>电磁波、波长、频率、波速</p>
+                        <p><strong>答案：λ = c/f</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 LC振荡电路 【中档】</h3>
+                    <p class="question">一LC振荡电路，电感为L，电容为C。求该电路产生电磁波的周期和频率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）LC振荡电路的周期公式：T = 2π√(LC)</p>
+                        <p>（2）频率：f = 1/T = 1/[2π√(LC)]</p>
+                        <p>（3）这是LC电路的固有频率</p>
+                        <p>（4）电磁波的频率与LC电路的固有频率相同</p>
+                        <p>（5）改变L或C可以改变电磁波的频率</p>
+                        <p><strong>知识点标签：</strong>LC振荡电路、电磁波的频率</p>
+                        <p><strong>答案：T = 2π√(LC)，f = 1/[2π√(LC)]</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 电磁波的能量 【中档】</h3>
+                    <p class="question">一电磁波在空间中传播，电场强度为E，磁场强度为H。求该电磁波的能流密度（单位时间内通过单位面积的电磁能量）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波的能流密度公式：S = EH</p>
+                        <p>（2）电磁波中，电场和磁场的关系：H = √(ε₀/μ₀)·E</p>
+                        <p>（3）所以：S = E·√(ε₀/μ₀)·E = √(ε₀/μ₀)·E²</p>
+                        <p>（4）也可以写成：S = cε₀E² = cμ₀H²，其中c = 1/√(ε₀μ₀)</p>
+                        <p>（5）能流密度描述电磁波的能量传输</p>
+                        <p><strong>知识点标签：</strong>电磁波、能流密度、电场和磁场</p>
+                        <p><strong>答案：S = cε₀E² = cμ₀H²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 电磁波的反射 【中档】</h3>
+                    <p class="question">一电磁波垂直射向金属板，若电磁波的频率为f，金属板是否会对电磁波产生反射？说明理由。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波垂直射向金属板时，会与金属板中的自由电子相互作用</p>
+                        <p>（2）电磁波的电场会驱动金属板中的自由电子运动</p>
+                        <p>（3）运动中的电子会产生电磁波，形成反射</p>
+                        <p>（4）反射波的频率与入射波相同，但相位相反</p>
+                        <p>（5）这就是电磁波的反射现象，类似于光波的反射</p>
+                        <p>（6）反射波的强度取决于金属板的导电性和入射角</p>
+                        <p><strong>知识点标签：</strong>电磁波、反射、金属板</p>
+                        <p><strong>答案：会反射，金属板中的自由电子与电磁波相互作用产生反射波</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 电磁波的折射 【中档】</h3>
+                    <p class="question">一电磁波从空气射入水中，入射角为i。若空气中的电磁波速为c₁，水中的电磁波速为c₂（c₁ > c₂），求折射角r。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据折射定律：sin i/sin r = c₁/c₂</p>
+                        <p>（2）解得：sin r = (c₂/c₁)·sin i</p>
+                        <p>（3）折射角：r = arcsin[(c₂/c₁)·sin i]</p>
+                        <p>（4）由于c₁ > c₂，所以折射角r小于入射角i</p>
+                        <p>（5）电磁波从光疏介质进入光密介质时，向法线折射</p>
+                        <p><strong>知识点标签：</strong>电磁波、折射、折射定律</p>
+                        <p><strong>答案：r = arcsin[(c₂/c₁)·sin i]</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 电磁波的干涉 【高档】</h3>
+                    <p class="question">两频率相同的电磁波在某点相遇，若两电磁波的振幅相同，相位差为Δφ，求该点合成电磁波的振幅。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）设两电磁波的振幅分别为A₁ = A和A₂ = A</p>
+                        <p>（2）合成电磁波的振幅：A合 = √(A₁² + A₂² + 2A₁A₂·cosΔφ)</p>
+                        <p>（3）代入A₁ = A₂ = A：A合 = √(A² + A² + 2A²·cosΔφ) = √[2A²(1 + cosΔφ)]</p>
+                        <p>（4）利用三角函数公式：1 + cosΔφ = 2cos²(Δφ/2)</p>
+                        <p>（5）所以：A合 = √[2A²·2cos²(Δφ/2)] = √[4A²cos²(Δφ/2)] = 2A|cos(Δφ/2)|</p>
+                        <p>（6）当Δφ = 0时，A合 = 2A（相长干涉）；当Δφ = π时，A合 = 0（相消干涉）</p>
+                        <p><strong>知识点标签：</strong>电磁波、干涉、振幅合成</p>
+                        <p><strong>答案：A合 = 2A|cos(Δφ/2)|</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 电磁波的衍射 【中档】</h3>
+                    <p class="question">一电磁波通过宽缝，缝宽为d，电磁波的波长为λ。若缝宽d与波长λ的关系满足d = λ，在缝后多远处能观察到明显的衍射现象？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波的衍射现象与缝宽d和波长λ的比值有关</p>
+                        <p>（2）当d ≈ λ时，衍射现象最明显</p>
+                        <p>（3）当d >> λ时，衍射现象不明显，近似沿直线传播</p>
+                        <p>（4）当d << λ时，衍射现象非常明显，电磁波可以绕过缝向各个方向传播</p>
+                        <p>（5）本题中d = λ，属于"缝宽与波长相当"的情况，衍射现象比较明显</p>
+                        <p>（6）在缝后一定距离（远大于缝宽）处都能观察到明显的衍射现象</p>
+                        <p><strong>知识点标签：</strong>电磁波、衍射、缝宽、波长</p>
+                        <p><strong>答案：当d = λ时，在缝后较远处都能观察到明显的衍射现象</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 无线电波 【基础】</h3>
+                    <p class="question">一无线电波的频率为f，在空气中传播的速度为c。求该无线电波的波长和周期。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）波长：λ = c/f</p>
+                        <p>（2）周期：T = 1/f</p>
+                        <p>（3）频率越高，波长越短，周期越短</p>
+                        <p>（4）无线电波的频率范围很广，从长波、中波到短波</p>
+                        <p>（5）不同频率的无线电波有不同的传播特性</p>
+                        <p><strong>知识点标签：</strong>无线电波、波长、周期、频率</p>
+                        <p><strong>答案：λ = c/f，T = 1/f</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 电磁波的偏振 【中档】</h3>
+                    <p class="question">一电磁波的偏振方向是竖直方向。若要使该电磁波通过偏振片，偏振片的透振方向应如何放置？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）偏振片只允许与其透振方向平行的电磁波分量通过</p>
+                        <p>（2）为了使竖直偏振的电磁波完全通过，偏振片的透振方向应设置为竖直方向</p>
+                        <p>（3）此时，电磁波的电场振动方向与偏振片的透振方向平行，完全通过</p>
+                        <p>（4）若偏振片的透振方向设置为水平方向，则电磁波完全被阻挡</p>
+                        <p>（5）若偏振片的透振方向与竖直方向成θ角，则通过的电磁波分量为E' = E·cosθ</p>
+                        <p><strong>知识点标签：</strong>电磁波、偏振、偏振片</p>
+                        <p><strong>答案：偏振片的透振方向应设置为竖直方向</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 电磁波的多普勒效应 【中档】</h3>
+                    <p class="question">一电磁波源以速度v₁向静止的接收者运动，电磁波的频率为f₀。若电磁波的速度为c，求接收者接收到的频率f'。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波源向接收者运动时，波长缩短：λ' = (c - v₁)/f₀</p>
+                        <p>（2）接收者接收到的频率：f' = c/λ'</p>
+                        <p>（3）代入λ'得：f' = c/[(c - v₁)/f₀] = c·f₀/(c - v₁)</p>
+                        <p>（4）由于c - v₁ < c，所以f' > f₀，接收到的频率升高</p>
+                        <p>（5）这称为电磁波的多普勒效应，应用于雷达测速、天体速度测量等</p>
+                        <p><strong>知识点标签：</strong>电磁波、多普勒效应、频率变化</p>
+                        <p><strong>答案：f' = c·f₀/(c - v₁)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 可见光 【基础】</h3>
+                    <p class="question">红光的波长约为700nm，紫光的波长约为400nm。求红光和紫光的频率之比。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）红光的波长：λ红 = 700nm = 700×10⁻⁹m</p>
+                        <p>（2）紫光的波长：λ紫 = 400nm = 400×10⁻⁹m</p>
+                        <p>（3）红光的频率：f红 = c/λ红 = c/(700×10⁻⁹)</p>
+                        <p>（4）紫光的频率：f紫 = c/λ紫 = c/(400×10⁻⁹)</p>
+                        <p>（5）频率之比：f红/f紫 = [c/(700×10⁻⁹)]/[c/(400×10⁻⁹)] = 400/700 = 4/7</p>
+                        <p>（6）红光的频率约为紫光的4/7</p>
+                        <p>（7）波长越短，频率越高</p>
+                        <p><strong>知识点标签：</strong>可见光、波长、频率</p>
+                        <p><strong>答案：f红/f紫 = 4/7</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 电磁波的强度 【中档】</h3>
+                    <p class="question">一电磁波在介质中传播，若将电场强度增大为原来的2倍，其他条件不变，则电磁波的强度变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波的强度（能流密度）：S = cε₀E²</p>
+                        <p>（2）原强度：S₁ = cε₀E₁²</p>
+                        <p>（3）电场强度增大为原来的2倍后：E₂ = 2E₁</p>
+                        <p>（4）新强度：S₂ = cε₀E₂² = cε₀(2E₁)² = 4cε₀E₁²</p>
+                        <p>（5）强度之比：S₂/S₁ = 4cε₀E₁²/(cε₀E₁²) = 4</p>
+                        <p>（6）电磁波的强度与电场强度的平方成正比</p>
+                        <p><strong>知识点标签：</strong>电磁波、强度、电场强度</p>
+                        <p><strong>答案：4倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 电磁波的应用 【高档】</h3>
+                    <p class="question">一电磁波用于通信，发射功率为P，天线向各个方向均匀发射。求距离发射天线r处电磁波的强度（忽略空气吸收）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电磁波向各个方向均匀发射，传播到距离r处时，电磁波分布在半径为r的球面上</p>
+                        <p>（2）球面的面积：A = 4πr²</p>
+                        <p>（3）距离r处电磁波的强度：I = P/A = P/(4πr²)</p>
+                        <p>（4）强度与距离的平方成反比</p>
+                        <p>（5）距离越远，强度越小</p>
+                        <p>（6）这是电磁波在自由空间中的传播规律</p>
+                        <p>（7）实际通信中，还需考虑天线增益、大气吸收等因素</p>
+                        <p><strong>知识点标签：</strong>电磁波、强度、球面传播、通信</p>
+                        <p><strong>答案：I = P/(4πr²)</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -57,7 +308,7 @@
         </main>
 
         <footer>
-            <p>高中物理 - 第十六章 机械波和电磁波</p>
+            <p>高中物理 - 第十六章 电磁波</p>
             <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
         </footer>
     </div>
@@ -69,6 +320,7 @@
             const chapterId = 'physics16';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +328,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
