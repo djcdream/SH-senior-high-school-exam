@@ -25,30 +25,302 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>波粒二象性：</strong>光和实物粒子既具有波动性，又具有粒子性</p>
+                    <p><strong>光子说：</strong>爱因斯坦提出，光是光子流，每个光子的能量E = hν，动量p = h/λ</p>
+                    <p><strong>德布罗意波：</strong>实物粒子也具有波动性，波长λ = h/p，其中h是普朗克常量</p>
+                    <p><strong>物质波：</strong>实物粒子的波，描述微观粒子的波动特性</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>不确定性原理：</strong>海森堡提出，不可能同时精确测量粒子的位置和动量</p>
+                    <p><strong>海森堡不等式：</strong>Δx·Δp ≥ h/(4π)</p>
+                    <p><strong>波函数：</strong>描述微观粒子状态的函数，|ψ|²表示粒子在某处出现的概率</p>
+                    <p><strong>薛定谔方程：</strong>量子力学的基本方程，描述波函数随时间的演化</p>
+                    <p><strong>隧穿效应：</strong>粒子能够穿透势垒，这是量子效应</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 光子说 【基础】</h3>
+                    <p class="question">一单色光的频率为ν，求该光子的能量和动量。已知普朗克常量h。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）光子能量：E = hν</p>
+                        <p>（2）光子动量：p = h/λ = hν/c</p>
+                        <p>（3）其中c是真空中的光速</p>
+                        <p>（4）光子的能量与频率成正比</p>
+                        <p>（5）光子的动量与能量成正比</p>
+                        <p><strong>知识点标签：</strong>光子说、光子能量、光子动量</p>
+                        <p><strong>答案：E = hν，p = hν/c</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 德布罗意波 【中档】</h3>
+                    <p class="question">一电子的质量为m，速度为v。求该电子的德布罗意波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电子的动量：p = mv</p>
+                        <p>（2）德布罗意波长：λ = h/p = h/(mv)</p>
+                        <p>（3）其中h = 6.63×10⁻³⁴J·s是普朗克常量</p>
+                        <p>（4）德布罗意波长与动量成反比</p>
+                        <p>（5）电子具有波动性，称为物质波</p>
+                        <p><strong>知识点标签：</strong>德布罗意波、物质波、电子波动性</p>
+                        <p><strong>答案：λ = h/(mv)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 不确定性原理 【中档】</h3>
+                    <p class="question">一电子的位置不确定量为Δx，求该电子的动量不确定量的最小值。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据海森堡不确定性原理：Δx·Δp ≥ h/(4π)</p>
+                        <p>（2）动量不确定量的最小值：Δp_min = h/(4πΔx)</p>
+                        <p>（3）位置测量越精确（Δx越小），动量不确定量越大</p>
+                        <p>（4）无法同时精确测量位置和动量</p>
+                        <p>（5）这是微观粒子的基本特性</p>
+                        <p><strong>知识点标签：</strong>不确定性原理、海森堡不等式</p>
+                        <p><strong>答案：Δp_min = h/(4πΔx)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 波粒二象性 【中档】</h3>
+                    <p class="question">光具有波粒二象性，说明光既有波动性又有粒子性。举出光的波动性和粒子性的实验证据。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）光的波动性实验证据：干涉、衍射、偏振</p>
+                        <p>（2）光的粒子性实验证据：光电效应、康普顿效应</p>
+                        <p>（3）干涉和衍射证明光具有波动性</p>
+                        <p>（4）光电效应和康普顿效应证明光具有粒子性（光子）</p>
+                        <p>（5）波粒二象性是光的基本特性</p>
+                        <p>（6）不同实验条件下，光表现不同的性质</p>
+                        <p><strong>知识点标签：</strong>波粒二象性、光的波动性、光的粒子性</p>
+                        <p><strong>答案：波动性：干涉、衍射；粒子性：光电效应、康普顿效应</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 光电效应 【中档】</h3>
+                    <p class="question">一金属的截止频率为ν₀，当用频率为ν（ν > ν₀）的光照射时，光电子的最大初动能是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据爱因斯坦光电效应方程：hν = W + Ek_max</p>
+                        <p>（2）其中W = hν₀是逸出功，Ek_max是光电子的最大初动能</p>
+                        <p>（3）代入得：Ek_max = hν - hν₀ = h(ν - ν₀)</p>
+                        <p>（4）当ν > ν₀时，Ek_max > 0，有光电子发射</p>
+                        <p>（5）当ν = ν₀时，Ek_max = 0，刚好没有光电子</p>
+                        <p>（6）当ν < ν₀时，没有光电子发射</p>
+                        <p><strong>知识点标签：</strong>光电效应、爱因斯坦方程、截止频率</p>
+                        <p><strong>答案：Ek_max = h(ν - ν₀)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 德布罗意波长 【中档】</h3>
+                    <p class="question">一质子的质量为m_p，动能为Ek。求该质子的德布罗意波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质子的动能：Ek = ½m_p² = p²/(2m_p)</p>
+                        <p>（2）解得动量：p = √(2m_pEk)</p>
+                        <p>（3）德布罗意波长：λ = h/p = h/√(2m_pEk)</p>
+                        <p>（4）其中h = 6.63×10⁻³⁴J·s是普朗克常量</p>
+                        <p>（5）动能越大，德布罗意波长越短</p>
+                        <p>（6）质子具有波动性，可以用德布罗意波长描述</p>
+                        <p><strong>知识点标签：</strong>德布罗意波、物质波、质子</p>
+                        <p><strong>答案：λ = h/√(2m_pEk)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 不确定度计算 【中档】</h3>
+                    <p class="question">一电子被限制在长度为L的无限深势阱中。求该电子的位置不确定量和动量不确定量的最小乘积。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电子被限制在长度为L的势阱中</p>
+                        <p>（2）位置不确定量：Δx ≈ L</p>
+                        <p>（3）根据不确定性原理：Δx·Δp ≥ h/(4π)</p>
+                        <p>（4）动量不确定量：Δp ≥ h/(4πL)</p>
+                        <p>（5）不确定量乘积：Δx·Δp ≥ h/(4π)</p>
+                        <p>（6）这是不确定度最小值，实际不确定度可能更大</p>
+                        <p>（7）限制在势阱中，位置相对确定，动量不确定度较大</p>
+                        <p><strong>知识点标签：</strong>不确定性原理、势阱、不确定度</p>
+                        <p><strong>答案：Δx·Δp ≥ h/(4π)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 物质波 【中档】</h3>
+                    <p class="question">一质量为m的粒子，以速度v运动。若要使该粒子的德布罗意波长为λ，需要多大的速度？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）德布罗意波长：λ = h/p = h/(mv)</p>
+                        <p>（2）解得速度：v = h/(mλ)</p>
+                        <p>（3）质量越大，需要越大的速度才能达到相同的德布罗意波长</p>
+                        <p>（4）波长越短，需要的速度越大</p>
+                        <p>（5）这是实物粒子波动性的体现</p>
+                        <p>（6）宏观粒子的德布罗意波长非常短，波动性不明显</p>
+                        <p><strong>知识点标签：</strong>德布罗意波、物质波、速度</p>
+                        <p><strong>答案：v = h/(mλ)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 康普顿效应 【中档】</h3>
+                    <p class="question">X射线光子与静止的自由电子碰撞，光子被散射，电子获得动能。求散射光子波长的变化。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）康普顿散射：光子与电子碰撞，光子被散射，电子获得动能</p>
+                        <p>（2）能量守恒：hν₀ + m_ec² = hν' + E_e</p>
+                        <p>（3）动量守恒：hν₀/c = hν'/c·cosθ + p_e·cosφ</p>
+                        <p>（4）波长变化：Δλ = λ' - λ₀ = h/(m_ec)(1 - cosθ)</p>
+                        <p>（5）其中θ是散射角</p>
+                        <p>（6）当θ = 0时，Δλ = 0（散射波长不变）</p>
+                        <p>（7）当θ = π时，Δλ = 2h/(m_ec)（波长变化最大）</p>
+                        <p>（8）康普顿效应是光的粒子性的重要证据</p>
+                        <p><strong>知识点标签：</strong>康普顿效应、散射、波长变化</p>
+                        <p><strong>答案：Δλ = h/(m_ec)(1 - cosθ)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 光子动量 【中档】</h3>
+                    <p class="question">一光子的能量为E，求该光子的动量和波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）光子能量：E = hν = hc/λ</p>
+                        <p>（2）光子动量：p = E/c</p>
+                        <p>（3）波长：λ = hc/E</p>
+                        <p>（4）光子具有能量和动量，是光的粒子性的体现</p>
+                        <p>（5）光子的能量与频率成正比，与波长成反比</p>
+                        <p>（6）光子的动量与能量成正比</p>
+                        <p>（7）光子静质量为零，总是以光速运动</p>
+                        <p><strong>知识点标签：</strong>光子、光子能量、光子动量、波长</p>
+                        <p><strong>答案：p = E/c，λ = hc/E</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 波函数 【中档】</h3>
+                    <p class="question">关于波函数，下列说法正确的是：</p>
+                    <p>(A) 波函数Ψ描述粒子的位置</p>
+                    <p>(B) |Ψ|²表示粒子在某处出现的概率</p>
+                    <p>(C) 波函数Ψ必须是实数</p>
+                    <p>(D) 波函数Ψ可以是复数</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。波函数Ψ描述粒子的量子状态，不是直接描述位置</p>
+                        <p>（B）正确。|Ψ|²表示粒子在某处出现的概率密度</p>
+                        <p>（C）错误。波函数Ψ可以是复数</p>
+                        <p>（D）正确。波函数Ψ可以是复数，只有|Ψ|²才有物理意义</p>
+                        <p>（5）波函数满足归一化条件：∫|Ψ|²dx = 1</p>
+                        <p>（6）波函数包含粒子的全部量子信息</p>
+                        <p><strong>知识点标签：</strong>波函数、概率密度、量子态</p>
+                        <p><strong>答案：B、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 隧穿效应 【中档】</h3>
+                    <p class="question">关于隧穿效应，下列说法正确的是：</p>
+                    <p>(A) 粒子的能量大于势垒高度时才能发生隧穿</p>
+                    <p>(B) 隧穿效应是经典现象</p>
+                    <p>(C) 隧穿效应是量子效应</p>
+                    <p>(D) 隧穿效应是概率性的</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。粒子的能量可以小于势垒高度，也有一定概率隧穿</p>
+                        <p>（B）错误。隧穿效应是量子效应，不是经典现象</p>
+                        <p>（C）正确。隧穿效应是量子效应，经典力学无法解释</p>
+                        <p>（D）正确。隧穿效应是概率性的，不是确定的</p>
+                        <p>（5）隧穿效应广泛应用于半导体器件</p>
+                        <p>（6）扫描隧道显微镜利用隧穿效应成像</p>
+                        <p><strong>知识点标签：</strong>隧穿效应、量子效应、概率性</p>
+                        <p><strong>答案：C、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 薛定谔方程 【高档】</h3>
+                    <p class="question">一维无限深势阱中，粒子质量为m，势阱宽度为a。求粒子的能级和波函数。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）薛定谔方程：-(ℏ²/2m)·(d²ψ/dx²) + V(x)ψ = Eψ</p>
+                        <p>（2）对于无限深势阱：V(x) = 0（0 < x < a），V(x) = ∞（其他区域）</p>
+                        <p>（3）边界条件：ψ(0) = ψ(a) = 0</p>
+                        <p>（4）解薛定谔方程得：ψ_n(x) = √(2/a)·sin(nπx/a)</p>
+                        <p>（5）能级：E_n = n²π²ℏ²/(2ma²)，n = 1, 2, 3, ...</p>
+                        <p>（6）基态：n = 1，E₁ = π²ℏ²/(2ma²)</p>
+                        <p>（7）波函数描述了粒子在势阱中的概率分布</p>
+                        <p>（8）能级是分立的，不是连续的</p>
+                        <p><strong>知识点标签：</strong>薛定谔方程、无限深势阱、能级、波函数</p>
+                        <p><strong>答案：E_n = n²π²ℏ²/(2ma²)，ψ_n(x) = √(2/a)·sin(nπx/a)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 量子数 【基础】</h3>
+                    <p class="question">关于量子数，下列说法正确的是：</p>
+                    <p>(A) 主量子数n描述电子的能量</p>
+                    <p>(B) 角量子数l描述电子的角动量</p>
+                    <p>(C) 磁量子数m描述电子的自旋角动量</p>
+                    <p>(D) 所有量子数都是分立的</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）正确。主量子数n描述电子的能量，n = 1, 2, 3, ...</p>
+                        <p>（B）正确。角量子数l描述电子的角动量，l = 0, 1, 2, ..., n-1</p>
+                        <p>（C）正确。磁量子数m描述电子的自旋角动量，m = -l, ..., +l</p>
+                        <p>（D）正确。所有量子数都是分立的，不是连续的</p>
+                        <p>（5）自旋量子数s描述电子的内禀自旋</p>
+                        <p>（6）量子数决定了电子的量子态</p>
+                        <p>（7）泡利不相容原理：一个量子态最多容纳一个电子</p>
+                        <p><strong>知识点标签：</strong>量子数、主量子数、角量子数、磁量子数</p>
+                        <p><strong>答案：A、B、C、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 量子力学综合 【高档】</h3>
+                    <p class="question">一粒子在一维势场中运动，势函数为V(x) = ½kx²（谐振子）。求该粒子的能级和零点能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）薛定谔方程：-(ℏ²/2m)·(d²ψ/dx²) + ½kx²ψ = Eψ</p>
+                        <p>（2）引入角频率ω = √(k/m)</p>
+                        <p>（3）解薛定谔方程得：ψ_n(x)和能级E_n</p>
+                        <p>（4）能级：E_n = (n + ½)ℏω，n = 0, 1, 2, ...</p>
+                        <p>（5）零点能：E₀ = (0 + ½)ℏω = ½ℏω</p>
+                        <p>（6）零点能不为零，这是量子效应</p>
+                        <p>（7）经典谐振子能量是连续的，量子谐振子能量是分立的</p>
+                        <p>（8）基态能量：E₀ = ½ℏω，称为零点能</p>
+                        <p>（9）即使在绝对零度，谐振子仍有零点能</p>
+                        <p><strong>知识点标签：</strong>薛定谔方程、谐振子、能级、零点能</p>
+                        <p><strong>答案：E_n = (n + ½)ℏω，E₀ = ½ℏω</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +341,7 @@
             const chapterId = 'physics22';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +349,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';

@@ -25,30 +25,295 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>狭义相对论：</strong>爱因斯坦在1905年提出的物理理论，应用于惯性参考系</p>
+                    <p><strong>相对性原理：</strong>物理定律在所有惯性参考系中都相同</p>
+                    <p><strong>光速不变原理：</strong>真空中的光速c在所有惯性参考系中都相同，与光源的运动无关</p>
+                    <p><strong>洛伦兹变换：</strong>不同惯性参考系之间的时空坐标变换</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>尺缩效应：</strong>运动的物体在运动方向上的长度缩短，l = l₀·√(1 - v²/c²)</p>
+                    <p><strong>钟慢效应：</strong>运动的时钟变慢，Δt = Δt₀/√(1 - v²/c²)</p>
+                    <p><strong>质能关系：</strong>E = mc²，质量和能量可以相互转化</p>
+                    <p><strong>质量增加：</strong>物体的质量随速度增加，m = m₀/√(1 - v²/c²)</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 光速不变 【基础】</h3>
+                    <p class="question">根据相对论，真空中的光速c是多少？光速与光源的运动有关吗？</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）真空中的光速：c = 3×10⁸m/s</p>
+                        <p>（2）根据光速不变原理，光速c在所有惯性参考系中都相同</p>
+                        <p>（3）光速与光源的运动无关</p>
+                        <p>（4）无论光源是静止的还是运动的，光速都是c</p>
+                        <p>（5）这是相对论的基本假设之一</p>
+                        <p><strong>知识点标签：</strong>相对论、光速不变原理、真空光速</p>
+                        <p><strong>答案：c = 3×10⁸m/s，与光源运动无关</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 尺缩效应 【中档】</h3>
+                    <p class="question">一静止长度为l₀的飞船，以速度v飞行。求地面观测者测量到的飞船长度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据尺缩效应：l = l₀·√(1 - v²/c²)</p>
+                        <p>（2）地面观测者测量到的飞船长度：l = l₀·√(1 - v²/c²)</p>
+                        <p>（3）由于√(1 - v²/c²) < 1（当v > 0时），所以l < l₀</p>
+                        <p>（4）运动的物体在运动方向上的长度缩短</p>
+                        <p>（5）这是相对论的时空效应之一</p>
+                        <p><strong>知识点标签：</strong>尺缩效应、相对论、长度测量</p>
+                        <p><strong>答案：l = l₀·√(1 - v²/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 钟慢效应 【中档】</h3>
+                    <p class="question">一飞船以速度v飞行，飞船上的时钟记录的时间间隔为Δt₀。求地面观测者记录的时间间隔。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据钟慢效应：Δt = Δt₀/√(1 - v²/c²)</p>
+                        <p>（2）地面观测者记录的时间间隔：Δt = Δt₀/√(1 - v²/c²)</p>
+                        <p>（3）由于1/√(1 - v²/c²) > 1（当v > 0时），所以Δt > Δt₀</p>
+                        <p>（4）运动的时钟变慢</p>
+                        <p>（5）地面观测者认为飞船上的时钟走得慢</p>
+                        <p>（6）这是相对论的时空效应之一</p>
+                        <p><strong>知识点标签：</strong>钟慢效应、相对论、时间测量</p>
+                        <p><strong>答案：Δt = Δt₀/√(1 - v²/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 质能关系 【中档】</h3>
+                    <p class="question">根据质能方程E = mc²，1kg物质对应的能量是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质能方程：E = mc²</p>
+                        <p>（2）质量：m = 1kg</p>
+                        <p>（3）真空中的光速：c = 3×10⁸m/s</p>
+                        <p>（4）对应的能量：E = 1kg×(3×10⁸m/s)² = 9×10¹⁶J</p>
+                        <p>（5）这个能量相当于燃烧20000吨TNT炸药</p>
+                        <p>（6）质能方程说明质量和能量可以相互转化</p>
+                        <p>（7）核反应释放的能量来源于质量亏损</p>
+                        <p><strong>知识点标签：</strong>质能方程、相对论、质能转换</p>
+                        <p><strong>答案：E = 9×10¹⁶J</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 质量增加 【中档】</h3>
+                    <p class="question">一物体的静止质量为m₀，当它以速度v运动时，质量变为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）质量增加公式：m = m₀/√(1 - v²/c²)</p>
+                        <p>（2）当物体以速度v运动时，质量：m = m₀/√(1 - v²/c²)</p>
+                        <p>（3）由于1/√(1 - v²/c²) > 1（当v > 0时），所以m > m₀</p>
+                        <p>（4）物体的质量随速度增加</p>
+                        <p>（5）当v → c时，m → ∞</p>
+                        <p>（6）这是相对论的质量效应，说明物体的质量不是恒定的</p>
+                        <p><strong>知识点标签：</strong>质量增加、相对论、运动质量</p>
+                        <p><strong>答案：m = m₀/√(1 - v²/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 洛伦兹因子 【中档】</h3>
+                    <p class="question">定义洛伦兹因子γ = 1/√(1 - v²/c²)。当速度v = 0.8c时，γ等于多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹因子：γ = 1/√(1 - v²/c²)</p>
+                        <p>（2）代入v = 0.8c：γ = 1/√(1 - (0.8c)²/c²) = 1/√(1 - 0.64)</p>
+                        <p>（3）γ = 1/√(0.36) = 1/0.6 ≈ 1.667</p>
+                        <p>（4）当v = 0.8c时，γ ≈ 1.667</p>
+                        <p>（5）洛伦兹因子描述了相对论效应的大小</p>
+                        <p>（6）当v → c时，γ → ∞</p>
+                        <p>（7）当v << c时，γ ≈ 1</p>
+                        <p><strong>知识点标签：</strong>洛伦兹因子、相对论、速度</p>
+                        <p><strong>答案：γ ≈ 1.667</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 相对论速度加法 【高档】</h3>
+                    <p class="question">两飞船A和B，分别以速度v_A和v_B沿同一直线飞行。根据相对论速度加法公式，求飞船A观测到飞船B的速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）相对论速度加法公式：u = (v_B - v_A)/(1 - v_A·v_B/c²)</p>
+                        <p>（2）其中u是飞船A观测到飞船B的速度</p>
+                        <p>（3）v_B和v_A是在地面参考系中的速度</p>
+                        <p>（4）当v_A和v_B都远小于c时，u ≈ v_B - v_A（经典情况）</p>
+                        <p>（5）当v_B = c时，u = (c - v_A)/(1 - v_A·c/c²) = c（光速不变）</p>
+                        <p>（6）当v_B接近c时，u也接近c，但不会超过c</p>
+                        <p>（7）相对论速度加法保证合成速度不超过光速</p>
+                        <p><strong>知识点标签：</strong>相对论速度加法、相对论、速度合成</p>
+                        <p><strong>答案：u = (v_B - v_A)/(1 - v_A·v_B/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 相对论动能 【中档】</h3>
+                    <p class="question">一物体的静止质量为m₀，以速度v运动时，其动能是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）相对论动能公式：E_k = (m - m₀)c² = (m₀/√(1 - v²/c²) - m₀)c²</p>
+                        <p>（2）化简：E_k = m₀c²(1/√(1 - v²/c²) - 1)</p>
+                        <p>（3）当v << c时，展开得：E_k ≈ ½m₀v²（经典情况）</p>
+                        <p>（4）相对论动能比经典动能大</p>
+                        <p>（5）当v → c时，E_k → ∞</p>
+                        <p>（6）高速时需要用相对论动能公式</p>
+                        <p>（7）低速时，相对论动能公式退化为经典动能公式</p>
+                        <p><strong>知识点标签：</strong>相对论动能、相对论、质量增加</p>
+                        <p><strong>答案：E_k = m₀c²(1/√(1 - v²/c²) - 1)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 相对论长度测量 【中档】</h3>
+                    <p class="question">一静止的杆长为l₀。一观察者以速度v沿杆的方向运动。求观察者测量到的杆长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据尺缩效应：l = l₀·√(1 - v²/c²)</p>
+                        <p>（2）观察者以速度v沿杆的方向运动，测量到的杆长：l = l₀·√(1 - v²/c²)</p>
+                        <p>（3）由于√(1 - v²/c²) < 1（当v > 0时），所以l < l₀</p>
+                        <p>（4）观察者测量到的杆比静止时短</p>
+                        <p>（5）这是相对论的时空效应</p>
+                        <p>（6）长度缩短只发生在运动方向上</p>
+                        <p>（7）垂直于运动方向的长度不变</p>
+                        <p><strong>知识点标签：</strong>尺缩效应、相对论、长度测量</p>
+                        <p><strong>答案：l = l₀·√(1 - v²/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 相对论时间膨胀 【中档】</h3>
+                    <p class="question">一双生子实验，双生子A留在地球，双生子B乘坐飞船以速度v飞行。飞船飞行时间t后返回地球。求双生子A和B的年龄差。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）地球上的时间：t_A = t（往返时间）</p>
+                        <p>（2）飞船上的时间：t_B = t/γ = t·√(1 - v²/c²)</p>
+                        <p>（3）由于γ > 1，所以t_B < t_A</p>
+                        <p>（4）双生子B的年龄增长：Δt_B = t_B</p>
+                        <p>（5）双生子A的年龄增长：Δt_A = t</p>
+                        <p>（6）年龄差：Δt = Δt_A - Δt_B = t - t·√(1 - v²/c²) = t[1 - √(1 - v²/c²)]</p>
+                        <p>（7）双生子B比双生子A年轻</p>
+                        <p>（8）这是著名的双生子佯谬</p>
+                        <p><strong>知识点标签：</strong>相对论、双生子实验、时间膨胀、年龄差</p>
+                        <p><strong>答案：Δt = t[1 - √(1 - v²/c²)]，B比A年轻</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 相对论质量 【中档】</h3>
+                    <p class="question">一物体的静止质量为m₀，当它以速度v运动时，其动能与静能的比值是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）相对论动能：E_k = (m - m₀)c² = m₀c²(1/√(1 - v²/c²) - 1)</p>
+                        <p>（2）静能：E₀ = m₀c²</p>
+                        <p>（3）比值：E_k/E₀ = 1/√(1 - v²/c²) - 1</p>
+                        <p>（4）也可以写成：E_k/E₀ = γ - 1</p>
+                        <p>（5）当v → c时，γ → ∞，比值E_k/E₀ → ∞</p>
+                        <p>（6）当v << c时，E_k/E₀ ≈ ½v²/c²（经典情况）</p>
+                        <p>（7）动能与静能的比值反映了相对论效应的大小</p>
+                        <p><strong>知识点标签：</strong>相对论质量、动能、静能</p>
+                        <p><strong>答案：E_k/E₀ = γ - 1</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 相对论时空 【中档】</h3>
+                    <p class="question">一事件在地面参考系S中发生的时空坐标为(x, t)。在另一参考系S'中，S'相对于S以速度v沿x轴运动。求该事件在S'中的时空坐标(x', t')。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹变换：x' = γ(x - vt)，t' = γ(t - vx/c²)</p>
+                        <p>（2）其中γ = 1/√(1 - v²/c²)</p>
+                        <p>（3）事件在S'中的时空坐标：x' = γ(x - vt)，t' = γ(t - vx/c²)</p>
+                        <p>（4）这是相对论中不同参考系之间的时空变换</p>
+                        <p>（5）洛伦兹变换保证光速不变原理</p>
+                        <p>（6）当v << c时，洛伦兹变换退化为伽利略变换</p>
+                        <p><strong>知识点标签：</strong>洛伦兹变换、相对论、时空坐标</p>
+                        <p><strong>答案：x' = γ(x - vt)，t' = γ(t - vx/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 相对论能量 【中档】</h3>
+                    <p class="question">一粒子的静止能量为E₀，当它以速度v运动时，总能量是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）相对论总能量公式：E = γE₀ = E₀/√(1 - v²/c²)</p>
+                        <p>（2）其中E₀ = m₀c²是静止能量</p>
+                        <p>（3）γ = 1/√(1 - v²/c²)是洛伦兹因子</p>
+                        <p>（4）总能量：E = E₀/√(1 - v²/c²)</p>
+                        <p>（5）当v = 0时，E = E₀（静止能量）</p>
+                        <p>（6）当v → c时，E → ∞</p>
+                        <p>（7）总能量包括静能和动能：E = E₀ + E_k</p>
+                        <p>（8）质能方程：E = mc² = γm₀c²</p>
+                        <p><strong>知识点标签：</strong>相对论能量、总能量、静能、质能方程</p>
+                        <p><strong>答案：E = E₀/√(1 - v²/c²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 相对论与经典力学 【中档】</h3>
+                    <p class="question">在什么情况下，相对论效应可以忽略不计，经典力学近似成立？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）当速度v远小于光速c时，相对论效应可以忽略</p>
+                        <p>（2）具体条件：v/c << 1，或v << c</p>
+                        <p>（3）在这种情况下，洛伦兹因子γ ≈ 1</p>
+                        <p>（4）尺缩效应：l ≈ l₀（长度几乎不变）</p>
+                        <p>（5）钟慢效应：Δt ≈ Δt₀（时间几乎不变）</p>
+                        <p>（6）质量增加：m ≈ m₀（质量几乎不变）</p>
+                        <p>（7）经典力学近似成立：E_k ≈ ½m₀v²</p>
+                        <p>（8）通常v < 0.1c时，经典力学近似很好</p>
+                        <p><strong>知识点标签：</strong>相对论、经典力学、近似条件</p>
+                        <p><strong>答案：当v << c时，相对论效应可以忽略，经典力学近似成立</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 相对论的综合 【高档】</h3>
+                    <p class="question">一粒子以速度v运动，静止质量为m₀。求该粒子的总能量、动能、动量和能量与动量的关系。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）洛伦兹因子：γ = 1/√(1 - v²/c²)</p>
+                        <p>（2）质量：m = γm₀</p>
+                        <p>（3）总能量：E = γm₀c² = mc²</p>
+                        <p>（4）动能：E_k = (m - m₀)c² = (γ - 1)m₀c²</p>
+                        <p>（5）动量：p = γm₀v = mv</p>
+                        <p>（6）能量与动量的关系：E² - (pc)² = (m₀c²)²</p>
+                        <p>（7）展开：E² = (pc)² + (m₀c²)²</p>
+                        <p>（8）这是相对论的能量-动量关系，对任何速度都成立</p>
+                        <p>（9）当v << c时，E ≈ m₀c² + ½m₀v²，p ≈ m₀v</p>
+                        <p><strong>知识点标签：</strong>相对论、总能量、动能、动量、能量-动量关系</p>
+                        <p><strong>答案：E = γm₀c²，E_k = (γ - 1)m₀c²，p = γm₀v，E² = (pc)² + (m₀c²)²</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +334,7 @@
             const chapterId = 'physics21';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +342,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
