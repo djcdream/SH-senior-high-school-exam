@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第八章 动量 - 高中物理</title>
+    <title>第八章 静电场 - 高中物理</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>高中物理</h1>
-            <h2>第八章 动量</h2>
+            <h2>第八章 静电场</h2>
         </header>
 
         <nav>
@@ -25,30 +25,267 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>电荷：</strong>物质的一种固有属性，分为正电荷和负电荷，电荷量Q的单位是库仑(C)</p>
+                    <p><strong>库仑定律：</strong>真空中两个点电荷之间的相互作用力F = kQ₁Q₂/r²，其中k = 9×10⁹ N·m²/C²</p>
+                    <p><strong>电场强度：</strong>E = F/q，单位是N/C或V/m，描述电场的强弱和方向</p>
+                    <p><strong>电场线：</strong>假想的曲线，曲线上每点的切线方向表示该点的电场方向，电场线越密处电场越强</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>电势与电容</h3>
+                    <p><strong>电势：</strong>φ = Ep/q，单位是伏特(V)，描述电场的能的性质</p>
+                    <p><strong>电势差：</strong>U = φ₁ - φ₂，电场中两点电势之差</p>
+                    <p><strong>电势能：</strong>Ep = qφ，电荷在电场中具有的能量</p>
+                    <p><strong>电容：</strong>C = Q/U，电容器容纳电荷的能力，单位是法拉(F)</p>
+                    <p><strong>匀强电场：</strong>E = U/d，电势差与距离之比</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 库仑定律 【基础】</h3>
+                    <p class="question">真空中两个点电荷，电荷量分别为+Q和-Q，相距r。求它们连线中点处的电场强度。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）设中点为O，+Q在O点产生的电场强度E₁ = kQ/(r/2)² = 4kQ/r²，方向指向-Q</p>
+                        <p>（2）-Q在O点产生的电场强度E₂ = kQ/(r/2)² = 4kQ/r²，方向指向+Q</p>
+                        <p>（3）根据矢量叠加，中点处的电场强度E = E₁ + E₂ = 2×4kQ/r² = 8kQ/r²</p>
+                        <p><strong>知识点标签：</strong>库仑定律、电场强度、电场叠加</p>
+                        <p><strong>答案：E = 8kQ/r²，方向沿连线指向+Q</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 电场线性质 【基础】</h3>
+                    <p class="question">关于电场线，下列说法正确的是：</p>
+                    <p>(A) 电场线上某点的切线方向表示电荷在该点的受力方向</p>
+                    <p>(B) 电场线越密的地方电场越强</p>
+                    <p>(C) 电场线可以相交</p>
+                    <p>(D) 电场线是闭合曲线</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）正确。电场线上某点的切线方向表示该点的电场方向，也是正电荷在该点的受力方向</p>
+                        <p>（B）正确。电场线的疏密表示电场的强弱，电场线越密处电场越强</p>
+                        <p>（C）错误。电场线不能相交，因为如果相交，则交点处有两个电场方向，这是不可能的</p>
+                        <p>（D）错误。静电场的电场线起于正电荷或无穷远，止于负电荷或无穷远，不是闭合曲线</p>
+                        <p><strong>知识点标签：</strong>电场线、电场性质</p>
+                        <p><strong>答案：A、B</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 电势与电势能 【中档】</h3>
+                    <p class="question">一电量为+q的检验电荷在电场中从A点移到B点，A、B两点的电势分别为φA和φB（φA > φB）。求电荷电势能的变化量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电荷在A点的电势能：EpA = qφA</p>
+                        <p>（2）电荷在B点的电势能：EpB = qφB</p>
+                        <p>（3）电势能的变化量：ΔEp = EpB - EpA = qφB - qφA = q(φB - φA)</p>
+                        <p>（4）由于φA > φB，所以φB - φA < 0，电势能减小</p>
+                        <p><strong>知识点标签：</strong>电势、电势能、电势差</p>
+                        <p><strong>答案：ΔEp = q(φB - φA)（电势能减小）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 匀强电场 【中档】</h3>
+                    <p class="question">两平行金属板相距d，接在电压为U的电源两极，金属板间为匀强电场。求两板间的电场强度E和电子在电场中受到的电场力F（电子电荷量为-e）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）匀强电场的电场强度：E = U/d</p>
+                        <p>（2）电子在电场中受到的电场力：F = eE = eU/d，方向与电场方向相反</p>
+                        <p><strong>知识点标签：</strong>匀强电场、电场强度、电场力</p>
+                        <p><strong>答案：E = U/d，F = eU/d</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 点电荷电势 【中档】</h3>
+                    <p class="question">一点电荷Q在真空中产生电场，求距离该点电荷r处的电势（设无穷远处电势为零）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）点电荷在距离r处产生的电场强度：E = kQ/r²</p>
+                        <p>（2）取无穷远处为参考点（电势为0），从无穷远处移到距离r处，电场力做功（电场力的方向与位移方向相反，负功）：</p>
+                        <p>W = -∫[∞到r] F·dr = -∫[∞到r] (kQq₀/r²)·dr = kQq₀/r</p>
+                        <p>（3）根据电势定义：φ = W/q₀ = kQ/r</p>
+                        <p>（4）电势的符号：若Q为正，φ为正；若Q为负，φ为负</p>
+                        <p><strong>知识点标签：</strong>点电荷电势、电势定义</p>
+                        <p><strong>答案：φ = kQ/r</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 电容 【中档】</h3>
+                    <p class="question">一平行板电容器，电容为C，接在电压为U的电源上。若将两板间距增大一倍，求电容器的电容和所带电荷的变化。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）平行板电容器的电容公式：C = εS/(4πkd)，其中d为板间距</p>
+                        <p>（2）间距增大一倍后：d' = 2d</p>
+                        <p>（3）新电容：C' = εS/(4πk·2d) = C/2</p>
+                        <p>（4）初始电荷：Q = CU</p>
+                        <p>（5）新电荷：Q' = C'U = (C/2)U = Q/2</p>
+                        <p><strong>知识点标签：</strong>平行板电容器、电容公式</p>
+                        <p><strong>答案：电容变为原来的一半，电荷也变为原来的一半</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 带电粒子在电场中的运动 【高档】</h3>
+                    <p class="question">一电子以速度v₀垂直进入匀强电场，电场强度为E，极板长度为L，电子质量为m，电荷量为-e。求电子离开电场时的侧向位移和偏转角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电子在电场中受电场力：F = eE，方向与电场方向相反</p>
+                        <p>（2）侧向加速度：a = F/m = eE/m</p>
+                        <p>（3）电子在电场中运动时间：t = L/v₀</p>
+                        <p>（4）侧向位移：y = ½at² = ½(eE/m)·(L/v₀)² = eEL²/(2mv₀²)</p>
+                        <p>（5）离开电场时的侧向速度：vy = at = (eE/m)·(L/v₀) = eEL/(mv₀)</p>
+                        <p>（6）偏转角：tanθ = vy/v₀ = (eEL/(mv₀))/v₀ = eEL/(mv₀²)</p>
+                        <p><strong>知识点标签：</strong>带电粒子在电场中的运动、类平抛运动</p>
+                        <p><strong>答案：侧向位移 = eEL²/(2mv₀²)，偏转角满足tanθ = eEL/(mv₀²)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·江苏卷】 电势叠加 【中档】</h3>
+                    <p class="question">两个等量异号点电荷+Q和-Q相距r，求它们连线中垂线上距离中点为x的点的电势（设无穷远处电势为零）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）设中点为O，中垂线上点P到O的距离为x</p>
+                        <p>（2）P点到+Q和-Q的距离均为：r' = √[(r/2)² + x²]</p>
+                        <p>（3）+Q在P点产生的电势：φ₁ = kQ/r'</p>
+                        <p>（4）-Q在P点产生的电势：φ₂ = -kQ/r'</p>
+                        <p>（5）P点的电势：φ = φ₁ + φ₂ = kQ/r' - kQ/r' = 0</p>
+                        <p>（6）中垂线上各点电势均为零（等势面）</p>
+                        <p><strong>知识点标签：</strong>电势叠加、等势面、偶极子</p>
+                        <p><strong>答案：φ = 0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·江西卷】 电场力做功 【中档】</h3>
+                    <p class="question">一电荷量为+q的点电荷在电场中从电势为φ₁的点移到电势为φ₂的点，求电场力做的功和电势能的变化量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电场力做的功：W = -q(φ₂ - φ₁) = q(φ₁ - φ₂)</p>
+                        <p>（2）电势能的变化量：ΔEp = Ep₂ - Ep₁ = qφ₂ - qφ₁ = q(φ₂ - φ₁)</p>
+                        <p>（3）根据功能关系：W = -ΔEp</p>
+                        <p>（4）若φ₁ > φ₂，则电场力做正功，电势能减小</p>
+                        <p><strong>知识点标签：</strong>电场力做功、电势能、功能关系</p>
+                        <p><strong>答案：W = q(φ₁ - φ₂)，ΔEp = q(φ₂ - φ₁)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 电场强度计算 【高档】</h3>
+                    <p class="question">一均匀带电圆环，半径为R，总电荷量为Q，求圆环轴线上距离环心为x处的电场强度（设圆环轴线沿x轴）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）圆环单位长度的电荷量：λ = Q/(2πR)</p>
+                        <p>（2）取一小段圆弧ds，其电荷量：dq = λds</p>
+                        <p>（3）该段电荷在轴线上x处产生的电场强度：dE = k·dq/(R² + x²)</p>
+                        <p>（4）dE在垂直于轴线方向的分量对称抵消，平行于轴线的分量：dE∥ = dE·cosθ = k·dq/(R² + x²)·[x/√(R² + x²)] = kxdq/(R² + x²)^(3/2)</p>
+                        <p>（5）积分得圆环轴线上的电场强度：E = ∫kxdq/(R² + x²)^(3/2) = kxQ/(R² + x²)^(3/2)</p>
+                        <p>（6）方向沿轴线，背离环心（若Q为正）</p>
+                        <p><strong>知识点标签：</strong>电场强度、积分、圆环电场</p>
+                        <p><strong>答案：E = kxQ/(R² + x²)^(3/2)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·河北卷】 电容器能量 【中档】</h3>
+                    <p class="question">一电容器电容为C，充电后电荷量为Q，两板间电压为U。求电容器储存的能量和电场能量密度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电容器储存的能量：Ep = ½QU = ½Q²/C = ½CU²</p>
+                        <p>（2）对于平行板电容器：C = εS/d，U = Ed</p>
+                        <p>（3）电容器体积：V = Sd</p>
+                        <p>（4）电场能量密度：ω = Ep/V = (½CU²)/(Sd) = ½(εS/d)(Ed)²/(Sd) = ½εE²</p>
+                        <p><strong>知识点标签：</strong>电容器能量、能量密度</p>
+                        <p><strong>答案：Ep = ½QU，能量密度 = ½εE²</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·新课标Ⅱ卷】 电荷守恒定律 【基础】</h3>
+                    <p class="question">两个完全相同的金属球A和B，分别带有电荷+4Q和-Q。若让两球接触后再分开，求每个球所带的电荷。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）两球接触前总电荷：Q总 = +4Q + (-Q) = +3Q</p>
+                        <p>（2）两球完全相同，接触后电荷平分：Q' = Q总/2 = +1.5Q</p>
+                        <p>（3）分开后每个球所带电荷：+1.5Q</p>
+                        <p>（4）这就是电荷守恒定律的应用</p>
+                        <p><strong>知识点标签：</strong>电荷守恒定律、电荷分配</p>
+                        <p><strong>答案：每个球带+1.5Q电荷</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·浙江卷】 静电平衡 【高档】</h3>
+                    <p class="question">一质量为m、电荷量为+q的带电小球用长为l的绝缘细线悬挂，在水平向右的匀强电场中静止平衡，细线与竖直方向的夹角为θ。求电场强度E和小球受到的电场力。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）小球受力：重力mg竖直向下，拉力F沿线向上，电场力Fe = qE水平向右</p>
+                        <p>（2）竖直方向平衡：Fcosθ = mg，所以 F = mg/cosθ</p>
+                        <p>（3）水平方向平衡：Fsinθ = Fe = qE</p>
+                        <p>（4）由Fsinθ = qE和F = mg/cosθ，得：(mg/cosθ)·sinθ = qE</p>
+                        <p>（5）解得：E = mgtanθ/q</p>
+                        <p>（6）电场力：Fe = qE = mgtanθ</p>
+                        <p><strong>知识点标签：</strong>静电平衡、受力分析、电场力</p>
+                        <p><strong>答案：E = mgtanθ/q，Fe = mgtanθ</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 电势差公式 【基础】</h3>
+                    <p class="question">在匀强电场中，电场强度为E，沿电场线方向距离为s的两点A、B，求A、B两点的电势差UAB。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）匀强电场中，沿电场线方向电势降低</p>
+                        <p>（2）根据电势差的定义：UAB = φA - φB</p>
+                        <p>（3）沿电场线方向移动电荷，电场力做正功：W = qUAB</p>
+                        <p>（4）也等于电场力做的功：W = qE·s</p>
+                        <p>（5）所以：qUAB = qE·s，即 UAB = E·s</p>
+                        <p>（6）电势差公式：U = Ed（其中d为距离）</p>
+                        <p><strong>知识点标签：</strong>匀强电场、电势差、电场强度</p>
+                        <p><strong>答案：UAB = Es</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 电容器的连接 【中档】</h3>
+                    <p class="question">两个电容器C₁和C₂串联接在电压为U的电源上，求每个电容器两端的电压和总电容。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）串联电容器的总电容：1/C总 = 1/C₁ + 1/C₂，所以 C总 = C₁C₂/(C₁ + C₂)</p>
+                        <p>（2）串联电容器电荷量相同：Q = C总·U = C₁C₂·U/(C₁ + C₂)</p>
+                        <p>（3）每个电容器两端的电压：U₁ = Q/C₁ = C₂·U/(C₁ + C₂)</p>
+                        <p>（4）U₂ = Q/C₂ = C₁·U/(C₁ + C₂)</p>
+                        <p>（5）验证：U₁ + U₂ = (C₂·U + C₁·U)/(C₁ + C₂) = U，符合串联特点</p>
+                        <p><strong>知识点标签：</strong>电容器串联、电容计算、电压分配</p>
+                        <p><strong>答案：C总 = C₁C₂/(C₁ + C₂)，U₁ = C₂U/(C₁ + C₂)，U₂ = C₁U/(C₁ + C₂)</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -57,7 +294,7 @@
         </main>
 
         <footer>
-            <p>高中物理 - 第八章 动量</p>
+            <p>高中物理 - 第八章 静电场</p>
             <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
         </footer>
     </div>
@@ -69,6 +306,7 @@
             const chapterId = 'physics8';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +314,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
