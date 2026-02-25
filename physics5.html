@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五章 曲线运动 - 高中物理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理</h1>
+            <h2>第五章 曲线运动</h2>
+        </header>
+
+        <nav>
+            <a href="physics.html" class="nav-link">← 返回物理列表</a>
+            <a href="#curve-motion" class="nav-link">曲线运动</a>
+            <a href="#composition" class="nav-link">运动的合成与分解</a>
+            <a href="#projectile" class="nav-link">抛体运动</a>
+            <a href="#circular" class="nav-link">圆周运动</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="curve-motion" class="section">
+                <h2>5.1 曲线运动</h2>
+
+                <div class="content-box">
+                    <h3>曲线运动的定义</h3>
+                    <p class="definition">物体运动轨迹是曲线的运动叫做<strong>曲线运动</strong></p>
+                </div>
+
+                <div class="content-box">
+                    <h3>曲线运动的条件</h3>
+                    <ul>
+                        <li><strong>初速度方向</strong>与<strong>合外力方向</strong>不在一条直线上</li>
+                        <li>物体所受合外力的方向指向曲线的<strong>凹侧</strong></li>
+                        <li>曲线运动的速度方向沿轨迹的<strong>切线方向</strong></li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>曲线运动的性质</h3>
+                    <ul>
+                        <li>曲线运动一定是<strong>变速运动</strong>（速度方向时刻变化）</li>
+                        <li>曲线运动一定具有<strong>加速度</strong></li>
+                        <li>做曲线运动的物体，所受合外力一定不为零</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="composition" class="section">
+                <h2>5.2 运动的合成与分解</h2>
+
+                <div class="content-box">
+                    <h3>基本概念</h3>
+                    <p class="definition">如果一个物体同时参与几个运动，那么这个物体的实际运动叫做这几个运动的<strong>合运动</strong>，这几个运动叫做这个物体运动的<strong>分运动</strong></p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>运算法则</h3>
+                    <p>位移、速度、加速度都是矢量，遵循<strong>平行四边形定则</strong></p>
+                    <div class="formula">
+                        <p>合速度：v = √(v₁² + v₂² + 2v₁v₂cosθ)</p>
+                        <p>合位移：s = √(s₁² + s₂² + 2s₁s₂cosθ)</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>运动的独立性</h3>
+                    <ul>
+                        <li>一个物体同时参与几个运动，各分运动<strong>独立进行</strong>，互不干扰</li>
+                        <li>合运动与各分运动具有<strong>等时性</strong></li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>合运动性质的判断</h3>
+                    <ul>
+                        <li><strong>匀速直线：</strong>合加速度为零</li>
+                        <li><strong>匀变速直线：</strong>合加速度恒定，且与初速度共线</li>
+                        <li><strong>匀变速曲线：</strong>合加速度恒定，且与初速度不共线（如平抛运动）</li>
+                        <li><strong>变加速曲线：</strong>合加速度变化（如圆周运动）</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projectile" class="section">
+                <h2>5.3 抛体运动</h2>
+
+                <div class="content-box">
+                    <h3>平抛运动</h3>
+                    <p class="definition">将物体以一定的初速度沿<strong>水平方向</strong>抛出，物体只在重力作用下的运动叫做<strong>平抛运动</strong></p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>平抛运动规律（不计空气阻力）</h3>
+                    <div class="formula">
+                        <p><strong>水平方向（匀速直线运动）：</strong></p>
+                        <p>vx = v₀，x = v₀t</p>
+                        <p><strong>竖直方向（自由落体运动）：</strong></p>
+                        <p>vy = gt，y = ½gt²</p>
+                        <p><strong>合速度：</strong>v = √(v₀² + (gt)²)</p>
+                        <p><strong>速度方向：</strong>tanθ = gt/v₀（θ为速度与水平方向夹角）</p>
+                        <p><strong>合位移：</strong>s = √(x² + y²)</p>
+                        <p><strong>位移方向：</strong>tanα = gt/(2v₀)</p>
+                        <p><strong>轨迹方程：</strong>y = (g/(2v₀²))x²（抛物线）</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>斜抛运动</h3>
+                    <p class="definition">将物体以一定的初速度沿<strong>斜向上或斜向下</strong>抛出，物体只在重力作用下的运动叫做<strong>斜抛运动</strong></p>
+                    <ul>
+                        <li><strong>射高：</strong>H = (v₀sinθ)²/(2g)</li>
+                        <li><strong>射程：</strong>X = v₀²sin(2θ)/g</li>
+                        <li><strong>飞行时间：</strong>T = 2v₀sinθ/g</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="circular" class="section">
+                <h2>5.4 圆周运动</h2>
+
+                <div class="content-box">
+                    <h3>圆周运动的定义</h3>
+                    <p class="definition">物体运动轨迹是圆的运动叫做<strong>圆周运动</strong></p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>描述圆周运动的物理量</h3>
+                    <div class="formula">
+                        <p><strong>线速度：</strong>v = Δs/Δt = 2πr/T = 2πrf（m/s）</p>
+                        <p><strong>角速度：</strong>ω = Δθ/Δt = 2π/T = 2πf（rad/s）</p>
+                        <p><strong>周期：</strong>T = 1/f（s）</p>
+                        <p><strong>频率：</strong>f = 1/T（Hz）</p>
+                        <p><strong>转速：</strong>n = f（r/s）或 n = 60f（r/min）</p>
+                        <p><strong>关系：</strong>v = ωr</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>匀速圆周运动</h3>
+                    <ul>
+                        <li><strong>定义：</strong>线速度大小不变的圆周运动</li>
+                        <li><strong>性质：</strong>变速运动（速度方向时刻变化），变加速运动（加速度方向时刻变化）</li>
+                        <li><strong>向心加速度：</strong>a = v²/r = ω²r = (2π/T)²r = 4π²rf²</li>
+                        <li><strong>方向：</strong>始终指向圆心</li>
+                    </ul>
+                </div>
+
+                <div class="operation-box">
+                    <h3>向心力</h3>
+                    <div class="formula">F = ma = mv²/r = mω²r = m(2π/T)²r = 4π²mrf²</div>
+                    <ul>
+                        <li><strong>作用：</strong>产生向心加速度，只改变速度方向，不改变速度大小</li>
+                        <li><strong>方向：</strong>始终指向圆心</li>
+                        <li><strong>性质：</strong>向心力是<strong>按效果命名的力</strong>，不是某种性质的力</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>生活中的圆周运动</h3>
+                    <ul>
+                        <li><strong>火车转弯：</strong>外轨略高于内轨，重力和支持力的合力提供向心力</li>
+                        <li><strong>汽车过拱形桥：</strong>在最高点，mg - FN = mv²/r，汽车对桥的压力小于重力</li>
+                        <li><strong>汽车过凹形桥：</strong>在最低点，FN - mg = mv²/r，汽车对桥的压力大于重力</li>
+                        <li><strong>航天器中的失重：</strong>航天器绕地球做圆周运动，重力完全提供向心力，宇航员处于完全失重状态</li>
+                        <li><strong>离心运动：</strong>当提供的向心力小于物体做圆周运动所需的向心力时，物体会逐渐远离圆心</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <div class="example-box">
+                    <h3>例题 1：曲线运动的条件 【基础】</h3>
+                    <p class="question">关于曲线运动的条件，下列说法正确的是？</p>
+                    <p>A. 物体受恒力作用时，一定做直线运动</p>
+                    <p>B. 物体受变力作用时，一定做曲线运动</p>
+                    <p>C. 物体做曲线运动时，所受合外力方向一定指向曲线的凹侧</p>
+                    <p>D. 物体做曲线运动时，速度方向和加速度方向一定不在同一直线上</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>A. 错误，物体受恒力作用，若力与速度方向不在一直线上，做匀变速曲线运动（如平抛）</p>
+                        <p>B. 错误，物体受变力作用，若力始终与速度方向共线，做变速直线运动</p>
+                        <p>C. 正确，物体做曲线运动时，合外力方向指向曲线的凹侧</p>
+                        <p>D. 错误，如匀速圆周运动，加速度始终指向圆心，速度沿切线方向，两者始终垂直（不在同一直线上）。但特例：若物体做加速度方向变化的直线运动，速度和加速度在同一直线上</p>
+                        <p>实际上D的表述不够准确。对于曲线运动，速度沿切线方向，加速度（合外力方向）指向凹侧，两者一般不共线</p>
+                        <p><strong>答案：C</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：运动的合成 【基础】</h3>
+                    <p class="question">汽艇在静水中速度为v₁，水流速度为v₂。若汽艇船头始终垂直河岸渡河，则汽艇的实际速度为多少？若要使渡河时间最短，船头应指向何方？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>（1）船头垂直河岸时：</strong></p>
+                        <p>汽艇的实际速度（合速度）v = √(v₁² + v₂²)</p>
+                        <p>方向与上游岸的夹角为θ，tanθ = v₁/v₂</p>
+                        <p><strong>（2）渡河时间最短：</strong></p>
+                        <p>渡河时间t = 河宽d / 垂直河岸的速度v₁</p>
+                        <p>要使t最小，应使v₁最大，即船头应垂直河岸</p>
+                        <p><strong>答案：</strong>实际速度为√(v₁² + v₂²)，最短渡河时间时船头垂直河岸</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：平抛运动的位移 【基础】</h3>
+                    <p class="question">物体以初速度v₀水平抛出，不计空气阻力，求t时刻物体的水平位移和竖直位移，以及合位移的大小和方向。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>水平方向（匀速）：</strong>x = v₀t</p>
+                        <p><strong>竖直方向（自由落体）：</strong>y = ½gt²</p>
+                        <p><strong>合位移大小：</strong>s = √(x² + y²) = √(v₀²t² + g²t⁴/4)</p>
+                        <p><strong>位移方向：</strong>与水平方向夹角α满足tanα = y/x = (½gt²)/(v₀t) = gt/(2v₀)</p>
+                        <p><strong>答案：</strong>水平位移v₀t，竖直位移gt²/2，合位移√(v₀²t² + g²t⁴/4)，方向满足tanα = gt/(2v₀)</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：平抛运动的速度 【基础】</h3>
+                    <p class="question">物体以初速度v₀ = 20m/s水平抛出，不计空气阻力，求2s末物体的速度大小和方向（g取10m/s²）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>水平速度：</strong>vx = v₀ = 20m/s</p>
+                        <p><strong>竖直速度：</strong>vy = gt = 10 × 2 = 20m/s</p>
+                        <p><strong>合速度大小：</strong>v = √(vx² + vy²) = √(20² + 20²) = 20√2 ≈ 28.3m/s</p>
+                        <p><strong>速度方向：</strong>与水平方向夹角θ满足tanθ = vy/vx = 20/20 = 1，故θ = 45°</p>
+                        <p><strong>答案：</strong>速度大小20√2m/s，方向与水平成45°角斜向下</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：圆周运动的线速度与角速度 【基础】</h3>
+                    <p class="question">一个做匀速圆周运动的物体，半径为r = 0.5m，周期为T = 2s，求线速度和角速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p><strong>角速度：</strong>ω = 2π/T = 2π/2 = π ≈ 3.14rad/s</p>
+                        <p><strong>线速度：</strong>v = ωr = π × 0.5 = 0.5π ≈ 1.57m/s</p>
+                        <p>或v = 2πr/T = 2π × 0.5/2 = 0.5π ≈ 1.57m/s</p>
+                        <p><strong>答案：</strong>角速度πrad/s，线速度0.5πm/s</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：向心加速度的计算 【中档】</h3>
+                    <p class="question">地球赤道上的物体随地球自转的向心加速度约为多少？（地球半径R = 6.4×10⁶m，自转周期T = 24h）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>T = 24h = 24 × 3600s = 86400s</p>
+                        <p><strong>角速度：</strong>ω = 2π/T = 2π/86400 ≈ 7.27×10⁻⁵rad/s</p>
+                        <p><strong>向心加速度：</strong>a = ω²R = (7.27×10⁻⁵)² × 6.4×10⁶ ≈ 0.034m/s²</p>
+                        <p>或a = (2π/T)²R = 4π²R/T² ≈ 4 × 3.14² × 6.4×10⁶/(86400)² ≈ 0.034m/s²</p>
+                        <p><strong>答案：</strong>约0.034m/s²</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2024·新课标卷】 平抛运动与动能 【中档】</h3>
+                    <p class="question">福建舰是我国自主设计建造的首艘弹射型航空母舰。借助配重小车可以进行弹射测试，测试时配重小车被弹射器从甲板上水平弹出后，落到海面上。调整弹射装置，使小车水平离开甲板时的动能变为调整前的4倍。忽略空气阻力，则小车在海面上的落点与其离开甲板处的水平距离为调整前的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）动能表达式为Ek = ½mv²</p>
+                        <p>（2）由题意可知小车水平离开甲板时的动能变为调整前的4倍，则小车离开甲板时速度变为调整前的2倍</p>
+                        <p>（3）小车离开甲板后做平抛运动，从离开甲板到到达海面上时间不变（h = ½gt²，高度不变）</p>
+                        <p>（4）根据x = vt，可知小车在海面上的落点与其离开甲板处的水平距离为调整前的2倍</p>
+                        <p><strong>知识点标签：</strong>平抛运动、动能定理、运动合成与分解</p>
+                        <p><strong>答案：2倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2024·新课标Ⅱ卷】 斜面上的圆周运动 【中档】</h3>
+                    <p class="question">一倾斜的匀质圆盘绕垂直于盘面的固定轴转动，盘面上a、b两点相对轴的距离分别为r₁和r₂，且r₁ < r₂。若圆盘转动的角速度为ω，则a、b两点的线速度和向心加速度之比各为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）同一转盘上，各点的角速度相同，都是ω</p>
+                        <p>（2）线速度v = ωr，所以v₁/v₂ = r₁/r₂</p>
+                        <p>（3）向心加速度a = ω²r，所以a₁/a₂ = r₁/r₂</p>
+                        <p><strong>知识点标签：</strong>圆周运动、线速度与角速度的关系</p>
+                        <p><strong>答案：</strong>线速度之比为r₁:r₂，向心加速度之比为r₁:r₂</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2023·浙江卷】 平抛运动与圆轨道 【高档】</h3>
+                    <p class="question">如图所示，一质量为m的小球从离地面高H处以初速度v₀水平抛出，恰好沿竖直平面内的光滑圆弧轨道运动，轨道半径为R，轨道末端切线水平。小球离开轨道后落到地面，不计空气阻力。求小球落地时的速度大小。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）整个过程只有重力做功，机械能守恒</p>
+                        <p>（2）初始状态：E₁ = ½mv₀² + mgH</p>
+                        <p>（3）落地时：E₂ = ½mv²</p>
+                        <p>（4）由E₁ = E₂得：½mv² = ½mv₀² + mgH</p>
+                        <p>（5）解得：v = √(v₀² + 2gH)</p>
+                        <p><strong>知识点标签：</strong>平抛运动、机械能守恒定律</p>
+                        <p><strong>答案：√(v₀² + 2gH)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2024·辽宁卷】 火车转弯 【中档】</h3>
+                    <p class="question">一列火车以速度v通过半径为r的弯道，弯道处外轨比内轨高h，两轨间距为d。若火车对内、外轨均无侧向压力，则速度v应为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）火车受力：重力mg竖直向下，支持力FN垂直于轨道斜向上</p>
+                        <p>（2）设轨道倾角为θ，则sinθ ≈ h/d，cosθ ≈ 1（θ很小时）</p>
+                        <p>（3）火车对内、外轨均无侧向压力时，重力和支持力的合力提供向心力</p>
+                        <p>（4）F向 = mgtanθ ≈ mgh/d = mv²/r</p>
+                        <p>（5）解得：v = √(ghr/d)</p>
+                        <p><strong>知识点标签：</strong>圆周运动、向心力、火车转弯</p>
+                        <p><strong>答案：v = √(ghr/d)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·河北卷】 平抛运动与角度关系 【中档】</h3>
+                    <p class="question">一小球从斜面上方O点水平抛出，落在斜面上P点。已知斜面倾角为θ，O点到斜面的竖直距离为h。不计空气阻力，求小球落到斜面上时的速度方向与水平方向夹角的正切值。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）设小球飞行时间为t</p>
+                        <p>（2）竖直方向：h = ½gt²，得t = √(2h/g)</p>
+                        <p>（3）竖直速度：vy = gt = g√(2h/g) = √(2gh)</p>
+                        <p>（4）速度方向与水平方向夹角α满足：tanα = vy/v₀</p>
+                        <p>（5）位移方向与水平方向夹角等于斜面倾角θ，满足：tanθ = h/(v₀t)</p>
+                        <p>（6）可以证明：tanα = 2tanθ（这是平抛运动的一个重要结论）</p>
+                        <p><strong>知识点标签：</strong>平抛运动、速度与位移方向关系</p>
+                        <p><strong>答案：tanα = 2tanθ</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·河北卷】 圆周运动的临界问题 【高档】</h3>
+                    <p class="question">一根长为l的轻绳一端固定在O点，另一端系一个质量为m的小球。小球在竖直平面内做圆周运动，通过最高点时的速度为v。求小球在最高点时，绳对球的拉力为零时的最小速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）小球在最高点受力：重力mg竖直向下，绳的拉力F可能竖直向下（也可能为零）</p>
+                        <p>（2）由牛顿第二定律：mg + F = mv²/l</p>
+                        <p>（3）当拉力F = 0时，mg = mv²/l</p>
+                        <p>（4）解得：v = √(gl)</p>
+                        <p>（5）这就是小球能通过最高点的最小速度（临界速度）</p>
+                        <p><strong>知识点标签：</strong>圆周运动、向心力、临界问题</p>
+                        <p><strong>答案：v = √(gl)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·全国卷】 滑雪大跳台 【高档】</h3>
+                    <p class="question">北京2022年冬奥会首钢滑雪大跳台，运动员从a处由静止自由滑下，到b处起跳，c点为a、b之间的最低点，a、c两处的高度差为h。要求运动员经过c点时对滑雪板的压力不大于自身所受重力的k倍，运动过程中将运动员视为质点并忽略所有阻力，则c点处这一段圆弧雪道的半径不应小于多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）运动员从a到c过程，由动能定理得：mgh = ½mv²</p>
+                        <p>（2）在c点，由牛顿第二定律得：FN - mg = mv²/R</p>
+                        <p>（3）要求FN ≤ kmg，即压力不大于k倍重力</p>
+                        <p>（4）联立得：R ≥ h/(k-1)</p>
+                        <p><strong>知识点标签：</strong>牛顿第二定律、动能定理、圆周运动</p>
+                        <p><strong>答案：R ≥ h/(k-1)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·江苏卷】 圆锥摆运动 【中档】</h3>
+                    <p class="question">一个质量为m的小球，用长为l的细绳悬挂于O点，使小球在水平面内做匀速圆周运动，细绳与竖直方向的夹角为θ。求小球运动的角速度和周期。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）小球受力：重力mg竖直向下，绳的拉力F沿绳向上</p>
+                        <p>（2）小球在水平面内做匀速圆周运动，向心力由拉力的水平分量提供</p>
+                        <p>（3）竖直方向平衡：Fcosθ = mg，得F = mg/cosθ</p>
+                        <p>（4）向心力：F向 = Fsinθ = mgtanθ</p>
+                        <p>（5）圆周半径：r = lsinθ</p>
+                        <p>（6）由F向 = mω²r得：mgtanθ = mω²lsinθ</p>
+                        <p>（7）解得：ω = √(g/lcosθ)，T = 2π/ω = 2π√(lcosθ/g)</p>
+                        <p><strong>知识点标签：</strong>圆周运动、向心力、圆锥摆</p>
+                        <p><strong>答案：ω = √(g/lcosθ)，T = 2π√(lcosθ/g)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·浙江卷】 平抛运动与圆轨道组合 【高档】</h3>
+                    <p class="question">如图所示，一半径为R的光滑四分之一圆弧轨道固定在竖直平面内，轨道底端切线水平。一质量为m的小球从轨道顶端由静止释放，离开轨道后做平抛运动，落到水平地面上。已知轨道顶端离地面的高度为H，求小球落地时的速度大小。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）全过程只有重力做功，机械能守恒</p>
+                        <p>（2）初状态（轨道顶端）：E₁ = mgH</p>
+                        <p>（3）末状态（落地）：E₂ = ½mv²</p>
+                        <p>（4）由机械能守恒：mgH = ½mv²</p>
+                        <p>（5）解得：v = √(2gH)</p>
+                        <p><strong>知识点标签：</strong>平抛运动、机械能守恒定律、圆周运动</p>
+                        <p><strong>答案：v = √(2gH)</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中物理 - 第五章 曲线运动</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'physics5';
+            const btn = document.getElementById('complete-btn');
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+            btn.addEventListener('click', () => {
+                PhysicsProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成本章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'physics.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

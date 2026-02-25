@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第六章 万有引力与航天 - 高中物理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高中物理</h1>
+            <h2>第六章 万有引力与航天</h2>
+        </header>
+
+        <nav>
+            <a href="physics.html" class="nav-link">← 返回物理列表</a>
+            <a href="#planet" class="nav-link">行星的运动</a>
+            <a href="#gravity" class="nav-link">万有引力定律</a>
+            <a href="#application" class="nav-link">万有引力理论成就</a>
+            <a href="#space" class="nav-link">宇宙航行</a>
+            <a href="#examples" class="nav-link">例题练习</a>
+        </nav>
+
+        <main>
+            <section id="planet" class="section">
+                <h2>6.1 行星的运动</h2>
+
+                <div class="content-box">
+                    <h3>地心说与日心说</h3>
+                    <ul>
+                        <li><strong>地心说：</strong>地球是宇宙的中心，太阳和其他行星都绕地球运动</li>
+                        <li><strong>日心说：</strong>太阳是宇宙的中心，地球和其他行星都绕太阳运动</li>
+                        <li>日心说更接近实际，但也不完全正确（太阳只是太阳系的中心）</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>开普勒第一定律（轨道定律）</h3>
+                    <p class="definition">所有行星绕太阳运动的轨道都是椭圆，太阳处在椭圆的一个焦点上</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>开普勒第二定律（面积定律）</h3>
+                    <p class="definition">对任意一个行星来说，它与太阳的连线在相等的时间内扫过相等的面积</p>
+                    <p>这意味着：行星在近日点速度大，在远日点速度小</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>开普勒第三定律（周期定律）</h3>
+                    <p class="definition">所有行星轨道的半长轴的三次方跟它的公转周期的二次方的比都相等</p>
+                    <div class="formula">a³/T² = k（常量）</div>
+                    <p>其中k的值只与中心天体有关，与行星无关</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>圆轨道近似</h3>
+                    <p>大多数行星轨道都很接近圆，因此在高中阶段通常将行星轨道视为圆</p>
+                    <p>此时：a³/T² = r³/T² = k</p>
+                </div>
+            </section>
+
+            <section id="gravity" class="section">
+                <h2>6.2 万有引力定律</h2>
+
+                <div class="content-box">
+                    <h3>万有引力定律的发现</h3>
+                    <ul>
+                        <li>牛顿在开普勒等前人研究的基础上发现了万有引力定律</li>
+                        <li>月地检验：验证了地面物体受的重力与地球吸引月球的力是同一性质的力</li>
+                    </ul>
+                </div>
+
+                <div class="operation-box">
+                    <h3>万有引力定律的内容</h3>
+                    <p class="definition">自然界中任何两个物体都相互吸引，引力的方向在它们的连线上，引力的大小与物体的质量m₁和m₂的乘积成正比，与它们之间距离r的二次方成反比</p>
+                    <div class="formula">F = G(m₁m₂)/r²</div>
+                    <p>G：万有引力常量，G = 6.67×10⁻¹¹ N·m²/kg²（卡文迪许测定）</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>适用条件</h3>
+                    <ul>
+                        <li><strong>质点：</strong>两物体距离远大于物体本身大小时，可视为质点</li>
+                        <li><strong>均匀球体：</strong>质量分布均匀的球体，可视为质量集中在球心</li>
+                        <li>不适用于形状不规则或质量分布不均匀的物体</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>万有引力的特点</h3>
+                    <ul>
+                        <li><strong>普遍性：</strong>任何两个物体之间都存在</li>
+                        <li><strong>相互性：</strong>两个物体之间的引力是一对作用力与反作用力</li>
+                        <li><strong>宏观性：</strong>通常只有质量巨大的物体间才有明显效果</li>
+                        <li><strong>特殊性：</strong>两物体间的距离趋近于零时，公式不再适用</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="application" class="section">
+                <h2>6.3 万有引力理论的成就</h2>
+
+                <div class="content-box">
+                    <h3>计算天体质量</h3>
+                    <p>以地球绕太阳运动为例（将轨道视为圆）：</p>
+                    <p>万有引力提供向心力：G(Mm)/r² = m(4π²r)/T²</p>
+                    <p>解得中心天体质量：<div class="formula">M = (4π²r³)/(GT²)</div></p>
+                    <p>其中：M为中心天体质量，r为轨道半径，T为公转周期</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>计算天体密度</h3>
+                    <p>若已知天体半径R和质量M，则密度：</p>
+                    <div class="formula">ρ = M/V = M/(4πR³/3) = 3M/(4πR³)</div>
+                    <p>若卫星在天体表面附近运行，r ≈ R：</p>
+                    <div class="formula">ρ = 3π/(GT²)</div>
+                </div>
+
+                <div class="content-box">
+                    <h3>发现未知天体</h3>
+                    <ul>
+                        <li><strong>海王星的发现：</strong>根据万有引力定律计算的天王星轨道与实际观测不符，推测存在未知行星，后被观测证实</li>
+                        <li><strong>冥王星的发现：</strong>同样利用万有引力定律</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="space" class="section">
+                <h2>6.4 宇宙航行</h2>
+
+                <div class="content-box">
+                    <h3>第一宇宙速度（环绕速度）</h3>
+                    <p class="definition">物体在地面附近绕地球做匀速圆周运动的速度叫做第一宇宙速度</p>
+                    <p>由 mg = mv²/R 得：v = √(gR) = √(9.8×6.4×10⁶) ≈ 7.9km/s</p>
+                    <p>这是人造地球卫星的<strong>最小发射速度</strong>，也是卫星<strong>最大的环绕速度</strong></p>
+                </div>
+
+                <div class="content-box">
+                    <h3>第二宇宙速度（脱离速度）</h3>
+                    <p class="definition">使物体挣脱地球引力束缚，飞离地球的最小发射速度</p>
+                    <p>v₂ = 11.2km/s</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>第三宇宙速度（逃逸速度）</h3>
+                    <p class="definition">使物体挣脱太阳引力束缚，飞出太阳系的最小发射速度</p>
+                    <p>v₃ = 16.7km/s</p>
+                </div>
+
+                <div class="operation-box">
+                    <h3>卫星的运行规律</h3>
+                    <p>万有引力提供向心力：G(Mm)/r² = m(v²)/r = mω²r = m(4π²r)/T²</p>
+                    <p><strong>线速度：</strong>v = √(GM/r)，轨道半径越大，线速度越小</p>
+                    <p><strong>角速度：</strong>ω = √(GM/r³)，轨道半径越大，角速度越小</p>
+                    <p><strong>周期：</strong>T = √(4π²r³/GM)，轨道半径越大，周期越大</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>同步卫星（地球同步轨道卫星）</h3>
+                    <ul>
+                        <li><strong>周期：</strong>与地球自转周期相同（T = 24h）</li>
+                        <li><strong>轨道：</strong>赤道上方，轨道平面与赤道平面重合</li>
+                        <li><strong>高度：</strong>固定高度（约36000km）</li>
+                        <li><strong>应用：</strong>通信、气象观测等</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>卫星的超重与失重</h3>
+                    <ul>
+                        <li><strong>发射过程（加速上升）：</strong>卫星处于超重状态</li>
+                        <li><strong>在轨运行：</strong>卫星处于完全失重状态</li>
+                        <li><strong>返回过程（减速下降）：</strong>卫星处于超重状态</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>例题练习</h2>
+
+                <div class="example-box">
+                    <h3>例题 1：开普勒第三定律的应用 【基础】</h3>
+                    <p class="question">两行星绕太阳做圆周运动，它们的轨道半径之比为r₁:r₂=1:4，则它们的周期之比为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
+                    <div id="sol1" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据开普勒第三定律：r³/T² = k（常量）</p>
+                        <p>对于两行星：r₁³/T₁² = r₂³/T₂²</p>
+                        <p>T₁²/T₂² = r₁³/r₂³ = (1/4)³ = 1/64</p>
+                        <p>T₁/T₂ = 1/8</p>
+                        <p><strong>答案：1:8</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 2：万有引力的计算 【基础】</h3>
+                    <p class="question">两个质量均为50kg的人相距1m，他们之间的万有引力约为多大？（G取6.67×10⁻¹¹ N·m²/kg²）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据万有引力定律：F = G(m₁m₂)/r²</p>
+                        <p>F = 6.67×10⁻¹¹ × (50×50)/(1²)</p>
+                        <p>F = 6.67×10⁻¹¹ × 2500 = 1.67×10⁻⁷ N</p>
+                        <p><strong>答案：约1.67×10⁻⁷ N（非常小，可忽略）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：第一宇宙速度 【基础】</h3>
+                    <p class="question">已知地球半径R=6.4×10⁶m，地面重力加速度g=10m/s²，求地球的第一宇宙速度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>第一宇宙速度是物体在地面附近绕地球做匀速圆周运动的速度</p>
+                        <p>由 mg = mv²/R 得：v = √(gR)</p>
+                        <p>v = √(10 × 6.4×10⁶) = √(6.4×10⁷) = 8×10³ m/s = 8km/s</p>
+                        <p><strong>答案：8km/s（通常取7.9km/s）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：卫星周期与轨道半径 【中档】</h3>
+                    <p class="question">人造地球卫星绕地球做匀速圆周运动，若轨道半径增大到原来的2倍，则卫星的周期变为原来的几倍？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>万有引力提供向心力：G(Mm)/r² = m(4π²r)/T²</p>
+                        <p>解得：T² = (4π²r³)/(GM)，即 T ∝ r^(3/2)</p>
+                        <p>当r变为2r时：T' = √(2³) × T = 2√2 × T</p>
+                        <p><strong>答案：2√2倍</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2024·新课标卷】 天体质量计算 【中档】</h3>
+                    <p class="question">"嫦娥六号"探测器成功着陆月球背面，完成了人类历史首次月球背面采样返回任务。已知月球半径为R，月球表面的重力加速度为g，引力常量为G。若"嫦娥六号"在月球表面附近绕月球做匀速圆周运动，求月球的质量</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>在月球表面附近，万有引力近似等于重力：G(Mm)/R² = mg</p>
+                        <p>解得：M = (gR²)/G</p>
+                        <p><strong>知识点标签：</strong>万有引力定律、重力与万有引力的关系</p>
+                        <p><strong>答案：M = gR²/G</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2023·全国卷】 同步卫星 【中档】</h3>
+                    <p class="question">地球同步卫星离地高度约为地球半径的6倍。若有一卫星在离地高度为地球半径的3倍的轨道上运行，则该卫星的周期与同步卫星周期的比值约为多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据开普勒第三定律：r³/T² = k</p>
+                        <p>同步卫星轨道半径：r₁ = R + 6R = 7R</p>
+                        <p>另一卫星轨道半径：r₂ = R + 3R = 4R</p>
+                        <p>r₁³/T₁² = r₂³/T₂²</p>
+                        <p>T₂²/T₁² = r₂³/r₁³ = (4R)³/(7R)³ = 64/343</p>
+                        <p>T₂/T₁ = √(64/343) = 8/(7√7) ≈ 8/18.5 ≈ 0.43</p>
+                        <p><strong>知识点标签：</strong>开普勒第三定律、卫星运动</p>
+                        <p><strong>答案：约0.43</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2024·浙江卷】 天体密度计算 【中档】</h3>
+                    <p class="question">某行星的半径为R，一颗卫星绕该行星做匀速圆周运动的周期为T，轨道半径为r。若已知引力常量为G，求该行星的平均密度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）卫星做圆周运动，万有引力提供向心力：</p>
+                        <p>G(Mm)/r² = m(4π²r)/T²</p>
+                        <p>（2）解得行星质量：M = (4π²r³)/(GT²)</p>
+                        <p>（3）行星体积：V = (4πR³)/3</p>
+                        <p>（4）行星密度：ρ = M/V = (4π²r³)/(GT²) × (3)/(4πR³) = (3πr³)/(GT²R³)</p>
+                        <p><strong>知识点标签：</strong>万有引力定律、天体密度</p>
+                        <p><strong>答案：ρ = 3πr³/(GT²R³)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2022·新课标卷】 双星系统 【高档】</h3>
+                    <p class="question">宇宙中存在双星系统，两恒星质量分别为m₁和m₂，相距L，绕它们连线上的某点做匀速圆周运动。求两恒星的轨道半径r₁和r₂，以及运动周期T</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）两恒星间的万有引力提供向心力，且角速度相同：</p>
+                        <p>G(m₁m₂)/L² = m₁ω²r₁ = m₂ω²r₂</p>
+                        <p>（2）由 r₁ + r₂ = L，且 m₁r₁ = m₂r₂，解得：</p>
+                        <p>r₁ = (m₂L)/(m₁+m₂)，r₂ = (m₁L)/(m₁+m₂)</p>
+                        <p>（3）由 G(m₁m₂)/L² = m₁(4π²r₁)/T²，解得：</p>
+                        <p>T = √[4π²L³/(G(m₁+m₂))]</p>
+                        <p><strong>知识点标签：</strong>双星系统、万有引力、圆周运动</p>
+                        <p><strong>答案：r₁ = m₂L/(m₁+m₂)，r₂ = m₁L/(m₁+m₂)，T = √[4π²L³/G(m₁+m₂)]</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2023·河北卷】 卫星变轨 【高档】</h3>
+                    <p class="question">卫星在圆轨道I上运行，半径为r₁，速度为v₁。若要使卫星进入半径为r₂（r₂ > r₁）的圆轨道II，需要在A点通过加速实现。求在圆轨道II上的速度v₂</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）在圆轨道I上：G(Mm)/r₁² = mv₁²/r₁，v₁ = √(GM/r₁)</p>
+                        <p>（2）在圆轨道II上：G(Mm)/r₂² = mv₂²/r₂</p>
+                        <p>（3）解得：v₂ = √(GM/r₂)</p>
+                        <p>（4）由于r₂ > r₁，所以v₂ < v₁</p>
+                        <p>（5）从轨道I进入轨道II需要在A点加速，但加速后的椭圆轨道在远地点的速度会小于圆轨道II的速度，需要再次加速才能进入圆轨道II</p>
+                        <p><strong>知识点标签：</strong>卫星变轨、圆周运动、能量守恒</p>
+                        <p><strong>答案：v₂ = √(GM/r₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2024·新课标卷】 火星探测 【中档】</h3>
+                    <p class="question">"天问一号"火星探测器成功着陆火星。已知火星质量为M，半径为R，引力常量为G。求火星表面的重力加速度g和火星的第一宇宙速度v</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）在火星表面，万有引力等于重力：</p>
+                        <p>G(Mm)/R² = mg</p>
+                        <p>解得：g = (GM)/R²</p>
+                        <p>（2）第一宇宙速度是卫星在火星表面附近绕火星做匀速圆周运动的速度：</p>
+                        <p>mg = mv²/R</p>
+                        <p>解得：v = √(gR) = √(GM/R)</p>
+                        <p><strong>知识点标签：</strong>万有引力定律、第一宇宙速度</p>
+                        <p><strong>答案：g = GM/R²，v = √(GM/R)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·新课标卷】 卫星加速度比较 【基础】</h3>
+                    <p class="question">两颗卫星P、Q绕地球做匀速圆周运动，轨道半径r_P < r_Q。下列说法正确的是：</p>
+                        <p>(A) P的周期大于Q的周期</p>
+                        <p>(B) P的线速度大于Q的线速度</p>
+                        <p>(C) P的角速度大于Q的角速度</p>
+                        <p>(D) P的向心加速度大于Q的向心加速度</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>根据 G(Mm)/r² = m(4π²r)/T² = mv²/r = mω²r = ma，得：</p>
+                        <p>（A）错误。T = √(4π²r³/GM)，r_P < r_Q，所以T_P < T_Q</p>
+                        <p>（B）正确。v = √(GM/r)，r_P < r_Q，所以v_P > v_Q</p>
+                        <p>（C）正确。ω = √(GM/r³)，r_P < r_Q，所以ω_P > ω_Q</p>
+                        <p>（D）正确。a = GM/r²，r_P < r_Q，所以a_P > a_Q</p>
+                        <p><strong>知识点标签：</strong>卫星运动、圆周运动规律</p>
+                        <p><strong>答案：B、C、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 航天飞机的能量 【高档】</h3>
+                    <p class="question">航天飞机在半径为r的轨道上绕地球飞行。若要将航天飞机转移到半径为2r的轨道上，需要通过加速实现。已知地球质量为M，引力常量为G，航天飞机质量为m。求两次加速所需的总能量</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）在半径为r的轨道上，速度v₁ = √(GM/r)，总能量E₁ = -GMm/(2r)</p>
+                        <p>（2）在半径为2r的轨道上，速度v₂ = √(GM/2r)，总能量E₂ = -GMm/(4r)</p>
+                        <p>（3）能量变化：ΔE = E₂ - E₁ = -GMm/(4r) - (-GMm/(2r)) = GMm/(4r)</p>
+                        <p>（4）实际操作中需要先加速进入椭圆轨道，再加速进入圆轨道，总能量等于两轨道能量之差</p>
+                        <p><strong>知识点标签：</strong>航天工程、能量守恒、轨道变换</p>
+                        <p><strong>答案：GMm/(4r)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·浙江卷】 月球引力波探测 【中档】</h3>
+                    <p class="question">"鹊桥"中继星在地月拉格朗日L2点附近运行，为月球背面的着陆器提供中继通信服务。已知地球质量为M，月球质量为m，地月距离为L。若"L2点"位于月球外侧距离月球x处，在此处地球和月球对中继星的引力合力为零，求x的值</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）在L2点，中继星受地球引力和月球引力，合力为零：</p>
+                        <p>G(Mm_卫)/(L+x)² = G(mm_卫)/x²</p>
+                        <p>（2）化简得：M/(L+x)² = m/x²</p>
+                        <p>（3）展开：Mx² = m(L+x)² = m(L² + 2Lx + x²)</p>
+                        <p>（4）整理：(M-m)x² - 2mLx - mL² = 0</p>
+                        <p>（5）解方程（取正值）得近似值（当M≫m时）：x ≈ L√(m/M)</p>
+                        <p><strong>知识点标签：</strong>拉格朗日点、万有引力平衡</p>
+                        <p><strong>答案：x满足(M-m)x² - 2mLx - mL² = 0</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·全国卷】 行星宜居带 【中档】</h3>
+                    <p class="question">恒星宜居带是指恒星周围存在液态水的区域。若某恒星质量为太阳质量的2倍，宜居带范围与轨道半径有关。已知地球绕太阳公转周期为1年，轨道半径为R。求该恒星宜居带内一颗行星绕该恒星公转的周期与地球绕太阳公转周期的比值（设行星轨道半径为1.5R）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）地球绕太阳：GM_日m/R² = m(4π²R)/T_日²</p>
+                        <p>（2）行星绕恒星：G(2M_日)m'/(1.5R)² = m'(4π²×1.5R)/T_行²</p>
+                        <p>（3）两式相除：M/R³ : 2M/(1.5R)³ = 1/T_日² : 1/T_行²</p>
+                        <p>（4）化简：T_行²/T_日² = (1.5)³/2 = 3.375/2 = 1.6875</p>
+                        <p>（5）T_行/T_日 = √1.6875 ≈ 1.3</p>
+                        <p><strong>知识点标签：</strong>开普勒第三定律、宜居带</p>
+                        <p><strong>答案：约1.3</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·河北卷】 空间站 【基础】</h3>
+                    <p class="question">中国空间站绕地球做匀速圆周运动，轨道高度约为400km。已知地球半径R=6400km，地面重力加速度g=10m/s²。求空间站绕地球运行的周期</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）空间站轨道半径：r = R + h = 6400km + 400km = 6800km = 6.8×10⁶m</p>
+                        <p>（2）在空间站轨道上：G(Mm)/r² = m(4π²r)/T²</p>
+                        <p>（3）在地球表面：GM = gR²</p>
+                        <p>（4）联立得：(gR²)/r² = (4π²r)/T²</p>
+                        <p>（5）解得：T² = (4π²r³)/(gR²) = (4π²×6.8³×10¹⁸)/(10×6.4²×10¹²)</p>
+                        <p>T ≈ √(3.05×10⁷) ≈ 5525s ≈ 92min</p>
+                        <p><strong>知识点标签：</strong>空间站、卫星周期</p>
+                        <p><strong>答案：约92分钟</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="complete-btn" class="complete-chapter-btn">完成本章学习</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>高中物理 - 第六章 万有引力与航天</p>
+            <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
+        </footer>
+    </div>
+
+    <script src="physics-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapterId = 'physics6';
+            const btn = document.getElementById('complete-btn');
+            const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            if (currentStatus === 'unstarted') {
+                PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
+            } else if (currentStatus === 'completed') {
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+            }
+            btn.addEventListener('click', () => {
+                PhysicsProgressManager.updateStatus(chapterId, 'completed');
+                btn.textContent = '本章已完成';
+                btn.classList.add('completed');
+                btn.disabled = true;
+                alert('恭喜！你已完成本章的学习！');
+                setTimeout(() => {
+                    window.location.href = 'physics.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
