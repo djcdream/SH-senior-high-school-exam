@@ -25,30 +25,294 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>光的直线传播：</strong>光在同种均匀介质中沿直线传播</p>
+                    <p><strong>光的反射：</strong>光从一种介质射到界面时，一部分光返回原介质</p>
+                    <p><strong>光的折射：</strong>光从一种介质射入另一种介质时，传播方向改变</p>
+                    <p><strong>全反射：</strong>光从光密介质射向光疏介质，入射角大于临界角时，全部反射</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>反射定律：</strong>反射光线、入射光线和法线在同一平面内，反射角等于入射角</p>
+                    <p><strong>折射定律：</strong>入射光线、折射光线和法线在同一平面内，入射角的正弦与折射角的正弦之比等于两种介质的相对折射率</p>
+                    <p><strong>色散：</strong>不同频率的光在同一种介质中的折射率不同，造成白光分解为色光</p>
+                    <p><strong>光的干涉：</strong>两列相干光叠加，形成明暗条纹</p>
+                    <p><strong>光的衍射：</strong>光遇到障碍物时，能绕过障碍物继续传播</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 光的反射 【基础】</h3>
+                    <p class="question">一光线以入射角i射到平面镜上，求反射光线的反射角和反射光线与入射光线的夹角。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据光的反射定律：反射角等于入射角，r = i</p>
+                        <p>（2）反射光线与入射光线的夹角：θ = r + i = i + i = 2i</p>
+                        <p>（3）反射光线与镜面的夹角：α = 90° - r = 90° - i</p>
+                        <p>（4）入射光线与镜面的夹角：β = 90° - i</p>
+                        <p>（5）反射光线与入射光线的夹角是入射角的两倍</p>
+                        <p><strong>知识点标签：</strong>光的反射、反射定律、平面镜</p>
+                        <p><strong>答案：r = i，θ = 2i</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 光的折射 【基础】</h3>
+                    <p class="question">一光线从空气射入水中，入射角为i，折射角为r。若空气中的光速为c₁，水中的光速为c₂（c₁ > c₂），求空气对水的折射率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据光的折射定律：n₁₂ = sin i/sin r</p>
+                        <p>（2）空气对水的折射率：n₁₂ = c₁/c₂</p>
+                        <p>（3）所以：sin i/sin r = c₁/c₂</p>
+                        <p>（4）折射率也可以表示为速度之比</p>
+                        <p>（5）光从光疏介质进入光密介质时，折射角小于入射角</p>
+                        <p><strong>知识点标签：</strong>光的折射、折射定律、折射率</p>
+                        <p><strong>答案：n₁₂ = c₁/c₂</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 全反射 【中档】</h3>
+                    <p class="question">一光线从水中射向空气，水的折射率为n = 4/3。求发生全反射的临界角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）全反射的条件：光从光密介质射向光疏介质，入射角大于临界角</p>
+                        <p>（2）临界角C的定义：折射角r = 90°时的入射角</p>
+                        <p>（3）根据折射定律：sin C/sin 90° = n空气/n水</p>
+                        <p>（4）由于n空气 ≈ 1，所以：sin C = 1/n = 3/4</p>
+                        <p>（5）临界角：C = arcsin(3/4) ≈ 48.6°</p>
+                        <p>（6）当入射角i > 48.6°时，发生全反射</p>
+                        <p><strong>知识点标签：</strong>全反射、临界角、折射定律</p>
+                        <p><strong>答案：C = arcsin(3/4) ≈ 48.6°</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 光的色散 【中档】</h3>
+                    <p class="question">白光通过棱镜分解为七色光，其中红光的折射率最小，紫光的折射率最大。比较红光和紫光的折射角和偏折角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据折射定律：n = sin i/sin r</p>
+                        <p>（2）入射角i相同，折射率n越大，折射角r越小</p>
+                        <p>（3）红光的折射率最小，所以红光的折射角最大</p>
+                        <p>（4）紫光的折射率最大，所以紫光的折射角最小</p>
+                        <p>（5）偏折角δ = i - r，所以红光的偏折角最小，紫光的偏折角最大</p>
+                        <p>（6）这形成了彩虹光谱，红光在外，紫光在内</p>
+                        <p><strong>知识点标签：</strong>光的色散、棱镜、折射率</p>
+                        <p><strong>答案：红光折射角最大，紫光偏折角最大</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 光的干涉 【中档】</h3>
+                    <p class="question">一单色光通过双缝干涉装置，缝间距为d，双缝到屏幕的距离为L，屏幕上相邻亮纹的间距为Δx。求该单色光的波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）双缝干涉的亮纹条件：Δr = kλ，k = 0, 1, 2, ...</p>
+                        <p>（2）相邻亮纹的波程差：Δr = d·sinθ ≈ d·tanθ = d·(Δx/L)</p>
+                        <p>（3）所以：λ = Δr = d·(Δx/L)</p>
+                        <p>（4）波长：λ = d·Δx/L</p>
+                        <p>（5）其中d是缝间距，L是缝到屏幕的距离，Δx是相邻亮纹的间距</p>
+                        <p>（6）通过测量Δx可以计算光的波长</p>
+                        <p><strong>知识点标签：</strong>光的干涉、双缝干涉、波长测量</p>
+                        <p><strong>答案：λ = d·Δx/L</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 光的衍射 【中档】</h3>
+                    <p class="question">一单色光通过宽缝，缝宽为a，光的波长为λ。若缝宽a与波长λ的关系满足a = 5λ，在缝后多远处能观察到明显的衍射现象？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）光的衍射现象与缝宽a和波长λ的比值有关</p>
+                        <p>（2）当a ≈ λ时，衍射现象最明显</p>
+                        <p>（3）当a >> λ时，衍射现象不明显，近似沿直线传播</p>
+                        <p>（4）当a << λ时，衍射现象非常明显</p>
+                        <p>（5）本题中a = 5λ，属于"缝宽略大于波长"的情况</p>
+                        <p>（6）在缝后一定距离（远大于缝宽）处都能观察到衍射现象，但不是非常明显</p>
+                        <p>（7）当a = λ时，衍射现象最明显</p>
+                        <p><strong>知识点标签：</strong>光的衍射、缝宽、波长</p>
+                        <p><strong>答案：a = 5λ时，在缝后较远处能观察到一定的衍射现象</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 凸透镜成像 【中档】</h3>
+                    <p class="question">一物体放在焦距为f的凸透镜前2f处。求像的位置、大小和性质。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）透镜成像公式：1/u + 1/v = 1/f</p>
+                        <p>（2）物体距离：u = 2f</p>
+                        <p>（3）代入公式：1/(2f) + 1/v = 1/f</p>
+                        <p>（4）解得：1/v = 1/f - 1/(2f) = 1/(2f)</p>
+                        <p>（5）像距：v = 2f</p>
+                        <p>（6）放大率：m = v/u = (2f)/(2f) = 1</p>
+                        <p>（7）像的大小与物体相同，像为实像、倒立</p>
+                        <p>（8）这是凸透镜成像的特殊点，当u = 2f时，v = 2f，m = 1</p>
+                        <p><strong>知识点标签：</strong>凸透镜、透镜成像、放大率</p>
+                        <p><strong>答案：v = 2f，m = 1，实像、倒立、等大</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 光的反射和折射 【中档】</h3>
+                    <p class="question">一光线以入射角i从空气射入水中，一部分反射，一部分折射。若空气中的光速为c₁，水中的光速为c₂，求反射角和折射角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）反射角：根据反射定律，r = i</p>
+                        <p>（2）折射角：根据折射定律，n₁₂ = sin i/sin r = c₁/c₂</p>
+                        <p>（3）所以：sin r = (c₂/c₁)·sin i</p>
+                        <p>（4）折射角：r = arcsin[(c₂/c₁)·sin i]</p>
+                        <p>（5）由于c₁ > c₂（光在空气中比水中快），所以c₂/c₁ < 1</p>
+                        <p>（6）因此sin r < sin i，折射角r小于入射角i</p>
+                        <p>（7）反射光线和折射光线分别在界面两侧</p>
+                        <p><strong>知识点标签：</strong>光的反射、折射、反射角、折射角</p>
+                        <p><strong>答案：r = i，折射角r = arcsin[(c₂/c₁)·sin i]</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 光的反射成像 【中档】</h3>
+                    <p class="question">一物体放在平面镜前距离d处，求像的位置和像与物体的距离。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）平面镜成像特点：物距等于像距</p>
+                        <p>（2）物体距离：u = d</p>
+                        <p>（3）像距：v = d</p>
+                        <p>（4）像在平面镜后方距离d处</p>
+                        <p>（5）像与物体的距离：L = u + v = d + d = 2d</p>
+                        <p>（6）像为虚像、正立、与物体大小相同</p>
+                        <p>（7）平面镜成的像是左右对称的</p>
+                        <p><strong>知识点标签：</strong>平面镜成像、像距、物距</p>
+                        <p><strong>答案：像距v = d，像与物体的距离L = 2d</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 光的折射率 【基础】</h3>
+                    <p class="question">一光线从介质A射入介质B，入射角为i，折射角为r。若介质A中的光速为v_A，介质B中的光速为v_B，求介质B对介质A的折射率。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）介质B对介质A的折射率：n_BA = sin i/sin r</p>
+                        <p>（2）折射率与光速的关系：n_BA = v_A/v_B</p>
+                        <p>（3）所以：sin i/sin r = v_A/v_B</p>
+                        <p>（4）若v_A > v_B，则n_BA > 1，介质B比介质A光密</p>
+                        <p>（5）若v_A < v_B，则n_BA < 1，介质B比介质A光疏</p>
+                        <p>（6）折射率描述了光在不同介质中的传播特性</p>
+                        <p><strong>知识点标签：</strong>折射率、光速、折射定律</p>
+                        <p><strong>答案：n_BA = v_A/v_B</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 凹透镜成像 【中档】</h3>
+                    <p class="question">一物体放在焦距为f的凹透镜前f处。求像的位置、大小和性质。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）透镜成像公式：1/u + 1/v = 1/f</p>
+                        <p>（2）凹透镜的焦距f为负值</p>
+                        <p>（3）物体距离：u = f（f为负，所以u为正）</p>
+                        <p>（4）代入公式：1/f + 1/v = 1/f</p>
+                        <p>（5）解得：1/v = 0，v → ∞（平行光）</p>
+                        <p>（6）放大率：m = v/u → ∞</p>
+                        <p>（7）像在无穷远处，为虚像、正立</p>
+                        <p>（8）这是凹透镜成像的特殊情况</p>
+                        <p><strong>知识点标签：</strong>凹透镜、透镜成像、焦距</p>
+                        <p><strong>答案：v → ∞，像在无穷远处，虚像</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 光的干涉条纹 【中档】</h3>
+                    <p class="question">一双缝干涉装置，缝间距为d，双缝到屏幕的距离为L，光的波长为λ。求屏幕上第k级亮纹的位置。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）双缝干涉的亮纹条件：Δr = kλ</p>
+                        <p>（2）波程差：Δr = d·sinθ ≈ d·tanθ = d·(x/L)</p>
+                        <p>（3）其中x是亮纹到中央亮纹的距离</p>
+                        <p>（4）所以：d·(x/L) = kλ</p>
+                        <p>（5）解得：x = kλL/d</p>
+                        <p>（6）k = 0时为中央亮纹，k = 1, 2, ...时为两侧的第1、2、...级亮纹</p>
+                        <p>（7）相邻亮纹的间距：Δx = λL/d</p>
+                        <p><strong>知识点标签：</strong>光的干涉、双缝干涉、亮纹位置</p>
+                        <p><strong>答案：x = kλL/d</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 凸透镜成像公式 【中档】</h3>
+                    <p class="question">一凸透镜的焦距为f，物体放在透镜前距离u处。求像的距离v和放大率m。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）透镜成像公式：1/u + 1/v = 1/f</p>
+                        <p>（2）解得像距：1/v = 1/f - 1/u = (u - f)/(uf)</p>
+                        <p>（3）所以：v = uf/(u - f)</p>
+                        <p>（4）放大率：m = v/u = [uf/(u - f)]/u = f/(u - f)</p>
+                        <p>（5）当u > f时，v > 0，成实像、倒立</p>
+                        <p>（6）当u < f时，v < 0，成虚像、正立</p>
+                        <p>（7）当u = 2f时，v = 2f，m = 1</p>
+                        <p><strong>知识点标签：</strong>凸透镜、透镜成像、放大率</p>
+                        <p><strong>答案：v = uf/(u - f)，m = f/(u - f)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 光的反射定律 【基础】</h3>
+                    <p class="question">一光线以入射角i射到平面镜上，若将平面镜旋转角度α，入射光线方向不变，求反射光线与原反射光线的夹角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）原反射角：r₁ = i</p>
+                        <p>（2）原反射光线与镜面的夹角：θ₁ = 90° - i</p>
+                        <p>（3）平面镜旋转角度α后，法线也旋转角度α</p>
+                        <p>（4）新的入射角：i' = i + α</p>
+                        <p>（5）新的反射角：r' = i' = i + α</p>
+                        <p>（6）反射光线的转角：Δθ = 2α</p>
+                        <p>（7）反射光线与原反射光线的夹角：2α</p>
+                        <p>（8）平面镜旋转α角，反射光线旋转2α角</p>
+                        <p><strong>知识点标签：</strong>光的反射、平面镜旋转、反射角</p>
+                        <p><strong>答案：反射光线与原反射光线的夹角为2α</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 光的全反射应用 【高档】</h3>
+                    <p class="question">一光纤的纤芯折射率为n₁，包层折射率为n₂（n₁ > n₂），光线从空气射入纤芯端面。求光线能在光纤中发生全反射的最大入射角。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）光纤发生全反射的条件：光线从纤芯射向包层时，入射角大于临界角</p>
+                        <p>（2）纤芯对包层的临界角：C = arcsin(n₂/n₁)</p>
+                        <p>（3）光纤端面的数值孔径：NA = n₁·sinθ_max</p>
+                        <p>（4）其中θ_max是最大入射角</p>
+                        <p>（5）数值孔径也可以表示为：NA = √(n₁² - n₂²)</p>
+                        <p>（6）所以：sinθ_max = NA/n₁ = √(n₁² - n₂²)/n₁ = √(1 - (n₂/n₁)²)</p>
+                        <p>（7）最大入射角：θ_max = arcsin[√(n₁² - n₂²)/n₁]</p>
+                        <p>（8）光纤利用全反射原理传输光信号，损耗极小</p>
+                        <p><strong>知识点标签：</strong>全反射、光纤、数值孔径、临界角</p>
+                        <p><strong>答案：θ_max = arcsin[√(n₁² - n₂²)/n₁]</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +333,7 @@
             const chapterId = 'physics17';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +341,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
