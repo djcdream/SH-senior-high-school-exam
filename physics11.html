@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第十一章 静电场 - 高中物理</title>
+    <title>第十一章 动量 - 高中物理</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>高中物理</h1>
-            <h2>第十一章 静电场</h2>
+            <h2>第十一章 动量</h2>
         </header>
 
         <nav>
@@ -25,30 +25,276 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>动量：</strong>p = mv，描述物体运动的量，单位是千克·米/秒(kg·m/s)</p>
+                    <p><strong>冲量：</strong>I = Ft，描述力对时间累积的效果，单位是牛顿·秒(N·s)</p>
+                    <p><strong>动量定理：</strong>物体所受合外力的冲量等于物体动量的变化量，I = Δp = mv₂ - mv₁</p>
+                    <p><strong>动量守恒定律：</strong>一个系统不受外力或所受外力的矢量和为零时，系统的总动量保持不变</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要应用</h3>
+                    <p><strong>碰撞：</strong>两物体相互作用的过程，包括弹性碰撞、非弹性碰撞和完全非弹性碰撞</p>
+                    <p><strong>弹性碰撞：</strong>碰撞过程中机械能守恒，动量也守恒</p>
+                    <p><strong>完全非弹性碰撞：</strong>碰撞后两物体速度相同，动量守恒但机械能不守恒</p>
+                    <p><strong>爆炸：</strong>物体分裂成几部分，系统动量守恒，机械能增加</p>
+                    <p><strong>火箭发射：</strong>利用动量守恒定律推进</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 动量定理 【基础】</h3>
+                    <p class="question">一质量为m的物体，在水平恒力F作用下从静止开始运动，运动时间为t。若不计摩擦阻力，求物体的动量和速度。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）根据动量定理：I = Ft = Δp = mv - 0</p>
+                        <p>（2）解得动量：p = Ft</p>
+                        <p>（3）速度：v = p/m = Ft/m</p>
+                        <p><strong>知识点标签：</strong>动量定理、冲量、速度</p>
+                        <p><strong>答案：p = Ft，v = Ft/m</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 动量守恒定律 【中档】</h3>
+                    <p class="question">两物体A、B质量分别为m₁和m₂，静止在光滑水平面上。A以速度v₀向B运动，碰撞后A的速度变为v₁，求B的速度v₂。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）碰撞前后系统动量守恒：m₁v₀ + 0 = m₁v₁ + m₂v₂</p>
+                        <p>（2）解得：m₂v₂ = m₁v₀ - m₁v₁ = m₁(v₀ - v₁)</p>
+                        <p>（3）所以：v₂ = m₁(v₀ - v₁)/m₂</p>
+                        <p>（4）若碰撞后A反弹，则v₁ < 0，v₂ > v₀/m₂</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、碰撞</p>
+                        <p><strong>答案：v₂ = m₁(v₀ - v₁)/m₂</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 完全非弹性碰撞 【中档】</h3>
+                    <p class="question">两物体A、B质量分别为m₁和m₂，A以速度v₀向静止的B运动，碰撞后两物体粘在一起运动。求碰撞后的共同速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）完全非弹性碰撞，碰撞后两物体速度相同</p>
+                        <p>（2）根据动量守恒：m₁v₀ + 0 = (m₁ + m₂)v</p>
+                        <p>（3）解得：v = m₁v₀/(m₁ + m₂)</p>
+                        <p>（4）碰撞后的共同速度</p>
+                        <p><strong>知识点标签：</strong>完全非弹性碰撞、动量守恒定律</p>
+                        <p><strong>答案：v = m₁v₀/(m₁ + m₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 弹性碰撞 【中档】</h3>
+                    <p class="question">两物体A、B质量相等m，A以速度v₀向静止的B运动，发生弹性碰撞。求碰撞后两物体的速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）弹性碰撞，动量守恒和机械能守恒</p>
+                        <p>（2）动量守恒：mv₀ + 0 = mv₁ + mv₂，即 v₁ + v₂ = v₀</p>
+                        <p>（3）机械能守恒：½mv₀² = ½mv₁² + ½mv₂²，即 v₀² = v₁² + v₂²</p>
+                        <p>（4）由v₁ = v₀ - v₂代入：v₀² = (v₀ - v₂)² + v₂² = v₀² - 2v₀v₂ + 2v₂²</p>
+                        <p>（5）解得：2v₂(v₂ - v₀) = 0，所以v₂ = v₀或v₂ = 0</p>
+                        <p>（6）v₂ = v₀时，v₁ = 0（交换速度）；v₂ = 0时，v₁ = v₀（无碰撞）</p>
+                        <p>（7）弹性碰撞后交换速度</p>
+                        <p><strong>知识点标签：</strong>弹性碰撞、动量守恒定律、机械能守恒</p>
+                        <p><strong>答案：v₁ = 0，v₂ = v₀（交换速度）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 冲量和动量 【中档】</h3>
+                    <p class="question">一质量为m的球，以速度v₀撞向墙壁，碰撞后以速度v₁弹回，碰撞时间为Δt。求球对墙壁的平均作用力。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）球对墙壁的平均作用力F'与墙壁对球的平均作用力F大小相等、方向相反</p>
+                        <p>（2）根据动量定理：FΔt = mv₁ - (-mv₀) = m(v₁ + v₀)</p>
+                        <p>（3）解得：F = m(v₁ + v₀)/Δt</p>
+                        <p>（4）球对墙壁的平均作用力：F' = m(v₁ + v₀)/Δt，方向与球碰撞前速度方向相同</p>
+                        <p><strong>知识点标签：</strong>冲量、动量定理、平均作用力</p>
+                        <p><strong>答案：F' = m(v₁ + v₀)/Δt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 动量守恒与能量 【高档】</h3>
+                    <p class="question">一质量为m₁的滑块以速度v₀在光滑水平面上滑行，与一质量为m₂的静止滑块碰撞，碰撞后两滑块一起运动。求碰撞过程中损失的机械能。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）碰撞后共同速度：v = m₁v₀/(m₁ + m₂)</p>
+                        <p>（2）碰撞前的动能：E₁ = ½m₁v₀²</p>
+                        <p>（3）碰撞后的动能：E₂ = ½(m₁ + m₂)v² = ½(m₁ + m₂)[m₁v₀/(m₁ + m₂)]² = ½m₁²v₀²/(m₁ + m₂)</p>
+                        <p>（4）损失的机械能：ΔE = E₁ - E₂ = ½m₁v₀² - ½m₁²v₀²/(m₁ + m₂)</p>
+                        <p>（5）化简：ΔE = ½m₁v₀²·[1 - m₁/(m₁ + m₂)] = ½m₁v₀²·[m₂/(m₁ + m₂)] = ½m₁m₂v₀²/(m₁ + m₂)</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、能量损失、完全非弹性碰撞</p>
+                        <p><strong>答案：ΔE = ½m₁m₂v₀²/(m₁ + m₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 爆炸 【中档】</h3>
+                    <p class="question">一质量为M的炮弹在空中爆炸，分裂成两块，质量分别为m和M-m，爆炸后两块沿相反方向运动，速度大小分别为v₁和v₂。求爆炸前后系统动量的变化。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）爆炸前，炮弹的速度为v，动量：p₁ = Mv</p>
+                        <p>（2）爆炸后，两块的速度分别为v₁和v₂（方向相反）</p>
+                        <p>（3）爆炸后的总动量：p₂ = mv₁ + (M-m)(-v₂) = mv₁ - (M-m)v₂</p>
+                        <p>（4）爆炸过程中，内力远大于外力（重力），系统动量近似守恒</p>
+                        <p>（5）所以：Mv ≈ mv₁ - (M-m)v₂</p>
+                        <p>（6）爆炸前后动量的变化：Δp = p₂ - p₁ = [mv₁ - (M-m)v₂] - Mv</p>
+                        <p>（7）实际上爆炸使系统机械能增加，但总动量保持不变</p>
+                        <p><strong>知识点标签：</strong>爆炸、动量守恒定律、内力与外力</p>
+                        <p><strong>答案：Δp ≈ 0（动量守恒）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 动量与能量综合 【高档】</h3>
+                    <p class="question">一质量为m₁的物块以速度v₀在光滑水平面上滑行，与一静止的轻弹簧碰撞，压缩弹簧的最大距离为x。若弹簧的劲度系数为k，求碰撞过程中系统损失的能量（或验证能量是否守恒）。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）物块碰撞弹簧后，物块与弹簧一起运动，压缩弹簧</p>
+                        <p>（2）最大压缩时，物块速度为零，弹簧弹性势能最大</p>
+                        <p>（3）根据机械能守恒：½m₁v₀² = ½kx²</p>
+                        <p>（4）物块与弹簧碰撞过程可以看作完全非弹性碰撞，碰撞后物块与弹簧系统一起运动</p>
+                        <p>（5）碰撞过程有能量损失，但最大压缩时剩余能量全部转化为弹簧的弹性势能</p>
+                        <p>（6）能量损失发生在碰撞瞬间，从½m₁v₀²减去弹簧最大弹性势能部分</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、机械能守恒、碰撞与压缩</p>
+                        <p><strong>答案：能量损失发生在碰撞瞬间</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 反冲运动 【中档】</h3>
+                    <p class="question">一质量为M的火箭，以速度v₀向前飞行，火箭向后喷出质量为Δm的气体，喷气速度为u（相对火箭）。求喷出气体后火箭的速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）喷出气体相对地面的速度：v' = v₀ - u（u为向后喷气，所以是减）</p>
+                        <p>（2）喷出气体后火箭的速度：v = v₀ + Δv</p>
+                        <p>（3）根据动量守恒（忽略重力等外力）：Mv₀ = (M - Δm)v + Δm(v₀ - u)</p>
+                        <p>（4）解得：v = [Mv₀ - Δm(v₀ - u)]/(M - Δm)</p>
+                        <p>（5）若Δm << M，可以近似为：Δv ≈ Δm·u/M</p>
+                        <p><strong>知识点标签：</strong>反冲运动、火箭、动量守恒定律</p>
+                        <p><strong>答案：v = [Mv₀ - Δm(v₀ - u)]/(M - Δm)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 动量定理的应用 【中档】</h3>
+                    <p class="question">一质量为m的物体从高度h处自由下落，落到地面上，与地面作用时间为Δt。求地面对物体的平均作用力。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）物体落地时的速度：v = √(2gh)</p>
+                        <p>（2）物体与地面作用后速度为零，动量变化：Δp = 0 - mv = -mv</p>
+                        <p>（3）作用时间内物体受重力mg和地面支持力N（向上）</p>
+                        <p>（4）根据动量定理：(N - mg)Δt = 0 - (-mv) = mv</p>
+                        <p>（5）解得：N = mg + mv/Δt = mg + m√(2gh)/Δt</p>
+                        <p>（6）地面对物体的平均作用力：N = mg + m√(2gh)/Δt</p>
+                        <p><strong>知识点标签：</strong>动量定理、自由落体、平均作用力</p>
+                        <p><strong>答案：N = mg + m√(2gh)/Δt</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 动量守恒与能量 【高档】</h3>
+                    <p class="question">一质量为m的钢球从高度H处自由下落，落到一质量为M的钢板上，钢板放在光滑水平面上。碰撞后钢球反弹，钢板开始运动。若碰撞为弹性碰撞，求钢板的运动速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）钢球落地时的速度：v₀ = √(2gH)</p>
+                        <p>（2）弹性碰撞，动量守恒和机械能守恒</p>
+                        <p>（3）动量守恒：mv₀ + 0 = mv₁ + Mv₂</p>
+                        <p>（4）机械能守恒：½mv₀² = ½mv₁² + ½Mv₂²</p>
+                        <p>（5）由于m << M，钢球反弹后速度v₁ ≈ -v₀（与碰撞前速度相反）</p>
+                        <p>（6）代入动量守恒：m√(2gH) + 0 = m(-√(2gH)) + Mv₂</p>
+                        <p>（7）解得：v₂ = 2m√(2gH)/M</p>
+                        <p>（8）钢板获得的速度，方向与钢球碰撞前速度方向相同</p>
+                        <p><strong>知识点标签：</strong>弹性碰撞、动量守恒定律、机械能守恒</p>
+                        <p><strong>答案：v₂ = 2m√(2gH)/M</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 动量的分量 【中档】</h3>
+                    <p class="question">一质量为m的物块，以速度v沿与水平面成θ角的斜面下滑，斜面倾角为α。求物块在时间t内沿斜面下滑的动量变化。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）物块沿斜面下滑，受力：重力mg竖直向下，支持力FN垂直于斜面向上</p>
+                        <p>（2）重力沿斜面的分量：mg·sinα</p>
+                        <p>（3）物块沿斜面下滑的加速度：a = g·sinα</p>
+                        <p>（4）时间t内沿斜面下滑的速度：v₁ = v + at = v + g·sinα·t</p>
+                        <p>（5）沿斜面的动量变化：Δp = m(v₁ - v) = m(g·sinα·t)</p>
+                        <p>（6）垂直于斜面的方向，支持力FN = mg·cosα，动量变化为零</p>
+                        <p><strong>知识点标签：</strong>动量定理、斜面运动、动量分量</p>
+                        <p><strong>答案：Δp = mg·sinα·t</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 动量守恒定律的应用 【中档】</h3>
+                    <p class="question">一质量为m₁的子弹以速度v₀射入一质量为m₂的静止木块中，子弹留在木块内。求碰撞后系统的速度。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）子弹射入木块后，子弹和木块一起运动，速度相同</p>
+                        <p>（2）根据动量守恒：m₁v₀ + 0 = (m₁ + m₂)v</p>
+                        <p>（3）解得：v = m₁v₀/(m₁ + m₂)</p>
+                        <p>（4）碰撞后系统的共同速度</p>
+                        <p>（5）这是一种完全非弹性碰撞，机械能有损失</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、完全非弹性碰撞、子弹射入木块</p>
+                        <p><strong>答案：v = m₁v₀/(m₁ + m₂)</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 动量守恒的验证 【基础】</h3>
+                    <p class="question">在气垫导轨上，两滑块A、B质量分别为m₁和m₂，A以速度v₀向静止的B运动，碰撞后A的速度变为v₁。若碰撞过程中动量守恒，求B的速度v₂。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）气垫导轨上摩擦力可忽略，碰撞过程动量守恒</p>
+                        <p>（2）动量守恒：m₁v₀ + 0 = m₁v₁ + m₂v₂</p>
+                        <p>（3）解得：m₂v₂ = m₁v₀ - m₁v₁ = m₁(v₀ - v₁)</p>
+                        <p>（4）所以：v₂ = m₁(v₀ - v₁)/m₂</p>
+                        <p>（5）若碰撞前测量A的速度为v₀，碰撞后测量A的速度为v₁，B的速度为v₂，可以验证m₁v₀是否等于m₁v₁ + m₂v₂</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、气垫导轨、碰撞实验</p>
+                        <p><strong>答案：v₂ = m₁(v₀ - v₁)/m₂</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 动量与能量的综合 【高档】</h3>
+                    <p class="question">一质量为m的钢球从高度H处自由下落，落到一弹簧上，弹簧的劲度系数为k。若钢球接触弹簧后压缩弹簧的最大距离为x，求弹簧的最大弹性势能和钢球与弹簧碰撞过程中损失的能量。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）钢球接触弹簧时的速度：v₀ = √(2gH)</p>
+                        <p>（2）最大压缩时，弹簧的弹性势能最大：Ep_max = ½kx²</p>
+                        <p>（3）钢球与弹簧碰撞过程可以看作完全非弹性碰撞，碰撞后钢球与弹簧一起运动</p>
+                        <p>（4）碰撞后钢球与弹簧系统一起运动，压缩弹簧，最后钢球速度为零</p>
+                        <p>（5）根据机械能守恒（从碰撞后到最大压缩）：½m₁v₀'² = ½kx²，其中v₀'是碰撞后钢球与弹簧的共同速度</p>
+                        <p>（6）碰撞过程损失的能量：ΔE = ½m₁v₀² - ½(m₁ + 0)v₀'² = ½m₁v₀² - ½m₁v₀'²</p>
+                        <p>（7）由于最大压缩时弹性势能Ep_max = ½kx² = ½(m₁ + 0)v₀'²，所以ΔE = ½m₁v₀² - ½m₁v₀'²</p>
+                        <p>（8）碰撞过程有能量损失，但最大压缩时剩余能量全部转化为弹簧的弹性势能</p>
+                        <p><strong>知识点标签：</strong>动量守恒定律、机械能守恒、弹性势能、能量损失</p>
+                        <p><strong>答案：Ep_max = ½kx²，碰撞过程有能量损失</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -57,7 +303,7 @@
         </main>
 
         <footer>
-            <p>高中物理 - 第十一章 静电场</p>
+            <p>高中物理 - 第十一章 动量</p>
             <p class="footer-note">点击"查看解答"按钮可以显示或隐藏解答过程</p>
         </footer>
     </div>
@@ -69,6 +315,7 @@
             const chapterId = 'physics11';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +323,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
