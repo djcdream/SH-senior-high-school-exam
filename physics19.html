@@ -25,30 +25,304 @@
                 <h2>知识点1</h2>
                 <div class="content-box">
                     <h3>基本概念</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
-                    <p>此处包含本章的核心知识点讲解。</p>
+                    <p><strong>α粒子散射实验：</strong>卢瑟福用α粒子轰击金箔，发现大部分α粒子直线穿过，少数发生大角度偏转，极少数甚至反弹</p>
+                    <p><strong>原子核式结构模型：</strong>在原子的中心有一个很小的核，叫做原子核，集中了原子的全部正电荷和几乎全部质量，电子在核外空间绕核旋转</p>
+                    <p><strong>氢原子光谱：</strong>氢原子发射的光谱是分立的线状光谱，存在巴耳末系、帕邢系、布喇开系等线系</p>
                 </div>
             </section>
 
             <section id="content2" class="section">
                 <h2>知识点2</h2>
                 <div class="content-box">
-                    <h3>重要公式</h3>
-                    <p>本章内容正在完善中，敬请期待...</p>
+                    <h3>重要规律</h3>
+                    <p><strong>玻尔理论：</strong>原子只能处于一系列不连续的能量状态，原子从一种能量状态跃迁到另一种能量状态时，发射或吸收光子</p>
+                    <p><strong>玻尔半径：</strong>r₁ = 0.53×10⁻¹⁰m，是氢原子电子轨道的最小半径</p>
+                    <p><strong>能级公式：</strong>E_n = -13.6eV/n²，其中n为主量子数</p>
+                    <p><strong>电子跃迁：</strong>从高能级跃迁到低能级时发射光子，从低能级跃迁到高能级时吸收光子</p>
                 </div>
             </section>
 
             <section id="examples" class="section">
                 <h2>例题练习</h2>
+                
                 <div class="example-box">
-                    <h3>例题 1：【基础】</h3>
-                    <p class="question">本章内容正在完善中，敬请期待...</p>
+                    <h3>例题 1：【2024·新课标卷】 玻尔理论 【基础】</h3>
+                    <p class="question">根据玻尔理论，氢原子的基态能量为-13.6eV。求氢原子的第一激发态能量和从基态跃迁到第一激发态需要吸收的光子能量。</p>
                     <button class="solution-btn" onclick="toggleSolution('sol1')">查看解答</button>
                     <div id="sol1" class="solution">
                         <p><strong>解答：</strong></p>
-                        <p>详细解答...</p>
+                        <p>（1）氢原子的能级公式：E_n = -13.6eV/n²</p>
+                        <p>（2）基态：n = 1，E₁ = -13.6eV/1² = -13.6eV</p>
+                        <p>（3）第一激发态：n = 2，E₂ = -13.6eV/2² = -3.4eV</p>
+                        <p>（4）跃迁需要吸收的光子能量：ΔE = E₂ - E₁ = -3.4eV - (-13.6eV) = 10.2eV</p>
+                        <p><strong>知识点标签：</strong>玻尔理论、能级、电子跃迁</p>
+                        <p><strong>答案：第一激发态能量 = -3.4eV，吸收光子能量 = 10.2eV</strong></p>
                     </div>
                 </div>
+
+                <div class="example-box">
+                    <h3>例题 2：【2023·浙江卷】 玻尔半径 【中档】</h3>
+                    <p class="question">根据玻尔理论，氢原子电子在第n条轨道上的轨道半径r_n与玻尔半径r₁的关系是什么？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol2')">查看解答</button>
+                    <div id="sol2" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）玻尔半径：r₁ = 0.53×10⁻¹⁰m</p>
+                        <p>（2）根据玻尔理论，电子的轨道半径：r_n = n²r₁</p>
+                        <p>（3）其中n是主量子数，n = 1, 2, 3, ...</p>
+                        <p>（4）电子轨道半径与主量子数的平方成正比</p>
+                        <p>（5）r₂ = 4r₁，r₃ = 9r₁，...</p>
+                        <p><strong>知识点标签：</strong>玻尔理论、玻尔半径、轨道半径</p>
+                        <p><strong>答案：r_n = n²r₁</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 3：【2022·新课标卷】 氢原子光谱 【中档】</h3>
+                    <p class="question">氢原子从n = 3能级跃迁到n = 2能级时，发射光子的波长是多少？（已知里德伯常量R = 1.097×10⁷m⁻¹）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol3')">查看解答</button>
+                    <div id="sol3" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据玻尔频率条件：hν = E₃ - E₂</p>
+                        <p>（2）波恩公式：1/λ = R(1/n₂² - 1/n₁²)</p>
+                        <p>（3）对于巴耳末系（n = 3, 2, 1），1/λ = R(1/2² - 1/3²) = R(1/4 - 1/9)</p>
+                        <p>（4）1/λ = R(9/36 - 4/36) = 5R/36</p>
+                        <p>（5）波长：λ = 36/(5R) = 36/(5×1.097×10⁷) = 36/(5.485×10⁷) ≈ 6.56×10⁻⁷m</p>
+                        <p>（6）换算成纳米：λ ≈ 656nm</p>
+                        <p>（7）这是可见光中的红光</p>
+                        <p><strong>知识点标签：</strong>氢原子光谱、波恩公式、波长</p>
+                        <p><strong>答案：λ ≈ 656nm（红光）</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 4：【2024·河北卷】 电子跃迁 【中档】</h3>
+                    <p class="question">氢原子从n = 4能级跃迁到n = 2能级时，发射光子的能量和频率各是多少？（已知普朗克常量h = 6.63×10⁻³⁴J·s）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol4')">查看解答</button>
+                    <div id="sol4" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）氢原子的能级公式：E_n = -13.6eV/n²</p>
+                        <p>（2）E₄ = -13.6eV/4² = -13.6eV/16 = -0.85eV</p>
+                        <p>（3）E₂ = -13.6eV/2² = -13.6eV/4 = -3.4eV</p>
+                        <p>（4）发射光子的能量：ΔE = E₄ - E₂ = -0.85eV - (-3.4eV) = 2.55eV</p>
+                        <p>（5）光子频率：ν = ΔE/h = 2.55×1.6×10⁻¹⁹/(6.63×10⁻³⁴) ≈ 6.15×10¹⁴Hz</p>
+                        <p>（6）波长：λ = c/ν = 3×10⁸/(6.15×10¹⁴) ≈ 4.88×10⁻⁷m = 488nm（可见光）</p>
+                        <p>（7）电子从高能级跃迁到低能级时发射光子</p>
+                        <p><strong>知识点标签：</strong>电子跃迁、光子能量、频率</p>
+                        <p><strong>答案：ΔE = 2.55eV，ν ≈ 6.15×10¹⁴Hz</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 5：【2023·全国卷】 原子核式结构 【中档】</h3>
+                    <p class="question">卢瑟福α粒子散射实验的结果是什么？这个结果支持了汤姆逊的枣糕模型吗？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol5')">查看解答</button>
+                    <div id="sol5" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）α粒子散射实验结果：</p>
+                        <p>- 绝大多数α粒子穿过金箔后仍沿原来的方向前进</p>
+                        <p>- 少数α粒子发生了较大的偏转</p>
+                        <p>- 极少数α粒子的偏转角超过90°，甚至被弹回</p>
+                        <p>（2）不支持汤姆逊的枣糕模型</p>
+                        <p>（3）汤姆逊模型认为正电荷均匀分布在原子中，无法解释大角度散射</p>
+                        <p>（4）卢瑟福提出了原子核式结构模型来解释这个实验结果</p>
+                        <p>（5）原子的大部分是空虚的，正电荷和几乎全部质量集中在一个很小的核上</p>
+                        <p><strong>知识点标签：</strong>α粒子散射、原子核式结构、汤姆逊模型</p>
+                        <p><strong>答案：不支持汤姆逊模型，支持原子核式结构模型</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 6：【2024·辽宁卷】 能级跃迁 【中档】</h3>
+                    <p class="question">氢原子电子从n = 3能级跃迁到基态时，可能发射几种不同能量的光子？它们的波长各是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol6')">查看解答</button>
+                    <div id="sol6" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）从n = 3跃迁到n = 1（基态）有两种途径：</p>
+                        <p>- 直接从n = 3到n = 1</p>
+                        <p>- 先从n = 3到n = 2，再从n = 2到n = 1</p>
+                        <p>（2）可能的跃迁：3→1，3→2，2→1</p>
+                        <p>（3）可能发射3种不同能量的光子</p>
+                        <p>（4）各跃迁的波长：</p>
+                        <p>- 3→1：1/λ₁ = R(1/1² - 1/3²) = R(1 - 1/9) = 8R/9，λ₁ = 9/(8R) ≈ 102.6nm（赖曼系，紫外）</p>
+                        <p>- 3→2：1/λ₂ = R(1/2² - 1/3²) = R(1/4 - 1/9) = 5R/36，λ₂ = 36/(5R) ≈ 656nm（巴耳末系，可见）</p>
+                        <p>- 2→1：1/λ₃ = R(1/1² - 1/2²) = R(1 - 1/4) = 3R/4，λ₃ = 4/(3R) ≈ 121.6nm（赖曼系，紫外）</p>
+                        <p>（5）其中λ₂ = 656nm是可见光中的红光</p>
+                        <p><strong>知识点标签：</strong>能级跃迁、光谱线、波恩公式</p>
+                        <p><strong>答案：3种，波长分别为102.6nm、656nm、121.6nm</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 7：【2022·浙江卷】 电离能 【中档】</h3>
+                    <p class="question">氢原子的电离能是多少？若要使基态的氢原子电离，需要吸收的光子最小能量是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol7')">查看解答</button>
+                    <div id="sol7" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）氢原子的电离能：|E_∞ - E₁|</p>
+                        <p>（2）其中E_∞ = 0（电子完全脱离原子核束缚时的能量为零）</p>
+                        <p>（3）E₁ = -13.6eV（基态能量）</p>
+                        <p>（4）电离能：|E_∞ - E₁| = |0 - (-13.6eV)| = 13.6eV</p>
+                        <p>（5）电离能的倒数等于电离电势：1/(13.6V)</p>
+                        <p>（6）使基态氢原子电离的最小光子能量：13.6eV</p>
+                        <p>（7）对应波长：λ = hc/E = 6.63×10⁻³⁴×3×10⁸/(13.6×1.6×10⁻¹⁹) ≈ 91.2nm（紫外）</p>
+                        <p><strong>知识点标签：</strong>电离能、基态、光子能量</p>
+                        <p><strong>答案：电离能 = 13.6eV，最小光子能量 = 13.6eV</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 8：【2023·河北卷】 巴耳末系 【中档】</h3>
+                    <p class="question">氢原子巴耳末系的光谱线中，波长最长的是哪一条？它的波长和频率各是多少？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol8')">查看解答</button>
+                    <div id="sol8" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）巴耳末系的跃迁：n = n→2，其中n = 3, 4, 5, ...</p>
+                        <p>（2）波长最长对应能量最小，即从n = 3跃迁到n = 2</p>
+                        <p>（3）波恩公式：1/λ = R(1/2² - 1/3²) = R(1/4 - 1/9) = 5R/36</p>
+                        <p>（4）波长：λ = 36/(5R) = 36/(5×1.097×10⁷) ≈ 6.56×10⁻⁷m = 656nm</p>
+                        <p>（5）频率：ν = c/λ = 3×10⁸/(656×10⁻⁹) ≈ 4.57×10¹⁴Hz</p>
+                        <p>（6）这是可见光中的红光（Hα线）</p>
+                        <p>（7）巴耳末系的其它谱线波长更短，在紫外区</p>
+                        <p><strong>知识点标签：</strong>巴耳末系、波恩公式、波长</p>
+                        <p><strong>答案：Hα线，λ ≈ 656nm，ν ≈ 4.57×10¹⁴Hz</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 9：【2024·新课标Ⅱ卷】 能级差 【中档】</h3>
+                    <p class="question">氢原子两个相邻能级之间的能量差ΔE随能级数n的增大如何变化？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol9')">查看解答</button>
+                    <div id="sol9" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）氢原子的能级公式：E_n = -13.6eV/n²</p>
+                        <p>（2）相邻能级n和n+1之间的能量差：</p>
+                        <p>（3）ΔE = E_n - E_{n+1} = -13.6eV(1/n² - 1/(n+1)²)</p>
+                        <p>（4）化简：ΔE = -13.6eV[(n+1)² - n²]/[n²(n+1)²] = -13.6eV(2n+1)/[n²(n+1)²]</p>
+                        <p>（5）绝对值：|ΔE| = 13.6eV(2n+1)/[n²(n+1)²]</p>
+                        <p>（6）随着n的增大，|ΔE|减小</p>
+                        <p>（7）能级越高，相邻能级的间距越小</p>
+                        <p>（8）当n→∞时，|ΔE| → 0，能级趋于连续</p>
+                        <p><strong>知识点标签：</strong>能级差、玻尔理论、氢原子能级</p>
+                        <p><strong>答案：|ΔE|随n的增大而减小</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 10：【2022·全国卷】 电子轨道 【中档】</h3>
+                    <p class="question">根据玻尔理论，氢原子电子在第n条轨道上的速率v_n与玻尔速率v₁的关系是什么？（已知v₁ = 2.18×10⁶m/s）</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol10')">查看解答</button>
+                    <div id="sol10" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）根据玻尔理论，电子做圆周运动：mv²/r_n = ke²/r_n²</p>
+                        <p>（2）角动量量子化：m·v_n·r_n = n·h/(2π)</p>
+                        <p>（3）解得：v_n = n·e²/(2ε₀h) = v₁/n</p>
+                        <p>（4）其中v₁ = e²/(2ε₀h) ≈ 2.18×10⁶m/s是玻尔速率</p>
+                        <p>（5）所以电子在第n条轨道上的速率：v_n = v₁/n</p>
+                        <p>（6）电子速率与主量子数成反比</p>
+                        <p>（7）v₁ = 2.18×10⁶m/s，v₂ = 1.09×10⁶m/s，v₃ = 0.73×10⁶m/s，...</p>
+                        <p><strong>知识点标签：</strong>玻尔理论、电子轨道、电子速率</p>
+                        <p><strong>答案：v_n = v₁/n</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 11：【2023·江苏卷】 光谱分析 【中档】</h3>
+                    <p class="question">某元素的特征光谱中，有一条波长为λ的光谱线。已知这是该元素原子的电子从第m能级跃迁到第n能级时发射的。求第(m+1)能级跃迁到第n能级时发射光子的波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol11')">查看解答</button>
+                    <div id="sol11" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）从第m能级跃迁到第n能级的能量：ΔE₁ = E_m - E_n</p>
+                        <p>（2）发射光子的波长：λ = hc/ΔE₁</p>
+                        <p>（3）从第(m+1)能级跃迁到第n能级的能量：ΔE₂ = E_{m+1} - E_n</p>
+                        <p>（4）根据波恩公式：1/λ₁ = R(1/n² - 1/m²)，1/λ₂ = R(1/n² - 1/(m+1)²)</p>
+                        <p>（5）由于1/n² - 1/(m+1)² > 1/n² - 1/m²</p>
+                        <p>（6）所以：1/λ₂ > 1/λ₁，即 λ₂ < λ₁</p>
+                        <p>（7）第(m+1)能级跃迁到第n能级时发射光子的波长更短，频率更高</p>
+                        <p>（8）具体的波长关系取决于m和n的值</p>
+                        <p><strong>知识点标签：</strong>光谱分析、能级跃迁、波恩公式</p>
+                        <p><strong>答案：λ₂ < λ₁</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 12：【2024·江西卷】 原子核 【中档】</h3>
+                    <p class="question">关于原子核，下列说法正确的是：</p>
+                    <p>(A) 原子核由质子和电子组成</p>
+                    <p>(B) 原子核带正电</p>
+                    <p>(C) 原子核的大小约为10⁻¹⁰m</p>
+                    <p>(D) 原子核几乎集中了原子的全部质量</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol12')">查看解答</button>
+                    <div id="sol12" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（A）错误。原子核由质子和中子组成（除普通氢核外），电子在核外</p>
+                        <p>（B）正确。原子核由质子带正电，中子不带电，所以原子核带正电</p>
+                        <p>（C）错误。原子核的大小约为10⁻¹⁴~10⁻¹⁵m，比10⁻¹⁰m小得多</p>
+                        <p>（D）正确。原子核的质子数和中子数之和（质量数）代表原子的质量，几乎集中了原子的全部质量</p>
+                        <p>（5）原子核的体积很小，但质量很大，密度极大</p>
+                        <p><strong>知识点标签：</strong>原子核、质子、中子、原子核大小</p>
+                        <p><strong>答案：B、D</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 13：【2022·河北卷】 能级跃迁和光谱 【中档】</h3>
+                    <p class="question">氢原子从高能级跃迁到低能级时，发射光子。若发射光子的能量越大，则电子跃迁的能级差如何变化？对应的光谱线在光谱中的位置如何变化？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol13')">查看解答</button>
+                    <div id="sol13" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）发射光子的能量：ΔE = E高 - E低</p>
+                        <p>（2）光子能量越大，意味着能级差越大</p>
+                        <p>（3）根据波恩公式：1/λ = R(1/n低² - 1/n高²)</p>
+                        <p>（4）能级差越大，1/λ越大，λ越小</p>
+                        <p>（5）所以光子能量越大，波长越短，频率越高</p>
+                        <p>（6）光谱线在光谱中的位置：波长越短，越靠近光谱的短波端（紫外区）</p>
+                        <p>（7）光谱线按波长从长到短排列：红外 → 可见 → 紫外</p>
+                        <p>（8）不同能级跃迁产生不同波长的光谱线</p>
+                        <p><strong>知识点标签：</strong>能级跃迁、光谱线、波长</p>
+                        <p><strong>答案：光子能量越大，能级差越大，波长越短，光谱线越靠近短波端</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 14：【2023·新课标卷】 普朗克常量 【基础】</h3>
+                    <p class="question">普朗克常量h = 6.63×10⁻³⁴J·s。已知氢原子基态能量E₁ = -13.6eV，求氢原子从基态跃迁到n = 2能级需要吸收的光子能量和对应的波长。</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol14')">查看解答</button>
+                    <div id="sol14" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）氢原子的能级公式：E_n = -13.6eV/n²</p>
+                        <p>（2）E₂ = -13.6eV/2² = -13.6eV/4 = -3.4eV</p>
+                        <p>（3）需要吸收的光子能量：ΔE = E₂ - E₁ = -3.4eV - (-13.6eV) = 10.2eV</p>
+                        <p>（4）对应的波长：λ = hc/ΔE = 6.63×10⁻³⁴×3×10⁸/(10.2×1.6×10⁻¹⁹)</p>
+                        <p>（5）λ = 1.989×10⁻²⁵/(1.632×10⁻¹⁸) ≈ 1.22×10⁻⁷m = 122nm</p>
+                        <p>（6）这是氢原子赖曼系的Hβ线，在紫外区</p>
+                        <p>（7）吸收光子的能量等于发射光子的能量</p>
+                        <p><strong>知识点标签：</strong>普朗克常量、能级跃迁、波长</p>
+                        <p><strong>答案：ΔE = 10.2eV，λ ≈ 122nm</strong></p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>例题 15：【2024·全国卷】 原子结构综合 【高档】</h3>
+                    <p class="question">氢原子中，电子在量子数为n的能级上运动。若要使电子跃迁到n = 2能级，可能需要吸收的光子有哪些波长？</p>
+                    <button class="solution-btn" onclick="toggleSolution('sol15')">查看解答</button>
+                    <div id="sol15" class="solution">
+                        <p><strong>解答：</strong></p>
+                        <p>（1）电子从高能级n跃迁到n = 2能级</p>
+                        <p>（2）可能的跃迁：n = 3, 4, 5, ... → 2</p>
+                        <p>（3）根据波恩公式：1/λ_{n,2} = R(1/2² - 1/n²) = R(1/4 - 1/n²)</p>
+                        <p>（4）各跃迁的波长：</p>
+                        <p>- 3→2：1/λ₃ = R(1/4 - 1/9) = 5R/36，λ₃ = 36/(5R) ≈ 656nm（巴耳末系，可见）</p>
+                        <p>- 4→2：1/λ₄ = R(1/4 - 1/16) = 3R/16，λ₄ = 16/(3R) ≈ 486nm（巴耳末系，可见）</p>
+                        <p>- 5→2：1/λ₅ = R(1/4 - 1/25) = 21R/100，λ₅ = 100/(21R) ≈ 434nm（巴耳末系，可见）</p>
+                        <p>- ...</p>
+                        <p>（5）可能的吸收波长有无限多个，当n→∞时，λ→4/(3R) ≈ 486nm</p>
+                        <p>（6）吸收的波长都在巴耳末系范围内</p>
+                        <p>（7）这些波长对应的光子在可见光区域</p>
+                        <p><strong>知识点标签：</strong>原子结构、能级跃迁、波恩公式、吸收光谱</p>
+                        <p><strong>答案：无限多个波长，最小波长约为486nm，在可见光区域</strong></p>
+                    </div>
+                </div>
+
             </section>
 
             <div style="text-align: center; margin-bottom: 40px;">
@@ -69,6 +343,7 @@
             const chapterId = 'physics19';
             const btn = document.getElementById('complete-btn');
             const currentStatus = PhysicsProgressManager.getChapterStatus(chapterId);
+            
             if (currentStatus === 'unstarted') {
                 PhysicsProgressManager.updateStatus(chapterId, 'in-progress');
             } else if (currentStatus === 'completed') {
@@ -76,6 +351,7 @@
                 btn.classList.add('completed');
                 btn.disabled = true;
             }
+            
             btn.addEventListener('click', () => {
                 PhysicsProgressManager.updateStatus(chapterId, 'completed');
                 btn.textContent = '本章已完成';
